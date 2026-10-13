@@ -2368,5 +2368,4705 @@
         "en": "I felt a little reassured to hear that such experiences aren't rare."
       }
     ]
+  },
+  {
+    "id": 26,
+    "pos": "verb",
+    "jp": "調べる",
+    "kana": "しらべる",
+    "meaning": {
+      "it": "controllare",
+      "en": "check"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "調べて"
+      },
+      {
+        "label": "ます形",
+        "jp": "調べます"
+      },
+      {
+        "label": "ない形",
+        "jp": "調べない"
+      },
+      {
+        "label": "た形",
+        "jp": "調べた"
+      },
+      {
+        "label": "可能形",
+        "jp": "調べられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、住所を調べた。",
+        "kana": "きのう、じゅうしょをしらべた。",
+        "it": "Ieri ho controllato l'indirizzo.",
+        "en": "Yesterday I checked the address."
+      },
+      {
+        "jp": "明日までに原因を調べます。",
+        "kana": "あしたまでにげんいんをしらべます。",
+        "it": "Entro domani controllare la causa.",
+        "en": "By tomorrow I will check the cause."
+      },
+      {
+        "jp": "時間があれば、住所を調べるつもりです。",
+        "kana": "じかんがあれば、じゅうしょをしらべるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di controllare l'indirizzo.",
+        "en": "If I have time, I intend to check the address."
+      },
+      {
+        "jp": "急がずに原因を調べてください。",
+        "kana": "いそがずにげんいんをしらべてください。",
+        "it": "Per favore, controllare la causa senza fretta.",
+        "en": "Please check the cause without rushing."
+      },
+      {
+        "jp": "まだ住所を調べないほうがいいと思います。",
+        "kana": "まだじゅうしょをしらべないほうがいいとおもいます。",
+        "it": "Penso sia meglio non controllare ancora l'indirizzo.",
+        "en": "I think it is better not to check the address yet."
+      },
+      {
+        "jp": "以前は一人で原因を調べられませんでした。",
+        "kana": "いぜんはひとりでげんいんをしらべられませんでした。",
+        "it": "Prima non riuscivo a controllare la causa da solo.",
+        "en": "I used to be unable to check the cause by myself."
+      },
+      {
+        "jp": "住所を調べてから、先生に報告しました。",
+        "kana": "じゅうしょをしらべてから、せんせいにほうこくしました。",
+        "it": "Dopo aver controllato l'indirizzo, ho riferito tutto all’insegnante.",
+        "en": "After I checked the address, I reported it to the teacher."
+      },
+      {
+        "jp": "もし原因を調べないと、困る人がいるでしょう。",
+        "kana": "もしげんいんをしらべないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a controllare la causa, qualcuno potrebbe avere problemi.",
+        "en": "If no one can check the cause, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、住所を調べる練習をしています。",
+        "kana": "さいきん、じゅうしょをしらべるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a controllare l'indirizzo.",
+        "en": "Lately I have been practicing how to check the address."
+      },
+      {
+        "jp": "原因を調べたあとで、気持ちが楽になりました。",
+        "kana": "げんいんをしらべたあとで、きもちがらくになりました。",
+        "it": "Dopo aver controllato la causa, mi sono sentito più sollevato.",
+        "en": "After I checked the cause, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "pos": "verb",
+    "jp": "届ける",
+    "kana": "とどける",
+    "meaning": {
+      "it": "consegnare",
+      "en": "deliver"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "届けて"
+      },
+      {
+        "label": "ます形",
+        "jp": "届けます"
+      },
+      {
+        "label": "ない形",
+        "jp": "届けない"
+      },
+      {
+        "label": "た形",
+        "jp": "届けた"
+      },
+      {
+        "label": "可能形",
+        "jp": "届けられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、書類を届けた。",
+        "kana": "きのう、しょるいをとどけた。",
+        "it": "Ieri ho consegnato i documenti.",
+        "en": "Yesterday I delivered the documents."
+      },
+      {
+        "jp": "明日までに忘れ物を届けます。",
+        "kana": "あしたまでにわすれものをとどけます。",
+        "it": "Entro domani consegnare l'oggetto dimenticato.",
+        "en": "By tomorrow I will deliver the forgotten item."
+      },
+      {
+        "jp": "時間があれば、書類を届けるつもりです。",
+        "kana": "じかんがあれば、しょるいをとどけるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di consegnare i documenti.",
+        "en": "If I have time, I intend to deliver the documents."
+      },
+      {
+        "jp": "急がずに忘れ物を届けてください。",
+        "kana": "いそがずにわすれものをとどけてください。",
+        "it": "Per favore, consegnare l'oggetto dimenticato senza fretta.",
+        "en": "Please deliver the forgotten item without rushing."
+      },
+      {
+        "jp": "まだ書類を届けないほうがいいと思います。",
+        "kana": "まだしょるいをとどけないほうがいいとおもいます。",
+        "it": "Penso sia meglio non consegnare ancora i documenti.",
+        "en": "I think it is better not to deliver the documents yet."
+      },
+      {
+        "jp": "以前は一人で忘れ物を届けられませんでした。",
+        "kana": "いぜんはひとりでわすれものをとどけられませんでした。",
+        "it": "Prima non riuscivo a consegnare l'oggetto dimenticato da solo.",
+        "en": "I used to be unable to deliver the forgotten item by myself."
+      },
+      {
+        "jp": "書類を届けてから、先生に報告しました。",
+        "kana": "しょるいをとどけてから、せんせいにほうこくしました。",
+        "it": "Dopo aver consegnato i documenti, ho riferito tutto all’insegnante.",
+        "en": "After I delivered the documents, I reported it to the teacher."
+      },
+      {
+        "jp": "もし忘れ物を届けないと、困る人がいるでしょう。",
+        "kana": "もしわすれものをとどけないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a consegnare l'oggetto dimenticato, qualcuno potrebbe avere problemi.",
+        "en": "If no one can deliver the forgotten item, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、書類を届ける練習をしています。",
+        "kana": "さいきん、しょるいをとどけるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a consegnare i documenti.",
+        "en": "Lately I have been practicing how to deliver the documents."
+      },
+      {
+        "jp": "忘れ物を届けたあとで、気持ちが楽になりました。",
+        "kana": "わすれものをとどけたあとで、きもちがらくになりました。",
+        "it": "Dopo aver consegnato l'oggetto dimenticato, mi sono sentito più sollevato.",
+        "en": "After I delivered the forgotten item, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "pos": "verb",
+    "jp": "片付ける",
+    "kana": "かたづける",
+    "meaning": {
+      "it": "riordinare",
+      "en": "tidy up"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "片付けて"
+      },
+      {
+        "label": "ます形",
+        "jp": "片付けます"
+      },
+      {
+        "label": "ない形",
+        "jp": "片付けない"
+      },
+      {
+        "label": "た形",
+        "jp": "片付けた"
+      },
+      {
+        "label": "可能形",
+        "jp": "片付けられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、部屋を片付けた。",
+        "kana": "きのう、へやをかたづけた。",
+        "it": "Ieri ho riordinato la stanza.",
+        "en": "Yesterday I tidied up the room."
+      },
+      {
+        "jp": "明日までに机の上を片付けます。",
+        "kana": "あしたまでにつくえのうえをかたづけます。",
+        "it": "Entro domani riordinare la scrivania.",
+        "en": "By tomorrow I will tidy up the desk."
+      },
+      {
+        "jp": "時間があれば、部屋を片付けるつもりです。",
+        "kana": "じかんがあれば、へやをかたづけるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di riordinare la stanza.",
+        "en": "If I have time, I intend to tidy up the room."
+      },
+      {
+        "jp": "急がずに机の上を片付けてください。",
+        "kana": "いそがずにつくえのうえをかたづけてください。",
+        "it": "Per favore, riordinare la scrivania senza fretta.",
+        "en": "Please tidy up the desk without rushing."
+      },
+      {
+        "jp": "まだ部屋を片付けないほうがいいと思います。",
+        "kana": "まだへやをかたづけないほうがいいとおもいます。",
+        "it": "Penso sia meglio non riordinare ancora la stanza.",
+        "en": "I think it is better not to tidy up the room yet."
+      },
+      {
+        "jp": "以前は一人で机の上を片付けられませんでした。",
+        "kana": "いぜんはひとりでつくえのうえをかたづけられませんでした。",
+        "it": "Prima non riuscivo a riordinare la scrivania da solo.",
+        "en": "I used to be unable to tidy up the desk by myself."
+      },
+      {
+        "jp": "部屋を片付けてから、先生に報告しました。",
+        "kana": "へやをかたづけてから、せんせいにほうこくしました。",
+        "it": "Dopo aver riordinato la stanza, ho riferito tutto all’insegnante.",
+        "en": "After I tidied up the room, I reported it to the teacher."
+      },
+      {
+        "jp": "もし机の上を片付けないと、困る人がいるでしょう。",
+        "kana": "もしつくえのうえをかたづけないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a riordinare la scrivania, qualcuno potrebbe avere problemi.",
+        "en": "If no one can tidy up the desk, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、部屋を片付ける練習をしています。",
+        "kana": "さいきん、へやをかたづけるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a riordinare la stanza.",
+        "en": "Lately I have been practicing how to tidy up the room."
+      },
+      {
+        "jp": "机の上を片付けたあとで、気持ちが楽になりました。",
+        "kana": "つくえのうえをかたづけたあとで、きもちがらくになりました。",
+        "it": "Dopo aver riordinato la scrivania, mi sono sentito più sollevato.",
+        "en": "After I tidied up the desk, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "pos": "verb",
+    "jp": "比べる",
+    "kana": "くらべる",
+    "meaning": {
+      "it": "confrontare",
+      "en": "compare"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "比べて"
+      },
+      {
+        "label": "ます形",
+        "jp": "比べます"
+      },
+      {
+        "label": "ない形",
+        "jp": "比べない"
+      },
+      {
+        "label": "た形",
+        "jp": "比べた"
+      },
+      {
+        "label": "可能形",
+        "jp": "比べられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、二つの案を比べた。",
+        "kana": "きのう、ふたつのあんをくらべた。",
+        "it": "Ieri ho confrontato le due proposte.",
+        "en": "Yesterday I compared the two proposals."
+      },
+      {
+        "jp": "明日までに値段を比べます。",
+        "kana": "あしたまでにねだんをくらべます。",
+        "it": "Entro domani confrontare i prezzi.",
+        "en": "By tomorrow I will compare the prices."
+      },
+      {
+        "jp": "時間があれば、二つの案を比べるつもりです。",
+        "kana": "じかんがあれば、ふたつのあんをくらべるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di confrontare le due proposte.",
+        "en": "If I have time, I intend to compare the two proposals."
+      },
+      {
+        "jp": "急がずに値段を比べてください。",
+        "kana": "いそがずにねだんをくらべてください。",
+        "it": "Per favore, confrontare i prezzi senza fretta.",
+        "en": "Please compare the prices without rushing."
+      },
+      {
+        "jp": "まだ二つの案を比べないほうがいいと思います。",
+        "kana": "まだふたつのあんをくらべないほうがいいとおもいます。",
+        "it": "Penso sia meglio non confrontare ancora le due proposte.",
+        "en": "I think it is better not to compare the two proposals yet."
+      },
+      {
+        "jp": "以前は一人で値段を比べられませんでした。",
+        "kana": "いぜんはひとりでねだんをくらべられませんでした。",
+        "it": "Prima non riuscivo a confrontare i prezzi da solo.",
+        "en": "I used to be unable to compare the prices by myself."
+      },
+      {
+        "jp": "二つの案を比べてから、先生に報告しました。",
+        "kana": "ふたつのあんをくらべてから、せんせいにほうこくしました。",
+        "it": "Dopo aver confrontato le due proposte, ho riferito tutto all’insegnante.",
+        "en": "After I compared the two proposals, I reported it to the teacher."
+      },
+      {
+        "jp": "もし値段を比べないと、困る人がいるでしょう。",
+        "kana": "もしねだんをくらべないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a confrontare i prezzi, qualcuno potrebbe avere problemi.",
+        "en": "If no one can compare the prices, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、二つの案を比べる練習をしています。",
+        "kana": "さいきん、ふたつのあんをくらべるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a confrontare le due proposte.",
+        "en": "Lately I have been practicing how to compare the two proposals."
+      },
+      {
+        "jp": "値段を比べたあとで、気持ちが楽になりました。",
+        "kana": "ねだんをくらべたあとで、きもちがらくになりました。",
+        "it": "Dopo aver confrontato i prezzi, mi sono sentito più sollevato.",
+        "en": "After I compared the prices, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "pos": "verb",
+    "jp": "伝える",
+    "kana": "つたえる",
+    "meaning": {
+      "it": "comunicare",
+      "en": "convey"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "伝えて"
+      },
+      {
+        "label": "ます形",
+        "jp": "伝えます"
+      },
+      {
+        "label": "ない形",
+        "jp": "伝えない"
+      },
+      {
+        "label": "た形",
+        "jp": "伝えた"
+      },
+      {
+        "label": "可能形",
+        "jp": "伝えられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、大切な情報を伝えた。",
+        "kana": "きのう、たいせつなじょうほうをつたえた。",
+        "it": "Ieri ho comunicato un'informazione importante.",
+        "en": "Yesterday I conveyed important information."
+      },
+      {
+        "jp": "明日までに変更を伝えます。",
+        "kana": "あしたまでにへんこうをつたえます。",
+        "it": "Entro domani comunicare il cambiamento.",
+        "en": "By tomorrow I will convey the change."
+      },
+      {
+        "jp": "時間があれば、大切な情報を伝えるつもりです。",
+        "kana": "じかんがあれば、たいせつなじょうほうをつたえるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di comunicare un'informazione importante.",
+        "en": "If I have time, I intend to convey important information."
+      },
+      {
+        "jp": "急がずに変更を伝えてください。",
+        "kana": "いそがずにへんこうをつたえてください。",
+        "it": "Per favore, comunicare il cambiamento senza fretta.",
+        "en": "Please convey the change without rushing."
+      },
+      {
+        "jp": "まだ大切な情報を伝えないほうがいいと思います。",
+        "kana": "まだたいせつなじょうほうをつたえないほうがいいとおもいます。",
+        "it": "Penso sia meglio non comunicare ancora un'informazione importante.",
+        "en": "I think it is better not to convey important information yet."
+      },
+      {
+        "jp": "以前は一人で変更を伝えられませんでした。",
+        "kana": "いぜんはひとりでへんこうをつたえられませんでした。",
+        "it": "Prima non riuscivo a comunicare il cambiamento da solo.",
+        "en": "I used to be unable to convey the change by myself."
+      },
+      {
+        "jp": "大切な情報を伝えてから、先生に報告しました。",
+        "kana": "たいせつなじょうほうをつたえてから、せんせいにほうこくしました。",
+        "it": "Dopo aver comunicato un'informazione importante, ho riferito tutto all’insegnante.",
+        "en": "After I conveyed important information, I reported it to the teacher."
+      },
+      {
+        "jp": "もし変更を伝えないと、困る人がいるでしょう。",
+        "kana": "もしへんこうをつたえないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a comunicare il cambiamento, qualcuno potrebbe avere problemi.",
+        "en": "If no one can convey the change, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、大切な情報を伝える練習をしています。",
+        "kana": "さいきん、たいせつなじょうほうをつたえるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a comunicare un'informazione importante.",
+        "en": "Lately I have been practicing how to convey important information."
+      },
+      {
+        "jp": "変更を伝えたあとで、気持ちが楽になりました。",
+        "kana": "へんこうをつたえたあとで、きもちがらくになりました。",
+        "it": "Dopo aver comunicato il cambiamento, mi sono sentito più sollevato.",
+        "en": "After I conveyed the change, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "pos": "verb",
+    "jp": "迎える",
+    "kana": "むかえる",
+    "meaning": {
+      "it": "andare a prendere",
+      "en": "pick up"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "迎えて"
+      },
+      {
+        "label": "ます形",
+        "jp": "迎えます"
+      },
+      {
+        "label": "ない形",
+        "jp": "迎えない"
+      },
+      {
+        "label": "た形",
+        "jp": "迎えた"
+      },
+      {
+        "label": "可能形",
+        "jp": "迎えられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、友人を迎えた。",
+        "kana": "きのう、ゆうじんをむかえた。",
+        "it": "Ieri ho preso un amico.",
+        "en": "Yesterday I picked up a friend."
+      },
+      {
+        "jp": "明日までに妹を迎えます。",
+        "kana": "あしたまでにいもうとをむかえます。",
+        "it": "Entro domani andare a prendere mia sorella minore.",
+        "en": "By tomorrow I will pick up my younger sister."
+      },
+      {
+        "jp": "時間があれば、友人を迎えるつもりです。",
+        "kana": "じかんがあれば、ゆうじんをむかえるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di andare a prendere un amico.",
+        "en": "If I have time, I intend to pick up a friend."
+      },
+      {
+        "jp": "急がずに妹を迎えてください。",
+        "kana": "いそがずにいもうとをむかえてください。",
+        "it": "Per favore, andare a prendere mia sorella minore senza fretta.",
+        "en": "Please pick up my younger sister without rushing."
+      },
+      {
+        "jp": "まだ友人を迎えないほうがいいと思います。",
+        "kana": "まだゆうじんをむかえないほうがいいとおもいます。",
+        "it": "Penso sia meglio non andare a prendere ancora un amico.",
+        "en": "I think it is better not to pick up a friend yet."
+      },
+      {
+        "jp": "以前は一人で妹を迎えられませんでした。",
+        "kana": "いぜんはひとりでいもうとをむかえられませんでした。",
+        "it": "Prima non riuscivo a andare a prendere mia sorella minore da solo.",
+        "en": "I used to be unable to pick up my younger sister by myself."
+      },
+      {
+        "jp": "友人を迎えてから、先生に報告しました。",
+        "kana": "ゆうじんをむかえてから、せんせいにほうこくしました。",
+        "it": "Dopo aver preso un amico, ho riferito tutto all’insegnante.",
+        "en": "After I picked up a friend, I reported it to the teacher."
+      },
+      {
+        "jp": "もし妹を迎えないと、困る人がいるでしょう。",
+        "kana": "もしいもうとをむかえないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a andare a prendere mia sorella minore, qualcuno potrebbe avere problemi.",
+        "en": "If no one can pick up my younger sister, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、友人を迎える練習をしています。",
+        "kana": "さいきん、ゆうじんをむかえるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a andare a prendere un amico.",
+        "en": "Lately I have been practicing how to pick up a friend."
+      },
+      {
+        "jp": "妹を迎えたあとで、気持ちが楽になりました。",
+        "kana": "いもうとをむかえたあとで、きもちがらくになりました。",
+        "it": "Dopo aver preso mia sorella minore, mi sono sentito più sollevato.",
+        "en": "After I picked up my younger sister, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "pos": "verb",
+    "jp": "断る",
+    "kana": "ことわる",
+    "meaning": {
+      "it": "rifiutare",
+      "en": "refuse"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "断って"
+      },
+      {
+        "label": "ます形",
+        "jp": "断ります"
+      },
+      {
+        "label": "ない形",
+        "jp": "断らない"
+      },
+      {
+        "label": "た形",
+        "jp": "断った"
+      },
+      {
+        "label": "可能形",
+        "jp": "断りえる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、突然の依頼を断った。",
+        "kana": "きのう、とつぜんのいらいをことわった。",
+        "it": "Ieri ho rifiutato la richiesta improvvisa.",
+        "en": "Yesterday I refused the sudden request."
+      },
+      {
+        "jp": "明日までに招待を断ります。",
+        "kana": "あしたまでにしょうたいをことわります。",
+        "it": "Entro domani rifiutare l'invito.",
+        "en": "By tomorrow I will refuse the invitation."
+      },
+      {
+        "jp": "時間があれば、突然の依頼を断るつもりです。",
+        "kana": "じかんがあれば、とつぜんのいらいをことわるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di rifiutare la richiesta improvvisa.",
+        "en": "If I have time, I intend to refuse the sudden request."
+      },
+      {
+        "jp": "急がずに招待を断ってください。",
+        "kana": "いそがずにしょうたいをことわってください。",
+        "it": "Per favore, rifiutare l'invito senza fretta.",
+        "en": "Please refuse the invitation without rushing."
+      },
+      {
+        "jp": "まだ突然の依頼を断らないほうがいいと思います。",
+        "kana": "まだとつぜんのいらいをことわらないほうがいいとおもいます。",
+        "it": "Penso sia meglio non rifiutare ancora la richiesta improvvisa.",
+        "en": "I think it is better not to refuse the sudden request yet."
+      },
+      {
+        "jp": "以前は一人で招待を断りえませんでした。",
+        "kana": "いぜんはひとりでしょうたいをことわりえませんでした。",
+        "it": "Prima non riuscivo a rifiutare l'invito da solo.",
+        "en": "I used to be unable to refuse the invitation by myself."
+      },
+      {
+        "jp": "突然の依頼を断ってから、先生に報告しました。",
+        "kana": "とつぜんのいらいをことわってから、せんせいにほうこくしました。",
+        "it": "Dopo aver rifiutato la richiesta improvvisa, ho riferito tutto all’insegnante.",
+        "en": "After I refused the sudden request, I reported it to the teacher."
+      },
+      {
+        "jp": "もし招待を断らないと、困る人がいるでしょう。",
+        "kana": "もししょうたいをことわらないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a rifiutare l'invito, qualcuno potrebbe avere problemi.",
+        "en": "If no one can refuse the invitation, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、突然の依頼を断る練習をしています。",
+        "kana": "さいきん、とつぜんのいらいをことわるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a rifiutare la richiesta improvvisa.",
+        "en": "Lately I have been practicing how to refuse the sudden request."
+      },
+      {
+        "jp": "招待を断ったあとで、気持ちが楽になりました。",
+        "kana": "しょうたいをことわったあとで、きもちがらくになりました。",
+        "it": "Dopo aver rifiutato l'invito, mi sono sentito più sollevato.",
+        "en": "After I refused the invitation, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "pos": "verb",
+    "jp": "誘う",
+    "kana": "さそう",
+    "meaning": {
+      "it": "invitare",
+      "en": "invite"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "誘って"
+      },
+      {
+        "label": "ます形",
+        "jp": "誘います"
+      },
+      {
+        "label": "ない形",
+        "jp": "誘わない"
+      },
+      {
+        "label": "た形",
+        "jp": "誘った"
+      },
+      {
+        "label": "可能形",
+        "jp": "誘いえる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、同僚を誘った。",
+        "kana": "きのう、どうりょうをさそった。",
+        "it": "Ieri ho invitato un collega.",
+        "en": "Yesterday I invited a colleague."
+      },
+      {
+        "jp": "明日までに友達を誘います。",
+        "kana": "あしたまでにともだちをさそいます。",
+        "it": "Entro domani invitare un amico.",
+        "en": "By tomorrow I will invite a friend."
+      },
+      {
+        "jp": "時間があれば、同僚を誘うつもりです。",
+        "kana": "じかんがあれば、どうりょうをさそうつもりです。",
+        "it": "Se avrò tempo, ho intenzione di invitare un collega.",
+        "en": "If I have time, I intend to invite a colleague."
+      },
+      {
+        "jp": "急がずに友達を誘ってください。",
+        "kana": "いそがずにともだちをさそってください。",
+        "it": "Per favore, invitare un amico senza fretta.",
+        "en": "Please invite a friend without rushing."
+      },
+      {
+        "jp": "まだ同僚を誘わないほうがいいと思います。",
+        "kana": "まだどうりょうをさそわないほうがいいとおもいます。",
+        "it": "Penso sia meglio non invitare ancora un collega.",
+        "en": "I think it is better not to invite a colleague yet."
+      },
+      {
+        "jp": "以前は一人で友達を誘いえませんでした。",
+        "kana": "いぜんはひとりでともだちをさそいえませんでした。",
+        "it": "Prima non riuscivo a invitare un amico da solo.",
+        "en": "I used to be unable to invite a friend by myself."
+      },
+      {
+        "jp": "同僚を誘ってから、先生に報告しました。",
+        "kana": "どうりょうをさそってから、せんせいにほうこくしました。",
+        "it": "Dopo aver invitato un collega, ho riferito tutto all’insegnante.",
+        "en": "After I invited a colleague, I reported it to the teacher."
+      },
+      {
+        "jp": "もし友達を誘わないと、困る人がいるでしょう。",
+        "kana": "もしともだちをさそわないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a invitare un amico, qualcuno potrebbe avere problemi.",
+        "en": "If no one can invite a friend, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、同僚を誘う練習をしています。",
+        "kana": "さいきん、どうりょうをさそうれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a invitare un collega.",
+        "en": "Lately I have been practicing how to invite a colleague."
+      },
+      {
+        "jp": "友達を誘ったあとで、気持ちが楽になりました。",
+        "kana": "ともだちをさそったあとで、きもちがらくになりました。",
+        "it": "Dopo aver invitato un amico, mi sono sentito più sollevato.",
+        "en": "After I invited a friend, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "pos": "verb",
+    "jp": "間違える",
+    "kana": "まちがえる",
+    "meaning": {
+      "it": "sbagliare",
+      "en": "get wrong"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "間違えて"
+      },
+      {
+        "label": "ます形",
+        "jp": "間違えます"
+      },
+      {
+        "label": "ない形",
+        "jp": "間違えない"
+      },
+      {
+        "label": "た形",
+        "jp": "間違えた"
+      },
+      {
+        "label": "可能形",
+        "jp": "間違えられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、集合時間を間違えた。",
+        "kana": "きのう、しゅうごうじかんをまちがえた。",
+        "it": "Ieri ho sbagliato l'orario dell'incontro.",
+        "en": "Yesterday I got wrong the meeting time."
+      },
+      {
+        "jp": "明日までに答えを間違えます。",
+        "kana": "あしたまでにこたえをまちがえます。",
+        "it": "Entro domani sbagliare la risposta.",
+        "en": "By tomorrow I will get wrong the answer."
+      },
+      {
+        "jp": "時間があれば、集合時間を間違えるつもりです。",
+        "kana": "じかんがあれば、しゅうごうじかんをまちがえるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di sbagliare l'orario dell'incontro.",
+        "en": "If I have time, I intend to get wrong the meeting time."
+      },
+      {
+        "jp": "急がずに答えを間違えてください。",
+        "kana": "いそがずにこたえをまちがえてください。",
+        "it": "Per favore, sbagliare la risposta senza fretta.",
+        "en": "Please get wrong the answer without rushing."
+      },
+      {
+        "jp": "まだ集合時間を間違えないほうがいいと思います。",
+        "kana": "まだしゅうごうじかんをまちがえないほうがいいとおもいます。",
+        "it": "Penso sia meglio non sbagliare ancora l'orario dell'incontro.",
+        "en": "I think it is better not to get wrong the meeting time yet."
+      },
+      {
+        "jp": "以前は一人で答えを間違えられませんでした。",
+        "kana": "いぜんはひとりでこたえをまちがえられませんでした。",
+        "it": "Prima non riuscivo a sbagliare la risposta da solo.",
+        "en": "I used to be unable to get wrong the answer by myself."
+      },
+      {
+        "jp": "集合時間を間違えてから、先生に報告しました。",
+        "kana": "しゅうごうじかんをまちがえてから、せんせいにほうこくしました。",
+        "it": "Dopo aver sbagliato l'orario dell'incontro, ho riferito tutto all’insegnante.",
+        "en": "After I got wrong the meeting time, I reported it to the teacher."
+      },
+      {
+        "jp": "もし答えを間違えないと、困る人がいるでしょう。",
+        "kana": "もしこたえをまちがえないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a sbagliare la risposta, qualcuno potrebbe avere problemi.",
+        "en": "If no one can get wrong the answer, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、集合時間を間違える練習をしています。",
+        "kana": "さいきん、しゅうごうじかんをまちがえるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a sbagliare l'orario dell'incontro.",
+        "en": "Lately I have been practicing how to get wrong the meeting time."
+      },
+      {
+        "jp": "答えを間違えたあとで、気持ちが楽になりました。",
+        "kana": "こたえをまちがえたあとで、きもちがらくになりました。",
+        "it": "Dopo aver sbagliato la risposta, mi sono sentito più sollevato.",
+        "en": "After I got wrong the answer, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "pos": "verb",
+    "jp": "見つける",
+    "kana": "みつける",
+    "meaning": {
+      "it": "trovare",
+      "en": "find"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "見つけて"
+      },
+      {
+        "label": "ます形",
+        "jp": "見つけます"
+      },
+      {
+        "label": "ない形",
+        "jp": "見つけない"
+      },
+      {
+        "label": "た形",
+        "jp": "見つけた"
+      },
+      {
+        "label": "可能形",
+        "jp": "見つけられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、なくした鍵を見つけた。",
+        "kana": "きのう、なくしたかぎをみつけた。",
+        "it": "Ieri ho trovato la chiave persa.",
+        "en": "Yesterday I found the lost key."
+      },
+      {
+        "jp": "明日までに静かな場所を見つけます。",
+        "kana": "あしたまでにしずかなばしょをみつけます。",
+        "it": "Entro domani trovare un posto tranquillo.",
+        "en": "By tomorrow I will find a quiet place."
+      },
+      {
+        "jp": "時間があれば、なくした鍵を見つけるつもりです。",
+        "kana": "じかんがあれば、なくしたかぎをみつけるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di trovare la chiave persa.",
+        "en": "If I have time, I intend to find the lost key."
+      },
+      {
+        "jp": "急がずに静かな場所を見つけてください。",
+        "kana": "いそがずにしずかなばしょをみつけてください。",
+        "it": "Per favore, trovare un posto tranquillo senza fretta.",
+        "en": "Please find a quiet place without rushing."
+      },
+      {
+        "jp": "まだなくした鍵を見つけないほうがいいと思います。",
+        "kana": "まだなくしたかぎをみつけないほうがいいとおもいます。",
+        "it": "Penso sia meglio non trovare ancora la chiave persa.",
+        "en": "I think it is better not to find the lost key yet."
+      },
+      {
+        "jp": "以前は一人で静かな場所を見つけられませんでした。",
+        "kana": "いぜんはひとりでしずかなばしょをみつけられませんでした。",
+        "it": "Prima non riuscivo a trovare un posto tranquillo da solo.",
+        "en": "I used to be unable to find a quiet place by myself."
+      },
+      {
+        "jp": "なくした鍵を見つけてから、先生に報告しました。",
+        "kana": "なくしたかぎをみつけてから、せんせいにほうこくしました。",
+        "it": "Dopo aver trovato la chiave persa, ho riferito tutto all’insegnante.",
+        "en": "After I found the lost key, I reported it to the teacher."
+      },
+      {
+        "jp": "もし静かな場所を見つけないと、困る人がいるでしょう。",
+        "kana": "もししずかなばしょをみつけないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a trovare un posto tranquillo, qualcuno potrebbe avere problemi.",
+        "en": "If no one can find a quiet place, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、なくした鍵を見つける練習をしています。",
+        "kana": "さいきん、なくしたかぎをみつけるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a trovare la chiave persa.",
+        "en": "Lately I have been practicing how to find the lost key."
+      },
+      {
+        "jp": "静かな場所を見つけたあとで、気持ちが楽になりました。",
+        "kana": "しずかなばしょをみつけたあとで、きもちがらくになりました。",
+        "it": "Dopo aver trovato un posto tranquillo, mi sono sentito più sollevato.",
+        "en": "After I found a quiet place, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "pos": "verb",
+    "jp": "受け取る",
+    "kana": "うけとる",
+    "meaning": {
+      "it": "ricevere",
+      "en": "receive"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "受け取って"
+      },
+      {
+        "label": "ます形",
+        "jp": "受け取ります"
+      },
+      {
+        "label": "ない形",
+        "jp": "受け取らない"
+      },
+      {
+        "label": "た形",
+        "jp": "受け取った"
+      },
+      {
+        "label": "可能形",
+        "jp": "受け取りえる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、小包を受け取った。",
+        "kana": "きのう、こづつみをうけとった。",
+        "it": "Ieri ho ricevuto il pacco.",
+        "en": "Yesterday I received the parcel."
+      },
+      {
+        "jp": "明日までに連絡を受け取ります。",
+        "kana": "あしたまでにれんらくをうけとります。",
+        "it": "Entro domani ricevere la comunicazione.",
+        "en": "By tomorrow I will receive the message."
+      },
+      {
+        "jp": "時間があれば、小包を受け取るつもりです。",
+        "kana": "じかんがあれば、こづつみをうけとるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di ricevere il pacco.",
+        "en": "If I have time, I intend to receive the parcel."
+      },
+      {
+        "jp": "急がずに連絡を受け取ってください。",
+        "kana": "いそがずにれんらくをうけとってください。",
+        "it": "Per favore, ricevere la comunicazione senza fretta.",
+        "en": "Please receive the message without rushing."
+      },
+      {
+        "jp": "まだ小包を受け取らないほうがいいと思います。",
+        "kana": "まだこづつみをうけとらないほうがいいとおもいます。",
+        "it": "Penso sia meglio non ricevere ancora il pacco.",
+        "en": "I think it is better not to receive the parcel yet."
+      },
+      {
+        "jp": "以前は一人で連絡を受け取りえませんでした。",
+        "kana": "いぜんはひとりでれんらくをうけとりえませんでした。",
+        "it": "Prima non riuscivo a ricevere la comunicazione da solo.",
+        "en": "I used to be unable to receive the message by myself."
+      },
+      {
+        "jp": "小包を受け取ってから、先生に報告しました。",
+        "kana": "こづつみをうけとってから、せんせいにほうこくしました。",
+        "it": "Dopo aver ricevuto il pacco, ho riferito tutto all’insegnante.",
+        "en": "After I received the parcel, I reported it to the teacher."
+      },
+      {
+        "jp": "もし連絡を受け取らないと、困る人がいるでしょう。",
+        "kana": "もしれんらくをうけとらないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a ricevere la comunicazione, qualcuno potrebbe avere problemi.",
+        "en": "If no one can receive the message, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、小包を受け取る練習をしています。",
+        "kana": "さいきん、こづつみをうけとるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a ricevere il pacco.",
+        "en": "Lately I have been practicing how to receive the parcel."
+      },
+      {
+        "jp": "連絡を受け取ったあとで、気持ちが楽になりました。",
+        "kana": "れんらくをうけとったあとで、きもちがらくになりました。",
+        "it": "Dopo aver ricevuto la comunicazione, mi sono sentito più sollevato.",
+        "en": "After I received the message, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "pos": "verb",
+    "jp": "捨てる",
+    "kana": "すてる",
+    "meaning": {
+      "it": "buttare",
+      "en": "throw away"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "捨てて"
+      },
+      {
+        "label": "ます形",
+        "jp": "捨てます"
+      },
+      {
+        "label": "ない形",
+        "jp": "捨てない"
+      },
+      {
+        "label": "た形",
+        "jp": "捨てた"
+      },
+      {
+        "label": "可能形",
+        "jp": "捨てられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、古い資料を捨てた。",
+        "kana": "きのう、ふるいしりょうをすてた。",
+        "it": "Ieri ho buttato i vecchi documenti.",
+        "en": "Yesterday I threw away the old documents."
+      },
+      {
+        "jp": "明日までに壊れた傘を捨てます。",
+        "kana": "あしたまでにこわれたかさをすてます。",
+        "it": "Entro domani buttare l’ombrello rotto.",
+        "en": "By tomorrow I will throw away the broken umbrella."
+      },
+      {
+        "jp": "時間があれば、古い資料を捨てるつもりです。",
+        "kana": "じかんがあれば、ふるいしりょうをすてるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di buttare i vecchi documenti.",
+        "en": "If I have time, I intend to throw away the old documents."
+      },
+      {
+        "jp": "急がずに壊れた傘を捨ててください。",
+        "kana": "いそがずにこわれたかさをすててください。",
+        "it": "Per favore, buttare l’ombrello rotto senza fretta.",
+        "en": "Please throw away the broken umbrella without rushing."
+      },
+      {
+        "jp": "まだ古い資料を捨てないほうがいいと思います。",
+        "kana": "まだふるいしりょうをすてないほうがいいとおもいます。",
+        "it": "Penso sia meglio non buttare ancora i vecchi documenti.",
+        "en": "I think it is better not to throw away the old documents yet."
+      },
+      {
+        "jp": "以前は一人で壊れた傘を捨てられませんでした。",
+        "kana": "いぜんはひとりでこわれたかさをすてられませんでした。",
+        "it": "Prima non riuscivo a buttare l’ombrello rotto da solo.",
+        "en": "I used to be unable to throw away the broken umbrella by myself."
+      },
+      {
+        "jp": "古い資料を捨ててから、先生に報告しました。",
+        "kana": "ふるいしりょうをすててから、せんせいにほうこくしました。",
+        "it": "Dopo aver buttato i vecchi documenti, ho riferito tutto all’insegnante.",
+        "en": "After I threw away the old documents, I reported it to the teacher."
+      },
+      {
+        "jp": "もし壊れた傘を捨てないと、困る人がいるでしょう。",
+        "kana": "もしこわれたかさをすてないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a buttare l’ombrello rotto, qualcuno potrebbe avere problemi.",
+        "en": "If no one can throw away the broken umbrella, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、古い資料を捨てる練習をしています。",
+        "kana": "さいきん、ふるいしりょうをすてるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a buttare i vecchi documenti.",
+        "en": "Lately I have been practicing how to throw away the old documents."
+      },
+      {
+        "jp": "壊れた傘を捨てたあとで、気持ちが楽になりました。",
+        "kana": "こわれたかさをすてたあとで、きもちがらくになりました。",
+        "it": "Dopo aver buttato l’ombrello rotto, mi sono sentito più sollevato.",
+        "en": "After I threw away the broken umbrella, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "pos": "verb",
+    "jp": "払う",
+    "kana": "はらう",
+    "meaning": {
+      "it": "pagare",
+      "en": "pay"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "払って"
+      },
+      {
+        "label": "ます形",
+        "jp": "払います"
+      },
+      {
+        "label": "ない形",
+        "jp": "払わない"
+      },
+      {
+        "label": "た形",
+        "jp": "払った"
+      },
+      {
+        "label": "可能形",
+        "jp": "払いえる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、家賃を払った。",
+        "kana": "きのう、やちんをはらった。",
+        "it": "Ieri ho pagato l'affitto.",
+        "en": "Yesterday I paid the rent."
+      },
+      {
+        "jp": "明日までに入場料を払います。",
+        "kana": "あしたまでににゅうじょうりょうをはらいます。",
+        "it": "Entro domani pagare il biglietto di ingresso.",
+        "en": "By tomorrow I will pay the admission fee."
+      },
+      {
+        "jp": "時間があれば、家賃を払うつもりです。",
+        "kana": "じかんがあれば、やちんをはらうつもりです。",
+        "it": "Se avrò tempo, ho intenzione di pagare l'affitto.",
+        "en": "If I have time, I intend to pay the rent."
+      },
+      {
+        "jp": "急がずに入場料を払ってください。",
+        "kana": "いそがずににゅうじょうりょうをはらってください。",
+        "it": "Per favore, pagare il biglietto di ingresso senza fretta.",
+        "en": "Please pay the admission fee without rushing."
+      },
+      {
+        "jp": "まだ家賃を払わないほうがいいと思います。",
+        "kana": "まだやちんをはらわないほうがいいとおもいます。",
+        "it": "Penso sia meglio non pagare ancora l'affitto.",
+        "en": "I think it is better not to pay the rent yet."
+      },
+      {
+        "jp": "以前は一人で入場料を払いえませんでした。",
+        "kana": "いぜんはひとりでにゅうじょうりょうをはらいえませんでした。",
+        "it": "Prima non riuscivo a pagare il biglietto di ingresso da solo.",
+        "en": "I used to be unable to pay the admission fee by myself."
+      },
+      {
+        "jp": "家賃を払ってから、先生に報告しました。",
+        "kana": "やちんをはらってから、せんせいにほうこくしました。",
+        "it": "Dopo aver pagato l'affitto, ho riferito tutto all’insegnante.",
+        "en": "After I paid the rent, I reported it to the teacher."
+      },
+      {
+        "jp": "もし入場料を払わないと、困る人がいるでしょう。",
+        "kana": "もしにゅうじょうりょうをはらわないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a pagare il biglietto di ingresso, qualcuno potrebbe avere problemi.",
+        "en": "If no one can pay the admission fee, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、家賃を払う練習をしています。",
+        "kana": "さいきん、やちんをはらうれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a pagare l'affitto.",
+        "en": "Lately I have been practicing how to pay the rent."
+      },
+      {
+        "jp": "入場料を払ったあとで、気持ちが楽になりました。",
+        "kana": "にゅうじょうりょうをはらったあとで、きもちがらくになりました。",
+        "it": "Dopo aver pagato il biglietto di ingresso, mi sono sentito più sollevato.",
+        "en": "After I paid the admission fee, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "pos": "verb",
+    "jp": "育てる",
+    "kana": "そだてる",
+    "meaning": {
+      "it": "coltivare",
+      "en": "grow"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "育てて"
+      },
+      {
+        "label": "ます形",
+        "jp": "育てます"
+      },
+      {
+        "label": "ない形",
+        "jp": "育てない"
+      },
+      {
+        "label": "た形",
+        "jp": "育てた"
+      },
+      {
+        "label": "可能形",
+        "jp": "育てられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、庭の野菜を育てた。",
+        "kana": "きのう、にわのやさいをそだてた。",
+        "it": "Ieri ho coltivato le verdure dell'orto.",
+        "en": "Yesterday I grew vegetables in the garden."
+      },
+      {
+        "jp": "明日までに小さな木を育てます。",
+        "kana": "あしたまでにちいさなきをそだてます。",
+        "it": "Entro domani coltivare un piccolo albero.",
+        "en": "By tomorrow I will grow a small tree."
+      },
+      {
+        "jp": "時間があれば、庭の野菜を育てるつもりです。",
+        "kana": "じかんがあれば、にわのやさいをそだてるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di coltivare le verdure dell'orto.",
+        "en": "If I have time, I intend to grow vegetables in the garden."
+      },
+      {
+        "jp": "急がずに小さな木を育ててください。",
+        "kana": "いそがずにちいさなきをそだててください。",
+        "it": "Per favore, coltivare un piccolo albero senza fretta.",
+        "en": "Please grow a small tree without rushing."
+      },
+      {
+        "jp": "まだ庭の野菜を育てないほうがいいと思います。",
+        "kana": "まだにわのやさいをそだてないほうがいいとおもいます。",
+        "it": "Penso sia meglio non coltivare ancora le verdure dell'orto.",
+        "en": "I think it is better not to grow vegetables in the garden yet."
+      },
+      {
+        "jp": "以前は一人で小さな木を育てられませんでした。",
+        "kana": "いぜんはひとりでちいさなきをそだてられませんでした。",
+        "it": "Prima non riuscivo a coltivare un piccolo albero da solo.",
+        "en": "I used to be unable to grow a small tree by myself."
+      },
+      {
+        "jp": "庭の野菜を育ててから、先生に報告しました。",
+        "kana": "にわのやさいをそだててから、せんせいにほうこくしました。",
+        "it": "Dopo aver coltivato le verdure dell'orto, ho riferito tutto all’insegnante.",
+        "en": "After I grew vegetables in the garden, I reported it to the teacher."
+      },
+      {
+        "jp": "もし小さな木を育てないと、困る人がいるでしょう。",
+        "kana": "もしちいさなきをそだてないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a coltivare un piccolo albero, qualcuno potrebbe avere problemi.",
+        "en": "If no one can grow a small tree, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、庭の野菜を育てる練習をしています。",
+        "kana": "さいきん、にわのやさいをそだてるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a coltivare le verdure dell'orto.",
+        "en": "Lately I have been practicing how to grow vegetables in the garden."
+      },
+      {
+        "jp": "小さな木を育てたあとで、気持ちが楽になりました。",
+        "kana": "ちいさなきをそだてたあとで、きもちがらくになりました。",
+        "it": "Dopo aver coltivato un piccolo albero, mi sono sentito più sollevato.",
+        "en": "After I grew a small tree, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "pos": "verb",
+    "jp": "建てる",
+    "kana": "たてる",
+    "meaning": {
+      "it": "costruire",
+      "en": "build"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "建てて"
+      },
+      {
+        "label": "ます形",
+        "jp": "建てます"
+      },
+      {
+        "label": "ない形",
+        "jp": "建てない"
+      },
+      {
+        "label": "た形",
+        "jp": "建てた"
+      },
+      {
+        "label": "可能形",
+        "jp": "建てられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、新しい家を建てた。",
+        "kana": "きのう、あたらしいいえをたてた。",
+        "it": "Ieri ho costruito una nuova casa.",
+        "en": "Yesterday I built a new house."
+      },
+      {
+        "jp": "明日までに図書館を建てます。",
+        "kana": "あしたまでにとしょかんをたてます。",
+        "it": "Entro domani costruire una biblioteca.",
+        "en": "By tomorrow I will build a library."
+      },
+      {
+        "jp": "時間があれば、新しい家を建てるつもりです。",
+        "kana": "じかんがあれば、あたらしいいえをたてるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di costruire una nuova casa.",
+        "en": "If I have time, I intend to build a new house."
+      },
+      {
+        "jp": "急がずに図書館を建ててください。",
+        "kana": "いそがずにとしょかんをたててください。",
+        "it": "Per favore, costruire una biblioteca senza fretta.",
+        "en": "Please build a library without rushing."
+      },
+      {
+        "jp": "まだ新しい家を建てないほうがいいと思います。",
+        "kana": "まだあたらしいいえをたてないほうがいいとおもいます。",
+        "it": "Penso sia meglio non costruire ancora una nuova casa.",
+        "en": "I think it is better not to build a new house yet."
+      },
+      {
+        "jp": "以前は一人で図書館を建てられませんでした。",
+        "kana": "いぜんはひとりでとしょかんをたてられませんでした。",
+        "it": "Prima non riuscivo a costruire una biblioteca da solo.",
+        "en": "I used to be unable to build a library by myself."
+      },
+      {
+        "jp": "新しい家を建ててから、先生に報告しました。",
+        "kana": "あたらしいいえをたててから、せんせいにほうこくしました。",
+        "it": "Dopo aver costruito una nuova casa, ho riferito tutto all’insegnante.",
+        "en": "After I built a new house, I reported it to the teacher."
+      },
+      {
+        "jp": "もし図書館を建てないと、困る人がいるでしょう。",
+        "kana": "もしとしょかんをたてないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a costruire una biblioteca, qualcuno potrebbe avere problemi.",
+        "en": "If no one can build a library, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、新しい家を建てる練習をしています。",
+        "kana": "さいきん、あたらしいいえをたてるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a costruire una nuova casa.",
+        "en": "Lately I have been practicing how to build a new house."
+      },
+      {
+        "jp": "図書館を建てたあとで、気持ちが楽になりました。",
+        "kana": "としょかんをたてたあとで、きもちがらくになりました。",
+        "it": "Dopo aver costruito una biblioteca, mi sono sentito più sollevato.",
+        "en": "After I built a library, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "pos": "verb",
+    "jp": "説明する",
+    "kana": "せつめいする",
+    "meaning": {
+      "it": "spiegare",
+      "en": "explain"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "説明して"
+      },
+      {
+        "label": "ます形",
+        "jp": "説明します"
+      },
+      {
+        "label": "ない形",
+        "jp": "説明しない"
+      },
+      {
+        "label": "た形",
+        "jp": "説明した"
+      },
+      {
+        "label": "可能形",
+        "jp": "説明できる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、規則を説明した。",
+        "kana": "きのう、きそくをせつめいした。",
+        "it": "Ieri ho spiegato le regole.",
+        "en": "Yesterday I explained the rules."
+      },
+      {
+        "jp": "明日までに使い方を説明します。",
+        "kana": "あしたまでにつかいかたをせつめいします。",
+        "it": "Entro domani spiegare l'utilizzo.",
+        "en": "By tomorrow I will explain how to use it."
+      },
+      {
+        "jp": "時間があれば、規則を説明するつもりです。",
+        "kana": "じかんがあれば、きそくをせつめいするつもりです。",
+        "it": "Se avrò tempo, ho intenzione di spiegare le regole.",
+        "en": "If I have time, I intend to explain the rules."
+      },
+      {
+        "jp": "急がずに使い方を説明してください。",
+        "kana": "いそがずにつかいかたをせつめいしてください。",
+        "it": "Per favore, spiegare l'utilizzo senza fretta.",
+        "en": "Please explain how to use it without rushing."
+      },
+      {
+        "jp": "まだ規則を説明しないほうがいいと思います。",
+        "kana": "まだきそくをせつめいしないほうがいいとおもいます。",
+        "it": "Penso sia meglio non spiegare ancora le regole.",
+        "en": "I think it is better not to explain the rules yet."
+      },
+      {
+        "jp": "以前は一人で使い方を説明できませんでした。",
+        "kana": "いぜんはひとりでつかいかたをせつめいできませんでした。",
+        "it": "Prima non riuscivo a spiegare l'utilizzo da solo.",
+        "en": "I used to be unable to explain how to use it by myself."
+      },
+      {
+        "jp": "規則を説明してから、先生に報告しました。",
+        "kana": "きそくをせつめいしてから、せんせいにほうこくしました。",
+        "it": "Dopo aver spiegato le regole, ho riferito tutto all’insegnante.",
+        "en": "After I explained the rules, I reported it to the teacher."
+      },
+      {
+        "jp": "もし使い方を説明しないと、困る人がいるでしょう。",
+        "kana": "もしつかいかたをせつめいしないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a spiegare l'utilizzo, qualcuno potrebbe avere problemi.",
+        "en": "If no one can explain how to use it, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、規則を説明する練習をしています。",
+        "kana": "さいきん、きそくをせつめいするれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a spiegare le regole.",
+        "en": "Lately I have been practicing how to explain the rules."
+      },
+      {
+        "jp": "使い方を説明したあとで、気持ちが楽になりました。",
+        "kana": "つかいかたをせつめいしたあとで、きもちがらくになりました。",
+        "it": "Dopo aver spiegato l'utilizzo, mi sono sentito più sollevato.",
+        "en": "After I explained how to use it, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "pos": "verb",
+    "jp": "招待する",
+    "kana": "しょうたいする",
+    "meaning": {
+      "it": "invitare",
+      "en": "invite"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "招待して"
+      },
+      {
+        "label": "ます形",
+        "jp": "招待します"
+      },
+      {
+        "label": "ない形",
+        "jp": "招待しない"
+      },
+      {
+        "label": "た形",
+        "jp": "招待した"
+      },
+      {
+        "label": "可能形",
+        "jp": "招待できる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、海外の友人を招待した。",
+        "kana": "きのう、かいがいのゆうじんをしょうたいした。",
+        "it": "Ieri ho invitato un amico dall'estero.",
+        "en": "Yesterday I invited a friend from abroad."
+      },
+      {
+        "jp": "明日までに先生を招待します。",
+        "kana": "あしたまでにせんせいをしょうたいします。",
+        "it": "Entro domani invitare l'insegnante.",
+        "en": "By tomorrow I will invite the teacher."
+      },
+      {
+        "jp": "時間があれば、海外の友人を招待するつもりです。",
+        "kana": "じかんがあれば、かいがいのゆうじんをしょうたいするつもりです。",
+        "it": "Se avrò tempo, ho intenzione di invitare un amico dall'estero.",
+        "en": "If I have time, I intend to invite a friend from abroad."
+      },
+      {
+        "jp": "急がずに先生を招待してください。",
+        "kana": "いそがずにせんせいをしょうたいしてください。",
+        "it": "Per favore, invitare l'insegnante senza fretta.",
+        "en": "Please invite the teacher without rushing."
+      },
+      {
+        "jp": "まだ海外の友人を招待しないほうがいいと思います。",
+        "kana": "まだかいがいのゆうじんをしょうたいしないほうがいいとおもいます。",
+        "it": "Penso sia meglio non invitare ancora un amico dall'estero.",
+        "en": "I think it is better not to invite a friend from abroad yet."
+      },
+      {
+        "jp": "以前は一人で先生を招待できませんでした。",
+        "kana": "いぜんはひとりでせんせいをしょうたいできませんでした。",
+        "it": "Prima non riuscivo a invitare l'insegnante da solo.",
+        "en": "I used to be unable to invite the teacher by myself."
+      },
+      {
+        "jp": "海外の友人を招待してから、先生に報告しました。",
+        "kana": "かいがいのゆうじんをしょうたいしてから、せんせいにほうこくしました。",
+        "it": "Dopo aver invitato un amico dall'estero, ho riferito tutto all’insegnante.",
+        "en": "After I invited a friend from abroad, I reported it to the teacher."
+      },
+      {
+        "jp": "もし先生を招待しないと、困る人がいるでしょう。",
+        "kana": "もしせんせいをしょうたいしないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a invitare l'insegnante, qualcuno potrebbe avere problemi.",
+        "en": "If no one can invite the teacher, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、海外の友人を招待する練習をしています。",
+        "kana": "さいきん、かいがいのゆうじんをしょうたいするれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a invitare un amico dall'estero.",
+        "en": "Lately I have been practicing how to invite a friend from abroad."
+      },
+      {
+        "jp": "先生を招待したあとで、気持ちが楽になりました。",
+        "kana": "せんせいをしょうたいしたあとで、きもちがらくになりました。",
+        "it": "Dopo aver invitato l'insegnante, mi sono sentito più sollevato.",
+        "en": "After I invited the teacher, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "pos": "verb",
+    "jp": "翻訳する",
+    "kana": "ほんやくする",
+    "meaning": {
+      "it": "tradurre",
+      "en": "translate"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "翻訳して"
+      },
+      {
+        "label": "ます形",
+        "jp": "翻訳します"
+      },
+      {
+        "label": "ない形",
+        "jp": "翻訳しない"
+      },
+      {
+        "label": "た形",
+        "jp": "翻訳した"
+      },
+      {
+        "label": "可能形",
+        "jp": "翻訳できる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、短い記事を翻訳した。",
+        "kana": "きのう、みじかいきじをほんやくした。",
+        "it": "Ieri ho tradotto un breve articolo.",
+        "en": "Yesterday I translated a short article."
+      },
+      {
+        "jp": "明日までに案内文を翻訳します。",
+        "kana": "あしたまでにあんないぶんをほんやくします。",
+        "it": "Entro domani tradurre il testo informativo.",
+        "en": "By tomorrow I will translate the information notice."
+      },
+      {
+        "jp": "時間があれば、短い記事を翻訳するつもりです。",
+        "kana": "じかんがあれば、みじかいきじをほんやくするつもりです。",
+        "it": "Se avrò tempo, ho intenzione di tradurre un breve articolo.",
+        "en": "If I have time, I intend to translate a short article."
+      },
+      {
+        "jp": "急がずに案内文を翻訳してください。",
+        "kana": "いそがずにあんないぶんをほんやくしてください。",
+        "it": "Per favore, tradurre il testo informativo senza fretta.",
+        "en": "Please translate the information notice without rushing."
+      },
+      {
+        "jp": "まだ短い記事を翻訳しないほうがいいと思います。",
+        "kana": "まだみじかいきじをほんやくしないほうがいいとおもいます。",
+        "it": "Penso sia meglio non tradurre ancora un breve articolo.",
+        "en": "I think it is better not to translate a short article yet."
+      },
+      {
+        "jp": "以前は一人で案内文を翻訳できませんでした。",
+        "kana": "いぜんはひとりであんないぶんをほんやくできませんでした。",
+        "it": "Prima non riuscivo a tradurre il testo informativo da solo.",
+        "en": "I used to be unable to translate the information notice by myself."
+      },
+      {
+        "jp": "短い記事を翻訳してから、先生に報告しました。",
+        "kana": "みじかいきじをほんやくしてから、せんせいにほうこくしました。",
+        "it": "Dopo aver tradotto un breve articolo, ho riferito tutto all’insegnante.",
+        "en": "After I translated a short article, I reported it to the teacher."
+      },
+      {
+        "jp": "もし案内文を翻訳しないと、困る人がいるでしょう。",
+        "kana": "もしあんないぶんをほんやくしないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a tradurre il testo informativo, qualcuno potrebbe avere problemi.",
+        "en": "If no one can translate the information notice, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、短い記事を翻訳する練習をしています。",
+        "kana": "さいきん、みじかいきじをほんやくするれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a tradurre un breve articolo.",
+        "en": "Lately I have been practicing how to translate a short article."
+      },
+      {
+        "jp": "案内文を翻訳したあとで、気持ちが楽になりました。",
+        "kana": "あんないぶんをほんやくしたあとで、きもちがらくになりました。",
+        "it": "Dopo aver tradotto il testo informativo, mi sono sentito più sollevato.",
+        "en": "After I translated the information notice, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "pos": "verb",
+    "jp": "確かめる",
+    "kana": "たしかめる",
+    "meaning": {
+      "it": "verificare",
+      "en": "verify"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "確かめて"
+      },
+      {
+        "label": "ます形",
+        "jp": "確かめます"
+      },
+      {
+        "label": "ない形",
+        "jp": "確かめない"
+      },
+      {
+        "label": "た形",
+        "jp": "確かめた"
+      },
+      {
+        "label": "可能形",
+        "jp": "確かめられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、出発時刻を確かめた。",
+        "kana": "きのう、しゅっぱつじこくをたしかめた。",
+        "it": "Ieri ho verificato l'orario di partenza.",
+        "en": "Yesterday I verified the departure time."
+      },
+      {
+        "jp": "明日までに予約内容を確かめます。",
+        "kana": "あしたまでによやくないようをたしかめます。",
+        "it": "Entro domani verificare i dettagli della prenotazione.",
+        "en": "By tomorrow I will verify the reservation details."
+      },
+      {
+        "jp": "時間があれば、出発時刻を確かめるつもりです。",
+        "kana": "じかんがあれば、しゅっぱつじこくをたしかめるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di verificare l'orario di partenza.",
+        "en": "If I have time, I intend to verify the departure time."
+      },
+      {
+        "jp": "急がずに予約内容を確かめてください。",
+        "kana": "いそがずによやくないようをたしかめてください。",
+        "it": "Per favore, verificare i dettagli della prenotazione senza fretta.",
+        "en": "Please verify the reservation details without rushing."
+      },
+      {
+        "jp": "まだ出発時刻を確かめないほうがいいと思います。",
+        "kana": "まだしゅっぱつじこくをたしかめないほうがいいとおもいます。",
+        "it": "Penso sia meglio non verificare ancora l'orario di partenza.",
+        "en": "I think it is better not to verify the departure time yet."
+      },
+      {
+        "jp": "以前は一人で予約内容を確かめられませんでした。",
+        "kana": "いぜんはひとりでよやくないようをたしかめられませんでした。",
+        "it": "Prima non riuscivo a verificare i dettagli della prenotazione da solo.",
+        "en": "I used to be unable to verify the reservation details by myself."
+      },
+      {
+        "jp": "出発時刻を確かめてから、先生に報告しました。",
+        "kana": "しゅっぱつじこくをたしかめてから、せんせいにほうこくしました。",
+        "it": "Dopo aver verificato l'orario di partenza, ho riferito tutto all’insegnante.",
+        "en": "After I verified the departure time, I reported it to the teacher."
+      },
+      {
+        "jp": "もし予約内容を確かめないと、困る人がいるでしょう。",
+        "kana": "もしよやくないようをたしかめないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a verificare i dettagli della prenotazione, qualcuno potrebbe avere problemi.",
+        "en": "If no one can verify the reservation details, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、出発時刻を確かめる練習をしています。",
+        "kana": "さいきん、しゅっぱつじこくをたしかめるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a verificare l'orario di partenza.",
+        "en": "Lately I have been practicing how to verify the departure time."
+      },
+      {
+        "jp": "予約内容を確かめたあとで、気持ちが楽になりました。",
+        "kana": "よやくないようをたしかめたあとで、きもちがらくになりました。",
+        "it": "Dopo aver verificato i dettagli della prenotazione, mi sono sentito più sollevato.",
+        "en": "After I verified the reservation details, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "pos": "verb",
+    "jp": "覚える",
+    "kana": "おぼえる",
+    "meaning": {
+      "it": "memorizzare",
+      "en": "memorize"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "覚えて"
+      },
+      {
+        "label": "ます形",
+        "jp": "覚えます"
+      },
+      {
+        "label": "ない形",
+        "jp": "覚えない"
+      },
+      {
+        "label": "た形",
+        "jp": "覚えた"
+      },
+      {
+        "label": "可能形",
+        "jp": "覚えられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日、新しい単語を覚えた。",
+        "kana": "きのう、あたらしいたんごをおぼえた。",
+        "it": "Ieri ho memorizzato le parole nuove.",
+        "en": "Yesterday I memorized new vocabulary."
+      },
+      {
+        "jp": "明日までに大事な番号を覚えます。",
+        "kana": "あしたまでにだいじなばんごうをおぼえます。",
+        "it": "Entro domani memorizzare il numero importante.",
+        "en": "By tomorrow I will memorize the important number."
+      },
+      {
+        "jp": "時間があれば、新しい単語を覚えるつもりです。",
+        "kana": "じかんがあれば、あたらしいたんごをおぼえるつもりです。",
+        "it": "Se avrò tempo, ho intenzione di memorizzare le parole nuove.",
+        "en": "If I have time, I intend to memorize new vocabulary."
+      },
+      {
+        "jp": "急がずに大事な番号を覚えてください。",
+        "kana": "いそがずにだいじなばんごうをおぼえてください。",
+        "it": "Per favore, memorizzare il numero importante senza fretta.",
+        "en": "Please memorize the important number without rushing."
+      },
+      {
+        "jp": "まだ新しい単語を覚えないほうがいいと思います。",
+        "kana": "まだあたらしいたんごをおぼえないほうがいいとおもいます。",
+        "it": "Penso sia meglio non memorizzare ancora le parole nuove.",
+        "en": "I think it is better not to memorize new vocabulary yet."
+      },
+      {
+        "jp": "以前は一人で大事な番号を覚えられませんでした。",
+        "kana": "いぜんはひとりでだいじなばんごうをおぼえられませんでした。",
+        "it": "Prima non riuscivo a memorizzare il numero importante da solo.",
+        "en": "I used to be unable to memorize the important number by myself."
+      },
+      {
+        "jp": "新しい単語を覚えてから、先生に報告しました。",
+        "kana": "あたらしいたんごをおぼえてから、せんせいにほうこくしました。",
+        "it": "Dopo aver memorizzato le parole nuove, ho riferito tutto all’insegnante.",
+        "en": "After I memorized new vocabulary, I reported it to the teacher."
+      },
+      {
+        "jp": "もし大事な番号を覚えないと、困る人がいるでしょう。",
+        "kana": "もしだいじなばんごうをおぼえないと、こまるひとがいるでしょう。",
+        "it": "Se non si riesce a memorizzare il numero importante, qualcuno potrebbe avere problemi.",
+        "en": "If no one can memorize the important number, someone may be inconvenienced."
+      },
+      {
+        "jp": "最近、新しい単語を覚える練習をしています。",
+        "kana": "さいきん、あたらしいたんごをおぼえるれんしゅうをしています。",
+        "it": "Ultimamente mi esercito a memorizzare le parole nuove.",
+        "en": "Lately I have been practicing how to memorize new vocabulary."
+      },
+      {
+        "jp": "大事な番号を覚えたあとで、気持ちが楽になりました。",
+        "kana": "だいじなばんごうをおぼえたあとで、きもちがらくになりました。",
+        "it": "Dopo aver memorizzato il numero importante, mi sono sentito più sollevato.",
+        "en": "After I memorized the important number, I felt relieved."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "pos": "noun",
+    "jp": "文化",
+    "kana": "ぶんか",
+    "meaning": {
+      "it": "cultura",
+      "en": "culture"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "文化です"
+      },
+      {
+        "label": "過去形",
+        "jp": "文化だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "文化ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "文化の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では地域の文化について調べています。",
+        "kana": "だいがくではちいきのぶんかについてしらべています。",
+        "it": "All’università stiamo studiando il tema «cultura» in un contesto locale.",
+        "en": "At university we are researching local culture."
+      },
+      {
+        "jp": "外国の文化を理解するには時間がかかります。",
+        "kana": "がいこくのぶんかをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere cultura in ambito straniera.",
+        "en": "It takes time to understand foreign culture."
+      },
+      {
+        "jp": "地域の文化について先生に質問しました。",
+        "kana": "ちいきのぶんかについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su cultura (locale).",
+        "en": "I asked my teacher about local culture."
+      },
+      {
+        "jp": "ニュースで外国の文化が話題になりました。",
+        "kana": "にゅーすでがいこくのぶんかがわだいになりました。",
+        "it": "Cultura (straniera) è diventata un argomento di discussione al telegiornale.",
+        "en": "Foreign culture became a topic in the news."
+      },
+      {
+        "jp": "友達と地域の文化について意見を交換しました。",
+        "kana": "ともだちとちいきのぶんかについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su cultura (locale).",
+        "en": "I exchanged views with a friend about local culture."
+      },
+      {
+        "jp": "資料を読んでも外国の文化がよく分かりませんでした。",
+        "kana": "しりょうをよんでもがいこくのぶんかがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene cultura (straniera).",
+        "en": "Even after reading the documents, I did not fully understand foreign culture."
+      },
+      {
+        "jp": "地域の文化と外国の文化を比べてみましょう。",
+        "kana": "ちいきのぶんかとがいこくのぶんかをくらべてみましょう。",
+        "it": "Proviamo a confrontare cultura nei contesti locale e straniera.",
+        "en": "Let us compare local and foreign culture."
+      },
+      {
+        "jp": "地域の文化に関する記事を見つけました。",
+        "kana": "ちいきのぶんかにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su cultura (locale).",
+        "en": "I found an article about local culture."
+      },
+      {
+        "jp": "これから外国の文化について詳しく説明します。",
+        "kana": "これからがいこくのぶんかについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio cultura (straniera).",
+        "en": "Now I will explain foreign culture in detail."
+      },
+      {
+        "jp": "地域の文化を知ることで、考え方が変わりました。",
+        "kana": "ちいきのぶんかをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio cultura (locale) ha cambiato il mio modo di pensare.",
+        "en": "Learning about local culture changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "pos": "noun",
+    "jp": "習慣",
+    "kana": "しゅうかん",
+    "meaning": {
+      "it": "abitudine",
+      "en": "habit"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "習慣です"
+      },
+      {
+        "label": "過去形",
+        "jp": "習慣だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "習慣ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "習慣の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では毎朝の習慣について調べています。",
+        "kana": "だいがくではまいあさのしゅうかんについてしらべています。",
+        "it": "All’università stiamo studiando il tema «abitudine» in un contesto mattutina.",
+        "en": "At university we are researching morning habit."
+      },
+      {
+        "jp": "昔からの習慣を理解するには時間がかかります。",
+        "kana": "むかしからのしゅうかんをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere abitudine in ambito tradizionale.",
+        "en": "It takes time to understand long-standing habit."
+      },
+      {
+        "jp": "毎朝の習慣について先生に質問しました。",
+        "kana": "まいあさのしゅうかんについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su abitudine (mattutina).",
+        "en": "I asked my teacher about morning habit."
+      },
+      {
+        "jp": "ニュースで昔からの習慣が話題になりました。",
+        "kana": "にゅーすでむかしからのしゅうかんがわだいになりました。",
+        "it": "Abitudine (tradizionale) è diventata un argomento di discussione al telegiornale.",
+        "en": "Long-standing habit became a topic in the news."
+      },
+      {
+        "jp": "友達と毎朝の習慣について意見を交換しました。",
+        "kana": "ともだちとまいあさのしゅうかんについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su abitudine (mattutina).",
+        "en": "I exchanged views with a friend about morning habit."
+      },
+      {
+        "jp": "資料を読んでも昔からの習慣がよく分かりませんでした。",
+        "kana": "しりょうをよんでもむかしからのしゅうかんがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene abitudine (tradizionale).",
+        "en": "Even after reading the documents, I did not fully understand long-standing habit."
+      },
+      {
+        "jp": "毎朝の習慣と昔からの習慣を比べてみましょう。",
+        "kana": "まいあさのしゅうかんとむかしからのしゅうかんをくらべてみましょう。",
+        "it": "Proviamo a confrontare abitudine nei contesti mattutina e tradizionale.",
+        "en": "Let us compare morning and long-standing habit."
+      },
+      {
+        "jp": "毎朝の習慣に関する記事を見つけました。",
+        "kana": "まいあさのしゅうかんにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su abitudine (mattutina).",
+        "en": "I found an article about morning habit."
+      },
+      {
+        "jp": "これから昔からの習慣について詳しく説明します。",
+        "kana": "これからむかしからのしゅうかんについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio abitudine (tradizionale).",
+        "en": "Now I will explain long-standing habit in detail."
+      },
+      {
+        "jp": "毎朝の習慣を知ることで、考え方が変わりました。",
+        "kana": "まいあさのしゅうかんをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio abitudine (mattutina) ha cambiato il mio modo di pensare.",
+        "en": "Learning about morning habit changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "pos": "noun",
+    "jp": "印象",
+    "kana": "いんしょう",
+    "meaning": {
+      "it": "impressione",
+      "en": "impression"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "印象です"
+      },
+      {
+        "label": "過去形",
+        "jp": "印象だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "印象ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "印象の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では第一印象について調べています。",
+        "kana": "だいがくではだいいちいんしょうについてしらべています。",
+        "it": "All’università stiamo studiando il tema «impressione» in un contesto iniziale.",
+        "en": "At university we are researching first impression."
+      },
+      {
+        "jp": "旅行の印象を理解するには時間がかかります。",
+        "kana": "りょこうのいんしょうをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere impressione in ambito del viaggio.",
+        "en": "It takes time to understand travel impression."
+      },
+      {
+        "jp": "第一印象について先生に質問しました。",
+        "kana": "だいいちいんしょうについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su impressione (iniziale).",
+        "en": "I asked my teacher about first impression."
+      },
+      {
+        "jp": "ニュースで旅行の印象が話題になりました。",
+        "kana": "にゅーすでりょこうのいんしょうがわだいになりました。",
+        "it": "Impressione (del viaggio) è diventata un argomento di discussione al telegiornale.",
+        "en": "Travel impression became a topic in the news."
+      },
+      {
+        "jp": "友達と第一印象について意見を交換しました。",
+        "kana": "ともだちとだいいちいんしょうについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su impressione (iniziale).",
+        "en": "I exchanged views with a friend about first impression."
+      },
+      {
+        "jp": "資料を読んでも旅行の印象がよく分かりませんでした。",
+        "kana": "しりょうをよんでもりょこうのいんしょうがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene impressione (del viaggio).",
+        "en": "Even after reading the documents, I did not fully understand travel impression."
+      },
+      {
+        "jp": "第一印象と旅行の印象を比べてみましょう。",
+        "kana": "だいいちいんしょうとりょこうのいんしょうをくらべてみましょう。",
+        "it": "Proviamo a confrontare impressione nei contesti iniziale e del viaggio.",
+        "en": "Let us compare first and travel impression."
+      },
+      {
+        "jp": "第一印象に関する記事を見つけました。",
+        "kana": "だいいちいんしょうにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su impressione (iniziale).",
+        "en": "I found an article about first impression."
+      },
+      {
+        "jp": "これから旅行の印象について詳しく説明します。",
+        "kana": "これからりょこうのいんしょうについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio impressione (del viaggio).",
+        "en": "Now I will explain travel impression in detail."
+      },
+      {
+        "jp": "第一印象を知ることで、考え方が変わりました。",
+        "kana": "だいいちいんしょうをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio impressione (iniziale) ha cambiato il mio modo di pensare.",
+        "en": "Learning about first impression changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "pos": "noun",
+    "jp": "影響",
+    "kana": "えいきょう",
+    "meaning": {
+      "it": "influenza / effetto",
+      "en": "influence / effect"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "影響です"
+      },
+      {
+        "label": "過去形",
+        "jp": "影響だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "影響ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "影響の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では天気の影響について調べています。",
+        "kana": "だいがくではてんきのえいきょうについてしらべています。",
+        "it": "All’università stiamo studiando il tema «influenza / effetto» in un contesto del tempo.",
+        "en": "At university we are researching weather-related influence / effect."
+      },
+      {
+        "jp": "社会への影響を理解するには時間がかかります。",
+        "kana": "しゃかいへのえいきょうをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere influenza / effetto in ambito sulla società.",
+        "en": "It takes time to understand social influence / effect."
+      },
+      {
+        "jp": "天気の影響について先生に質問しました。",
+        "kana": "てんきのえいきょうについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su influenza / effetto (del tempo).",
+        "en": "I asked my teacher about weather-related influence / effect."
+      },
+      {
+        "jp": "ニュースで社会への影響が話題になりました。",
+        "kana": "にゅーすでしゃかいへのえいきょうがわだいになりました。",
+        "it": "Influenza / effetto (sulla società) è diventata un argomento di discussione al telegiornale.",
+        "en": "Social influence / effect became a topic in the news."
+      },
+      {
+        "jp": "友達と天気の影響について意見を交換しました。",
+        "kana": "ともだちとてんきのえいきょうについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su influenza / effetto (del tempo).",
+        "en": "I exchanged views with a friend about weather-related influence / effect."
+      },
+      {
+        "jp": "資料を読んでも社会への影響がよく分かりませんでした。",
+        "kana": "しりょうをよんでもしゃかいへのえいきょうがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene influenza / effetto (sulla società).",
+        "en": "Even after reading the documents, I did not fully understand social influence / effect."
+      },
+      {
+        "jp": "天気の影響と社会への影響を比べてみましょう。",
+        "kana": "てんきのえいきょうとしゃかいへのえいきょうをくらべてみましょう。",
+        "it": "Proviamo a confrontare influenza / effetto nei contesti del tempo e sulla società.",
+        "en": "Let us compare weather-related and social influence / effect."
+      },
+      {
+        "jp": "天気の影響に関する記事を見つけました。",
+        "kana": "てんきのえいきょうにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su influenza / effetto (del tempo).",
+        "en": "I found an article about weather-related influence / effect."
+      },
+      {
+        "jp": "これから社会への影響について詳しく説明します。",
+        "kana": "これからしゃかいへのえいきょうについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio influenza / effetto (sulla società).",
+        "en": "Now I will explain social influence / effect in detail."
+      },
+      {
+        "jp": "天気の影響を知ることで、考え方が変わりました。",
+        "kana": "てんきのえいきょうをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio influenza / effetto (del tempo) ha cambiato il mio modo di pensare.",
+        "en": "Learning about weather-related influence / effect changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "pos": "noun",
+    "jp": "関係",
+    "kana": "かんけい",
+    "meaning": {
+      "it": "relazione / rapporto",
+      "en": "relationship"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "関係です"
+      },
+      {
+        "label": "過去形",
+        "jp": "関係だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "関係ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "関係の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では家族の関係について調べています。",
+        "kana": "だいがくではかぞくのかんけいについてしらべています。",
+        "it": "All’università stiamo studiando il tema «relazione / rapporto» in un contesto familiare.",
+        "en": "At university we are researching family relationship."
+      },
+      {
+        "jp": "仕事上の関係を理解するには時間がかかります。",
+        "kana": "しごとじょうのかんけいをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere relazione / rapporto in ambito professionale.",
+        "en": "It takes time to understand professional relationship."
+      },
+      {
+        "jp": "家族の関係について先生に質問しました。",
+        "kana": "かぞくのかんけいについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su relazione / rapporto (familiare).",
+        "en": "I asked my teacher about family relationship."
+      },
+      {
+        "jp": "ニュースで仕事上の関係が話題になりました。",
+        "kana": "にゅーすでしごとじょうのかんけいがわだいになりました。",
+        "it": "Relazione / rapporto (professionale) è diventata un argomento di discussione al telegiornale.",
+        "en": "Professional relationship became a topic in the news."
+      },
+      {
+        "jp": "友達と家族の関係について意見を交換しました。",
+        "kana": "ともだちとかぞくのかんけいについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su relazione / rapporto (familiare).",
+        "en": "I exchanged views with a friend about family relationship."
+      },
+      {
+        "jp": "資料を読んでも仕事上の関係がよく分かりませんでした。",
+        "kana": "しりょうをよんでもしごとじょうのかんけいがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene relazione / rapporto (professionale).",
+        "en": "Even after reading the documents, I did not fully understand professional relationship."
+      },
+      {
+        "jp": "家族の関係と仕事上の関係を比べてみましょう。",
+        "kana": "かぞくのかんけいとしごとじょうのかんけいをくらべてみましょう。",
+        "it": "Proviamo a confrontare relazione / rapporto nei contesti familiare e professionale.",
+        "en": "Let us compare family and professional relationship."
+      },
+      {
+        "jp": "家族の関係に関する記事を見つけました。",
+        "kana": "かぞくのかんけいにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su relazione / rapporto (familiare).",
+        "en": "I found an article about family relationship."
+      },
+      {
+        "jp": "これから仕事上の関係について詳しく説明します。",
+        "kana": "これからしごとじょうのかんけいについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio relazione / rapporto (professionale).",
+        "en": "Now I will explain professional relationship in detail."
+      },
+      {
+        "jp": "家族の関係を知ることで、考え方が変わりました。",
+        "kana": "かぞくのかんけいをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio relazione / rapporto (familiare) ha cambiato il mio modo di pensare.",
+        "en": "Learning about family relationship changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "pos": "noun",
+    "jp": "方法",
+    "kana": "ほうほう",
+    "meaning": {
+      "it": "metodo",
+      "en": "method"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "方法です"
+      },
+      {
+        "label": "過去形",
+        "jp": "方法だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "方法ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "方法の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では新しい方法について調べています。",
+        "kana": "だいがくではあたらしいほうほうについてしらべています。",
+        "it": "All’università stiamo studiando il tema «metodo» in un contesto nuovo.",
+        "en": "At university we are researching new method."
+      },
+      {
+        "jp": "別の方法を理解するには時間がかかります。",
+        "kana": "べつのほうほうをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere metodo in ambito alternativo.",
+        "en": "It takes time to understand alternative method."
+      },
+      {
+        "jp": "新しい方法について先生に質問しました。",
+        "kana": "あたらしいほうほうについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su metodo (nuovo).",
+        "en": "I asked my teacher about new method."
+      },
+      {
+        "jp": "ニュースで別の方法が話題になりました。",
+        "kana": "にゅーすでべつのほうほうがわだいになりました。",
+        "it": "Metodo (alternativo) è diventata un argomento di discussione al telegiornale.",
+        "en": "Alternative method became a topic in the news."
+      },
+      {
+        "jp": "友達と新しい方法について意見を交換しました。",
+        "kana": "ともだちとあたらしいほうほうについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su metodo (nuovo).",
+        "en": "I exchanged views with a friend about new method."
+      },
+      {
+        "jp": "資料を読んでも別の方法がよく分かりませんでした。",
+        "kana": "しりょうをよんでもべつのほうほうがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene metodo (alternativo).",
+        "en": "Even after reading the documents, I did not fully understand alternative method."
+      },
+      {
+        "jp": "新しい方法と別の方法を比べてみましょう。",
+        "kana": "あたらしいほうほうとべつのほうほうをくらべてみましょう。",
+        "it": "Proviamo a confrontare metodo nei contesti nuovo e alternativo.",
+        "en": "Let us compare new and alternative method."
+      },
+      {
+        "jp": "新しい方法に関する記事を見つけました。",
+        "kana": "あたらしいほうほうにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su metodo (nuovo).",
+        "en": "I found an article about new method."
+      },
+      {
+        "jp": "これから別の方法について詳しく説明します。",
+        "kana": "これからべつのほうほうについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio metodo (alternativo).",
+        "en": "Now I will explain alternative method in detail."
+      },
+      {
+        "jp": "新しい方法を知ることで、考え方が変わりました。",
+        "kana": "あたらしいほうほうをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio metodo (nuovo) ha cambiato il mio modo di pensare.",
+        "en": "Learning about new method changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "pos": "noun",
+    "jp": "情報",
+    "kana": "じょうほう",
+    "meaning": {
+      "it": "informazione",
+      "en": "information"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "情報です"
+      },
+      {
+        "label": "過去形",
+        "jp": "情報だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "情報ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "情報の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では最新の情報について調べています。",
+        "kana": "だいがくではさいしんのじょうほうについてしらべています。",
+        "it": "All’università stiamo studiando il tema «informazione» in un contesto aggiornata.",
+        "en": "At university we are researching latest information."
+      },
+      {
+        "jp": "旅行の情報を理解するには時間がかかります。",
+        "kana": "りょこうのじょうほうをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere informazione in ambito di viaggio.",
+        "en": "It takes time to understand travel information."
+      },
+      {
+        "jp": "最新の情報について先生に質問しました。",
+        "kana": "さいしんのじょうほうについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su informazione (aggiornata).",
+        "en": "I asked my teacher about latest information."
+      },
+      {
+        "jp": "ニュースで旅行の情報が話題になりました。",
+        "kana": "にゅーすでりょこうのじょうほうがわだいになりました。",
+        "it": "Informazione (di viaggio) è diventata un argomento di discussione al telegiornale.",
+        "en": "Travel information became a topic in the news."
+      },
+      {
+        "jp": "友達と最新の情報について意見を交換しました。",
+        "kana": "ともだちとさいしんのじょうほうについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su informazione (aggiornata).",
+        "en": "I exchanged views with a friend about latest information."
+      },
+      {
+        "jp": "資料を読んでも旅行の情報がよく分かりませんでした。",
+        "kana": "しりょうをよんでもりょこうのじょうほうがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene informazione (di viaggio).",
+        "en": "Even after reading the documents, I did not fully understand travel information."
+      },
+      {
+        "jp": "最新の情報と旅行の情報を比べてみましょう。",
+        "kana": "さいしんのじょうほうとりょこうのじょうほうをくらべてみましょう。",
+        "it": "Proviamo a confrontare informazione nei contesti aggiornata e di viaggio.",
+        "en": "Let us compare latest and travel information."
+      },
+      {
+        "jp": "最新の情報に関する記事を見つけました。",
+        "kana": "さいしんのじょうほうにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su informazione (aggiornata).",
+        "en": "I found an article about latest information."
+      },
+      {
+        "jp": "これから旅行の情報について詳しく説明します。",
+        "kana": "これからりょこうのじょうほうについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio informazione (di viaggio).",
+        "en": "Now I will explain travel information in detail."
+      },
+      {
+        "jp": "最新の情報を知ることで、考え方が変わりました。",
+        "kana": "さいしんのじょうほうをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio informazione (aggiornata) ha cambiato il mio modo di pensare.",
+        "en": "Learning about latest information changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "pos": "noun",
+    "jp": "環境",
+    "kana": "かんきょう",
+    "meaning": {
+      "it": "ambiente",
+      "en": "environment"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "環境です"
+      },
+      {
+        "label": "過去形",
+        "jp": "環境だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "環境ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "環境の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では学習環境について調べています。",
+        "kana": "だいがくではがくしゅうかんきょうについてしらべています。",
+        "it": "All’università stiamo studiando il tema «ambiente» in un contesto di studio.",
+        "en": "At university we are researching learning environment."
+      },
+      {
+        "jp": "自然環境を理解するには時間がかかります。",
+        "kana": "しぜんかんきょうをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere ambiente in ambito naturale.",
+        "en": "It takes time to understand natural environment."
+      },
+      {
+        "jp": "学習環境について先生に質問しました。",
+        "kana": "がくしゅうかんきょうについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su ambiente (di studio).",
+        "en": "I asked my teacher about learning environment."
+      },
+      {
+        "jp": "ニュースで自然環境が話題になりました。",
+        "kana": "にゅーすでしぜんかんきょうがわだいになりました。",
+        "it": "Ambiente (naturale) è diventata un argomento di discussione al telegiornale.",
+        "en": "Natural environment became a topic in the news."
+      },
+      {
+        "jp": "友達と学習環境について意見を交換しました。",
+        "kana": "ともだちとがくしゅうかんきょうについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su ambiente (di studio).",
+        "en": "I exchanged views with a friend about learning environment."
+      },
+      {
+        "jp": "資料を読んでも自然環境がよく分かりませんでした。",
+        "kana": "しりょうをよんでもしぜんかんきょうがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene ambiente (naturale).",
+        "en": "Even after reading the documents, I did not fully understand natural environment."
+      },
+      {
+        "jp": "学習環境と自然環境を比べてみましょう。",
+        "kana": "がくしゅうかんきょうとしぜんかんきょうをくらべてみましょう。",
+        "it": "Proviamo a confrontare ambiente nei contesti di studio e naturale.",
+        "en": "Let us compare learning and natural environment."
+      },
+      {
+        "jp": "学習環境に関する記事を見つけました。",
+        "kana": "がくしゅうかんきょうにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su ambiente (di studio).",
+        "en": "I found an article about learning environment."
+      },
+      {
+        "jp": "これから自然環境について詳しく説明します。",
+        "kana": "これからしぜんかんきょうについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio ambiente (naturale).",
+        "en": "Now I will explain natural environment in detail."
+      },
+      {
+        "jp": "学習環境を知ることで、考え方が変わりました。",
+        "kana": "がくしゅうかんきょうをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio ambiente (di studio) ha cambiato il mio modo di pensare.",
+        "en": "Learning about learning environment changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "pos": "noun",
+    "jp": "条件",
+    "kana": "じょうけん",
+    "meaning": {
+      "it": "condizione / requisito",
+      "en": "condition / requirement"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "条件です"
+      },
+      {
+        "label": "過去形",
+        "jp": "条件だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "条件ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "条件の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では応募の条件について調べています。",
+        "kana": "だいがくではおうぼのじょうけんについてしらべています。",
+        "it": "All’università stiamo studiando il tema «condizione / requisito» in un contesto di candidatura.",
+        "en": "At university we are researching application condition / requirement."
+      },
+      {
+        "jp": "契約の条件を理解するには時間がかかります。",
+        "kana": "けいやくのじょうけんをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere condizione / requisito in ambito contrattuale.",
+        "en": "It takes time to understand contractual condition / requirement."
+      },
+      {
+        "jp": "応募の条件について先生に質問しました。",
+        "kana": "おうぼのじょうけんについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su condizione / requisito (di candidatura).",
+        "en": "I asked my teacher about application condition / requirement."
+      },
+      {
+        "jp": "ニュースで契約の条件が話題になりました。",
+        "kana": "にゅーすでけいやくのじょうけんがわだいになりました。",
+        "it": "Condizione / requisito (contrattuale) è diventata un argomento di discussione al telegiornale.",
+        "en": "Contractual condition / requirement became a topic in the news."
+      },
+      {
+        "jp": "友達と応募の条件について意見を交換しました。",
+        "kana": "ともだちとおうぼのじょうけんについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su condizione / requisito (di candidatura).",
+        "en": "I exchanged views with a friend about application condition / requirement."
+      },
+      {
+        "jp": "資料を読んでも契約の条件がよく分かりませんでした。",
+        "kana": "しりょうをよんでもけいやくのじょうけんがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene condizione / requisito (contrattuale).",
+        "en": "Even after reading the documents, I did not fully understand contractual condition / requirement."
+      },
+      {
+        "jp": "応募の条件と契約の条件を比べてみましょう。",
+        "kana": "おうぼのじょうけんとけいやくのじょうけんをくらべてみましょう。",
+        "it": "Proviamo a confrontare condizione / requisito nei contesti di candidatura e contrattuale.",
+        "en": "Let us compare application and contractual condition / requirement."
+      },
+      {
+        "jp": "応募の条件に関する記事を見つけました。",
+        "kana": "おうぼのじょうけんにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su condizione / requisito (di candidatura).",
+        "en": "I found an article about application condition / requirement."
+      },
+      {
+        "jp": "これから契約の条件について詳しく説明します。",
+        "kana": "これからけいやくのじょうけんについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio condizione / requisito (contrattuale).",
+        "en": "Now I will explain contractual condition / requirement in detail."
+      },
+      {
+        "jp": "応募の条件を知ることで、考え方が変わりました。",
+        "kana": "おうぼのじょうけんをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio condizione / requisito (di candidatura) ha cambiato il mio modo di pensare.",
+        "en": "Learning about application condition / requirement changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "pos": "noun",
+    "jp": "意見",
+    "kana": "いけん",
+    "meaning": {
+      "it": "opinione",
+      "en": "opinion"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "意見です"
+      },
+      {
+        "label": "過去形",
+        "jp": "意見だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "意見ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "意見の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "大学では専門家の意見について調べています。",
+        "kana": "だいがくではせんもんかのいけんについてしらべています。",
+        "it": "All’università stiamo studiando il tema «opinione» in un contesto di un esperto.",
+        "en": "At university we are researching expert opinion."
+      },
+      {
+        "jp": "学生の意見を理解するには時間がかかります。",
+        "kana": "がくせいのいけんをりかいするにはじかんがかかります。",
+        "it": "Ci vuole tempo per comprendere opinione in ambito degli studenti.",
+        "en": "It takes time to understand student opinion."
+      },
+      {
+        "jp": "専門家の意見について先生に質問しました。",
+        "kana": "せんもんかのいけんについてせんせいにしつもんしました。",
+        "it": "Ho chiesto all’insegnante informazioni su opinione (di un esperto).",
+        "en": "I asked my teacher about expert opinion."
+      },
+      {
+        "jp": "ニュースで学生の意見が話題になりました。",
+        "kana": "にゅーすでがくせいのいけんがわだいになりました。",
+        "it": "Opinione (degli studenti) è diventata un argomento di discussione al telegiornale.",
+        "en": "Student opinion became a topic in the news."
+      },
+      {
+        "jp": "友達と専門家の意見について意見を交換しました。",
+        "kana": "ともだちとせんもんかのいけんについていけんをこうかんしました。",
+        "it": "Ho scambiato opinioni con un amico su opinione (di un esperto).",
+        "en": "I exchanged views with a friend about expert opinion."
+      },
+      {
+        "jp": "資料を読んでも学生の意見がよく分かりませんでした。",
+        "kana": "しりょうをよんでもがくせいのいけんがよくわかりませんでした。",
+        "it": "Anche dopo aver letto i documenti, non ho capito bene opinione (degli studenti).",
+        "en": "Even after reading the documents, I did not fully understand student opinion."
+      },
+      {
+        "jp": "専門家の意見と学生の意見を比べてみましょう。",
+        "kana": "せんもんかのいけんとがくせいのいけんをくらべてみましょう。",
+        "it": "Proviamo a confrontare opinione nei contesti di un esperto e degli studenti.",
+        "en": "Let us compare expert and student opinion."
+      },
+      {
+        "jp": "専門家の意見に関する記事を見つけました。",
+        "kana": "せんもんかのいけんにかんするきじをみつけました。",
+        "it": "Ho trovato un articolo su opinione (di un esperto).",
+        "en": "I found an article about expert opinion."
+      },
+      {
+        "jp": "これから学生の意見について詳しく説明します。",
+        "kana": "これからがくせいのいけんについてくわしくせつめいします。",
+        "it": "Ora spiegherò nel dettaglio opinione (degli studenti).",
+        "en": "Now I will explain student opinion in detail."
+      },
+      {
+        "jp": "専門家の意見を知ることで、考え方が変わりました。",
+        "kana": "せんもんかのいけんをしることで、かんがえかたがかわりました。",
+        "it": "Conoscere meglio opinione (di un esperto) ha cambiato il mio modo di pensare.",
+        "en": "Learning about expert opinion changed how I think."
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "pos": "na",
+    "jp": "簡単",
+    "kana": "かんたん",
+    "meaning": {
+      "it": "semplice",
+      "en": "simple"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "簡単な"
+      },
+      {
+        "label": "に形",
+        "jp": "簡単に"
+      },
+      {
+        "label": "で形",
+        "jp": "簡単で"
+      },
+      {
+        "label": "否定形",
+        "jp": "簡単ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "簡単だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "簡単です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この手続きは思ったより簡単でした。",
+        "kana": "このてつづきはおもったよりかんたんでした。",
+        "it": "Questa procedura si è rivelato più semplice del previsto.",
+        "en": "This procedure was more simple than expected."
+      },
+      {
+        "jp": "簡単な問題を見つけるのは簡単ではありません。",
+        "kana": "かんたんなもんだいをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un problema semplice.",
+        "en": "It is not easy to find a simple problem."
+      },
+      {
+        "jp": "以前はこの手続きがそれほど簡単ではありませんでした。",
+        "kana": "いぜんはこのてつづきがそれほどかんたんではありませんでした。",
+        "it": "In passato questa procedura non era così semplice.",
+        "en": "In the past, this procedure was not so simple."
+      },
+      {
+        "jp": "この手続きが簡単なら、別の方法を考えます。",
+        "kana": "このてつづきがかんたんなら、べつのほうほうをかんがえます。",
+        "it": "Se questa procedura è semplice, prenderò in considerazione un altro metodo.",
+        "en": "If this procedure is simple, I will consider another approach."
+      },
+      {
+        "jp": "先生はこの手続きを簡単だと感じたそうです。",
+        "kana": "せんせいはこのてつづきをかんたんだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato questa procedura semplice.",
+        "en": "Apparently the teacher felt this procedure was simple."
+      },
+      {
+        "jp": "簡単な問題について話し合いました。",
+        "kana": "かんたんなもんだいについてはなしあいました。",
+        "it": "Abbiamo discusso di un problema semplice.",
+        "en": "We discussed a simple problem."
+      },
+      {
+        "jp": "この手続きがもっと簡単になればいいですね。",
+        "kana": "このてつづきがもっとかんたんになればいいですね。",
+        "it": "Sarebbe bello se questa procedura diventasse ancora più semplice.",
+        "en": "It would be good if this procedure became even more simple."
+      },
+      {
+        "jp": "簡単でない問題もあることを忘れないでください。",
+        "kana": "かんたんでないもんだいもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche problema non semplice.",
+        "en": "Remember that not every problem is simple."
+      },
+      {
+        "jp": "この手続きは簡単だったので、みんな驚きました。",
+        "kana": "このてつづきはかんたんだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché questa procedura era semplice.",
+        "en": "Everyone was surprised because this procedure was simple."
+      },
+      {
+        "jp": "簡単な問題を選ぶ理由を説明してください。",
+        "kana": "かんたんなもんだいをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un problema semplice.",
+        "en": "Please explain why you would choose a simple problem."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "pos": "na",
+    "jp": "複雑",
+    "kana": "ふくざつ",
+    "meaning": {
+      "it": "complicato",
+      "en": "complicated"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "複雑な"
+      },
+      {
+        "label": "に形",
+        "jp": "複雑に"
+      },
+      {
+        "label": "で形",
+        "jp": "複雑で"
+      },
+      {
+        "label": "否定形",
+        "jp": "複雑ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "複雑だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "複雑です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "その説明は思ったより複雑でした。",
+        "kana": "そのせつめいはおもったよりふくざつでした。",
+        "it": "Quella spiegazione si è rivelato più complicato del previsto.",
+        "en": "That explanation was more complicated than expected."
+      },
+      {
+        "jp": "複雑な仕組みを見つけるのは簡単ではありません。",
+        "kana": "ふくざつなしくみをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un meccanismo complicato.",
+        "en": "It is not easy to find a complicated mechanism."
+      },
+      {
+        "jp": "以前はその説明がそれほど複雑ではありませんでした。",
+        "kana": "いぜんはそのせつめいがそれほどふくざつではありませんでした。",
+        "it": "In passato quella spiegazione non era così complicato.",
+        "en": "In the past, that explanation was not so complicated."
+      },
+      {
+        "jp": "その説明が複雑なら、別の方法を考えます。",
+        "kana": "そのせつめいがふくざつなら、べつのほうほうをかんがえます。",
+        "it": "Se quella spiegazione è complicato, prenderò in considerazione un altro metodo.",
+        "en": "If that explanation is complicated, I will consider another approach."
+      },
+      {
+        "jp": "先生はその説明を複雑だと感じたそうです。",
+        "kana": "せんせいはそのせつめいをふくざつだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato quella spiegazione complicato.",
+        "en": "Apparently the teacher felt that explanation was complicated."
+      },
+      {
+        "jp": "複雑な仕組みについて話し合いました。",
+        "kana": "ふくざつなしくみについてはなしあいました。",
+        "it": "Abbiamo discusso di un meccanismo complicato.",
+        "en": "We discussed a complicated mechanism."
+      },
+      {
+        "jp": "その説明がもっと複雑になればいいですね。",
+        "kana": "そのせつめいがもっとふくざつになればいいですね。",
+        "it": "Sarebbe bello se quella spiegazione diventasse ancora più complicato.",
+        "en": "It would be good if that explanation became even more complicated."
+      },
+      {
+        "jp": "複雑でない仕組みもあることを忘れないでください。",
+        "kana": "ふくざつでないしくみもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche meccanismo non complicato.",
+        "en": "Remember that not every mechanism is complicated."
+      },
+      {
+        "jp": "その説明は複雑だったので、みんな驚きました。",
+        "kana": "そのせつめいはふくざつだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché quella spiegazione era complicato.",
+        "en": "Everyone was surprised because that explanation was complicated."
+      },
+      {
+        "jp": "複雑な仕組みを選ぶ理由を説明してください。",
+        "kana": "ふくざつなしくみをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un meccanismo complicato.",
+        "en": "Please explain why you would choose a complicated mechanism."
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "pos": "na",
+    "jp": "静か",
+    "kana": "しずか",
+    "meaning": {
+      "it": "tranquillo",
+      "en": "quiet"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "静かな"
+      },
+      {
+        "label": "に形",
+        "jp": "静かに"
+      },
+      {
+        "label": "で形",
+        "jp": "静かで"
+      },
+      {
+        "label": "否定形",
+        "jp": "静かではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "静かだった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "静かです"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この公園は思ったより静かでした。",
+        "kana": "このこうえんはおもったよりしずかでした。",
+        "it": "Questo parco si è rivelato più tranquillo del previsto.",
+        "en": "This park was more quiet than expected."
+      },
+      {
+        "jp": "静かな場所を見つけるのは簡単ではありません。",
+        "kana": "しずかなばしょをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un posto tranquillo.",
+        "en": "It is not easy to find a quiet place."
+      },
+      {
+        "jp": "以前はこの公園がそれほど静かではありませんでした。",
+        "kana": "いぜんはこのこうえんがそれほどしずかではありませんでした。",
+        "it": "In passato questo parco non era così tranquillo.",
+        "en": "In the past, this park was not so quiet."
+      },
+      {
+        "jp": "この公園が静かなら、別の方法を考えます。",
+        "kana": "このこうえんがしずかなら、べつのほうほうをかんがえます。",
+        "it": "Se questo parco è tranquillo, prenderò in considerazione un altro metodo.",
+        "en": "If this park is quiet, I will consider another approach."
+      },
+      {
+        "jp": "先生はこの公園を静かだと感じたそうです。",
+        "kana": "せんせいはこのこうえんをしずかだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato questo parco tranquillo.",
+        "en": "Apparently the teacher felt this park was quiet."
+      },
+      {
+        "jp": "静かな場所について話し合いました。",
+        "kana": "しずかなばしょについてはなしあいました。",
+        "it": "Abbiamo discusso di un posto tranquillo.",
+        "en": "We discussed a quiet place."
+      },
+      {
+        "jp": "この公園がもっと静かになればいいですね。",
+        "kana": "このこうえんがもっとしずかになればいいですね。",
+        "it": "Sarebbe bello se questo parco diventasse ancora più tranquillo.",
+        "en": "It would be good if this park became even more quiet."
+      },
+      {
+        "jp": "静かでない場所もあることを忘れないでください。",
+        "kana": "しずかでないばしょもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche posto non tranquillo.",
+        "en": "Remember that not every place is quiet."
+      },
+      {
+        "jp": "この公園は静かだったので、みんな驚きました。",
+        "kana": "このこうえんはしずかだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché questo parco era tranquillo.",
+        "en": "Everyone was surprised because this park was quiet."
+      },
+      {
+        "jp": "静かな場所を選ぶ理由を説明してください。",
+        "kana": "しずかなばしょをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un posto tranquillo.",
+        "en": "Please explain why you would choose a quiet place."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "pos": "na",
+    "jp": "熱心",
+    "kana": "ねっしん",
+    "meaning": {
+      "it": "dedicato",
+      "en": "dedicated"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "熱心な"
+      },
+      {
+        "label": "に形",
+        "jp": "熱心に"
+      },
+      {
+        "label": "で形",
+        "jp": "熱心で"
+      },
+      {
+        "label": "否定形",
+        "jp": "熱心ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "熱心だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "熱心です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "あの学生は思ったより熱心でした。",
+        "kana": "あのがくせいはおもったよりねっしんでした。",
+        "it": "Quello studente si è rivelato più dedicato del previsto.",
+        "en": "That student was more dedicated than expected."
+      },
+      {
+        "jp": "熱心な研究者を見つけるのは簡単ではありません。",
+        "kana": "ねっしんなけんきゅうしゃをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un ricercatore dedicato.",
+        "en": "It is not easy to find a dedicated researcher."
+      },
+      {
+        "jp": "以前はあの学生がそれほど熱心ではありませんでした。",
+        "kana": "いぜんはあのがくせいがそれほどねっしんではありませんでした。",
+        "it": "In passato quello studente non era così dedicato.",
+        "en": "In the past, that student was not so dedicated."
+      },
+      {
+        "jp": "あの学生が熱心なら、別の方法を考えます。",
+        "kana": "あのがくせいがねっしんなら、べつのほうほうをかんがえます。",
+        "it": "Se quello studente è dedicato, prenderò in considerazione un altro metodo.",
+        "en": "If that student is dedicated, I will consider another approach."
+      },
+      {
+        "jp": "先生はあの学生を熱心だと感じたそうです。",
+        "kana": "せんせいはあのがくせいをねっしんだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato quello studente dedicato.",
+        "en": "Apparently the teacher felt that student was dedicated."
+      },
+      {
+        "jp": "熱心な研究者について話し合いました。",
+        "kana": "ねっしんなけんきゅうしゃについてはなしあいました。",
+        "it": "Abbiamo discusso di un ricercatore dedicato.",
+        "en": "We discussed a dedicated researcher."
+      },
+      {
+        "jp": "あの学生がもっと熱心になればいいですね。",
+        "kana": "あのがくせいがもっとねっしんになればいいですね。",
+        "it": "Sarebbe bello se quello studente diventasse ancora più dedicato.",
+        "en": "It would be good if that student became even more dedicated."
+      },
+      {
+        "jp": "熱心でない研究者もあることを忘れないでください。",
+        "kana": "ねっしんでないけんきゅうしゃもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche ricercatore non dedicato.",
+        "en": "Remember that not every researcher is dedicated."
+      },
+      {
+        "jp": "あの学生は熱心だったので、みんな驚きました。",
+        "kana": "あのがくせいはねっしんだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché quello studente era dedicato.",
+        "en": "Everyone was surprised because that student was dedicated."
+      },
+      {
+        "jp": "熱心な研究者を選ぶ理由を説明してください。",
+        "kana": "ねっしんなけんきゅうしゃをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un ricercatore dedicato.",
+        "en": "Please explain why you would choose a dedicated researcher."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "pos": "na",
+    "jp": "心配",
+    "kana": "しんぱい",
+    "meaning": {
+      "it": "preoccupato",
+      "en": "worried"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "心配な"
+      },
+      {
+        "label": "に形",
+        "jp": "心配に"
+      },
+      {
+        "label": "で形",
+        "jp": "心配で"
+      },
+      {
+        "label": "否定形",
+        "jp": "心配ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "心配だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "心配です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "彼の家族は思ったより心配でした。",
+        "kana": "かれのかぞくはおもったよりしんぱいでした。",
+        "it": "La sua famiglia si è rivelato più preoccupato del previsto.",
+        "en": "His family was more worried than expected."
+      },
+      {
+        "jp": "心配な表情を見つけるのは簡単ではありません。",
+        "kana": "しんぱいなひょうじょうをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un espressione preoccupato.",
+        "en": "It is not easy to find a worried expression."
+      },
+      {
+        "jp": "以前は彼の家族がそれほど心配ではありませんでした。",
+        "kana": "いぜんはかれのかぞくがそれほどしんぱいではありませんでした。",
+        "it": "In passato la sua famiglia non era così preoccupato.",
+        "en": "In the past, his family was not so worried."
+      },
+      {
+        "jp": "彼の家族が心配なら、別の方法を考えます。",
+        "kana": "かれのかぞくがしんぱいなら、べつのほうほうをかんがえます。",
+        "it": "Se la sua famiglia è preoccupato, prenderò in considerazione un altro metodo.",
+        "en": "If his family is worried, I will consider another approach."
+      },
+      {
+        "jp": "先生は彼の家族を心配だと感じたそうです。",
+        "kana": "せんせいはかれのかぞくをしんぱいだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato la sua famiglia preoccupato.",
+        "en": "Apparently the teacher felt his family was worried."
+      },
+      {
+        "jp": "心配な表情について話し合いました。",
+        "kana": "しんぱいなひょうじょうについてはなしあいました。",
+        "it": "Abbiamo discusso di un espressione preoccupato.",
+        "en": "We discussed a worried expression."
+      },
+      {
+        "jp": "彼の家族がもっと心配になればいいですね。",
+        "kana": "かれのかぞくがもっとしんぱいになればいいですね。",
+        "it": "Sarebbe bello se la sua famiglia diventasse ancora più preoccupato.",
+        "en": "It would be good if his family became even more worried."
+      },
+      {
+        "jp": "心配でない表情もあることを忘れないでください。",
+        "kana": "しんぱいでないひょうじょうもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche espressione non preoccupato.",
+        "en": "Remember that not every expression is worried."
+      },
+      {
+        "jp": "彼の家族は心配だったので、みんな驚きました。",
+        "kana": "かれのかぞくはしんぱいだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché la sua famiglia era preoccupato.",
+        "en": "Everyone was surprised because his family was worried."
+      },
+      {
+        "jp": "心配な表情を選ぶ理由を説明してください。",
+        "kana": "しんぱいなひょうじょうをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un espressione preoccupato.",
+        "en": "Please explain why you would choose a worried expression."
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "pos": "na",
+    "jp": "大切",
+    "kana": "たいせつ",
+    "meaning": {
+      "it": "importante",
+      "en": "important"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "大切な"
+      },
+      {
+        "label": "に形",
+        "jp": "大切に"
+      },
+      {
+        "label": "で形",
+        "jp": "大切で"
+      },
+      {
+        "label": "否定形",
+        "jp": "大切ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "大切だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "大切です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この約束は思ったより大切でした。",
+        "kana": "このやくそくはおもったよりたいせつでした。",
+        "it": "Questa promessa si è rivelato più importante del previsto.",
+        "en": "This promise was more important than expected."
+      },
+      {
+        "jp": "大切な思い出を見つけるのは簡単ではありません。",
+        "kana": "たいせつなおもいでをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un ricordo importante.",
+        "en": "It is not easy to find a important memory."
+      },
+      {
+        "jp": "以前はこの約束がそれほど大切ではありませんでした。",
+        "kana": "いぜんはこのやくそくがそれほどたいせつではありませんでした。",
+        "it": "In passato questa promessa non era così importante.",
+        "en": "In the past, this promise was not so important."
+      },
+      {
+        "jp": "この約束が大切なら、別の方法を考えます。",
+        "kana": "このやくそくがたいせつなら、べつのほうほうをかんがえます。",
+        "it": "Se questa promessa è importante, prenderò in considerazione un altro metodo.",
+        "en": "If this promise is important, I will consider another approach."
+      },
+      {
+        "jp": "先生はこの約束を大切だと感じたそうです。",
+        "kana": "せんせいはこのやくそくをたいせつだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato questa promessa importante.",
+        "en": "Apparently the teacher felt this promise was important."
+      },
+      {
+        "jp": "大切な思い出について話し合いました。",
+        "kana": "たいせつなおもいでについてはなしあいました。",
+        "it": "Abbiamo discusso di un ricordo importante.",
+        "en": "We discussed a important memory."
+      },
+      {
+        "jp": "この約束がもっと大切になればいいですね。",
+        "kana": "このやくそくがもっとたいせつになればいいですね。",
+        "it": "Sarebbe bello se questa promessa diventasse ancora più importante.",
+        "en": "It would be good if this promise became even more important."
+      },
+      {
+        "jp": "大切でない思い出もあることを忘れないでください。",
+        "kana": "たいせつでないおもいでもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche ricordo non importante.",
+        "en": "Remember that not every memory is important."
+      },
+      {
+        "jp": "この約束は大切だったので、みんな驚きました。",
+        "kana": "このやくそくはたいせつだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché questa promessa era importante.",
+        "en": "Everyone was surprised because this promise was important."
+      },
+      {
+        "jp": "大切な思い出を選ぶ理由を説明してください。",
+        "kana": "たいせつなおもいでをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un ricordo importante.",
+        "en": "Please explain why you would choose a important memory."
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "pos": "na",
+    "jp": "十分",
+    "kana": "じゅうぶん",
+    "meaning": {
+      "it": "sufficiente",
+      "en": "sufficient"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "十分な"
+      },
+      {
+        "label": "に形",
+        "jp": "十分に"
+      },
+      {
+        "label": "で形",
+        "jp": "十分で"
+      },
+      {
+        "label": "否定形",
+        "jp": "十分ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "十分だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "十分です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この時間は思ったより十分でした。",
+        "kana": "このじかんはおもったよりじゅうぶんでした。",
+        "it": "Questo tempo si è rivelato più sufficiente del previsto.",
+        "en": "This amount of time was more sufficient than expected."
+      },
+      {
+        "jp": "十分な量を見つけるのは簡単ではありません。",
+        "kana": "じゅうぶんなりょうをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un quantità sufficiente.",
+        "en": "It is not easy to find a sufficient amount."
+      },
+      {
+        "jp": "以前はこの時間がそれほど十分ではありませんでした。",
+        "kana": "いぜんはこのじかんがそれほどじゅうぶんではありませんでした。",
+        "it": "In passato questo tempo non era così sufficiente.",
+        "en": "In the past, this amount of time was not so sufficient."
+      },
+      {
+        "jp": "この時間が十分なら、別の方法を考えます。",
+        "kana": "このじかんがじゅうぶんなら、べつのほうほうをかんがえます。",
+        "it": "Se questo tempo è sufficiente, prenderò in considerazione un altro metodo.",
+        "en": "If this amount of time is sufficient, I will consider another approach."
+      },
+      {
+        "jp": "先生はこの時間を十分だと感じたそうです。",
+        "kana": "せんせいはこのじかんをじゅうぶんだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato questo tempo sufficiente.",
+        "en": "Apparently the teacher felt this amount of time was sufficient."
+      },
+      {
+        "jp": "十分な量について話し合いました。",
+        "kana": "じゅうぶんなりょうについてはなしあいました。",
+        "it": "Abbiamo discusso di un quantità sufficiente.",
+        "en": "We discussed a sufficient amount."
+      },
+      {
+        "jp": "この時間がもっと十分になればいいですね。",
+        "kana": "このじかんがもっとじゅうぶんになればいいですね。",
+        "it": "Sarebbe bello se questo tempo diventasse ancora più sufficiente.",
+        "en": "It would be good if this amount of time became even more sufficient."
+      },
+      {
+        "jp": "十分でない量もあることを忘れないでください。",
+        "kana": "じゅうぶんでないりょうもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche quantità non sufficiente.",
+        "en": "Remember that not every amount is sufficient."
+      },
+      {
+        "jp": "この時間は十分だったので、みんな驚きました。",
+        "kana": "このじかんはじゅうぶんだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché questo tempo era sufficiente.",
+        "en": "Everyone was surprised because this amount of time was sufficient."
+      },
+      {
+        "jp": "十分な量を選ぶ理由を説明してください。",
+        "kana": "じゅうぶんなりょうをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un quantità sufficiente.",
+        "en": "Please explain why you would choose a sufficient amount."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "pos": "na",
+    "jp": "特別",
+    "kana": "とくべつ",
+    "meaning": {
+      "it": "speciale",
+      "en": "special"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "特別な"
+      },
+      {
+        "label": "に形",
+        "jp": "特別に"
+      },
+      {
+        "label": "で形",
+        "jp": "特別で"
+      },
+      {
+        "label": "否定形",
+        "jp": "特別ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "特別だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "特別です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "今日の行事は思ったより特別でした。",
+        "kana": "きょうのぎょうじはおもったよりとくべつでした。",
+        "it": "L’evento di oggi si è rivelato più speciale del previsto.",
+        "en": "Today's event was more special than expected."
+      },
+      {
+        "jp": "特別な機会を見つけるのは簡単ではありません。",
+        "kana": "とくべつなきかいをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un occasione speciale.",
+        "en": "It is not easy to find a special occasion."
+      },
+      {
+        "jp": "以前は今日の行事がそれほど特別ではありませんでした。",
+        "kana": "いぜんはきょうのぎょうじがそれほどとくべつではありませんでした。",
+        "it": "In passato l’evento di oggi non era così speciale.",
+        "en": "In the past, today's event was not so special."
+      },
+      {
+        "jp": "今日の行事が特別なら、別の方法を考えます。",
+        "kana": "きょうのぎょうじがとくべつなら、べつのほうほうをかんがえます。",
+        "it": "Se l’evento di oggi è speciale, prenderò in considerazione un altro metodo.",
+        "en": "If today's event is special, I will consider another approach."
+      },
+      {
+        "jp": "先生は今日の行事を特別だと感じたそうです。",
+        "kana": "せんせいはきょうのぎょうじをとくべつだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato l’evento di oggi speciale.",
+        "en": "Apparently the teacher felt today's event was special."
+      },
+      {
+        "jp": "特別な機会について話し合いました。",
+        "kana": "とくべつなきかいについてはなしあいました。",
+        "it": "Abbiamo discusso di un occasione speciale.",
+        "en": "We discussed a special occasion."
+      },
+      {
+        "jp": "今日の行事がもっと特別になればいいですね。",
+        "kana": "きょうのぎょうじがもっととくべつになればいいですね。",
+        "it": "Sarebbe bello se l’evento di oggi diventasse ancora più speciale.",
+        "en": "It would be good if today's event became even more special."
+      },
+      {
+        "jp": "特別でない機会もあることを忘れないでください。",
+        "kana": "とくべつでないきかいもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche occasione non speciale.",
+        "en": "Remember that not every occasion is special."
+      },
+      {
+        "jp": "今日の行事は特別だったので、みんな驚きました。",
+        "kana": "きょうのぎょうじはとくべつだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché l’evento di oggi era speciale.",
+        "en": "Everyone was surprised because today's event was special."
+      },
+      {
+        "jp": "特別な機会を選ぶ理由を説明してください。",
+        "kana": "とくべつなきかいをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un occasione speciale.",
+        "en": "Please explain why you would choose a special occasion."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "pos": "na",
+    "jp": "無理",
+    "kana": "むり",
+    "meaning": {
+      "it": "impossibile / eccessivo",
+      "en": "unreasonable / impossible"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "無理な"
+      },
+      {
+        "label": "に形",
+        "jp": "無理に"
+      },
+      {
+        "label": "で形",
+        "jp": "無理で"
+      },
+      {
+        "label": "否定形",
+        "jp": "無理ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "無理だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "無理です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この計画は思ったより無理でした。",
+        "kana": "このけいかくはおもったよりむりでした。",
+        "it": "Questo piano si è rivelato più impossibile / eccessivo del previsto.",
+        "en": "This plan was more unreasonable / impossible than expected."
+      },
+      {
+        "jp": "無理な要求を見つけるのは簡単ではありません。",
+        "kana": "むりなようきゅうをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un richiesta impossibile / eccessivo.",
+        "en": "It is not easy to find a unreasonable / impossible request."
+      },
+      {
+        "jp": "以前はこの計画がそれほど無理ではありませんでした。",
+        "kana": "いぜんはこのけいかくがそれほどむりではありませんでした。",
+        "it": "In passato questo piano non era così impossibile / eccessivo.",
+        "en": "In the past, this plan was not so unreasonable / impossible."
+      },
+      {
+        "jp": "この計画が無理なら、別の方法を考えます。",
+        "kana": "このけいかくがむりなら、べつのほうほうをかんがえます。",
+        "it": "Se questo piano è impossibile / eccessivo, prenderò in considerazione un altro metodo.",
+        "en": "If this plan is unreasonable / impossible, I will consider another approach."
+      },
+      {
+        "jp": "先生はこの計画を無理だと感じたそうです。",
+        "kana": "せんせいはこのけいかくをむりだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato questo piano impossibile / eccessivo.",
+        "en": "Apparently the teacher felt this plan was unreasonable / impossible."
+      },
+      {
+        "jp": "無理な要求について話し合いました。",
+        "kana": "むりなようきゅうについてはなしあいました。",
+        "it": "Abbiamo discusso di un richiesta impossibile / eccessivo.",
+        "en": "We discussed a unreasonable / impossible request."
+      },
+      {
+        "jp": "この計画がもっと無理になればいいですね。",
+        "kana": "このけいかくがもっとむりになればいいですね。",
+        "it": "Sarebbe bello se questo piano diventasse ancora più impossibile / eccessivo.",
+        "en": "It would be good if this plan became even more unreasonable / impossible."
+      },
+      {
+        "jp": "無理でない要求もあることを忘れないでください。",
+        "kana": "むりでないようきゅうもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche richiesta non impossibile / eccessivo.",
+        "en": "Remember that not every request is unreasonable / impossible."
+      },
+      {
+        "jp": "この計画は無理だったので、みんな驚きました。",
+        "kana": "このけいかくはむりだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché questo piano era impossibile / eccessivo.",
+        "en": "Everyone was surprised because this plan was unreasonable / impossible."
+      },
+      {
+        "jp": "無理な要求を選ぶ理由を説明してください。",
+        "kana": "むりなようきゅうをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un richiesta impossibile / eccessivo.",
+        "en": "Please explain why you would choose a unreasonable / impossible request."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "pos": "na",
+    "jp": "残念",
+    "kana": "ざんねん",
+    "meaning": {
+      "it": "spiacevole / deludente",
+      "en": "regrettable / disappointing"
+    },
+    "forms": [
+      {
+        "label": "な形",
+        "jp": "残念な"
+      },
+      {
+        "label": "に形",
+        "jp": "残念に"
+      },
+      {
+        "label": "で形",
+        "jp": "残念で"
+      },
+      {
+        "label": "否定形",
+        "jp": "残念ではない"
+      },
+      {
+        "label": "過去形",
+        "jp": "残念だった"
+      },
+      {
+        "label": "丁寧形",
+        "jp": "残念です"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "昨日の結果は思ったより残念でした。",
+        "kana": "きのうのけっかはおもったよりざんねんでした。",
+        "it": "Il risultato di ieri si è rivelato più spiacevole / deludente del previsto.",
+        "en": "Yesterday's result was more regrettable / disappointing than expected."
+      },
+      {
+        "jp": "残念な知らせを見つけるのは簡単ではありません。",
+        "kana": "ざんねんなしらせをみつけるのはかんたんではありません。",
+        "it": "Non è facile trovare un notizia spiacevole / deludente.",
+        "en": "It is not easy to find a regrettable / disappointing news."
+      },
+      {
+        "jp": "以前は昨日の結果がそれほど残念ではありませんでした。",
+        "kana": "いぜんはきのうのけっかがそれほどざんねんではありませんでした。",
+        "it": "In passato il risultato di ieri non era così spiacevole / deludente.",
+        "en": "In the past, yesterday's result was not so regrettable / disappointing."
+      },
+      {
+        "jp": "昨日の結果が残念なら、別の方法を考えます。",
+        "kana": "きのうのけっかがざんねんなら、べつのほうほうをかんがえます。",
+        "it": "Se il risultato di ieri è spiacevole / deludente, prenderò in considerazione un altro metodo.",
+        "en": "If yesterday's result is regrettable / disappointing, I will consider another approach."
+      },
+      {
+        "jp": "先生は昨日の結果を残念だと感じたそうです。",
+        "kana": "せんせいはきのうのけっかをざんねんだとかんじたそうです。",
+        "it": "A quanto pare l’insegnante ha giudicato il risultato di ieri spiacevole / deludente.",
+        "en": "Apparently the teacher felt yesterday's result was regrettable / disappointing."
+      },
+      {
+        "jp": "残念な知らせについて話し合いました。",
+        "kana": "ざんねんなしらせについてはなしあいました。",
+        "it": "Abbiamo discusso di un notizia spiacevole / deludente.",
+        "en": "We discussed a regrettable / disappointing news."
+      },
+      {
+        "jp": "昨日の結果がもっと残念になればいいですね。",
+        "kana": "きのうのけっかがもっとざんねんになればいいですね。",
+        "it": "Sarebbe bello se il risultato di ieri diventasse ancora più spiacevole / deludente.",
+        "en": "It would be good if yesterday's result became even more regrettable / disappointing."
+      },
+      {
+        "jp": "残念でない知らせもあることを忘れないでください。",
+        "kana": "ざんねんでないしらせもあることをわすれないでください。",
+        "it": "Ricorda che esistono anche notizia non spiacevole / deludente.",
+        "en": "Remember that not every news is regrettable / disappointing."
+      },
+      {
+        "jp": "昨日の結果は残念だったので、みんな驚きました。",
+        "kana": "きのうのけっかはざんねんだったので、みんなおどろきました。",
+        "it": "Tutti sono rimasti sorpresi perché il risultato di ieri era spiacevole / deludente.",
+        "en": "Everyone was surprised because yesterday's result was regrettable / disappointing."
+      },
+      {
+        "jp": "残念な知らせを選ぶ理由を説明してください。",
+        "kana": "ざんねんなしらせをえらぶりゆうをせつめいしてください。",
+        "it": "Spiega perché sceglieresti un notizia spiacevole / deludente.",
+        "en": "Please explain why you would choose a regrettable / disappointing news."
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "pos": "i",
+    "jp": "厳しい",
+    "kana": "きびしい",
+    "meaning": {
+      "it": "severo",
+      "en": "strict"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "厳しく"
+      },
+      {
+        "label": "て形",
+        "jp": "厳しくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "厳しくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "厳しかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "厳しくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この先生は思ったより厳しいです。",
+        "kana": "このせんせいはおもったよりきびしいです。",
+        "it": "Questo insegnante è più severo del previsto.",
+        "en": "This teacher is more strict than expected."
+      },
+      {
+        "jp": "厳しい規則を見つけました。",
+        "kana": "きびしいきそくをみつけました。",
+        "it": "Ho trovato un regolamento severo.",
+        "en": "I found a strict rule."
+      },
+      {
+        "jp": "昨日はこの先生がとても厳しかった。",
+        "kana": "きのうはこのせんせいがとてもきびしかった。",
+        "it": "Ieri questo insegnante era davvero severo.",
+        "en": "Yesterday this teacher was really strict."
+      },
+      {
+        "jp": "この先生が厳しくないときもあります。",
+        "kana": "このせんせいがきびしくないときもあります。",
+        "it": "Ci sono anche momenti in cui questo insegnante non è severo.",
+        "en": "There are also times when this teacher is not strict."
+      },
+      {
+        "jp": "この先生が厳しいので、少し困っています。",
+        "kana": "このせんせいがきびしいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché questo insegnante è severo.",
+        "en": "I am having some trouble because this teacher is strict."
+      },
+      {
+        "jp": "厳しい規則について作文を書きました。",
+        "kana": "きびしいきそくについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un regolamento severo.",
+        "en": "I wrote an essay about a strict rule."
+      },
+      {
+        "jp": "この先生は前ほど厳しくなかった。",
+        "kana": "このせんせいはまえほどきびしくなかった。",
+        "it": "Questo insegnante non era severo come prima.",
+        "en": "This teacher was not as strict as before."
+      },
+      {
+        "jp": "この先生がもっと厳しくなったら、どうしますか。",
+        "kana": "このせんせいがもっときびしくなったら、どうしますか。",
+        "it": "Cosa farai se questo insegnante diventerà ancora più severo?",
+        "en": "What will you do if this teacher becomes even more strict?"
+      },
+      {
+        "jp": "この先生は厳しいけれど、役に立ちます。",
+        "kana": "このせんせいはきびしいけれど、やくにたちます。",
+        "it": "Anche se questo insegnante è severo, è utile.",
+        "en": "Although this teacher is strict, it is useful."
+      },
+      {
+        "jp": "厳しい規則でも、時間がたつと印象が変わります。",
+        "kana": "きびしいきそくでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un regolamento severo, l’impressione cambia col tempo.",
+        "en": "Even with a strict rule, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "pos": "i",
+    "jp": "恥ずかしい",
+    "kana": "はずかしい",
+    "meaning": {
+      "it": "imbarazzante",
+      "en": "embarrassing"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "恥ずかしく"
+      },
+      {
+        "label": "て形",
+        "jp": "恥ずかしくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "恥ずかしくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "恥ずかしかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "恥ずかしくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "その失敗は思ったより恥ずかしいです。",
+        "kana": "そのしっぱいはおもったよりはずかしいです。",
+        "it": "Quell’errore è più imbarazzante del previsto.",
+        "en": "That mistake is more embarrassing than expected."
+      },
+      {
+        "jp": "恥ずかしい思い出を見つけました。",
+        "kana": "はずかしいおもいでをみつけました。",
+        "it": "Ho trovato un ricordo imbarazzante.",
+        "en": "I found a embarrassing memory."
+      },
+      {
+        "jp": "昨日はその失敗がとても恥ずかしかった。",
+        "kana": "きのうはそのしっぱいがとてもはずかしかった。",
+        "it": "Ieri quell’errore era davvero imbarazzante.",
+        "en": "Yesterday that mistake was really embarrassing."
+      },
+      {
+        "jp": "その失敗が恥ずかしくないときもあります。",
+        "kana": "そのしっぱいがはずかしくないときもあります。",
+        "it": "Ci sono anche momenti in cui quell’errore non è imbarazzante.",
+        "en": "There are also times when that mistake is not embarrassing."
+      },
+      {
+        "jp": "その失敗が恥ずかしいので、少し困っています。",
+        "kana": "そのしっぱいがはずかしいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché quell’errore è imbarazzante.",
+        "en": "I am having some trouble because that mistake is embarrassing."
+      },
+      {
+        "jp": "恥ずかしい思い出について作文を書きました。",
+        "kana": "はずかしいおもいでについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un ricordo imbarazzante.",
+        "en": "I wrote an essay about a embarrassing memory."
+      },
+      {
+        "jp": "その失敗は前ほど恥ずかしくなかった。",
+        "kana": "そのしっぱいはまえほどはずかしくなかった。",
+        "it": "Quell’errore non era imbarazzante come prima.",
+        "en": "That mistake was not as embarrassing as before."
+      },
+      {
+        "jp": "その失敗がもっと恥ずかしくなったら、どうしますか。",
+        "kana": "そのしっぱいがもっとはずかしくなったら、どうしますか。",
+        "it": "Cosa farai se quell’errore diventerà ancora più imbarazzante?",
+        "en": "What will you do if that mistake becomes even more embarrassing?"
+      },
+      {
+        "jp": "その失敗は恥ずかしいけれど、役に立ちます。",
+        "kana": "そのしっぱいははずかしいけれど、やくにたちます。",
+        "it": "Anche se quell’errore è imbarazzante, è utile.",
+        "en": "Although that mistake is embarrassing, it is useful."
+      },
+      {
+        "jp": "恥ずかしい思い出でも、時間がたつと印象が変わります。",
+        "kana": "はずかしいおもいででも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un ricordo imbarazzante, l’impressione cambia col tempo.",
+        "en": "Even with a embarrassing memory, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "pos": "i",
+    "jp": "眠い",
+    "kana": "ねむい",
+    "meaning": {
+      "it": "assonnato",
+      "en": "sleepy"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "眠く"
+      },
+      {
+        "label": "て形",
+        "jp": "眠くて"
+      },
+      {
+        "label": "ない形",
+        "jp": "眠くない"
+      },
+      {
+        "label": "過去形",
+        "jp": "眠かった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "眠くなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "弟は思ったより眠いです。",
+        "kana": "おとうとはおもったよりねむいです。",
+        "it": "Mio fratello minore è più assonnato del previsto.",
+        "en": "My younger brother is more sleepy than expected."
+      },
+      {
+        "jp": "眠い顔を見つけました。",
+        "kana": "ねむいかおをみつけました。",
+        "it": "Ho trovato un viso assonnato.",
+        "en": "I found a sleepy face."
+      },
+      {
+        "jp": "昨日は弟がとても眠かった。",
+        "kana": "きのうはおとうとがとてもねむかった。",
+        "it": "Ieri mio fratello minore era davvero assonnato.",
+        "en": "Yesterday my younger brother was really sleepy."
+      },
+      {
+        "jp": "弟が眠くないときもあります。",
+        "kana": "おとうとがねむくないときもあります。",
+        "it": "Ci sono anche momenti in cui mio fratello minore non è assonnato.",
+        "en": "There are also times when my younger brother is not sleepy."
+      },
+      {
+        "jp": "弟が眠いので、少し困っています。",
+        "kana": "おとうとがねむいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché mio fratello minore è assonnato.",
+        "en": "I am having some trouble because my younger brother is sleepy."
+      },
+      {
+        "jp": "眠い顔について作文を書きました。",
+        "kana": "ねむいかおについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un viso assonnato.",
+        "en": "I wrote an essay about a sleepy face."
+      },
+      {
+        "jp": "弟は前ほど眠くなかった。",
+        "kana": "おとうとはまえほどねむくなかった。",
+        "it": "Mio fratello minore non era assonnato come prima.",
+        "en": "My younger brother was not as sleepy as before."
+      },
+      {
+        "jp": "弟がもっと眠くなったら、どうしますか。",
+        "kana": "おとうとがもっとねむくなったら、どうしますか。",
+        "it": "Cosa farai se mio fratello minore diventerà ancora più assonnato?",
+        "en": "What will you do if my younger brother becomes even more sleepy?"
+      },
+      {
+        "jp": "弟は眠いけれど、役に立ちます。",
+        "kana": "おとうとはねむいけれど、やくにたちます。",
+        "it": "Anche se mio fratello minore è assonnato, è utile.",
+        "en": "Although my younger brother is sleepy, it is useful."
+      },
+      {
+        "jp": "眠い顔でも、時間がたつと印象が変わります。",
+        "kana": "ねむいかおでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un viso assonnato, l’impressione cambia col tempo.",
+        "en": "Even with a sleepy face, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "pos": "i",
+    "jp": "重い",
+    "kana": "おもい",
+    "meaning": {
+      "it": "pesante",
+      "en": "heavy"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "重く"
+      },
+      {
+        "label": "て形",
+        "jp": "重くて"
+      },
+      {
+        "label": "ない形",
+        "jp": "重くない"
+      },
+      {
+        "label": "過去形",
+        "jp": "重かった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "重くなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この荷物は思ったより重いです。",
+        "kana": "このにもつはおもったよりおもいです。",
+        "it": "Questo bagaglio è più pesante del previsto.",
+        "en": "This luggage is more heavy than expected."
+      },
+      {
+        "jp": "重い箱を見つけました。",
+        "kana": "おもいはこをみつけました。",
+        "it": "Ho trovato un scatolone pesante.",
+        "en": "I found a heavy box."
+      },
+      {
+        "jp": "昨日はこの荷物がとても重かった。",
+        "kana": "きのうはこのにもつがとてもおもかった。",
+        "it": "Ieri questo bagaglio era davvero pesante.",
+        "en": "Yesterday this luggage was really heavy."
+      },
+      {
+        "jp": "この荷物が重くないときもあります。",
+        "kana": "このにもつがおもくないときもあります。",
+        "it": "Ci sono anche momenti in cui questo bagaglio non è pesante.",
+        "en": "There are also times when this luggage is not heavy."
+      },
+      {
+        "jp": "この荷物が重いので、少し困っています。",
+        "kana": "このにもつがおもいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché questo bagaglio è pesante.",
+        "en": "I am having some trouble because this luggage is heavy."
+      },
+      {
+        "jp": "重い箱について作文を書きました。",
+        "kana": "おもいはこについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un scatolone pesante.",
+        "en": "I wrote an essay about a heavy box."
+      },
+      {
+        "jp": "この荷物は前ほど重くなかった。",
+        "kana": "このにもつはまえほどおもくなかった。",
+        "it": "Questo bagaglio non era pesante come prima.",
+        "en": "This luggage was not as heavy as before."
+      },
+      {
+        "jp": "この荷物がもっと重くなったら、どうしますか。",
+        "kana": "このにもつがもっとおもくなったら、どうしますか。",
+        "it": "Cosa farai se questo bagaglio diventerà ancora più pesante?",
+        "en": "What will you do if this luggage becomes even more heavy?"
+      },
+      {
+        "jp": "この荷物は重いけれど、役に立ちます。",
+        "kana": "このにもつはおもいけれど、やくにたちます。",
+        "it": "Anche se questo bagaglio è pesante, è utile.",
+        "en": "Although this luggage is heavy, it is useful."
+      },
+      {
+        "jp": "重い箱でも、時間がたつと印象が変わります。",
+        "kana": "おもいはこでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un scatolone pesante, l’impressione cambia col tempo.",
+        "en": "Even with a heavy box, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "pos": "i",
+    "jp": "軽い",
+    "kana": "かるい",
+    "meaning": {
+      "it": "leggero",
+      "en": "light"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "軽く"
+      },
+      {
+        "label": "て形",
+        "jp": "軽くて"
+      },
+      {
+        "label": "ない形",
+        "jp": "軽くない"
+      },
+      {
+        "label": "過去形",
+        "jp": "軽かった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "軽くなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "このかばんは思ったより軽いです。",
+        "kana": "このかばんはおもったよりかるいです。",
+        "it": "Questa borsa è più leggero del previsto.",
+        "en": "This bag is more light than expected."
+      },
+      {
+        "jp": "軽い道具を見つけました。",
+        "kana": "かるいどうぐをみつけました。",
+        "it": "Ho trovato un attrezzo leggero.",
+        "en": "I found a light tool."
+      },
+      {
+        "jp": "昨日はこのかばんがとても軽かった。",
+        "kana": "きのうはこのかばんがとてもかるかった。",
+        "it": "Ieri questa borsa era davvero leggero.",
+        "en": "Yesterday this bag was really light."
+      },
+      {
+        "jp": "このかばんが軽くないときもあります。",
+        "kana": "このかばんがかるくないときもあります。",
+        "it": "Ci sono anche momenti in cui questa borsa non è leggero.",
+        "en": "There are also times when this bag is not light."
+      },
+      {
+        "jp": "このかばんが軽いので、少し困っています。",
+        "kana": "このかばんがかるいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché questa borsa è leggero.",
+        "en": "I am having some trouble because this bag is light."
+      },
+      {
+        "jp": "軽い道具について作文を書きました。",
+        "kana": "かるいどうぐについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un attrezzo leggero.",
+        "en": "I wrote an essay about a light tool."
+      },
+      {
+        "jp": "このかばんは前ほど軽くなかった。",
+        "kana": "このかばんはまえほどかるくなかった。",
+        "it": "Questa borsa non era leggero come prima.",
+        "en": "This bag was not as light as before."
+      },
+      {
+        "jp": "このかばんがもっと軽くなったら、どうしますか。",
+        "kana": "このかばんがもっとかるくなったら、どうしますか。",
+        "it": "Cosa farai se questa borsa diventerà ancora più leggero?",
+        "en": "What will you do if this bag becomes even more light?"
+      },
+      {
+        "jp": "このかばんは軽いけれど、役に立ちます。",
+        "kana": "このかばんはかるいけれど、やくにたちます。",
+        "it": "Anche se questa borsa è leggero, è utile.",
+        "en": "Although this bag is light, it is useful."
+      },
+      {
+        "jp": "軽い道具でも、時間がたつと印象が変わります。",
+        "kana": "かるいどうぐでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un attrezzo leggero, l’impressione cambia col tempo.",
+        "en": "Even with a light tool, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "pos": "i",
+    "jp": "苦しい",
+    "kana": "くるしい",
+    "meaning": {
+      "it": "difficile / penoso",
+      "en": "painful / distressing"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "苦しく"
+      },
+      {
+        "label": "て形",
+        "jp": "苦しくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "苦しくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "苦しかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "苦しくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "その練習は思ったより苦しいです。",
+        "kana": "そのれんしゅうはおもったよりくるしいです。",
+        "it": "Quell’allenamento è più difficile / penoso del previsto.",
+        "en": "That training is more painful / distressing than expected."
+      },
+      {
+        "jp": "苦しい経験を見つけました。",
+        "kana": "くるしいけいけんをみつけました。",
+        "it": "Ho trovato un esperienza difficile / penoso.",
+        "en": "I found a painful / distressing experience."
+      },
+      {
+        "jp": "昨日はその練習がとても苦しかった。",
+        "kana": "きのうはそのれんしゅうがとてもくるしかった。",
+        "it": "Ieri quell’allenamento era davvero difficile / penoso.",
+        "en": "Yesterday that training was really painful / distressing."
+      },
+      {
+        "jp": "その練習が苦しくないときもあります。",
+        "kana": "そのれんしゅうがくるしくないときもあります。",
+        "it": "Ci sono anche momenti in cui quell’allenamento non è difficile / penoso.",
+        "en": "There are also times when that training is not painful / distressing."
+      },
+      {
+        "jp": "その練習が苦しいので、少し困っています。",
+        "kana": "そのれんしゅうがくるしいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché quell’allenamento è difficile / penoso.",
+        "en": "I am having some trouble because that training is painful / distressing."
+      },
+      {
+        "jp": "苦しい経験について作文を書きました。",
+        "kana": "くるしいけいけんについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un esperienza difficile / penoso.",
+        "en": "I wrote an essay about a painful / distressing experience."
+      },
+      {
+        "jp": "その練習は前ほど苦しくなかった。",
+        "kana": "そのれんしゅうはまえほどくるしくなかった。",
+        "it": "Quell’allenamento non era difficile / penoso come prima.",
+        "en": "That training was not as painful / distressing as before."
+      },
+      {
+        "jp": "その練習がもっと苦しくなったら、どうしますか。",
+        "kana": "そのれんしゅうがもっとくるしくなったら、どうしますか。",
+        "it": "Cosa farai se quell’allenamento diventerà ancora più difficile / penoso?",
+        "en": "What will you do if that training becomes even more painful / distressing?"
+      },
+      {
+        "jp": "その練習は苦しいけれど、役に立ちます。",
+        "kana": "そのれんしゅうはくるしいけれど、やくにたちます。",
+        "it": "Anche se quell’allenamento è difficile / penoso, è utile.",
+        "en": "Although that training is painful / distressing, it is useful."
+      },
+      {
+        "jp": "苦しい経験でも、時間がたつと印象が変わります。",
+        "kana": "くるしいけいけんでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un esperienza difficile / penoso, l’impressione cambia col tempo.",
+        "en": "Even with a painful / distressing experience, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "pos": "i",
+    "jp": "美しい",
+    "kana": "うつくしい",
+    "meaning": {
+      "it": "bello",
+      "en": "beautiful"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "美しく"
+      },
+      {
+        "label": "て形",
+        "jp": "美しくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "美しくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "美しかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "美しくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この景色は思ったより美しいです。",
+        "kana": "このけしきはおもったよりうつくしいです。",
+        "it": "Questo paesaggio è più bello del previsto.",
+        "en": "This scenery is more beautiful than expected."
+      },
+      {
+        "jp": "美しい庭を見つけました。",
+        "kana": "うつくしいにわをみつけました。",
+        "it": "Ho trovato un giardino bello.",
+        "en": "I found a beautiful garden."
+      },
+      {
+        "jp": "昨日はこの景色がとても美しかった。",
+        "kana": "きのうはこのけしきがとてもうつくしかった。",
+        "it": "Ieri questo paesaggio era davvero bello.",
+        "en": "Yesterday this scenery was really beautiful."
+      },
+      {
+        "jp": "この景色が美しくないときもあります。",
+        "kana": "このけしきがうつくしくないときもあります。",
+        "it": "Ci sono anche momenti in cui questo paesaggio non è bello.",
+        "en": "There are also times when this scenery is not beautiful."
+      },
+      {
+        "jp": "この景色が美しいので、少し困っています。",
+        "kana": "このけしきがうつくしいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché questo paesaggio è bello.",
+        "en": "I am having some trouble because this scenery is beautiful."
+      },
+      {
+        "jp": "美しい庭について作文を書きました。",
+        "kana": "うつくしいにわについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un giardino bello.",
+        "en": "I wrote an essay about a beautiful garden."
+      },
+      {
+        "jp": "この景色は前ほど美しくなかった。",
+        "kana": "このけしきはまえほどうつくしくなかった。",
+        "it": "Questo paesaggio non era bello come prima.",
+        "en": "This scenery was not as beautiful as before."
+      },
+      {
+        "jp": "この景色がもっと美しくなったら、どうしますか。",
+        "kana": "このけしきがもっとうつくしくなったら、どうしますか。",
+        "it": "Cosa farai se questo paesaggio diventerà ancora più bello?",
+        "en": "What will you do if this scenery becomes even more beautiful?"
+      },
+      {
+        "jp": "この景色は美しいけれど、役に立ちます。",
+        "kana": "このけしきはうつくしいけれど、やくにたちます。",
+        "it": "Anche se questo paesaggio è bello, è utile.",
+        "en": "Although this scenery is beautiful, it is useful."
+      },
+      {
+        "jp": "美しい庭でも、時間がたつと印象が変わります。",
+        "kana": "うつくしいにわでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un giardino bello, l’impressione cambia col tempo.",
+        "en": "Even with a beautiful garden, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "pos": "i",
+    "jp": "恐ろしい",
+    "kana": "おそろしい",
+    "meaning": {
+      "it": "terribile / spaventoso",
+      "en": "frightening"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "恐ろしく"
+      },
+      {
+        "label": "て形",
+        "jp": "恐ろしくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "恐ろしくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "恐ろしかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "恐ろしくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "その事件は思ったより恐ろしいです。",
+        "kana": "そのじけんはおもったよりおそろしいです。",
+        "it": "Quell’episodio è più terribile / spaventoso del previsto.",
+        "en": "That incident is more frightening than expected."
+      },
+      {
+        "jp": "恐ろしい話を見つけました。",
+        "kana": "おそろしいはなしをみつけました。",
+        "it": "Ho trovato un racconto terribile / spaventoso.",
+        "en": "I found a frightening story."
+      },
+      {
+        "jp": "昨日はその事件がとても恐ろしかった。",
+        "kana": "きのうはそのじけんがとてもおそろしかった。",
+        "it": "Ieri quell’episodio era davvero terribile / spaventoso.",
+        "en": "Yesterday that incident was really frightening."
+      },
+      {
+        "jp": "その事件が恐ろしくないときもあります。",
+        "kana": "そのじけんがおそろしくないときもあります。",
+        "it": "Ci sono anche momenti in cui quell’episodio non è terribile / spaventoso.",
+        "en": "There are also times when that incident is not frightening."
+      },
+      {
+        "jp": "その事件が恐ろしいので、少し困っています。",
+        "kana": "そのじけんがおそろしいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché quell’episodio è terribile / spaventoso.",
+        "en": "I am having some trouble because that incident is frightening."
+      },
+      {
+        "jp": "恐ろしい話について作文を書きました。",
+        "kana": "おそろしいはなしについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un racconto terribile / spaventoso.",
+        "en": "I wrote an essay about a frightening story."
+      },
+      {
+        "jp": "その事件は前ほど恐ろしくなかった。",
+        "kana": "そのじけんはまえほどおそろしくなかった。",
+        "it": "Quell’episodio non era terribile / spaventoso come prima.",
+        "en": "That incident was not as frightening as before."
+      },
+      {
+        "jp": "その事件がもっと恐ろしくなったら、どうしますか。",
+        "kana": "そのじけんがもっとおそろしくなったら、どうしますか。",
+        "it": "Cosa farai se quell’episodio diventerà ancora più terribile / spaventoso?",
+        "en": "What will you do if that incident becomes even more frightening?"
+      },
+      {
+        "jp": "その事件は恐ろしいけれど、役に立ちます。",
+        "kana": "そのじけんはおそろしいけれど、やくにたちます。",
+        "it": "Anche se quell’episodio è terribile / spaventoso, è utile.",
+        "en": "Although that incident is frightening, it is useful."
+      },
+      {
+        "jp": "恐ろしい話でも、時間がたつと印象が変わります。",
+        "kana": "おそろしいはなしでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un racconto terribile / spaventoso, l’impressione cambia col tempo.",
+        "en": "Even with a frightening story, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "pos": "i",
+    "jp": "うるさい",
+    "kana": "うるさい",
+    "meaning": {
+      "it": "rumoroso",
+      "en": "noisy"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "うるさく"
+      },
+      {
+        "label": "て形",
+        "jp": "うるさくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "うるさくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "うるさかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "うるさくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "隣の部屋は思ったよりうるさいです。",
+        "kana": "となりのへやはおもったよりうるさいです。",
+        "it": "La stanza accanto è più rumoroso del previsto.",
+        "en": "The next room is more noisy than expected."
+      },
+      {
+        "jp": "うるさい場所を見つけました。",
+        "kana": "うるさいばしょをみつけました。",
+        "it": "Ho trovato un luogo rumoroso.",
+        "en": "I found a noisy place."
+      },
+      {
+        "jp": "昨日は隣の部屋がとてもうるさかった。",
+        "kana": "きのうはとなりのへやがとてもうるさかった。",
+        "it": "Ieri la stanza accanto era davvero rumoroso.",
+        "en": "Yesterday the next room was really noisy."
+      },
+      {
+        "jp": "隣の部屋がうるさくないときもあります。",
+        "kana": "となりのへやがうるさくないときもあります。",
+        "it": "Ci sono anche momenti in cui la stanza accanto non è rumoroso.",
+        "en": "There are also times when the next room is not noisy."
+      },
+      {
+        "jp": "隣の部屋がうるさいので、少し困っています。",
+        "kana": "となりのへやがうるさいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché la stanza accanto è rumoroso.",
+        "en": "I am having some trouble because the next room is noisy."
+      },
+      {
+        "jp": "うるさい場所について作文を書きました。",
+        "kana": "うるさいばしょについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un luogo rumoroso.",
+        "en": "I wrote an essay about a noisy place."
+      },
+      {
+        "jp": "隣の部屋は前ほどうるさくなかった。",
+        "kana": "となりのへやはまえほどうるさくなかった。",
+        "it": "La stanza accanto non era rumoroso come prima.",
+        "en": "The next room was not as noisy as before."
+      },
+      {
+        "jp": "隣の部屋がもっとうるさくなったら、どうしますか。",
+        "kana": "となりのへやがもっとうるさくなったら、どうしますか。",
+        "it": "Cosa farai se la stanza accanto diventerà ancora più rumoroso?",
+        "en": "What will you do if the next room becomes even more noisy?"
+      },
+      {
+        "jp": "隣の部屋はうるさいけれど、役に立ちます。",
+        "kana": "となりのへやはうるさいけれど、やくにたちます。",
+        "it": "Anche se la stanza accanto è rumoroso, è utile.",
+        "en": "Although the next room is noisy, it is useful."
+      },
+      {
+        "jp": "うるさい場所でも、時間がたつと印象が変わります。",
+        "kana": "うるさいばしょでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un luogo rumoroso, l’impressione cambia col tempo.",
+        "en": "Even with a noisy place, impressions change over time."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "pos": "i",
+    "jp": "すばらしい",
+    "kana": "すばらしい",
+    "meaning": {
+      "it": "splendido",
+      "en": "wonderful"
+    },
+    "forms": [
+      {
+        "label": "く形",
+        "jp": "すばらしく"
+      },
+      {
+        "label": "て形",
+        "jp": "すばらしくて"
+      },
+      {
+        "label": "ない形",
+        "jp": "すばらしくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "すばらしかった"
+      },
+      {
+        "label": "過去否定形",
+        "jp": "すばらしくなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "その演奏は思ったよりすばらしいです。",
+        "kana": "そのえんそうはおもったよりすばらしいです。",
+        "it": "Quell’esibizione è più splendido del previsto.",
+        "en": "That performance is more wonderful than expected."
+      },
+      {
+        "jp": "すばらしい作品を見つけました。",
+        "kana": "すばらしいさくひんをみつけました。",
+        "it": "Ho trovato un opera splendido.",
+        "en": "I found a wonderful work."
+      },
+      {
+        "jp": "昨日はその演奏がとてもすばらしかった。",
+        "kana": "きのうはそのえんそうがとてもすばらしかった。",
+        "it": "Ieri quell’esibizione era davvero splendido.",
+        "en": "Yesterday that performance was really wonderful."
+      },
+      {
+        "jp": "その演奏がすばらしくないときもあります。",
+        "kana": "そのえんそうがすばらしくないときもあります。",
+        "it": "Ci sono anche momenti in cui quell’esibizione non è splendido.",
+        "en": "There are also times when that performance is not wonderful."
+      },
+      {
+        "jp": "その演奏がすばらしいので、少し困っています。",
+        "kana": "そのえんそうがすばらしいので、すこしこまっています。",
+        "it": "Ho qualche difficoltà perché quell’esibizione è splendido.",
+        "en": "I am having some trouble because that performance is wonderful."
+      },
+      {
+        "jp": "すばらしい作品について作文を書きました。",
+        "kana": "すばらしいさくひんについてさくぶんをかきました。",
+        "it": "Ho scritto un tema su un opera splendido.",
+        "en": "I wrote an essay about a wonderful work."
+      },
+      {
+        "jp": "その演奏は前ほどすばらしくなかった。",
+        "kana": "そのえんそうはまえほどすばらしくなかった。",
+        "it": "Quell’esibizione non era splendido come prima.",
+        "en": "That performance was not as wonderful as before."
+      },
+      {
+        "jp": "その演奏がもっとすばらしくなったら、どうしますか。",
+        "kana": "そのえんそうがもっとすばらしくなったら、どうしますか。",
+        "it": "Cosa farai se quell’esibizione diventerà ancora più splendido?",
+        "en": "What will you do if that performance becomes even more wonderful?"
+      },
+      {
+        "jp": "その演奏はすばらしいけれど、役に立ちます。",
+        "kana": "そのえんそうはすばらしいけれど、やくにたちます。",
+        "it": "Anche se quell’esibizione è splendido, è utile.",
+        "en": "Although that performance is wonderful, it is useful."
+      },
+      {
+        "jp": "すばらしい作品でも、時間がたつと印象が変わります。",
+        "kana": "すばらしいさくひんでも、じかんがたつといんしょうがかわります。",
+        "it": "Anche con un opera splendido, l’impressione cambia col tempo.",
+        "en": "Even with a wonderful work, impressions change over time."
+      }
+    ]
   }
 ]
