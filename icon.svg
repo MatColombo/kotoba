@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+ <rect width="512" height="512" fill="#0d1320" rx="110"/>
+ <rect x="55" y="55" width="402" height="402" fill="#9bf0d5" rx="95"/>
+ <path d="M125 370C195 405 325 405 388 370" stroke="#0d4a43" stroke-width="23" stroke-linecap="round" fill="none"/>
+ <text x="256" y="326" text-anchor="middle" font-size="260" font-family="Noto Sans CJK JP,Hiragino Kaku Gothic ProN,sans-serif" font-weight="700" fill="#10332d">語</text>
+</svg>

@@ -1,0 +1,2372 @@
+[
+  {
+    "id": 1,
+    "pos": "verb",
+    "jp": "集める",
+    "kana": "あつめる",
+    "meaning": {
+      "it": "raccogliere / collezionare",
+      "en": "collect / gather"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "集めて"
+      },
+      {
+        "label": "ます形",
+        "jp": "集めます"
+      },
+      {
+        "label": "ない形",
+        "jp": "集めない"
+      },
+      {
+        "label": "た形",
+        "jp": "集めた"
+      },
+      {
+        "label": "可能形",
+        "jp": "集められる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "旅行先で見つけた古い切手を集めています。",
+        "kana": "りょこうさきでみつけたふるいきってをあつめています。",
+        "it": "Colleziono francobolli antichi trovati durante i viaggi.",
+        "en": "I collect old stamps I find while traveling."
+      },
+      {
+        "jp": "会議の前に全員の意見を集めてください。",
+        "kana": "かいぎのまえにぜんいんのいけんをあつめてください。",
+        "it": "Raccogli le opinioni di tutti prima della riunione.",
+        "en": "Please gather everyone's opinions before the meeting."
+      },
+      {
+        "jp": "必要な資料を集めなければ、調査は始められません。",
+        "kana": "ひつようなしりょうをあつめなければ、ちょうさははじめられません。",
+        "it": "Se non raccogliamo i documenti necessari, non possiamo iniziare l'indagine.",
+        "en": "We can't start the investigation unless we collect the necessary documents."
+      },
+      {
+        "jp": "妹は去年から海辺の石を集め始めました。",
+        "kana": "いもうとはきょねんからうみべのいしをあつめはじめました。",
+        "it": "Mia sorella minore ha iniziato a raccogliere sassi sulla spiaggia l'anno scorso.",
+        "en": "My younger sister started collecting stones from the beach last year."
+      },
+      {
+        "jp": "地域の人たちが公園のごみを集めてくれました。",
+        "kana": "ちいきのひとたちがこうえんのごみをあつめてくれました。",
+        "it": "Gli abitanti del quartiere hanno raccolto i rifiuti del parco per noi.",
+        "en": "Local residents kindly collected the litter in the park."
+      },
+      {
+        "jp": "急いで情報を集めても、間違いがあるかもしれません。",
+        "kana": "いそいでじょうほうをあつめても、まちがいがあるかもしれません。",
+        "it": "Anche raccogliendo informazioni in fretta, potrebbero esserci errori.",
+        "en": "Even if we gather information quickly, there may be mistakes."
+      },
+      {
+        "jp": "写真を百枚集めたら、小さな展示会を開きたいです。",
+        "kana": "しゃしんをひゃくまいあつめたら、ちいさなてんじかいをひらきたいです。",
+        "it": "Quando avrò raccolto cento fotografie, vorrei organizzare una piccola mostra.",
+        "en": "Once I have collected a hundred photos, I'd like to hold a small exhibition."
+      },
+      {
+        "jp": "この箱には使わなくなった道具を集めてあります。",
+        "kana": "このはこにはつかわなくなったどうぐをあつめてあります。",
+        "it": "In questa scatola sono stati raccolti gli attrezzi che non usiamo più.",
+        "en": "Tools we no longer use have been gathered in this box."
+      },
+      {
+        "jp": "一人では十分なお金を集められませんでした。",
+        "kana": "ひとりではじゅうぶんなおかねをあつめられませんでした。",
+        "it": "Da solo non sono riuscito a raccogliere abbastanza denaro.",
+        "en": "I couldn't raise enough money on my own."
+      },
+      {
+        "jp": "資料を集めながら、新しい疑問も出てきました。",
+        "kana": "しりょうをあつめながら、あたらしいぎもんもでてきました。",
+        "it": "Mentre raccoglievo materiale, sono emerse anche nuove domande.",
+        "en": "As I gathered materials, new questions came up."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "pos": "verb",
+    "jp": "選ぶ",
+    "kana": "えらぶ",
+    "meaning": {
+      "it": "scegliere",
+      "en": "choose / select"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "選んで"
+      },
+      {
+        "label": "ます形",
+        "jp": "選びます"
+      },
+      {
+        "label": "ない形",
+        "jp": "選ばない"
+      },
+      {
+        "label": "た形",
+        "jp": "選んだ"
+      },
+      {
+        "label": "可能形",
+        "jp": "選べる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "長く使う物だから、値段だけで選ばないでください。",
+        "kana": "ながくつかうものだから、ねだんだけでえらばないでください。",
+        "it": "Dato che lo userai a lungo, non scegliere solo in base al prezzo.",
+        "en": "Since you'll use it for a long time, don't choose based only on price."
+      },
+      {
+        "jp": "写真を見ながら、旅行先のホテルを選びました。",
+        "kana": "しゃしんをみながら、りょこうさきのほてるをえらびました。",
+        "it": "Ho scelto l'hotel per il viaggio guardando le fotografie.",
+        "en": "I chose the hotel for the trip while looking at photos."
+      },
+      {
+        "jp": "好きな席を選んでから、名前を書いてください。",
+        "kana": "すきなせきをえらんでから、なまえをかいてください。",
+        "it": "Dopo aver scelto il posto che preferisci, scrivi il tuo nome.",
+        "en": "After choosing your preferred seat, write down your name."
+      },
+      {
+        "jp": "候補が多すぎて、一つに選べません。",
+        "kana": "こうほがおおすぎて、ひとつにえらべません。",
+        "it": "Ci sono troppi candidati e non riesco a sceglierne uno.",
+        "en": "There are too many options, so I can't pick just one."
+      },
+      {
+        "jp": "先生は私の作文を代表作品に選んでくれました。",
+        "kana": "せんせいはわたしのさくぶんをだいひょうさくひんにえらんでくれました。",
+        "it": "L'insegnante ha scelto il mio tema come elaborato rappresentativo.",
+        "en": "The teacher selected my essay as a representative piece."
+      },
+      {
+        "jp": "急いで選ぶと、大事な違いを見落とします。",
+        "kana": "いそいでえらぶと、だいじなちがいをみおとします。",
+        "it": "Se scegli in fretta, rischi di non notare differenze importanti.",
+        "en": "If you choose in a hurry, you'll miss important differences."
+      },
+      {
+        "jp": "友達が選んだ映画は、予想よりずっと面白かったです。",
+        "kana": "ともだちがえらんだえいがは、よそうよりずっとおもしろかったです。",
+        "it": "Il film scelto dal mio amico era molto più interessante del previsto.",
+        "en": "The movie my friend chose was far more interesting than expected."
+      },
+      {
+        "jp": "子どもたちに自分で本を選ばせました。",
+        "kana": "こどもたちにじぶんでほんをえらばせました。",
+        "it": "Ho lasciato che i bambini scegliessero i libri da soli.",
+        "en": "I let the children choose their own books."
+      },
+      {
+        "jp": "色を選ぶ前に、部屋の明るさを考えましょう。",
+        "kana": "いろをえらぶまえに、へやのあかるさをかんがえましょう。",
+        "it": "Prima di scegliere il colore, consideriamo la luminosità della stanza.",
+        "en": "Before choosing a color, let's consider how bright the room is."
+      },
+      {
+        "jp": "失敗しても、もう一度選び直せばいいですよ。",
+        "kana": "しっぱいしても、もういちどえらびなおせばいいですよ。",
+        "it": "Anche se sbagli, puoi semplicemente scegliere di nuovo.",
+        "en": "Even if you make a mistake, you can simply choose again."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "pos": "verb",
+    "jp": "決める",
+    "kana": "きめる",
+    "meaning": {
+      "it": "decidere / stabilire",
+      "en": "decide / set"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "決めて"
+      },
+      {
+        "label": "ます形",
+        "jp": "決めます"
+      },
+      {
+        "label": "ない形",
+        "jp": "決めない"
+      },
+      {
+        "label": "た形",
+        "jp": "決めた"
+      },
+      {
+        "label": "可能形",
+        "jp": "決められる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "出発する時間は天気を見てから決めましょう。",
+        "kana": "しゅっぱつするじかんはてんきをみてからきめましょう。",
+        "it": "Decidiamo l'orario di partenza dopo aver controllato il meteo.",
+        "en": "Let's decide when to leave after checking the weather."
+      },
+      {
+        "jp": "まだ進路を決めていないので、先生に相談します。",
+        "kana": "まだしんろをきめていないので、せんせいにそうだんします。",
+        "it": "Non ho ancora deciso il mio percorso di studi, quindi parlerò con l'insegnante.",
+        "en": "I haven't decided my path yet, so I'll consult my teacher."
+      },
+      {
+        "jp": "家族と話し合って、新しい家に引っ越すことを決めました。",
+        "kana": "かぞくとはなしあって、あたらしいいえにひっこすことをきめました。",
+        "it": "Dopo averne parlato con la famiglia, abbiamo deciso di trasferirci.",
+        "en": "After discussing it with my family, we decided to move to a new home."
+      },
+      {
+        "jp": "大切なことを一人だけで決めないほうがいいです。",
+        "kana": "たいせつなことをひとりだけできめないほうがいいです。",
+        "it": "È meglio non decidere da soli le questioni importanti.",
+        "en": "It's better not to decide important matters alone."
+      },
+      {
+        "jp": "会議で次の担当者が決められました。",
+        "kana": "かいぎでつぎのたんとうしゃがきめられました。",
+        "it": "Durante la riunione è stato designato il prossimo responsabile.",
+        "en": "The next person in charge was chosen at the meeting."
+      },
+      {
+        "jp": "何を買うか決めてから店に入りました。",
+        "kana": "なにをかうかきめてからみせにはいりました。",
+        "it": "Sono entrato nel negozio dopo aver deciso cosa comprare.",
+        "en": "I entered the store after deciding what to buy."
+      },
+      {
+        "jp": "毎朝の勉強時間を決めると、続けやすくなります。",
+        "kana": "まいあさのべんきょうじかんをきめると、つづけやすくなります。",
+        "it": "Se stabilisci un orario di studio ogni mattina, è più facile essere costanti.",
+        "en": "Setting a study time each morning makes it easier to keep going."
+      },
+      {
+        "jp": "答えを急いで決めなくても大丈夫です。",
+        "kana": "こたえをいそいできめなくてもだいじょうぶです。",
+        "it": "Va bene anche non decidere subito la risposta.",
+        "en": "You don't have to rush to decide on an answer."
+      },
+      {
+        "jp": "旅行の予定が決まったら、すぐに知らせます。",
+        "kana": "りょこうのよていがきまったら、すぐにしらせます。",
+        "it": "Quando il programma del viaggio sarà deciso, ti avviserò subito.",
+        "en": "I'll let you know as soon as the travel plans are settled."
+      },
+      {
+        "jp": "彼女は練習方法を自分で決めたがっています。",
+        "kana": "かのじょはれんしゅうほうほうをじぶんできめたがっています。",
+        "it": "Lei vuole decidere da sola il metodo di allenamento.",
+        "en": "She wants to decide on her training method herself."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "pos": "verb",
+    "jp": "続ける",
+    "kana": "つづける",
+    "meaning": {
+      "it": "continuare",
+      "en": "continue / keep doing"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "続けて"
+      },
+      {
+        "label": "ます形",
+        "jp": "続けます"
+      },
+      {
+        "label": "ない形",
+        "jp": "続けない"
+      },
+      {
+        "label": "た形",
+        "jp": "続けた"
+      },
+      {
+        "label": "可能形",
+        "jp": "続けられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "雨が降っても、試合を続ける予定です。",
+        "kana": "あめがふっても、しあいをつづけるよていです。",
+        "it": "Anche se piove, prevediamo di continuare la partita.",
+        "en": "We plan to continue the match even if it rains."
+      },
+      {
+        "jp": "日本語の日記を半年間書き続けています。",
+        "kana": "にほんごのにっきをはんとしかんかきつづけています。",
+        "it": "Continuo a scrivere un diario in giapponese da sei mesi.",
+        "en": "I've kept writing a diary in Japanese for six months."
+      },
+      {
+        "jp": "無理をして練習を続けないで、少し休んでください。",
+        "kana": "むりをしてれんしゅうをつづけないで、すこしやすんでください。",
+        "it": "Non forzarti a continuare l'allenamento; riposati un po'.",
+        "en": "Don't push yourself to keep practicing; take a short break."
+      },
+      {
+        "jp": "周りが静かになってから、先生は説明を続けました。",
+        "kana": "まわりがしずかになってから、せんせいはせつめいをつづけました。",
+        "it": "L'insegnante ha ripreso la spiegazione quando si è fatto silenzio.",
+        "en": "The teacher continued the explanation once things became quiet."
+      },
+      {
+        "jp": "忙しくても、一日十分なら勉強を続けられます。",
+        "kana": "いそがしくても、いちにちじゅっぷんべんきょうをつづけられます。",
+        "it": "Anche se sei impegnato, puoi continuare a studiare per dieci minuti al giorno.",
+        "en": "Even when you're busy, you can keep studying for ten minutes a day."
+      },
+      {
+        "jp": "兄は仕事を続けながら、夜の学校に通っています。",
+        "kana": "あにはしごとをつづけながら、よるのがっこうにかよっています。",
+        "it": "Mio fratello continua a lavorare mentre frequenta una scuola serale.",
+        "en": "My older brother keeps working while attending evening classes."
+      },
+      {
+        "jp": "続けていた運動のおかげで、階段が楽になりました。",
+        "kana": "つづけていたうんどうのおかげで、かいだんがらくになりました。",
+        "it": "Grazie all'esercizio che facevo regolarmente, le scale sono diventate più facili.",
+        "en": "Thanks to the exercise I kept up, climbing stairs has become easier."
+      },
+      {
+        "jp": "失敗しても続ければ、少しずつ上手になります。",
+        "kana": "しっぱいしてもつづければ、すこしずつじょうずになります。",
+        "it": "Se continui anche dopo gli errori, migliorerai poco alla volta.",
+        "en": "If you keep going despite mistakes, you'll improve little by little."
+      },
+      {
+        "jp": "同じ話を何度も続けるので、みんな困っていました。",
+        "kana": "おなじはなしをなんどもつづけるので、みんなこまっていました。",
+        "it": "Continuava a ripetere la stessa storia, e tutti erano in difficoltà.",
+        "en": "They kept repeating the same story, which bothered everyone."
+      },
+      {
+        "jp": "昨日の話の続きを、昼休みに聞かせてください。",
+        "kana": "きのうのはなしのつづきを、ひるやすみにきかせてください。",
+        "it": "Raccontami il seguito della storia di ieri durante la pausa pranzo.",
+        "en": "Please tell me the rest of yesterday's story at lunch break."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "pos": "verb",
+    "jp": "手伝う",
+    "kana": "てつだう",
+    "meaning": {
+      "it": "aiutare / dare una mano",
+      "en": "help / lend a hand"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "手伝って"
+      },
+      {
+        "label": "ます形",
+        "jp": "手伝います"
+      },
+      {
+        "label": "ない形",
+        "jp": "手伝わない"
+      },
+      {
+        "label": "た形",
+        "jp": "手伝った"
+      },
+      {
+        "label": "可能形",
+        "jp": "手伝える"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "週末に祖父の庭仕事を手伝いました。",
+        "kana": "しゅうまつにそふのにわしごとをてつだいました。",
+        "it": "Nel fine settimana ho aiutato mio nonno a lavorare in giardino.",
+        "en": "I helped my grandfather with gardening over the weekend."
+      },
+      {
+        "jp": "荷物が重そうですね。運ぶのを手伝いましょうか。",
+        "kana": "にもつがおもそうですね。はこぶのをてつだいましょうか。",
+        "it": "Quel bagaglio sembra pesante. Vuoi che ti aiuti a portarlo?",
+        "en": "That luggage looks heavy. Shall I help you carry it?"
+      },
+      {
+        "jp": "料理を手伝ってくれた友達に、お礼を言いました。",
+        "kana": "りょうりをてつだってくれたともだちに、おれいをいいました。",
+        "it": "Ho ringraziato l'amico che mi ha aiutato a cucinare.",
+        "en": "I thanked the friend who helped me cook."
+      },
+      {
+        "jp": "忙しいときは、遠慮しないで手伝ってと言ってください。",
+        "kana": "いそがしいときは、えんりょしないでてつだってといってください。",
+        "it": "Quando sei occupato, chiedimi pure una mano senza esitazione.",
+        "en": "When you're busy, don't hesitate to ask me for help."
+      },
+      {
+        "jp": "弟は宿題が終わるまで家事を手伝いません。",
+        "kana": "おとうとはしゅくだいがおわるまでかじをてつだいません。",
+        "it": "Mio fratello minore non aiuta in casa finché non finisce i compiti.",
+        "en": "My younger brother doesn't help with chores until he finishes his homework."
+      },
+      {
+        "jp": "受付を手伝える人を三人探しています。",
+        "kana": "うけつけをてつだえるひとをさんにんさがしています。",
+        "it": "Cerchiamo tre persone che possano aiutare alla reception.",
+        "en": "We're looking for three people who can help at reception."
+      },
+      {
+        "jp": "友達に引っ越しを手伝ってもらうことにしました。",
+        "kana": "ともだちにひっこしをてつだってもらうことにしました。",
+        "it": "Ho deciso di chiedere a un amico di aiutarmi con il trasloco.",
+        "en": "I decided to ask a friend to help me move."
+      },
+      {
+        "jp": "手伝おうとしたのに、もう作業は終わっていました。",
+        "kana": "てつだおうとしたのに、もうさぎょうはおわっていました。",
+        "it": "Volevo dare una mano, ma il lavoro era già finito.",
+        "en": "I tried to help, but the work had already been completed."
+      },
+      {
+        "jp": "母を手伝いながら、昔の家族の話を聞きました。",
+        "kana": "ははをてつだいながら、むかしのかぞくのはなしをききました。",
+        "it": "Mentre aiutavo mia madre, ho ascoltato storie sulla nostra famiglia di un tempo.",
+        "en": "While helping my mother, I heard stories about our family long ago."
+      },
+      {
+        "jp": "手伝ってもらったおかげで、準備が予定より早く終わりました。",
+        "kana": "てつだってもらったおかげで、じゅんびがよていよりはやくおわりました。",
+        "it": "Grazie all'aiuto ricevuto, i preparativi sono finiti prima del previsto.",
+        "en": "Thanks to the help I received, preparations finished ahead of schedule."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "pos": "verb",
+    "jp": "直す",
+    "kana": "なおす",
+    "meaning": {
+      "it": "riparare / correggere",
+      "en": "fix / correct"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "直して"
+      },
+      {
+        "label": "ます形",
+        "jp": "直します"
+      },
+      {
+        "label": "ない形",
+        "jp": "直さない"
+      },
+      {
+        "label": "た形",
+        "jp": "直した"
+      },
+      {
+        "label": "可能形",
+        "jp": "直せる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "壊れた時計を父が自分で直しました。",
+        "kana": "こわれたとけいをちちがじぶんでなおしました。",
+        "it": "Mio padre ha riparato da solo l'orologio rotto.",
+        "en": "My father fixed the broken watch himself."
+      },
+      {
+        "jp": "先生に言われたところを直して、作文を出しました。",
+        "kana": "せんせいにいわれたところをなおして、さくぶんをだしました。",
+        "it": "Ho corretto le parti indicate dall'insegnante e consegnato il tema.",
+        "en": "I corrected the parts my teacher pointed out and submitted my essay."
+      },
+      {
+        "jp": "機械を直せない場合は、専門の人に頼みます。",
+        "kana": "きかいをなおせないばあいは、せんもんのひとにたのみます。",
+        "it": "Se non riesco a riparare il macchinario, chiederò a uno specialista.",
+        "en": "If I can't fix the machine, I'll ask a specialist."
+      },
+      {
+        "jp": "その数字は間違っているので、すぐに直してください。",
+        "kana": "そのすうじはまちがっているので、すぐになおしてください。",
+        "it": "Quel numero è sbagliato, quindi correggilo subito.",
+        "en": "That figure is wrong, so please correct it right away."
+      },
+      {
+        "jp": "雨にぬれた本は、元どおりには直りませんでした。",
+        "kana": "あめにぬれたほんは、もとどおりにはなおりませんでした。",
+        "it": "Il libro bagnato dalla pioggia non è tornato come prima.",
+        "en": "The rain-soaked book couldn't be restored to its original condition."
+      },
+      {
+        "jp": "予定を直すより、集合場所を変えたほうが簡単です。",
+        "kana": "よていをなおすより、しゅうごうばしょをかえたほうがかんたんです。",
+        "it": "Piuttosto che modificare il programma, è più semplice cambiare il luogo d'incontro.",
+        "en": "It's easier to change the meeting place than to revise the schedule."
+      },
+      {
+        "jp": "書類を直さないまま送ってしまいました。",
+        "kana": "しょるいをなおさないままおくってしまいました。",
+        "it": "Ho inviato il documento senza correggerlo.",
+        "en": "I sent the document without fixing it."
+      },
+      {
+        "jp": "発音を何度も直してもらい、やっと覚えました。",
+        "kana": "はつおんをなんどもなおしてもらい、やっとおぼえました。",
+        "it": "Dopo avermi corretto più volte la pronuncia, finalmente l'ho imparata.",
+        "en": "After having my pronunciation corrected many times, I finally learned it."
+      },
+      {
+        "jp": "この古い自転車なら、少し時間があれば直せます。",
+        "kana": "このふるいじてんしゃなら、すこしじかんがあればなおせます。",
+        "it": "Questa vecchia bicicletta posso ripararla, se ho un po' di tempo.",
+        "en": "I can fix this old bicycle if I have a little time."
+      },
+      {
+        "jp": "間違いに気づいたら、恥ずかしがらずに直しましょう。",
+        "kana": "まちがいにきづいたら、はずかしがらずになおしましょう。",
+        "it": "Se ti accorgi di un errore, correggilo senza vergognarti.",
+        "en": "If you notice a mistake, correct it without feeling embarrassed."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "pos": "verb",
+    "jp": "運ぶ",
+    "kana": "はこぶ",
+    "meaning": {
+      "it": "trasportare / portare",
+      "en": "carry / transport"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "運んで"
+      },
+      {
+        "label": "ます形",
+        "jp": "運びます"
+      },
+      {
+        "label": "ない形",
+        "jp": "運ばない"
+      },
+      {
+        "label": "た形",
+        "jp": "運んだ"
+      },
+      {
+        "label": "可能形",
+        "jp": "運べる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "新しい机を二階まで運ぶのは大変でした。",
+        "kana": "あたらしいつくえをにかいまではこぶのはたいへんでした。",
+        "it": "Portare la nuova scrivania al secondo piano è stato faticoso.",
+        "en": "Carrying the new desk up to the second floor was hard work."
+      },
+      {
+        "jp": "割れやすい皿は一枚ずつ運んでください。",
+        "kana": "われやすいさらはいちまいずつはこんでください。",
+        "it": "Porta i piatti fragili uno alla volta, per favore.",
+        "en": "Please carry the fragile plates one at a time."
+      },
+      {
+        "jp": "父は毎朝、自転車で新聞を運んでいます。",
+        "kana": "ちちはまいあさ、じてんしゃでしんぶんをはこんでいます。",
+        "it": "Mio padre trasporta giornali in bicicletta ogni mattina.",
+        "en": "My father delivers newspapers by bicycle every morning."
+      },
+      {
+        "jp": "荷物が多すぎて、一度では全部運べません。",
+        "kana": "にもつがおおすぎて、いちどではぜんぶはこべません。",
+        "it": "Ci sono troppi bagagli per portarli tutti in una volta.",
+        "en": "There's too much luggage to carry it all in one trip."
+      },
+      {
+        "jp": "台風の前に植木を家の中へ運びました。",
+        "kana": "たいふうのまえにうえきをいえのなかへはこびました。",
+        "it": "Prima del tifone abbiamo portato le piante in casa.",
+        "en": "We brought the potted plants indoors before the typhoon."
+      },
+      {
+        "jp": "水を運ぶ間に、床をぬらさないようにしてください。",
+        "kana": "みずをはこぶあいだに、ゆかをぬらさないようにしてください。",
+        "it": "Mentre trasporti l'acqua, cerca di non bagnare il pavimento.",
+        "en": "Try not to wet the floor while carrying the water."
+      },
+      {
+        "jp": "この箱は重いので、一人で運ばないでください。",
+        "kana": "このはこはおもいので、ひとりではこばないでください。",
+        "it": "Questa scatola è pesante, quindi non portarla da solo.",
+        "en": "This box is heavy, so please don't carry it alone."
+      },
+      {
+        "jp": "船で運ばれた果物は、港で検査されます。",
+        "kana": "ふねではこばれたくだものは、みなとでけんさされます。",
+        "it": "La frutta trasportata via nave viene controllata al porto.",
+        "en": "Fruit shipped by boat is inspected at the port."
+      },
+      {
+        "jp": "必要な道具だけを車に運んでおきました。",
+        "kana": "ひつようなどうぐだけをくるまにはこんでおきました。",
+        "it": "Ho caricato in auto soltanto gli attrezzi necessari.",
+        "en": "I loaded only the necessary tools into the car in advance."
+      },
+      {
+        "jp": "病院へ運ばれた人は、もう元気になったそうです。",
+        "kana": "びょういんへはこばれたひとは、もうげんきになったそうです。",
+        "it": "A quanto pare la persona portata in ospedale ora sta bene.",
+        "en": "I hear the person taken to the hospital has already recovered."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "pos": "verb",
+    "jp": "間に合う",
+    "kana": "まにあう",
+    "meaning": {
+      "it": "arrivare in tempo / fare in tempo",
+      "en": "be on time / make it"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "間に合って"
+      },
+      {
+        "label": "ます形",
+        "jp": "間に合います"
+      },
+      {
+        "label": "ない形",
+        "jp": "間に合わない"
+      },
+      {
+        "label": "た形",
+        "jp": "間に合った"
+      },
+      {
+        "label": "条件形",
+        "jp": "間に合えば"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "急げば、七時の電車にまだ間に合います。",
+        "kana": "いそげば、しちじのでんしゃにまだまにあいます。",
+        "it": "Se ci sbrighiamo, facciamo ancora in tempo a prendere il treno delle sette.",
+        "en": "If we hurry, we can still catch the seven o'clock train."
+      },
+      {
+        "jp": "道が混んでいて、会議の開始に間に合いませんでした。",
+        "kana": "みちがこんでいて、かいぎのかいしにまにあいませんでした。",
+        "it": "C'era traffico e non sono arrivato in tempo per l'inizio della riunione.",
+        "en": "Traffic was heavy, and I didn't make it to the start of the meeting."
+      },
+      {
+        "jp": "今日中に仕上げれば、締め切りに間に合うでしょう。",
+        "kana": "きょうじゅうにしあげれば、しめきりにまにあうでしょう。",
+        "it": "Se lo finiamo entro oggi, dovremmo rispettare la scadenza.",
+        "en": "If we finish it today, we should meet the deadline."
+      },
+      {
+        "jp": "走っても間に合わないので、次のバスを待ちます。",
+        "kana": "はしってもまにあわないので、つぎのばすをまちます。",
+        "it": "Neanche correndo farei in tempo, quindi aspetto il prossimo autobus.",
+        "en": "Even running won't get me there in time, so I'll wait for the next bus."
+      },
+      {
+        "jp": "開演に間に合って、本当によかったです。",
+        "kana": "かいえんにまにあって、ほんとうによかったです。",
+        "it": "Sono davvero contento di essere arrivato in tempo per l'inizio dello spettacolo.",
+        "en": "I'm really glad we made it before the performance began."
+      },
+      {
+        "jp": "資料が届かなければ、明日の発表に間に合いません。",
+        "kana": "しりょうがとどかなければ、あしたのはっぴょうにまにあいません。",
+        "it": "Se i documenti non arrivano, non saremo pronti per la presentazione di domani.",
+        "en": "If the documents don't arrive, we won't be ready for tomorrow's presentation."
+      },
+      {
+        "jp": "授業に間に合うように、いつも早めに家を出ます。",
+        "kana": "じゅぎょうにまにあうように、いつもはやめにいえをでます。",
+        "it": "Esco sempre un po' prima per arrivare in orario a lezione.",
+        "en": "I always leave home early so I can get to class on time."
+      },
+      {
+        "jp": "修理が間に合ったおかげで、旅行に車を使えました。",
+        "kana": "しゅうりがまにあったおかげで、りょこうにくるまをつかえました。",
+        "it": "Grazie alla riparazione completata in tempo, abbiamo potuto usare l'auto per il viaggio.",
+        "en": "Because the repair was finished in time, we could use the car for our trip."
+      },
+      {
+        "jp": "申し込みは金曜日までなら間に合いますか。",
+        "kana": "もうしこみはきんようびまでならまにあいますか。",
+        "it": "Se faccio domanda entro venerdì, sono ancora in tempo?",
+        "en": "Will my application still be on time if I submit it by Friday?"
+      },
+      {
+        "jp": "あと五分あれば、準備は十分間に合います。",
+        "kana": "あとごふんあれば、じゅんびはじゅうぶんまにあいます。",
+        "it": "Con altri cinque minuti, riusciremo senz'altro a prepararci in tempo.",
+        "en": "With five more minutes, we'll definitely finish preparing in time."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "pos": "verb",
+    "jp": "予約する",
+    "kana": "よやくする",
+    "meaning": {
+      "it": "prenotare",
+      "en": "reserve / book"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "予約して"
+      },
+      {
+        "label": "ます形",
+        "jp": "予約します"
+      },
+      {
+        "label": "ない形",
+        "jp": "予約しない"
+      },
+      {
+        "label": "た形",
+        "jp": "予約した"
+      },
+      {
+        "label": "可能形",
+        "jp": "予約できる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "人気の店なので、二週間前に席を予約しました。",
+        "kana": "にんきのみせなので、にしゅうかんまえにせきをよやくしました。",
+        "it": "Dato che il locale è molto richiesto, ho prenotato due settimane prima.",
+        "en": "Since the restaurant is popular, I booked a table two weeks ahead."
+      },
+      {
+        "jp": "病院に行く前に、電話で予約してください。",
+        "kana": "びょういんにいくまえに、でんわでよやくしてください。",
+        "it": "Prima di andare in ospedale, prenota per telefono.",
+        "en": "Please book by phone before going to the hospital."
+      },
+      {
+        "jp": "まだホテルを予約していないので、今夜調べます。",
+        "kana": "まだほてるをよやくしていないので、こんやしらべます。",
+        "it": "Non ho ancora prenotato l'hotel, quindi cercherò stasera.",
+        "en": "I haven't booked a hotel yet, so I'll look tonight."
+      },
+      {
+        "jp": "この切符はインターネットでも予約できます。",
+        "kana": "このきっぷはいんたーねっとでもよやくできます。",
+        "it": "Questo biglietto si può prenotare anche online.",
+        "en": "You can reserve this ticket online too."
+      },
+      {
+        "jp": "天気が悪そうなら、船のツアーは予約しません。",
+        "kana": "てんきがわるそうなら、ふねのつあーはよやくしません。",
+        "it": "Se il tempo sembra brutto, non prenoterò il tour in barca.",
+        "en": "If the weather looks bad, I won't book the boat tour."
+      },
+      {
+        "jp": "間違った日に予約してしまい、変更をお願いしました。",
+        "kana": "まちがったひによやくしてしまい、へんこうをおねがいしました。",
+        "it": "Ho prenotato per il giorno sbagliato e ho chiesto di cambiare data.",
+        "en": "I accidentally booked the wrong day and asked to change it."
+      },
+      {
+        "jp": "予約した時間より早く着いたら、入口で待ってください。",
+        "kana": "よやくしたじかんよりはやくついたら、いりぐちでまってください。",
+        "it": "Se arrivi prima dell'orario prenotato, aspetta all'ingresso.",
+        "en": "If you arrive before your booked time, wait at the entrance."
+      },
+      {
+        "jp": "週末の部屋はすぐ埋まるので、早めに予約しましょう。",
+        "kana": "しゅうまつのへやはすぐうまるので、はやめによやくしましょう。",
+        "it": "Le camere per il fine settimana si esauriscono presto, quindi prenotiamo per tempo.",
+        "en": "Weekend rooms fill up quickly, so let's book early."
+      },
+      {
+        "jp": "予約を取り消す場合は、前日までに連絡が必要です。",
+        "kana": "よやくをとりけすばあいは、ぜんじつまでにれんらくがひつようです。",
+        "it": "Se annulli la prenotazione, devi avvisare entro il giorno prima.",
+        "en": "If you cancel your reservation, you must notify them by the previous day."
+      },
+      {
+        "jp": "友達の誕生日のために、窓側の席を予約しておきました。",
+        "kana": "ともだちのたんじょうびのために、まどがわのせきをよやくしておきました。",
+        "it": "Per il compleanno di un amico, ho prenotato in anticipo un tavolo vicino alla finestra.",
+        "en": "I reserved a window seat in advance for my friend's birthday."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "pos": "verb",
+    "jp": "変える",
+    "kana": "かえる",
+    "meaning": {
+      "it": "cambiare / modificare",
+      "en": "change / alter"
+    },
+    "forms": [
+      {
+        "label": "て形",
+        "jp": "変えて"
+      },
+      {
+        "label": "ます形",
+        "jp": "変えます"
+      },
+      {
+        "label": "ない形",
+        "jp": "変えない"
+      },
+      {
+        "label": "た形",
+        "jp": "変えた"
+      },
+      {
+        "label": "可能形",
+        "jp": "変えられる"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "電車が止まったので、帰る道を変えました。",
+        "kana": "でんしゃがとまったので、かえるみちをかえました。",
+        "it": "Il treno si è fermato, quindi ho cambiato il percorso per tornare a casa.",
+        "en": "The train stopped, so I changed my route home."
+      },
+      {
+        "jp": "この設定を変えると、音が小さくなります。",
+        "kana": "このせっていをかえると、おとがちいさくなります。",
+        "it": "Se modifichi questa impostazione, il volume si abbassa.",
+        "en": "Changing this setting makes the sound quieter."
+      },
+      {
+        "jp": "急に予定を変えないで、先に相談してください。",
+        "kana": "きゅうによていをかえないで、さきにそうだんしてください。",
+        "it": "Non cambiare i piani all'improvviso; parlane prima con me.",
+        "en": "Please discuss it with me before suddenly changing the plans."
+      },
+      {
+        "jp": "髪形を変えたら、友達にすぐ気づかれました。",
+        "kana": "かみがたをかえたら、ともだちにすぐきづかれました。",
+        "it": "Quando ho cambiato pettinatura, i miei amici se ne sono accorti subito.",
+        "en": "My friends noticed immediately when I changed my hairstyle."
+      },
+      {
+        "jp": "席を変えてもいいか、係の人に聞きました。",
+        "kana": "せきをかえてもいいか、かかりのひとにききました。",
+        "it": "Ho chiesto all'addetto se potevo cambiare posto.",
+        "en": "I asked the attendant if I could change seats."
+      },
+      {
+        "jp": "考え方を少し変えれば、別の答えが見つかります。",
+        "kana": "かんがえかたをすこしかえれば、べつのこたえがみつかります。",
+        "it": "Se cambi leggermente prospettiva, troverai un'altra risposta.",
+        "en": "If you change your way of thinking a little, you'll find another answer."
+      },
+      {
+        "jp": "大事な部分は変えずに、文章だけ短くしました。",
+        "kana": "だいじなぶぶんはかえずに、ぶんしょうだけみじかくしました。",
+        "it": "Ho accorciato solo il testo senza cambiare le parti importanti.",
+        "en": "I shortened the text without changing the important parts."
+      },
+      {
+        "jp": "古い家具の色を変えて、新しい部屋に合わせました。",
+        "kana": "ふるいかぐのいろをかえて、あたらしいへやにあわせました。",
+        "it": "Ho cambiato il colore dei vecchi mobili per abbinarli alla nuova stanza.",
+        "en": "I changed the color of the old furniture to match the new room."
+      },
+      {
+        "jp": "名前を変えた理由を、まだ誰にも話していません。",
+        "kana": "なまえをかえたりゆうを、まだだれにもはなしていません。",
+        "it": "Non ho ancora detto a nessuno perché ho cambiato nome.",
+        "en": "I haven't told anyone why I changed my name."
+      },
+      {
+        "jp": "予定を変えられなかったため、今回は参加できません。",
+        "kana": "よていをかえられなかったため、こんかいはさんかできません。",
+        "it": "Non posso partecipare questa volta perché non sono riuscito a cambiare programma.",
+        "en": "I can't take part this time because I couldn't change my schedule."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "pos": "noun",
+    "jp": "予定",
+    "kana": "よてい",
+    "meaning": {
+      "it": "programma / piano",
+      "en": "plan / schedule"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "予定です"
+      },
+      {
+        "label": "過去形",
+        "jp": "予定だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "予定ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "予定の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "明日の予定が急に変わったので、友達に連絡しました。",
+        "kana": "あしたのよていがきゅうにかわったので、ともだちにれんらくしました。",
+        "it": "Il programma di domani è cambiato all'improvviso, quindi ho avvisato un amico.",
+        "en": "Tomorrow's plans changed suddenly, so I contacted a friend."
+      },
+      {
+        "jp": "予定より早く仕事が終わり、映画を見に行けました。",
+        "kana": "よていよりはやくしごとがおわり、えいがをみにいけました。",
+        "it": "Ho finito di lavorare prima del previsto e sono riuscito ad andare al cinema.",
+        "en": "I finished work earlier than planned and managed to go to a movie."
+      },
+      {
+        "jp": "来月は京都に三日間滞在する予定です。",
+        "kana": "らいげつはきょうとにみっかかんたいざいするよていです。",
+        "it": "Il mese prossimo ho in programma di restare tre giorni a Kyoto.",
+        "en": "I plan to stay in Kyoto for three days next month."
+      },
+      {
+        "jp": "この週末、何か特別な予定がありますか。",
+        "kana": "このしゅうまつ、なにかとくべつなよていがありますか。",
+        "it": "Hai programmi speciali per questo fine settimana?",
+        "en": "Do you have any special plans this weekend?"
+      },
+      {
+        "jp": "予定が決まったら、集合場所も知らせてください。",
+        "kana": "よていがきまったら、しゅうごうばしょもしらせてください。",
+        "it": "Quando il programma sarà definito, comunicami anche il punto d'incontro.",
+        "en": "Once the plan is settled, please let me know the meeting place too."
+      },
+      {
+        "jp": "台風のため、出発の予定を一日遅らせました。",
+        "kana": "たいふうのため、しゅっぱつのよていをいちにちおくらせました。",
+        "it": "A causa del tifone, abbiamo rinviato la partenza di un giorno.",
+        "en": "Because of the typhoon, we postponed our departure by a day."
+      },
+      {
+        "jp": "予定を詰め込みすぎると、旅行が疲れるものになります。",
+        "kana": "よていをつめこみすぎると、りょこうがつかれるものになります。",
+        "it": "Se riempi troppo il programma, il viaggio diventa stancante.",
+        "en": "Packing in too many activities makes a trip exhausting."
+      },
+      {
+        "jp": "父は予定のない日曜日を大切にしています。",
+        "kana": "ちちはよていのないにちようびをたいせつにしています。",
+        "it": "Mio padre tiene molto alle domeniche senza impegni.",
+        "en": "My father values Sundays when he has no plans."
+      },
+      {
+        "jp": "予定どおりに進まなくても、落ち着いてください。",
+        "kana": "よていどおりにすすまなくても、おちついてください。",
+        "it": "Anche se le cose non vanno secondo i piani, mantieni la calma.",
+        "en": "Even if things don't go according to plan, stay calm."
+      },
+      {
+        "jp": "来年の予定について、家族でゆっくり話しました。",
+        "kana": "らいねんのよていについて、かぞくでゆっくりはなしました。",
+        "it": "Abbiamo parlato con calma in famiglia dei programmi per l'anno prossimo.",
+        "en": "We talked calmly as a family about next year's plans."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "pos": "noun",
+    "jp": "理由",
+    "kana": "りゆう",
+    "meaning": {
+      "it": "motivo / ragione",
+      "en": "reason"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "理由です"
+      },
+      {
+        "label": "過去形",
+        "jp": "理由だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "理由ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "理由の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "遅れた理由を説明したら、先生は理解してくれました。",
+        "kana": "おくれたりゆうをせつめいしたら、せんせいはりかいしてくれました。",
+        "it": "Dopo che ho spiegato il motivo del ritardo, l'insegnante ha capito.",
+        "en": "When I explained why I was late, the teacher understood."
+      },
+      {
+        "jp": "その店を選んだ理由は、駅から近いことです。",
+        "kana": "そのみせをえらんだりゆうは、えきからちかいことです。",
+        "it": "Il motivo per cui ho scelto quel negozio è che è vicino alla stazione.",
+        "en": "I chose that shop because it's close to the station."
+      },
+      {
+        "jp": "理由も聞かずに相手を責めるべきではありません。",
+        "kana": "りゆうもきかずにあいてをせめるべきではありません。",
+        "it": "Non si dovrebbe accusare qualcuno senza nemmeno ascoltarne le ragioni.",
+        "en": "You shouldn't blame someone without even hearing their reasons."
+      },
+      {
+        "jp": "欠席する理由を、前の日にメールで伝えました。",
+        "kana": "けっせきするりゆうを、まえのひにめーるでつたえました。",
+        "it": "Ho comunicato via email il motivo della mia assenza il giorno prima.",
+        "en": "I emailed the reason for my absence the day before."
+      },
+      {
+        "jp": "その判断には、何か特別な理由があったのでしょうか。",
+        "kana": "そのはんだんには、なにかとくべつなりゆうがあったのでしょうか。",
+        "it": "C'era forse un motivo particolare dietro quella decisione?",
+        "en": "Was there a special reason behind that decision?"
+      },
+      {
+        "jp": "忙しいという理由だけで、運動をやめたくありません。",
+        "kana": "いそがしいというりゆうだけで、うんどうをやめたくありません。",
+        "it": "Non voglio smettere di fare esercizio solo perché sono occupato.",
+        "en": "I don't want to stop exercising just because I'm busy."
+      },
+      {
+        "jp": "理由が分からないまま、会議が中止になりました。",
+        "kana": "りゆうがわからないまま、かいぎがちゅうしになりました。",
+        "it": "La riunione è stata annullata senza che ne sapessimo il motivo.",
+        "en": "The meeting was canceled without anyone knowing why."
+      },
+      {
+        "jp": "彼女が怒った理由を、後になって知りました。",
+        "kana": "かのじょがおこったりゆうを、あとになってしりました。",
+        "it": "Solo più tardi ho scoperto perché si era arrabbiata.",
+        "en": "I found out only later why she had become angry."
+      },
+      {
+        "jp": "理由を一つずつ書き出すと、問題が整理できます。",
+        "kana": "りゆうをひとつずつかきだすと、もんだいがせいりできます。",
+        "it": "Scrivendo le ragioni una per una, puoi mettere ordine nel problema.",
+        "en": "Writing down the reasons one by one helps organize the problem."
+      },
+      {
+        "jp": "理由はともかく、まず相手の話を聞きましょう。",
+        "kana": "りゆうはともかく、まずあいてのはなしをききましょう。",
+        "it": "A prescindere dal motivo, ascoltiamo prima l'altra persona.",
+        "en": "Whatever the reason, let's listen to the other person first."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "pos": "noun",
+    "jp": "経験",
+    "kana": "けいけん",
+    "meaning": {
+      "it": "esperienza",
+      "en": "experience"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "経験です"
+      },
+      {
+        "label": "過去形",
+        "jp": "経験だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "経験ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "経験の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "初めて一人で海外旅行をした経験は忘れられません。",
+        "kana": "はじめてひとりでかいがいりょこうをしたけいけんはわすれられません。",
+        "it": "Non dimenticherò mai l'esperienza del mio primo viaggio all'estero da solo.",
+        "en": "I'll never forget my first experience of traveling abroad alone."
+      },
+      {
+        "jp": "接客の経験がある人を募集しています。",
+        "kana": "せっきゃくのけいけんがあるひとをぼしゅうしています。",
+        "it": "Cerchiamo persone con esperienza nel servizio clienti.",
+        "en": "We're recruiting people with customer service experience."
+      },
+      {
+        "jp": "失敗した経験から、多くのことを学びました。",
+        "kana": "しっぱいしたけいけんから、おおくのことをまなびました。",
+        "it": "Ho imparato molto dall'esperienza di un fallimento.",
+        "en": "I learned a great deal from the experience of failing."
+      },
+      {
+        "jp": "日本で働いた経験はありますか。",
+        "kana": "にほんではたらいたけいけんはありますか。",
+        "it": "Hai mai avuto esperienza di lavoro in Giappone?",
+        "en": "Have you ever worked in Japan?"
+      },
+      {
+        "jp": "経験が少なくても、熱心に練習すれば上達します。",
+        "kana": "けいけんがすくなくても、ねっしんにれんしゅうすればじょうたつします。",
+        "it": "Anche con poca esperienza, migliorerai esercitandoti con impegno.",
+        "en": "Even with little experience, you'll improve if you practice diligently."
+      },
+      {
+        "jp": "祖母は戦後の生活について、自分の経験を話してくれました。",
+        "kana": "そぼはせんごのせいかつについて、じぶんのけいけんをはなしてくれました。",
+        "it": "Mia nonna mi ha raccontato la sua esperienza di vita nel dopoguerra.",
+        "en": "My grandmother told me about her own experiences of life after the war."
+      },
+      {
+        "jp": "今回の経験を次の仕事に生かしたいと思います。",
+        "kana": "こんかいのけいけんをつぎのしごとにいかしたいとおもいます。",
+        "it": "Vorrei mettere a frutto questa esperienza nel prossimo lavoro.",
+        "en": "I'd like to make use of this experience in my next job."
+      },
+      {
+        "jp": "経験者の意見を聞いてから、道具を買いました。",
+        "kana": "けいけんしゃのいけんをきいてから、どうぐをかいました。",
+        "it": "Ho comprato l'attrezzatura dopo aver sentito il parere di una persona esperta.",
+        "en": "I bought the equipment after listening to someone experienced."
+      },
+      {
+        "jp": "同じ経験をしても、感じ方は人によって違います。",
+        "kana": "おなじけいけんをしても、かんじかたはひとによってちがいます。",
+        "it": "Anche vivendo la stessa esperienza, le persone la percepiscono in modo diverso.",
+        "en": "Even after the same experience, people can feel differently about it."
+      },
+      {
+        "jp": "知らない町で道に迷ったのも、いい経験でした。",
+        "kana": "しらないまちでみちにまよったのも、いいけいけんでした。",
+        "it": "Anche perdermi in una città sconosciuta è stata una bella esperienza.",
+        "en": "Even getting lost in an unfamiliar town was a valuable experience."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "pos": "noun",
+    "jp": "約束",
+    "kana": "やくそく",
+    "meaning": {
+      "it": "promessa / appuntamento",
+      "en": "promise / arrangement"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "約束です"
+      },
+      {
+        "label": "過去形",
+        "jp": "約束だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "約束ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "約束の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "明日の約束を忘れないように、カレンダーに書きました。",
+        "kana": "あしたのやくそくをわすれないように、かれんだーにかきました。",
+        "it": "Ho segnato l'appuntamento di domani sul calendario per non dimenticarlo.",
+        "en": "I wrote tomorrow's appointment on my calendar so I wouldn't forget it."
+      },
+      {
+        "jp": "友達との約束があるので、今日は早く帰ります。",
+        "kana": "ともだちとのやくそくがあるので、きょうははやくかえります。",
+        "it": "Oggi torno presto perché ho un appuntamento con un amico.",
+        "en": "I'm going home early today because I have plans with a friend."
+      },
+      {
+        "jp": "子どもとした約束は、できるだけ守りたいです。",
+        "kana": "こどもとしたやくそくは、できるだけまもりたいです。",
+        "it": "Cerco di mantenere, per quanto possibile, le promesse fatte ai bambini.",
+        "en": "I want to keep my promises to children whenever possible."
+      },
+      {
+        "jp": "約束の時間を過ぎても、彼は現れませんでした。",
+        "kana": "やくそくのじかんをすぎても、かれはあらわれませんでした。",
+        "it": "Anche dopo l'ora concordata, lui non si è presentato.",
+        "en": "He didn't show up even after the agreed time."
+      },
+      {
+        "jp": "雨が降った場合の集合場所も約束しておきましょう。",
+        "kana": "あめがふったばあいのしゅうごうばしょもやくそくしておきましょう。",
+        "it": "Mettiamoci d'accordo anche sul punto d'incontro in caso di pioggia.",
+        "en": "Let's also agree on a meeting place in case it rains."
+      },
+      {
+        "jp": "大切な約束を破ったことを、今でも後悔しています。",
+        "kana": "たいせつなやくそくをやぶったことを、いまでもこうかいしています。",
+        "it": "Mi pento ancora oggi di aver infranto una promessa importante.",
+        "en": "I still regret breaking an important promise."
+      },
+      {
+        "jp": "約束を変更したいなら、早めに連絡してください。",
+        "kana": "やくそくをへんこうしたいなら、はやめにれんらくしてください。",
+        "it": "Se vuoi cambiare l'appuntamento, avvisami per tempo.",
+        "en": "If you want to change our plans, please let me know early."
+      },
+      {
+        "jp": "先生は約束どおり、授業の後で質問に答えてくれました。",
+        "kana": "せんせいはやくそくどおり、じゅぎょうのあとでしつもんにこたえてくれました。",
+        "it": "Come promesso, l'insegnante ha risposto alle domande dopo la lezione.",
+        "en": "As promised, the teacher answered questions after class."
+      },
+      {
+        "jp": "その約束には、二人だけが知っている理由がありました。",
+        "kana": "そのやくそくには、ふたりだけがしっているりゆうがありました。",
+        "it": "Dietro quella promessa c'era un motivo noto solo a loro due.",
+        "en": "There was a reason for that promise that only the two of them knew."
+      },
+      {
+        "jp": "彼女は一度決めた約束を簡単には変えません。",
+        "kana": "かのじょはいちどきめたやくそくをかんたんにはかえません。",
+        "it": "Lei non cambia facilmente una promessa già fatta.",
+        "en": "She doesn't easily change a promise once she's made it."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "pos": "noun",
+    "jp": "場合",
+    "kana": "ばあい",
+    "meaning": {
+      "it": "caso / situazione",
+      "en": "case / situation"
+    },
+    "forms": [
+      {
+        "label": "丁寧形",
+        "jp": "場合です"
+      },
+      {
+        "label": "過去形",
+        "jp": "場合だった"
+      },
+      {
+        "label": "否定形",
+        "jp": "場合ではない"
+      },
+      {
+        "label": "連体形",
+        "jp": "場合の"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "地震が起きた場合は、この出口から避難してください。",
+        "kana": "じしんがおきたばあいは、このでぐちからひなんしてください。",
+        "it": "In caso di terremoto, evacuate attraverso questa uscita.",
+        "en": "In the event of an earthquake, evacuate through this exit."
+      },
+      {
+        "jp": "予定が変わる場合は、前日までに知らせてください。",
+        "kana": "よていがかわるばあいは、ぜんじつまでにしらせてください。",
+        "it": "Se il programma cambia, avvisami entro il giorno prima.",
+        "en": "If the schedule changes, please let me know by the previous day."
+      },
+      {
+        "jp": "雨の場合でも、イベントは予定どおり行います。",
+        "kana": "あめのばあいでも、いべんとはよていどおりおこないます。",
+        "it": "Anche in caso di pioggia, l'evento si svolgerà come previsto.",
+        "en": "Even in case of rain, the event will go ahead as planned."
+      },
+      {
+        "jp": "分からない場合は、遠慮せず質問してください。",
+        "kana": "わからないばあいは、えんりょせずしつもんしてください。",
+        "it": "Se non capisci, fai pure domande senza esitare.",
+        "en": "If you don't understand, please ask questions without hesitation."
+      },
+      {
+        "jp": "この場合は、謝るより先に事情を説明しましょう。",
+        "kana": "このばあいは、あやまるよりさきにじじょうをせつめいしましょう。",
+        "it": "In questo caso, spieghiamo prima la situazione invece di scusarci subito.",
+        "en": "In this case, let's explain the circumstances before apologizing."
+      },
+      {
+        "jp": "電車が遅れた場合の連絡方法を決めておきます。",
+        "kana": "でんしゃがおくれたばあいのれんらくほうほうをきめておきます。",
+        "it": "Stabilirò prima come comunicare in caso di ritardo del treno.",
+        "en": "I'll decide in advance how to get in touch if the train is delayed."
+      },
+      {
+        "jp": "特別な場合を除いて、図書館では静かにしてください。",
+        "kana": "とくべつなばあいをのぞいて、としょかんではしずかにしてください。",
+        "it": "Tranne in casi particolari, mantenete il silenzio in biblioteca.",
+        "en": "Except in special circumstances, please be quiet in the library."
+      },
+      {
+        "jp": "同じ問題でも、人によって答えが違う場合があります。",
+        "kana": "おなじもんだいでも、ひとによってこたえがちがうばあいがあります。",
+        "it": "Anche alla stessa domanda, le risposte possono variare da persona a persona.",
+        "en": "Even for the same question, answers sometimes differ from person to person."
+      },
+      {
+        "jp": "道に迷った場合に備えて、地図を保存しておきました。",
+        "kana": "みちにまよったばあいにそなえて、ちずをほぞんしておきました。",
+        "it": "Ho salvato una mappa nel caso in cui mi perdessi.",
+        "en": "I saved a map in case I got lost."
+      },
+      {
+        "jp": "その場合は、新しい予約を取り直す必要があります。",
+        "kana": "そのばあいは、あたらしいよやくをとりなおすひつようがあります。",
+        "it": "In quel caso bisogna effettuare una nuova prenotazione.",
+        "en": "In that case, you'll need to make a new reservation."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "pos": "na",
+    "jp": "必要",
+    "kana": "ひつよう",
+    "meaning": {
+      "it": "necessario / indispensabile",
+      "en": "necessary / needed"
+    },
+    "forms": [
+      {
+        "label": "連体形",
+        "jp": "必要な"
+      },
+      {
+        "label": "補語形",
+        "jp": "必要に"
+      },
+      {
+        "label": "て形",
+        "jp": "必要で"
+      },
+      {
+        "label": "否定形",
+        "jp": "必要じゃない"
+      },
+      {
+        "label": "過去形",
+        "jp": "必要だった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "必要じゃなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "海外旅行には有効なパスポートが必要です。",
+        "kana": "かいがいりょこうにはゆうこうなぱすぽーとがひつようです。",
+        "it": "Per viaggiare all'estero è necessario un passaporto valido.",
+        "en": "A valid passport is necessary for international travel."
+      },
+      {
+        "jp": "必要な書類をそろえてから、申し込んでください。",
+        "kana": "ひつようなしょるいをそろえてから、もうしこんでください。",
+        "it": "Raccogli i documenti necessari prima di presentare la domanda.",
+        "en": "Gather the required documents before applying."
+      },
+      {
+        "jp": "急がなくてもいいので、必要な時間をかけてください。",
+        "kana": "いそがなくてもいいので、ひつようなじかんをかけてください。",
+        "it": "Non c'è fretta, quindi prenditi tutto il tempo necessario.",
+        "en": "There's no need to rush, so take the time you need."
+      },
+      {
+        "jp": "この作業に特別な道具は必要ありません。",
+        "kana": "このさぎょうにとくべつなどうぐはひつようありません。",
+        "it": "Per questo lavoro non servono attrezzi speciali.",
+        "en": "No special tools are needed for this task."
+      },
+      {
+        "jp": "説明が必要なら、担当者を呼んできます。",
+        "kana": "せつめいがひつようなら、たんとうしゃをよんできます。",
+        "it": "Se ti serve una spiegazione, chiamo il responsabile.",
+        "en": "If you need an explanation, I'll get the person in charge."
+      },
+      {
+        "jp": "必要以上に心配すると、眠れなくなります。",
+        "kana": "ひつよういじょうにしんぱいすると、ねむれなくなります。",
+        "it": "Se ti preoccupi più del necessario, non riuscirai a dormire.",
+        "en": "Worrying more than necessary can keep you awake."
+      },
+      {
+        "jp": "この経験は、今後の仕事に必要になるでしょう。",
+        "kana": "このけいけんは、こんごのしごとにひつようになるでしょう。",
+        "it": "Questa esperienza probabilmente sarà utile nel lavoro futuro.",
+        "en": "This experience will probably become necessary in future work."
+      },
+      {
+        "jp": "道が暗くて危険なので、明かりが必要でした。",
+        "kana": "みちがくらくてきけんなので、あかりがひつようでした。",
+        "it": "Dato che la strada era buia e pericolosa, serviva una luce.",
+        "en": "The road was dark and dangerous, so a light was needed."
+      },
+      {
+        "jp": "全員に必要な情報だけを、短くまとめました。",
+        "kana": "ぜんいんにひつようなじょうほうだけを、みじかくまとめました。",
+        "it": "Ho riassunto brevemente solo le informazioni necessarie a tutti.",
+        "en": "I briefly summarized only the information everyone needed."
+      },
+      {
+        "jp": "この話し合いは必要ではなかったと、後で気づきました。",
+        "kana": "このはなしあいはひつようではなかったと、あとできづきました。",
+        "it": "In seguito mi sono accorto che quella discussione non era necessaria.",
+        "en": "I realized afterward that the discussion hadn't been necessary."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "pos": "na",
+    "jp": "便利",
+    "kana": "べんり",
+    "meaning": {
+      "it": "comodo / pratico",
+      "en": "convenient / handy"
+    },
+    "forms": [
+      {
+        "label": "連体形",
+        "jp": "便利な"
+      },
+      {
+        "label": "副詞形",
+        "jp": "便利に"
+      },
+      {
+        "label": "て形",
+        "jp": "便利で"
+      },
+      {
+        "label": "否定形",
+        "jp": "便利じゃない"
+      },
+      {
+        "label": "過去形",
+        "jp": "便利だった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "便利じゃなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "駅の近くに住むと、買い物にも通勤にも便利です。",
+        "kana": "えきのちかくにすむと、かいものにもつうきんにもべんりです。",
+        "it": "Abitare vicino alla stazione è comodo sia per fare acquisti sia per andare al lavoro.",
+        "en": "Living near the station is convenient for both shopping and commuting."
+      },
+      {
+        "jp": "このアプリには便利な辞書機能が付いています。",
+        "kana": "このあぷりにはべんりなじしょきのうがついています。",
+        "it": "Quest'app include una pratica funzione dizionario.",
+        "en": "This app includes a handy dictionary feature."
+      },
+      {
+        "jp": "便利でも、使い方が難しければ意味がありません。",
+        "kana": "べんりでも、つかいかたがむずかしければいみがありません。",
+        "it": "Anche se è comodo, non serve a nulla se è difficile da usare.",
+        "en": "Even if it's convenient, it's useless if it's hard to use."
+      },
+      {
+        "jp": "田舎では車がないと、あまり便利ではありません。",
+        "kana": "いなかではくるまがないと、あまりべんりではありません。",
+        "it": "In campagna non è molto comodo vivere senza auto.",
+        "en": "In the countryside, getting around without a car isn't very convenient."
+      },
+      {
+        "jp": "新しい道ができて、学校まで便利に行けるようになりました。",
+        "kana": "あたらしいみちができて、がっこうまでべんりにいけるようになりました。",
+        "it": "Con la nuova strada è diventato più comodo raggiungere la scuola.",
+        "en": "The new road has made it easier to get to school."
+      },
+      {
+        "jp": "紙の地図も、電池が切れたときには便利です。",
+        "kana": "かみのちずも、でんちがきれたときにはべんりです。",
+        "it": "Anche una mappa cartacea è utile quando la batteria si scarica.",
+        "en": "A paper map is handy when the battery runs out."
+      },
+      {
+        "jp": "この店は便利な場所にあるので、よく利用します。",
+        "kana": "このみせはべんりなばしょにあるので、よくりようします。",
+        "it": "Uso spesso questo negozio perché si trova in una posizione comoda.",
+        "en": "I often use this shop because it's in a convenient location."
+      },
+      {
+        "jp": "以前の電話は不便でしたが、新しいものはずっと便利です。",
+        "kana": "いぜんのでんわはふべんでしたが、あたらしいものはずっとべんりです。",
+        "it": "Il vecchio telefono era scomodo, ma quello nuovo è molto più pratico.",
+        "en": "The old phone was inconvenient, but the new one is much handier."
+      },
+      {
+        "jp": "便利だからといって、何でも機械に任せるのは危険です。",
+        "kana": "べんりだからといって、なんでもきかいにまかせるのはきけんです。",
+        "it": "Solo perché è comodo, non significa che sia sicuro affidare tutto alle macchine.",
+        "en": "Just because it's convenient doesn't mean it's safe to leave everything to machines."
+      },
+      {
+        "jp": "便利な道具ほど、正しい使い方を覚えましょう。",
+        "kana": "べんりなどうぐほど、ただしいつかいかたをおぼえましょう。",
+        "it": "Più uno strumento è pratico, più è importante imparare a usarlo correttamente.",
+        "en": "The handier a tool is, the more important it is to learn how to use it properly."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "pos": "na",
+    "jp": "安全",
+    "kana": "あんぜん",
+    "meaning": {
+      "it": "sicuro / in sicurezza",
+      "en": "safe / secure"
+    },
+    "forms": [
+      {
+        "label": "連体形",
+        "jp": "安全な"
+      },
+      {
+        "label": "副詞形",
+        "jp": "安全に"
+      },
+      {
+        "label": "て形",
+        "jp": "安全で"
+      },
+      {
+        "label": "否定形",
+        "jp": "安全じゃない"
+      },
+      {
+        "label": "過去形",
+        "jp": "安全だった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "安全じゃなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "夜道を歩くときは、安全な道を選んでください。",
+        "kana": "よみちをあるくときは、あんぜんなみちをえらんでください。",
+        "it": "Quando cammini di notte, scegli una strada sicura.",
+        "en": "Choose a safe route when walking at night."
+      },
+      {
+        "jp": "子どもたちが安全に遊べる公園を作りたいです。",
+        "kana": "こどもたちがあんぜんにあそべるこうえんをつくりたいです。",
+        "it": "Vorremmo creare un parco dove i bambini possano giocare in sicurezza.",
+        "en": "We want to create a park where children can play safely."
+      },
+      {
+        "jp": "安全のために、山に入る前に天気を確認します。",
+        "kana": "あんぜんのために、やまにはいるまえにてんきをかくにんします。",
+        "it": "Per sicurezza controllo il tempo prima di andare in montagna.",
+        "en": "For safety, I check the weather before entering the mountains."
+      },
+      {
+        "jp": "この橋は古いですが、検査では安全だと分かりました。",
+        "kana": "このはしはふるいですが、けんさではあんぜんだとわかりました。",
+        "it": "Questo ponte è vecchio, ma un'ispezione ha confermato che è sicuro.",
+        "en": "The bridge is old, but an inspection showed it was safe."
+      },
+      {
+        "jp": "道が凍っているので、今は安全ではありません。",
+        "kana": "みちがこおっているので、いまはあんぜんではありません。",
+        "it": "La strada è ghiacciata, quindi al momento non è sicura.",
+        "en": "The road is icy, so it's not safe right now."
+      },
+      {
+        "jp": "安全な場所に移動してから、家族に連絡しました。",
+        "kana": "あんぜんなばしょにいどうしてから、かぞくにれんらくしました。",
+        "it": "Mi sono spostato in un luogo sicuro prima di contattare la famiglia.",
+        "en": "I moved to a safe place before contacting my family."
+      },
+      {
+        "jp": "便利さだけでなく、安全も考えて道具を選びます。",
+        "kana": "べんりさだけでなく、あんぜんもかんがえてどうぐをえらびます。",
+        "it": "Scelgo gli strumenti considerando non solo la comodità, ma anche la sicurezza.",
+        "en": "I choose tools based not only on convenience but also on safety."
+      },
+      {
+        "jp": "安全だと思っていた道が、雨で通れなくなりました。",
+        "kana": "あんぜんだとおもっていたみちが、あめでとおれなくなりました。",
+        "it": "La strada che credevo sicura è diventata impraticabile per la pioggia.",
+        "en": "The road I thought was safe became impassable because of rain."
+      },
+      {
+        "jp": "交通安全について、学校で話し合いました。",
+        "kana": "こうつうあんぜんについて、がっこうではなしあいました。",
+        "it": "A scuola abbiamo discusso di sicurezza stradale.",
+        "en": "We discussed road safety at school."
+      },
+      {
+        "jp": "急いでいるときほど、安全に気をつけましょう。",
+        "kana": "いそいでいるときほど、あんぜんにきをつけましょう。",
+        "it": "Più hai fretta, più devi prestare attenzione alla sicurezza.",
+        "en": "The more of a hurry you're in, the more carefully you should think about safety."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "pos": "na",
+    "jp": "丁寧",
+    "kana": "ていねい",
+    "meaning": {
+      "it": "cortese / accurato",
+      "en": "polite / careful / thorough"
+    },
+    "forms": [
+      {
+        "label": "連体形",
+        "jp": "丁寧な"
+      },
+      {
+        "label": "副詞形",
+        "jp": "丁寧に"
+      },
+      {
+        "label": "て形",
+        "jp": "丁寧で"
+      },
+      {
+        "label": "否定形",
+        "jp": "丁寧じゃない"
+      },
+      {
+        "label": "過去形",
+        "jp": "丁寧だった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "丁寧じゃなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "店員さんが丁寧に商品の違いを説明してくれました。",
+        "kana": "てんいんさんがていねいにしょうひんのちがいをせつめいしてくれました。",
+        "it": "Il commesso mi ha spiegato con cura le differenze tra i prodotti.",
+        "en": "The shop assistant carefully explained the differences between the products."
+      },
+      {
+        "jp": "初めて会う人には、丁寧な言葉を使うようにしています。",
+        "kana": "はじめてあうひとには、ていねいなことばをつかうようにしています。",
+        "it": "Cerco di usare un linguaggio cortese con le persone che incontro per la prima volta.",
+        "en": "I try to use polite language with people I meet for the first time."
+      },
+      {
+        "jp": "説明が丁寧だったので、初心者にも分かりました。",
+        "kana": "せつめいがていねいだったので、しょしんしゃにもわかりました。",
+        "it": "La spiegazione era così accurata che anche i principianti l'hanno capita.",
+        "en": "The explanation was so thorough that even beginners understood it."
+      },
+      {
+        "jp": "急いで書いた字は、あまり丁寧ではありません。",
+        "kana": "いそいでかいたじは、あまりていねいではありません。",
+        "it": "I caratteri scritti in fretta non sono molto curati.",
+        "en": "The characters I wrote in a hurry aren't very neat."
+      },
+      {
+        "jp": "大切な手紙なので、一文字ずつ丁寧に書きました。",
+        "kana": "たいせつなてがみなので、ひともじずつていねいにかきました。",
+        "it": "Dato che era una lettera importante, l'ho scritta con cura, carattere per carattere.",
+        "en": "Because it was an important letter, I wrote each character carefully."
+      },
+      {
+        "jp": "丁寧に作られた家具は、長く使えることが多いです。",
+        "kana": "ていねいにつくられたかぐは、ながくつかえることがおおいです。",
+        "it": "I mobili realizzati con cura spesso durano a lungo.",
+        "en": "Carefully made furniture often lasts a long time."
+      },
+      {
+        "jp": "先生は間違いを丁寧に直してくれました。",
+        "kana": "せんせいはまちがいをていねいになおしてくれました。",
+        "it": "L'insegnante ha corretto attentamente i miei errori.",
+        "en": "My teacher corrected my mistakes carefully."
+      },
+      {
+        "jp": "彼の話し方は丁寧ですが、少し堅く感じます。",
+        "kana": "かれのはなしかたはていねいですが、すこしかたくかんじます。",
+        "it": "Il suo modo di parlare è cortese, ma suona un po' formale.",
+        "en": "He speaks politely, but it feels a little formal."
+      },
+      {
+        "jp": "丁寧で分かりやすい説明をありがとうございました。",
+        "kana": "ていねいでわかりやすいせつめいをありがとうございました。",
+        "it": "Grazie per la spiegazione accurata e facile da capire.",
+        "en": "Thank you for the careful, easy-to-understand explanation."
+      },
+      {
+        "jp": "短い返事でも、丁寧に伝えれば失礼になりません。",
+        "kana": "みじかいへんじでも、ていねいにつたえればしつれいになりません。",
+        "it": "Anche una risposta breve non è scortese se viene espressa con gentilezza.",
+        "en": "Even a short reply isn't rude if you phrase it politely."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "pos": "na",
+    "jp": "自由",
+    "kana": "じゆう",
+    "meaning": {
+      "it": "libero / senza vincoli",
+      "en": "free / unrestricted"
+    },
+    "forms": [
+      {
+        "label": "連体形",
+        "jp": "自由な"
+      },
+      {
+        "label": "副詞形",
+        "jp": "自由に"
+      },
+      {
+        "label": "て形",
+        "jp": "自由で"
+      },
+      {
+        "label": "否定形",
+        "jp": "自由じゃない"
+      },
+      {
+        "label": "過去形",
+        "jp": "自由だった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "自由じゃなかった"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この図書館では、好きな席を自由に選べます。",
+        "kana": "このとしょかんでは、すきなせきをじゆうにえらべます。",
+        "it": "In questa biblioteca puoi scegliere liberamente il posto che preferisci.",
+        "en": "In this library, you can freely choose your preferred seat."
+      },
+      {
+        "jp": "仕事の後は、自由な時間を大切にしています。",
+        "kana": "しごとのあとは、じゆうなじかんをたいせつにしています。",
+        "it": "Dopo il lavoro tengo molto al mio tempo libero.",
+        "en": "I value my free time after work."
+      },
+      {
+        "jp": "質問は自由ですが、相手の話を最後まで聞いてください。",
+        "kana": "しつもんはじゆうですが、あいてのはなしをさいごまできいてください。",
+        "it": "Le domande sono libere, ma ascoltate l'altro fino alla fine.",
+        "en": "You're free to ask questions, but please let the other person finish speaking."
+      },
+      {
+        "jp": "子どもたちは自由に絵を描いていました。",
+        "kana": "こどもたちはじゆうにえをかいていました。",
+        "it": "I bambini disegnavano liberamente.",
+        "en": "The children were drawing freely."
+      },
+      {
+        "jp": "自由に旅行できるようになったら、北海道に行きたいです。",
+        "kana": "じゆうにりょこうできるようになったら、ほっかいどうにいきたいです。",
+        "it": "Quando potrò viaggiare liberamente, vorrei andare in Hokkaido.",
+        "en": "When I can travel freely, I'd like to visit Hokkaido."
+      },
+      {
+        "jp": "意見を自由に言える雰囲気が必要です。",
+        "kana": "いけんをじゆうにいえるふんいきがひつようです。",
+        "it": "Serve un ambiente in cui si possano esprimere liberamente le proprie opinioni.",
+        "en": "We need an atmosphere where people can express their opinions freely."
+      },
+      {
+        "jp": "予定のない日は、何をするか自由に決めています。",
+        "kana": "よていのないひは、なにをするかじゆうにきめています。",
+        "it": "Nei giorni senza programmi decido liberamente cosa fare.",
+        "en": "On days without plans, I decide freely what to do."
+      },
+      {
+        "jp": "便利な生活でも、自由な時間がなければ疲れます。",
+        "kana": "べんりなせいかつでも、じゆうなじかんがなければつかれます。",
+        "it": "Anche una vita comoda può essere stancante senza tempo libero.",
+        "en": "Even a convenient lifestyle is tiring without free time."
+      },
+      {
+        "jp": "昼休みは自由なので、公園で本を読んでもいいです。",
+        "kana": "ひるやすみはじゆうなので、こうえんでほんをよんでもいいです。",
+        "it": "La pausa pranzo è libera, quindi puoi leggere un libro al parco.",
+        "en": "Lunch break is free time, so you can read a book in the park."
+      },
+      {
+        "jp": "自由だからこそ、自分の行動に責任を持ちたいです。",
+        "kana": "じゆうだからこそ、じぶんのこうどうにせきにんをもちたいです。",
+        "it": "Proprio perché sono libero, voglio assumermi la responsabilità delle mie azioni.",
+        "en": "Precisely because I'm free, I want to take responsibility for my actions."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "pos": "i",
+    "jp": "深い",
+    "kana": "ふかい",
+    "meaning": {
+      "it": "profondo",
+      "en": "deep"
+    },
+    "forms": [
+      {
+        "label": "副詞形",
+        "jp": "深く"
+      },
+      {
+        "label": "て形",
+        "jp": "深くて"
+      },
+      {
+        "label": "否定形",
+        "jp": "深くない"
+      },
+      {
+        "label": "過去形",
+        "jp": "深かった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "深くなかった"
+      },
+      {
+        "label": "条件形",
+        "jp": "深ければ"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この湖は見た目よりずっと深いそうです。",
+        "kana": "このみずうみはみためよりずっとふかいそうです。",
+        "it": "Pare che questo lago sia molto più profondo di quanto sembri.",
+        "en": "Apparently this lake is much deeper than it looks."
+      },
+      {
+        "jp": "深い森に入る前に、道を確認しました。",
+        "kana": "ふかいもりにはいるまえに、みちをかくにんしました。",
+        "it": "Prima di entrare nel fitto bosco, ho controllato il percorso.",
+        "en": "Before entering the deep forest, I checked the route."
+      },
+      {
+        "jp": "彼の話を聞いて、問題について深く考えました。",
+        "kana": "かれのはなしをきいて、もんだいについてふかくかんがえました。",
+        "it": "Ascoltando la sua storia, ho riflettuto a fondo sul problema.",
+        "en": "Listening to his story made me think deeply about the issue."
+      },
+      {
+        "jp": "夜が深くなるにつれて、町は静かになりました。",
+        "kana": "よるがふかくなるにつれて、まちはしずかになりました。",
+        "it": "Man mano che si faceva notte fonda, la città diventava silenziosa.",
+        "en": "As the night grew late, the town became quieter."
+      },
+      {
+        "jp": "傷は思ったほど深くなかったので、安心しました。",
+        "kana": "きずはおもったほどふかくなかったので、あんしんしました。",
+        "it": "La ferita non era così profonda come pensavo, e mi sono tranquillizzato.",
+        "en": "The cut wasn't as deep as I thought, which was a relief."
+      },
+      {
+        "jp": "二人には長い間にできた深い信頼があります。",
+        "kana": "ふたりにはながいあいだにできたふかいしんらいがあります。",
+        "it": "Tra loro c'è una profonda fiducia costruita nel tempo.",
+        "en": "They share a deep trust built over many years."
+      },
+      {
+        "jp": "この川は流れが速くて深いので、泳がないでください。",
+        "kana": "このかわはながれがはやくてふかいので、およがないでください。",
+        "it": "Questo fiume ha una corrente forte ed è profondo, quindi non nuotare.",
+        "en": "This river has a strong current and is deep, so don't swim in it."
+      },
+      {
+        "jp": "調べれば調べるほど、歴史の深さに驚きます。",
+        "kana": "しらべればしらべるほど、れきしのふかさにおどろきます。",
+        "it": "Più approfondisco la ricerca, più mi sorprende la complessità della storia.",
+        "en": "The more I research, the more I'm amazed by the depth of history."
+      },
+      {
+        "jp": "深く息を吸ってから、ゆっくり話し始めました。",
+        "kana": "ふかくいきをすってから、ゆっくりはなしはじめました。",
+        "it": "Ho fatto un respiro profondo prima di iniziare a parlare lentamente.",
+        "en": "I took a deep breath before beginning to speak slowly."
+      },
+      {
+        "jp": "昨日の雪は予想より深く、道が見えませんでした。",
+        "kana": "きのうのゆきはよそうよりふかく、みちがみえませんでした。",
+        "it": "La neve di ieri era più alta del previsto e non si vedeva la strada.",
+        "en": "Yesterday's snow was deeper than expected, hiding the road."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "pos": "i",
+    "jp": "細かい",
+    "kana": "こまかい",
+    "meaning": {
+      "it": "minuto / dettagliato",
+      "en": "fine / detailed"
+    },
+    "forms": [
+      {
+        "label": "副詞形",
+        "jp": "細かく"
+      },
+      {
+        "label": "て形",
+        "jp": "細かくて"
+      },
+      {
+        "label": "否定形",
+        "jp": "細かくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "細かかった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "細かくなかった"
+      },
+      {
+        "label": "条件形",
+        "jp": "細かければ"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この地図は細かい道まで載っているので便利です。",
+        "kana": "このちずはこまかいみちまでのっているのでべんりです。",
+        "it": "Questa mappa è utile perché mostra anche le stradine più piccole.",
+        "en": "This map is useful because it shows even the smallest streets."
+      },
+      {
+        "jp": "玉ねぎを細かく切ってから、鍋に入れてください。",
+        "kana": "たまねぎをこまかくきってから、なべにいれてください。",
+        "it": "Taglia finemente la cipolla prima di metterla nella pentola.",
+        "en": "Finely chop the onion before putting it in the pot."
+      },
+      {
+        "jp": "先生の説明は細かくて、初心者には少し難しかったです。",
+        "kana": "せんせいのせつめいはこまかくて、しょしんしゃにはすこしむずかしかったです。",
+        "it": "La spiegazione dell'insegnante era molto dettagliata e un po' difficile per i principianti.",
+        "en": "The teacher's explanation was detailed and a little difficult for beginners."
+      },
+      {
+        "jp": "細かい間違いを直すより、まず内容を確認しましょう。",
+        "kana": "こまかいまちがいをなおすより、まずないようをかくにんしましょう。",
+        "it": "Invece di correggere i piccoli errori, controlliamo prima il contenuto.",
+        "en": "Rather than fixing tiny mistakes, let's check the content first."
+      },
+      {
+        "jp": "文字が細かすぎて、眼鏡なしでは読めません。",
+        "kana": "もじがこまかすぎて、めがねなしではよめません。",
+        "it": "I caratteri sono troppo piccoli per leggerli senza occhiali.",
+        "en": "The print is too fine to read without glasses."
+      },
+      {
+        "jp": "予定を細かく決めすぎると、自由な時間がなくなります。",
+        "kana": "よていをこまかくきめすぎると、じゆうなじかんがなくなります。",
+        "it": "Se pianifichi tutto nei minimi dettagli, non ti resta tempo libero.",
+        "en": "If you plan everything in too much detail, you lose your free time."
+      },
+      {
+        "jp": "この布は模様が細かく、とても丁寧に作られています。",
+        "kana": "このぬのはもようがこまかく、とてもていねいにつくられています。",
+        "it": "Questo tessuto ha un motivo finissimo ed è lavorato con grande cura.",
+        "en": "This fabric has a delicate pattern and is very carefully made."
+      },
+      {
+        "jp": "細かいことを気にしない性格の友達がいます。",
+        "kana": "こまかいことをきにしないせいかくのともだちがいます。",
+        "it": "Ho un amico che non si preoccupa dei piccoli dettagli.",
+        "en": "I have a friend who doesn't worry about minor details."
+      },
+      {
+        "jp": "雨が細かく降っていて、傘が必要か迷いました。",
+        "kana": "あめがこまかくふっていて、かさがひつようかまよいました。",
+        "it": "Pioveva così finemente che non sapevo se servisse l'ombrello.",
+        "en": "The rain was so fine that I wasn't sure whether I needed an umbrella."
+      },
+      {
+        "jp": "前の説明ほど細かくなくても、要点が分かれば十分です。",
+        "kana": "まえのせつめいほどこまかくなくても、ようてんがわかればじゅうぶんです。",
+        "it": "Non serve una spiegazione dettagliata quanto la precedente, purché si capiscano i punti essenziali.",
+        "en": "It doesn't need to be as detailed as the previous explanation if the main points are clear."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "pos": "i",
+    "jp": "優しい",
+    "kana": "やさしい",
+    "meaning": {
+      "it": "gentile / premuroso",
+      "en": "kind / gentle"
+    },
+    "forms": [
+      {
+        "label": "副詞形",
+        "jp": "優しく"
+      },
+      {
+        "label": "て形",
+        "jp": "優しくて"
+      },
+      {
+        "label": "否定形",
+        "jp": "優しくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "優しかった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "優しくなかった"
+      },
+      {
+        "label": "条件形",
+        "jp": "優しければ"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "道に迷ったとき、優しい人が駅まで案内してくれました。",
+        "kana": "みちにまよったとき、やさしいひとがえきまであんないしてくれました。",
+        "it": "Quando mi sono perso, una persona gentile mi ha accompagnato alla stazione.",
+        "en": "When I got lost, a kind person guided me to the station."
+      },
+      {
+        "jp": "忙しい日でも、彼女は誰にでも優しく接します。",
+        "kana": "いそがしいひでも、かのじょはだれにでもやさしくせっします。",
+        "it": "Anche nei giorni impegnativi, lei tratta tutti con gentilezza.",
+        "en": "Even on busy days, she treats everyone kindly."
+      },
+      {
+        "jp": "この先生は優しいですが、宿題には厳しいです。",
+        "kana": "このせんせいはやさしいですが、しゅくだいにはきびしいです。",
+        "it": "Questo insegnante è gentile, ma è severo sui compiti.",
+        "en": "This teacher is kind, but strict about homework."
+      },
+      {
+        "jp": "弟が落ち込んでいたので、優しく声をかけました。",
+        "kana": "おとうとがおちこんでいたので、やさしくこえをかけました。",
+        "it": "Mio fratello minore era giù di morale, così gli ho parlato con dolcezza.",
+        "en": "My younger brother was feeling down, so I spoke to him gently."
+      },
+      {
+        "jp": "優しい言葉だけでは、問題が解決しないこともあります。",
+        "kana": "やさしいことばだけでは、もんだいがかいけつしないこともあります。",
+        "it": "A volte le sole parole gentili non bastano a risolvere un problema.",
+        "en": "Kind words alone don't always solve a problem."
+      },
+      {
+        "jp": "祖母の声は昔から優しくて、聞くと安心します。",
+        "kana": "そぼのこえはむかしからやさしくて、きくとあんしんします。",
+        "it": "La voce di mia nonna è sempre stata dolce, e sentirla mi rassicura.",
+        "en": "My grandmother's voice has always been gentle, and hearing it reassures me."
+      },
+      {
+        "jp": "疲れているときほど、自分にも優しくしたいです。",
+        "kana": "つかれているときほど、じぶんにもやさしくしたいです。",
+        "it": "Proprio quando sono stanco, voglio essere gentile anche con me stesso.",
+        "en": "Especially when I'm tired, I want to be kind to myself too."
+      },
+      {
+        "jp": "見た目は怖そうでしたが、話すととても優しい人でした。",
+        "kana": "みためはこわそうでしたが、はなすととてもやさしいひとでした。",
+        "it": "Sembrava una persona spaventosa, ma parlando era molto gentile.",
+        "en": "They looked intimidating, but turned out to be very kind when we talked."
+      },
+      {
+        "jp": "優しく注意すれば、子どもも理由を理解してくれます。",
+        "kana": "やさしくちゅういすれば、こどももりゆうをりかいしてくれます。",
+        "it": "Se lo richiami con gentilezza, anche un bambino capirà il motivo.",
+        "en": "If you correct them gently, children can understand the reason too."
+      },
+      {
+        "jp": "みんなに優しくしようとして、自分の予定を後回しにしました。",
+        "kana": "みんなにやさしくしようとして、じぶんのよていをあとまわしにしました。",
+        "it": "Nel tentativo di essere gentile con tutti, ho messo da parte i miei impegni.",
+        "en": "Trying to be kind to everyone, I put my own plans aside."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "pos": "i",
+    "jp": "正しい",
+    "kana": "ただしい",
+    "meaning": {
+      "it": "corretto / giusto",
+      "en": "correct / right"
+    },
+    "forms": [
+      {
+        "label": "副詞形",
+        "jp": "正しく"
+      },
+      {
+        "label": "て形",
+        "jp": "正しくて"
+      },
+      {
+        "label": "否定形",
+        "jp": "正しくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "正しかった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "正しくなかった"
+      },
+      {
+        "label": "条件形",
+        "jp": "正しければ"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "辞書で調べて、漢字の正しい読み方を確認しました。",
+        "kana": "じしょでしらべて、かんじのただしいよみかたをかくにんしました。",
+        "it": "Ho controllato sul dizionario la lettura corretta del kanji.",
+        "en": "I checked the correct reading of the kanji in a dictionary."
+      },
+      {
+        "jp": "正しい答えでも、理由を説明できることが大切です。",
+        "kana": "ただしいこたえでも、りゆうをせつめいできることがたいせつです。",
+        "it": "Anche con la risposta giusta, è importante saperne spiegare il motivo.",
+        "en": "Even with the correct answer, it's important to be able to explain why."
+      },
+      {
+        "jp": "機械を正しく使わないと、危険な場合があります。",
+        "kana": "きかいをただしくつかわないと、きけんなばあいがあります。",
+        "it": "Se non usi correttamente il macchinario, in certi casi può essere pericoloso.",
+        "en": "If you don't use the machine correctly, it can be dangerous."
+      },
+      {
+        "jp": "昨日の説明は一部正しくありませんでした。",
+        "kana": "きのうのせつめいはいちぶただしくありませんでした。",
+        "it": "Una parte della spiegazione di ieri non era corretta.",
+        "en": "Part of yesterday's explanation was incorrect."
+      },
+      {
+        "jp": "自分が正しいと思っても、相手の意見を聞きましょう。",
+        "kana": "じぶんがただしいとおもっても、あいてのいけんをききましょう。",
+        "it": "Anche se pensi di avere ragione, ascolta l'opinione dell'altro.",
+        "en": "Even if you think you're right, listen to the other person's opinion."
+      },
+      {
+        "jp": "正しい順番に並べれば、機械は動きます。",
+        "kana": "ただしいじゅんばんにならべれば、きかいはうごきます。",
+        "it": "Se metti i pezzi nell'ordine giusto, la macchina funziona.",
+        "en": "If you arrange the parts in the correct order, the machine works."
+      },
+      {
+        "jp": "その情報が正しいかどうか、別の資料でも確かめました。",
+        "kana": "そのじょうほうがただしいかどうか、べつのしりょうでもたしかめました。",
+        "it": "Ho verificato anche con un'altra fonte se quell'informazione fosse corretta.",
+        "en": "I checked another source to see whether that information was correct."
+      },
+      {
+        "jp": "正しく伝えたつもりでも、誤解されることがあります。",
+        "kana": "ただしくつたえたつもりでも、ごかいされることがあります。",
+        "it": "Anche quando credi di esserti spiegato correttamente, a volte vieni frainteso.",
+        "en": "Even when you think you've explained it correctly, you can be misunderstood."
+      },
+      {
+        "jp": "答えは正しかったのに、計算の途中を間違えました。",
+        "kana": "こたえはただしかったのに、けいさんのとちゅうをまちがえました。",
+        "it": "La risposta era giusta, eppure ho sbagliato un passaggio del calcolo.",
+        "en": "The answer was correct, yet I made a mistake during the calculation."
+      },
+      {
+        "jp": "正しい発音を覚えるために、何度も音声を聞きました。",
+        "kana": "ただしいはつおんをおぼえるために、なんどもおんせいをききました。",
+        "it": "Ho ascoltato molte volte l'audio per imparare la pronuncia corretta.",
+        "en": "I listened to the audio many times to learn the correct pronunciation."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "pos": "i",
+    "jp": "珍しい",
+    "kana": "めずらしい",
+    "meaning": {
+      "it": "raro / insolito",
+      "en": "rare / unusual"
+    },
+    "forms": [
+      {
+        "label": "副詞形",
+        "jp": "珍しく"
+      },
+      {
+        "label": "て形",
+        "jp": "珍しくて"
+      },
+      {
+        "label": "否定形",
+        "jp": "珍しくない"
+      },
+      {
+        "label": "過去形",
+        "jp": "珍しかった"
+      },
+      {
+        "label": "否定過去",
+        "jp": "珍しくなかった"
+      },
+      {
+        "label": "条件形",
+        "jp": "珍しければ"
+      }
+    ],
+    "examples": [
+      {
+        "jp": "この町では、雪が積もるのは珍しいことです。",
+        "kana": "このまちでは、ゆきがつもるのはめずらしいことです。",
+        "it": "In questa città è raro che la neve si accumuli.",
+        "en": "It's unusual for snow to accumulate in this town."
+      },
+      {
+        "jp": "旅行中に珍しい鳥を見つけて、写真を撮りました。",
+        "kana": "りょこうちゅうにめずらしいとりをみつけて、しゃしんをとりました。",
+        "it": "Durante il viaggio ho trovato un uccello raro e l'ho fotografato.",
+        "en": "I spotted a rare bird while traveling and took a photo."
+      },
+      {
+        "jp": "彼が朝早く来るなんて、今日は珍しいですね。",
+        "kana": "かれがあさはやくくるなんて、きょうはめずらしいですね。",
+        "it": "È insolito che lui arrivi così presto la mattina.",
+        "en": "It's unusual for him to arrive so early in the morning."
+      },
+      {
+        "jp": "この料理には、珍しい香辛料が使われています。",
+        "kana": "このりょうりには、めずらしいこうしんりょうがつかわれています。",
+        "it": "In questo piatto si usa una spezia insolita.",
+        "en": "An unusual spice is used in this dish."
+      },
+      {
+        "jp": "珍しく父が夕食を作ってくれたので、驚きました。",
+        "kana": "めずらしくちちがゆうしょくをつくってくれたので、おどろきました。",
+        "it": "Mi ha sorpreso che, insolitamente, mio padre avesse preparato la cena.",
+        "en": "I was surprised because my father cooked dinner for once."
+      },
+      {
+        "jp": "外国では普通でも、日本では珍しい習慣があります。",
+        "kana": "がいこくではふつうでも、にほんではめずらしいしゅうかんがあります。",
+        "it": "Alcune usanze comuni all'estero sono rare in Giappone.",
+        "en": "Some customs common abroad are unusual in Japan."
+      },
+      {
+        "jp": "祖父からもらった珍しい時計を、大切にしています。",
+        "kana": "そふからもらっためずらしいとけいを、たいせつにしています。",
+        "it": "Conservo con cura un raro orologio ricevuto da mio nonno.",
+        "en": "I treasure an unusual watch my grandfather gave me."
+      },
+      {
+        "jp": "最近は珍しくなくなった技術も、昔は夢のようでした。",
+        "kana": "さいきんはめずらしくなくなったぎじゅつも、むかしはゆめのようでした。",
+        "it": "Anche tecnologie ormai comuni sembravano un sogno in passato.",
+        "en": "Even technology that's common now once seemed like a dream."
+      },
+      {
+        "jp": "珍しい形の雲が出ていたので、空を見上げました。",
+        "kana": "めずらしいかたちのくもがでていたので、そらをみあげました。",
+        "it": "Ho alzato gli occhi al cielo perché c'era una nuvola dalla forma insolita.",
+        "en": "I looked up because there was an unusually shaped cloud."
+      },
+      {
+        "jp": "そんな経験は珍しくないと聞いて、少し安心しました。",
+        "kana": "そんなけいけんはめずらしくないときいて、すこしあんしんしました。",
+        "it": "Sapere che un'esperienza del genere non è rara mi ha rassicurato un po'.",
+        "en": "I felt a little reassured to hear that such experiences aren't rare."
+      }
+    ]
+  }
+]

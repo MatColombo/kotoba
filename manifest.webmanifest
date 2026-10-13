@@ -1,0 +1,15 @@
+{
+  "name": "Kotoba Drive — Giapponese N4",
+  "short_name": "Kotoba Drive",
+  "description": "Ripasso audio di vocaboli giapponesi N4 con esempi e comandi multimediali sperimentali",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d1320",
+  "theme_color": "#111827",
+  "icons": [
+    {"src": "./icon-192.png", "sizes":"192x192", "type":"image/png", "purpose":"any maskable"},
+    {"src": "./icon-512.png", "sizes":"512x512", "type":"image/png", "purpose":"any maskable"}
+  ]
+}

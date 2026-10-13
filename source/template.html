@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#111827" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Kotoba Drive" />
+  <meta name="description" content="Ripasso audio giapponese N4: 25 parole, 250 esempi e test dei comandi multimediali, in italiano e inglese." />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <title>Kotoba Drive — Japanese N4</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0d1320;--panel:#182234;--panel2:#1d2a3e;--panel3:#142032;--edge:#2b3b51;--text:#f0f4f8;--muted:#a9bbcc;--faint:#71849a;--mint:#9bf0d5;--coral:#ffae8c;--blue:#9cbcf5;--danger:#f3aa9e;--shadow:0 14px 44px rgba(0,0,0,.16)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 10% 0%,#1b2940 0%,transparent 38%),var(--bg);color:var(--text);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--mint);outline-offset:3px}a{color:var(--mint)}.shell{max-width:1190px;margin:0 auto;padding:0 24px 72px} .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:94px} .brand{display:flex;align-items:center;gap:12px} .brandmark{display:grid;place-items:center;background:var(--mint);width:44px;height:44px;border-radius:14px;font-size:27px;font-weight:800;color:#092821;line-height:1} .brandname{font-size:19px;letter-spacing:-.8px;font-weight:800}.brandname em{font-style:normal;color:var(--mint)}.brandline{font-size:11px;text-transform:uppercase;letter-spacing:1.3px;color:var(--muted);font-weight:700}.lang-switch{display:flex;align-items:center;gap:4px;background:#152136;border:1px solid var(--edge);border-radius:13px;padding:4px} .lang-switch button{border:0;background:transparent;color:var(--muted);padding:9px 14px;border-radius:9px;font-weight:750;font-size:12px} .lang-switch button.active{background:#344962;color:#fff;box-shadow:0 2px 8px #0003}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--mint);font-size:11px;font-weight:800}.hero{padding:16px 0 24px;display:flex;gap:20px;align-items:flex-end;justify-content:space-between}.hero h1{font-size:clamp(28px,4.3vw,43px);line-height:1.13;margin:10px 0 12px;letter-spacing:-1.7px;font-weight:820}.hero p{color:var(--muted);margin:0;max-width:670px}.statline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.mini-stat{border:1px solid var(--edge);padding:7px 10px;border-radius:999px;color:var(--muted);font-size:12px;white-space:nowrap}.mini-stat b{color:var(--text)}.nav{display:flex;gap:6px;overflow:auto;padding:5px;margin:8px 0 23px;border:1px solid var(--edge);border-radius:15px;background:#121d2e;max-width:max-content}.nav button{border:0;padding:10px 17px;border-radius:11px;background:none;color:var(--muted);font-weight:700;white-space:nowrap}.nav button.active{background:var(--mint);color:#103229}.panel{border:1px solid var(--edge);background:linear-gradient(150deg,var(--panel),#151e2d);border-radius:20px;box-shadow:var(--shadow)}.study-grid{display:grid;grid-template-columns:minmax(0,1.32fr) minmax(312px,.78fr);gap:18px}.flashcard{padding:24px 26px 20px;min-height:578px;display:flex;flex-direction:column}.card-kicker{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:12px;font-weight:650}.pill{border:1px solid #3b5a64;border-radius:999px;color:var(--mint);padding:5px 10px;font-size:11px;letter-spacing:.25px}.progress-track{height:5px;background:#2c3b4a;border-radius:999px;overflow:hidden;margin:16px 0 26px}.progress-track b{display:block;background:var(--mint);height:100%;width:5%;border-radius:999px;transition:width .35s}.jp-word{font-size:clamp(66px,8vw,92px);font-weight:730;line-height:1.12;letter-spacing:1px;margin:8px 0 0;overflow-wrap:anywhere}.reading{color:var(--mint);font-size:19px;letter-spacing:1.4px;margin:5px 0 14px}.meaning{font-size:clamp(23px,3.5vw,30px);font-weight:700;min-height:50px;line-height:1.24}.meaning.hidden-answer{color:#64758c;letter-spacing:2px}.fine-label{text-transform:uppercase;letter-spacing:1.3px;color:var(--muted);font-size:10px;font-weight:800}.forms{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0 18px}.form-chip{border:1px solid #365067;border-radius:8px;padding:6px 9px;background:#1e3041;font-size:12px;color:#d5e5f3}.form-chip small{display:block;color:var(--muted);font-size:10px}.example-preview{border-top:1px solid var(--edge);padding-top:16px;margin-top:auto;display:grid;gap:4px}.example-preview .jp-example{font-size:16px;line-height:1.65}.example-preview .kana{font-size:12px;color:var(--muted);line-height:1.6}.example-preview .example-native{font-size:13px;color:#d5dfea;line-height:1.5}.example-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.example-inline-actions{display:flex;gap:5px}.tiny-btn{border:1px solid var(--edge);color:var(--muted);background:transparent;padding:5px 9px;border-radius:9px;font-size:12px}.controls{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:9px;margin-top:20px}.control{border:1px solid #405469;border-radius:13px;background:#263447;color:#eaf3f6;min-height:65px;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:760}.control.primary{background:var(--mint);border-color:var(--mint);color:#0e322b}.control.hard{color:var(--coral)}.control strong{font-size:19px}.secondary-actions{display:flex;justify-content:space-between;gap:10px;margin-top:12px;align-items:center}.link-btn{border:0;background:transparent;color:var(--mint);padding:5px 0;font-size:12px;font-weight:750}.statusline{font-size:12px;color:var(--muted);margin-top:10px;min-height:20px}.settings{padding:24px;display:flex;flex-direction:column;gap:18px}.panel-title{margin:0;font-size:19px;letter-spacing:-.35px}.muted{color:var(--muted)}.group{display:grid;gap:8px}.group label{display:block;font-size:12px;font-weight:760;color:#d6e3ee}.field{background:#111c2b;color:var(--text);border:1px solid #35485d;border-radius:10px;width:100%;padding:12px 13px;min-height:44px}.field option{background:#152236}.checkrow{display:flex;justify-content:space-between;align-items:center;gap:12px}.switch{display:inline-flex;align-items:center;position:relative;min-width:44px;height:25px}.switch input{position:absolute;opacity:0}.switch span{display:block;width:44px;height:25px;background:#45546b;border-radius:99px;transition:background .2s}.switch span:after{content:"";position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:99px;background:#fff;transition:transform .2s}.switch input:checked+span{background:#6ad1b4}.switch input:checked+span:after{transform:translateX(19px)}.small-note{font-size:12px;color:var(--muted);line-height:1.55}.range-line{display:flex;align-items:center;gap:16px}.range-line input{flex:1;accent-color:var(--mint)}.range-value{min-width:50px;text-align:right;color:var(--mint);font-weight:800;font-variant-numeric:tabular-nums}.aside-divider{border:0;border-top:1px solid var(--edge);margin:0}.helpbox{border:1px solid #39525d;background:#1c3040;border-radius:13px;padding:14px;color:#c8dae5;font-size:12px;line-height:1.6}.helpbox b{color:var(--mint)}.library-layout{display:grid;grid-template-columns:370px minmax(0,1fr);gap:18px;align-items:start}.lib-left,.detail{padding:19px}.searchbar{width:100%;display:block;min-height:45px;border-radius:12px;background:#101a29;border:1px solid var(--edge);padding:10px 14px;color:var(--text);margin-top:14px}.filter-row{display:flex;gap:5px;flex-wrap:wrap;margin:13px 0}.filter-btn{background:#213044;color:var(--muted);border:1px solid var(--edge);padding:6px 11px;border-radius:9px;font-size:11px;font-weight:750}.filter-btn.active{background:#33564e;color:#adffe1;border-color:#477c6f}.word-list{display:grid;gap:5px;max-height:710px;overflow:auto;padding-right:3px}.word-row{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:transparent;color:var(--text);border:1px solid transparent;border-radius:12px;padding:11px 12px}.word-row.active{background:#25423e;border-color:#426c62}.word-row:hover{background:#25344a}.word-name{font-size:17px;font-weight:800;min-width:90px}.word-reading{font-size:11px;color:var(--muted);display:block}.word-meaning{color:var(--muted);font-size:11px;margin-left:auto;max-width:125px;text-align:right}.word-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}.detail-word{font-size:49px;margin:8px 0 0;line-height:1.2}.detail-read{font-size:17px;color:var(--mint);margin:0 0 7px}.detail-meaning{font-size:18px;font-weight:750;margin-bottom:15px}.round-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#284b48;color:var(--mint);border:1px solid #4d8575;font-size:19px}.detail-form-title{margin-top:16px}.ex-section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:20px 0 10px}.ex-list{display:grid;gap:10px}.ex-row{border:1px solid var(--edge);background:#172538;border-radius:12px;padding:14px}.ex-head{display:flex;align-items:flex-start;gap:10px}.ex-no{font-size:11px;color:var(--mint);font-weight:850;min-width:19px;padding-top:3px}.ex-content{flex:1;min-width:0}.ex-jp{font-size:15px;line-height:1.6}.ex-kana{font-size:12px;color:#a8c0d2;line-height:1.6;margin-top:3px}.ex-native{font-size:13px;color:#d5e0ed;margin-top:6px}.ex-actions{display:flex;gap:5px}.ex-actions button{background:#273a4b;border:1px solid #3b5367;color:var(--mint);border-radius:9px;min-height:34px;min-width:34px;font-size:13px}.diagnostics{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}.diag-card{padding:23px}.diag-stat{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--edge);padding:11px 0;color:var(--muted)}.diag-stat strong{color:var(--text);font-size:12px;text-align:right}.good{color:var(--mint)!important}.warning{color:var(--coral)!important}.buttonrow{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.action-btn{border:1px solid #496478;border-radius:11px;background:#263b50;color:var(--text);padding:10px 13px;font-weight:700;font-size:12px;min-height:43px}.action-btn.strong{background:var(--mint);border-color:var(--mint);color:#10382f}.event-log{background:#0d1726;border:1px solid #334258;border-radius:12px;padding:12px;min-height:215px;max-height:345px;overflow:auto;font:12px/1.85 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d5e6e8;white-space:pre-wrap;overflow-wrap:anywhere}.diag-note{color:var(--muted);font-size:13px;line-height:1.6}.footer{margin-top:28px;color:#8498ab;font-size:12px;border-top:1px solid var(--edge);padding-top:17px;display:flex;align-items:center;justify-content:space-between;gap:12px}.footer span{max-width:750px}.invisible{display:none!important} .toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));left:50%;transform:translate(-50%,25px);padding:10px 16px;background:#b5f9e2;color:#173c32;box-shadow:0 10px 50px #0007;border-radius:12px;opacity:0;pointer-events:none;transition:all .25s;max-width:calc(100vw - 32px);font-size:13px;font-weight:700;z-index:99}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:920px){.study-grid,.diagnostics{grid-template-columns:1fr}.library-layout{grid-template-columns:285px minmax(0,1fr)}.hero{align-items:flex-start;flex-direction:column}.hero h1{margin-bottom:7px}.settings{display:grid;grid-template-columns:1fr 1fr;gap:16px}.settings .panel-title,.settings .helpbox,.settings .aside-divider{grid-column:1/-1}.settings .checkrow{align-self:center}}
+    @media(max-width:680px){.shell{padding:0 14px 74px}.topbar{min-height:75px}.brandmark{width:40px;height:40px}.brandname{font-size:17px}.brandline{font-size:9px}.hero{padding:10px 0 18px}.hero h1{font-size:30px}.hero p{font-size:13px}.nav{margin:8px 0 15px}.nav button{padding:10px 12px;font-size:13px}.flashcard{padding:19px 18px 18px;min-height:0}.progress-track{margin-bottom:19px}.jp-word{font-size:65px;margin:8px 0 0}.reading{font-size:17px}.meaning{font-size:24px;min-height:39px}.controls{gap:7px}.control{min-height:62px;font-size:12px}.control strong{font-size:17px}.settings{display:flex;padding:18px;gap:15px}.library-layout{display:flex;flex-direction:column}.lib-left,.detail{width:100%}.word-list{max-height:310px}.detail-word{font-size:43px}.ex-row{padding:12px 10px}.ex-kana,.ex-native{font-size:12px}.footer{align-items:start;flex-direction:column}.mini-stat{font-size:11px}.word-meaning{max-width:190px}.diag-card{padding:17px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+ <div class="shell">
+  <header class="topbar">
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<em>drive</em></div><div class="brandline">Japanese audio learning</div></div></div>
+   <div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div>
+  </header>
+  <section class="hero">
+   <div><div class="eyebrow">JLPT N4 · Audio-first</div><h1>Impara giapponese<br />senza guardare lo schermo.</h1><p>Ripasso vocale, forme grammaticali e frasi contestualizzate. Pensato per una sessione avviata prima di mettersi alla guida.</p></div>
+   <div class="statline"><span class="mini-stat"><b>25</b> termini</span><span class="mini-stat"><b>250</b> esempi</span><span class="mini-stat"><b>2</b> lingue</span><span class="mini-stat"><b>0 €</b></span></div>
+  </section>
+  <nav class="nav" aria-label="Sezioni app"><button data-tab="study" class="active" type="button">◉ Studio audio</button><button data-tab="library" type="button">▤ Vocabolario</button><button data-tab="diagnostics" type="button">⌁ Test volante</button></nav>
+
+  <main>
+   <section id="view-study">
+    <div class="study-grid">
+     <article class="panel flashcard">
+      <div class="card-kicker"><span id="study-counter">PAROLA 1 / 20</span><span class="pill" id="pos-pill">VERBO · 動詞</span></div>
+      <div class="progress-track" aria-hidden="true"><b id="progress-bar"></b></div>
+      <div id="study-jp" class="jp-word" lang="ja">集める</div>
+      <div id="study-kana" class="reading" lang="ja">あつめる</div>
+      <div id="study-meaning" class="meaning hidden-answer">···</div>
+      <div class="fine-label">FORME GRAMMATICALI</div>
+      <div id="study-forms" class="forms"></div>
+      <div class="example-preview">
+       <div class="example-head"><span class="fine-label" id="example-heading">ESEMPIO 1 DI 10</span><div class="example-inline-actions"><button class="tiny-btn" id="example-prev" type="button" aria-label="Esempio precedente">←</button><button class="tiny-btn" id="example-next" type="button" aria-label="Esempio successivo">→</button></div></div>
+       <div class="jp-example" id="study-example-jp" lang="ja"></div>
+       <div class="kana" id="study-example-kana" lang="ja"></div>
+       <div class="example-native" id="study-example-native"></div>
+      </div>
+      <div class="controls">
+       <button class="control hard" id="btn-repeat" type="button" title="Ripeti la parola e segnala difficoltà"><strong>↶</strong><span>Ripeti</span></button>
+       <button class="control primary" id="btn-play" type="button"><strong id="play-icon">▶</strong><span id="play-label">Avvia audio</span></button>
+       <button class="control" id="btn-next" type="button" title="Passa alla parola successiva"><span>Lo so</span><strong>→</strong></button>
+      </div>
+      <div class="secondary-actions"><button id="btn-reveal" class="link-btn" type="button">Mostra soluzione</button><button id="btn-show-detail" class="link-btn" type="button">Vedi i 10 esempi ↗</button></div>
+      <div class="statusline" id="playback-status" aria-live="polite">Premi «Avvia audio» per iniziare.</div>
+     </article>
+     <aside class="panel settings">
+      <h2 class="panel-title">La tua sessione</h2>
+      <div class="group"><label for="study-category">Categoria</label><select id="study-category" class="field"><option value="all">Tutte le categorie</option><option value="verb">10 verbi</option><option value="noun">5 sostantivi</option><option value="na">5 aggettivi な</option><option value="i">5 aggettivi い</option></select></div>
+      <div class="group"><label for="session-size">Termini per sessione</label><select id="session-size" class="field"><option value="10">10 parole</option><option value="20" selected>20 parole (predefinito)</option><option value="25">Tutte le 25 parole</option></select></div>
+      <div class="group"><label for="study-direction">Direzione delle domande</label><select id="study-direction" class="field"><option value="jp-native">日本語 → Lingua madre</option><option value="native-jp">Lingua madre → 日本語</option></select></div>
+      <div class="group"><label for="wait-range">Pausa per ricordare</label><div class="range-line"><input type="range" id="wait-range" min="2" max="9" step="1" value="4"><span class="range-value" id="wait-value">4 sec</span></div></div>
+      <hr class="aside-divider" />
+      <div class="checkrow"><label for="with-forms">Pronuncia anche 2 forme</label><label class="switch"><input type="checkbox" id="with-forms" /><span></span></label></div>
+      <div class="checkrow"><label for="with-examples">Leggi un esempio per parola</label><label class="switch"><input type="checkbox" id="with-examples" checked /><span></span></label></div>
+      <div class="checkrow"><label for="with-translation">Leggi anche la traduzione</label><label class="switch"><input type="checkbox" id="with-translation" checked /><span></span></label></div>
+      <div class="checkrow"><label for="wheel-enabled">Bridge comandi volante <span style="color:var(--coral)">(test)</span></label><label class="switch"><input type="checkbox" id="wheel-enabled" checked /><span></span></label></div>
+      <hr class="aside-divider" />
+      <div class="helpbox"><b>Comandi proposti</b><div>▶ Pausa / riprendi · → Parola nota / avanti · ← Ripeti e segna difficile.</div><div style="margin-top:7px">Su iPhone la ricezione dei pulsanti fisici non è garantita: verifica nella scheda «Test volante», a veicolo fermo.</div></div>
+      <div class="small-note" id="study-stats">Ripassi effettuati: 0 · Parole difficili: 0</div>
+     </aside>
+    </div>
+   </section>
+
+   <section id="view-library" class="invisible">
+    <div class="library-layout">
+     <aside class="panel lib-left"><h2 class="panel-title">Catalogo N4 <span style="color:var(--faint);font-size:13px;font-weight:500">(indicativo)</span></h2><input id="word-search" class="searchbar" type="search" placeholder="Cerca 日本語, italiano, english..." autocomplete="off" aria-label="Cerca vocaboli" />
+      <div class="filter-row"><button class="filter-btn active" data-filter="all" type="button">Tutti 25</button><button class="filter-btn" data-filter="verb" type="button">Verbi 10</button><button class="filter-btn" data-filter="noun" type="button">Nomi 5</button><button class="filter-btn" data-filter="na" type="button">な 5</button><button class="filter-btn" data-filter="i" type="button">い 5</button></div>
+      <div id="word-list" class="word-list"></div>
+     </aside>
+     <article class="panel detail" id="detail-panel">
+      <div class="word-head"><div><span id="detail-pos" class="pill">Verbo</span><h2 id="detail-word" class="detail-word" lang="ja">集める</h2><p id="detail-reading" class="detail-read" lang="ja">あつめる</p><div id="detail-meaning" class="detail-meaning"></div></div><button class="round-icon" id="btn-word-voice" type="button" title="Pronuncia giapponese" aria-label="Pronuncia la parola">▶</button></div>
+      <div class="fine-label detail-form-title">FORME GRAMMATICALI</div><div id="detail-forms" class="forms"></div>
+      <div class="ex-section-title"><h3 style="margin:0;font-size:17px">10 frasi d'esempio</h3><button id="btn-play-10" class="action-btn" type="button">▶ Ascolta tutte</button></div>
+      <div class="small-note" style="margin-bottom:12px">Per ogni frase: testo giapponese, lettura completa in kana e traduzione nella lingua selezionata. I due tasti audio pronunciano rispettivamente il giapponese e la traduzione.</div>
+      <div id="ex-list" class="ex-list"></div>
+     </article>
+    </div>
+   </section>
+
+   <section id="view-diagnostics" class="invisible">
+    <div class="diagnostics">
+     <div class="panel diag-card">
+      <div class="eyebrow">iPhone + Bluetooth</div><h2 class="panel-title" style="margin:8px 0 13px">Diagnostica audio</h2>
+      <p class="diag-note">Esegui il test <strong style="color:var(--text)">da fermo</strong>. Collegati all'autoradio, avvia la traccia multimediale, poi premi i pulsanti del volante e controlla se nel registro compaiono eventi reali.</p>
+      <div class="diag-stat"><span>Web Speech API</span><strong id="cap-tts">—</strong></div>
+      <div class="diag-stat"><span>Media Session API</span><strong id="cap-media">—</strong></div>
+      <div class="diag-stat"><span>Voce giapponese</span><strong id="cap-ja">—</strong></div>
+      <div class="diag-stat"><span>Voce italiana</span><strong id="cap-it">—</strong></div>
+      <div class="diag-stat"><span>Voce inglese</span><strong id="cap-en">—</strong></div>
+      <div class="diag-stat"><span>Eventi hardware rilevati</span><strong id="hardware-count">0</strong></div>
+      <div class="buttonrow"><button id="btn-media" class="action-btn strong" type="button">▶ Avvia traccia di test</button><button id="btn-ja" class="action-btn" type="button">Ascolta 日本語</button><button id="btn-it" class="action-btn" type="button">Ascolta IT</button><button id="btn-en" class="action-btn" type="button">Ascolta EN</button></div>
+      <div class="small-note" id="media-bed-note">La traccia è quasi silenziosa; serve a far riconoscere la pagina come lettore multimediale. La sua riproduzione non dimostra ancora che il volante sia compatibile.</div>
+     </div>
+     <div class="panel diag-card">
+      <div class="eyebrow">Event monitor</div><h2 class="panel-title" style="margin:8px 0 13px">Registro dei comandi</h2>
+      <div id="event-log" class="event-log" role="log" aria-live="polite">In attesa di eventi…</div>
+      <div class="buttonrow"><button id="sim-prev" class="action-btn" type="button">← Simula precedente</button><button id="sim-play" class="action-btn" type="button">⏯ Simula play</button><button id="sim-next" class="action-btn" type="button">→ Simula prossimo</button><button id="clear-log" class="action-btn" type="button">Svuota registro</button></div>
+      <p class="diag-note">Le simulazioni sono etichettate come <strong>SIMULATO</strong> e verificano solo il codice della pagina. I comandi fisici, quando arrivano, sono etichettati <strong>MEDIA</strong>. Su alcune auto i pulsanti inviano salti temporali invece di «traccia successiva».</p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer"><span>Demo personale, senza login né API a pagamento. Livello N4 indicativo: il JLPT non pubblica una lista ufficiale contemporanea di vocaboli per livello. Le voci TTS e i comandi Bluetooth dipendono da iOS/Safari.</span><span>kotobadrive · v0.1</span></footer>
+ </div>
+ <div class="toast" id="toast" role="status"></div>
+ <audio id="media-bed" loop playsinline preload="auto" src="data:audio/mpeg;base64,__AUDIO_BASE64__"></audio>
+ <script>
+ const BANK=__VOCAB_DATA__;
+ </script>
+ <script>
+ (()=>{'use strict';
+ const $=id=>document.getElementById(id);
+ const POS={verb:{it:'VERBO · 動詞',en:'VERB · 動詞'},noun:{it:'SOSTANTIVO · 名詞',en:'NOUN · 名詞'},na:{it:'AGGETTIVO な',en:'な ADJECTIVE'},i:{it:'AGGETTIVO い',en:'い ADJECTIVE'}};
+ const STORAGE='kotoba-drive-demo-v1';
+ const defaults={lang:'it',direction:'jp-native',category:'all',size:20,delay:4,withForms:false,withExamples:true,withTranslation:true,wheel:true,progress:{},exampleCycle:{}};
+ let stored={};try{stored=JSON.parse(localStorage.getItem(STORAGE)||'{}')||{}}catch(e){}
+ const state={...defaults,...stored,playing:false,paused:false,view:'study',libraryFilter:'all',search:'',chosenWordId:1,deck:[],index:0,answerShown:false,phase:'Pronto',runId:0,previewId:0,hardwareCount:0,events:[],voices:[],sessionViewed:0,completed:false};
+ if(state.lang!=='en')state.lang='it';
+ let toastTimer;
+ const t=(it,en)=>state.lang==='it'?it:en;
+ const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const itemById=id=>BANK.find(w=>w.id===id);
+ const current=()=>state.deck[Math.min(state.index,state.deck.length-1)]||BANK[0];
+ const activeExample=item=>{const x=state.exampleCycle[item.id]||0;return item.examples[((x%10)+10)%10]};
+ const save=()=>{try{const pick={lang:state.lang,direction:state.direction,category:state.category,size:state.size,delay:state.delay,withForms:state.withForms,withExamples:state.withExamples,withTranslation:state.withTranslation,wheel:state.wheel,progress:state.progress,exampleCycle:state.exampleCycle};localStorage.setItem(STORAGE,JSON.stringify(pick))}catch(e){}};
+ const toast=message=>{const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2900)};
+ const shuffle=arr=>{for(let i=arr.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr};
+ function newDeck(){
+   let available=BANK.filter(w=>state.category==='all'||w.pos===state.category),size=Math.min(available.length,state.size);
+   if(state.category==='all'&&size===20){const caps={verb:8,noun:4,na:4,i:4};available=Object.entries(caps).flatMap(([pos,n])=>shuffle(BANK.filter(w=>w.pos===pos).slice()).slice(0,n));}
+   else available=shuffle(available.slice()).slice(0,size);
+   state.deck=shuffle(available);state.index=0;state.answerShown=false;state.paused=false;state.completed=false;state.sessionViewed=0;state.phase=t('Pronto per iniziare','Ready to begin');renderStudy();
+ }
+ function cancelVoice(){if('speechSynthesis'in window){try{speechSynthesis.cancel()}catch(e){}}}
+ function interruptPreview(){state.previewId++;cancelVoice()}
+ function cancelLesson(){state.runId++;cancelVoice()}
+ function setPlaybackState(){if('mediaSession'in navigator){try{navigator.mediaSession.playbackState=state.playing?'playing':'paused'}catch(e){}}}
+ function updateMediaMetadata(){if(!('mediaSession'in navigator)||!('MediaMetadata'in window))return;const item=current();try{navigator.mediaSession.metadata=new MediaMetadata({title:item.jp+' · '+item.kana,artist:item.meaning[state.lang],album:'Kotoba Drive · JLPT N4'})}catch(e){}}
+ function makeLog(source,message){const time=new Date().toLocaleTimeString('it-IT',{hour12:false});state.events.unshift(`${time}  [${source}] ${message}`);if(state.events.length>45)state.events.pop();$('event-log').textContent=state.events.join('\n');}
+ async function bridgeOn(){if(!state.wheel)return;const player=$('media-bed');try{if(player.paused){await player.play();makeLog('AUDIO','traccia multimediale attiva')}updateMediaMetadata()}catch(e){makeLog('ERRORE',`traccia audio non avviata: ${e.name||e.message}`)}}
+ function bridgeOff(){const player=$('media-bed');if(!player.paused)player.pause()}
+ function stopLesson(msg){state.playing=false;state.paused=true;cancelLesson();bridgeOff();setPlaybackState();state.phase=msg||t('In pausa','Paused');renderStudy()}
+ function resetSession(){stopLesson();newDeck();toast(t('Sessione aggiornata','Session updated'))}
+ function progressFor(item){if(!state.progress[item.id])state.progress[item.id]={seen:0,known:0,hard:0};return state.progress[item.id]}
+ function countProgress(){let seen=0,hard=0;Object.values(state.progress).forEach(p=>{seen+=p.seen||0;hard+=p.hard||0});$('study-stats').textContent=t(`Ripassi effettuati: ${seen} · Parole difficili: ${hard}`,`Reviews completed: ${seen} · Difficult marks: ${hard}`)}
+ function renderStudy(){
+   const item=current(),ex=activeExample(item),total=state.deck.length;
+   $('study-counter').textContent=t(`PAROLA ${Math.min(state.index+1,total)} / ${total}`,`WORD ${Math.min(state.index+1,total)} / ${total}`);
+   $('progress-bar').style.width=(total?Math.min(100,((state.index+1)/total)*100):0)+'%';
+   $('pos-pill').textContent=POS[item.pos][state.lang];
+   $('study-jp').textContent=item.jp;$('study-kana').textContent=item.kana;
+   $('study-meaning').textContent=state.answerShown?item.meaning[state.lang]:'···';$('study-meaning').classList.toggle('hidden-answer',!state.answerShown);
+   $('study-forms').innerHTML=item.forms.map(f=>`<span class="form-chip"><small>${escapeHTML(f.label)}</small><span lang="ja">${escapeHTML(f.jp)}</span></span>`).join('');
+   $('example-heading').textContent=t(`ESEMPIO ${(state.exampleCycle[item.id]||0)%10+1} DI 10`,`EXAMPLE ${(state.exampleCycle[item.id]||0)%10+1} OF 10`);
+   $('study-example-jp').textContent=ex.jp;$('study-example-kana').textContent=ex.kana;$('study-example-native').textContent=ex[state.lang];
+   $('btn-play').innerHTML=state.playing?'<strong>Ⅱ</strong><span>'+t('Pausa','Pause')+'</span>':'<strong>▶</strong><span>'+t(state.completed?'Nuova sessione':(state.paused?'Riprendi':'Avvia audio'),state.completed?'New session':(state.paused?'Resume':'Start audio'))+'</span>';
+   $('btn-reveal').textContent=state.answerShown?t('Nascondi soluzione','Hide meaning'):t('Mostra soluzione','Reveal meaning');
+   $('playback-status').textContent=state.phase;countProgress();updateMediaMetadata();
+ }
+ function renderLanguage(){
+   $('language-it').classList.toggle('active',state.lang==='it');$('language-en').classList.toggle('active',state.lang==='en');
+   $('language-it').setAttribute('aria-pressed',String(state.lang==='it'));$('language-en').setAttribute('aria-pressed',String(state.lang==='en'));
+   document.documentElement.lang=state.lang;
+   renderStudy();renderLibrary();renderDetail();
+ }
+ function showView(tab){if(state.view==='library'&&tab!=='library')interruptPreview();state.view=tab;for(const x of ['study','library','diagnostics']){$('view-'+x).classList.toggle('invisible',x!==tab);document.querySelector(`[data-tab="${x}"]`).classList.toggle('active',x===tab)}if(tab==='diagnostics')renderCapabilities();if(tab==='library')renderLibrary();window.scrollTo({top:0,behavior:'smooth'})}
+ function renderLibrary(){const filtered=BANK.filter(w=>(state.libraryFilter==='all'||w.pos===state.libraryFilter)&&[w.jp,w.kana,w.meaning.it,w.meaning.en].join(' ').toLowerCase().includes(state.search.toLowerCase().trim()));
+   $('word-list').innerHTML=filtered.map(w=>`<button type="button" class="word-row ${w.id===state.chosenWordId?'active':''}" data-id="${w.id}"><span class="word-name"><span lang="ja">${escapeHTML(w.jp)}</span><span class="word-reading" lang="ja">${escapeHTML(w.kana)}</span></span><span class="word-meaning">${escapeHTML(w.meaning[state.lang])}</span></button>`).join('')||`<p class="small-note">${t('Nessun termine trovato.','No matching words.')}</p>`;
+   document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter===state.libraryFilter));
+ }
+ function renderDetail(){const w=itemById(state.chosenWordId)||BANK[0];$('detail-pos').textContent=POS[w.pos][state.lang];$('detail-word').textContent=w.jp;$('detail-reading').textContent=w.kana;$('detail-meaning').textContent=w.meaning[state.lang];$('detail-forms').innerHTML=w.forms.map(f=>`<button class="form-chip" data-form-jp="${escapeHTML(f.jp)}" type="button" title="Pronuncia la forma"><small>${escapeHTML(f.label)}</small><span lang="ja">${escapeHTML(f.jp)}</span> ♪</button>`).join('');
+   $('ex-list').innerHTML=w.examples.map((e,i)=>`<div class="ex-row"><div class="ex-head"><span class="ex-no">${String(i+1).padStart(2,'0')}</span><div class="ex-content"><div class="ex-jp" lang="ja">${escapeHTML(e.jp)}</div><div class="ex-kana" lang="ja">${escapeHTML(e.kana)}</div><div class="ex-native">${escapeHTML(e[state.lang])}</div></div><div class="ex-actions"><button type="button" data-ex-jp="${i}" title="Ascolta giapponese" aria-label="Ascolta esempio giapponese">日</button><button type="button" data-ex-native="${i}" title="Ascolta traduzione" aria-label="Ascolta traduzione">${state.lang.toUpperCase()}</button></div></div></div>`).join('');
+ }
+ function loadVoices(){if(!('speechSynthesis'in window))return;state.voices=speechSynthesis.getVoices()||[];renderCapabilities()}
+ function selectVoice(lang){const prefix=lang.split('-')[0].toLowerCase();const candidates=state.voices.filter(v=>v.lang.toLowerCase().startsWith(prefix));return candidates.find(v=>v.localService)||candidates[0]||null}
+ function renderCapabilities(){const tts='speechSynthesis'in window;const ms='mediaSession'in navigator;$('cap-tts').textContent=tts?'DISPONIBILE':'NON DISPONIBILE';$('cap-tts').className=tts?'good':'warning';$('cap-media').textContent=ms?'API PRESENTE':'NON DISPONIBILE';$('cap-media').className=ms?'good':'warning';for(const [id,lang] of [['ja','ja-JP'],['it','it-IT'],['en','en-US']]){let voice=selectVoice(lang);$("cap-"+id).textContent=voice?`${voice.name} (${voice.lang})`:tts?'Voce non elencata':'Non disponibile';$("cap-"+id).className=voice?'good':'warning'}$('hardware-count').textContent=String(state.hardwareCount)}
+ const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+ function speak(text,lang){return new Promise(resolve=>{
+   if(!('speechSynthesis'in window)){makeLog('TTS','API non disponibile');resolve();return}
+   let finished=false;const maxWait=Math.min(27000,Math.max(5500,3500+text.length*245));const utter=new SpeechSynthesisUtterance(text);utter.lang=lang;utter.rate=lang==='ja-JP'?.82:.94;utter.pitch=1;utter.volume=1;const voice=selectVoice(lang);if(voice)utter.voice=voice;
+   let timer;function finish(){if(finished)return;finished=true;clearTimeout(timer);resolve()}
+   utter.onend=finish;utter.onerror=e=>{if(e.error&&e.error!=='interrupted'&&e.error!=='canceled')makeLog('TTS',`errore ${lang}: ${e.error}`);finish()};
+   timer=setTimeout(()=>{makeLog('TTS',`timeout ${lang} — controllo voce iOS`);finish()},maxWait);
+   try{speechSynthesis.resume();speechSynthesis.speak(utter)}catch(e){makeLog('TTS',`errore ${e.message}`);finish()}
+ })}
+ const langNative=()=>state.lang==='it'?'it-IT':'en-US';
+ function setPhase(msg){state.phase=msg;$('playback-status').textContent=msg}
+ async function pump(){
+   const token=++state.runId;const valid=()=>state.playing&&token===state.runId;
+   while(valid()&&state.index<state.deck.length){
+     const w=current(),ex=activeExample(w);state.answerShown=false;renderStudy();
+     const promptNative=state.direction==='native-jp';
+     setPhase(promptNative?t('Ascolta la parola italiana…','Listen to the English word…'):t('Ascolta la parola giapponese…','Listen to the Japanese word…'));
+     await speak(promptNative?w.meaning[state.lang]:w.jp,promptNative?langNative():'ja-JP');if(!valid())return;
+     setPhase(t(`Ricorda il significato… ${state.delay} secondi`,`Recall the meaning… ${state.delay} seconds`));await delay(state.delay*1000);if(!valid())return;
+     state.answerShown=true;renderStudy();setPhase(t('Soluzione','Answer'));
+     await speak(promptNative?w.jp:w.meaning[state.lang],promptNative?'ja-JP':langNative());if(!valid())return;
+     if(state.withForms){const start=(state.exampleCycle[w.id]||0)%w.forms.length;for(let k=0;k<Math.min(2,w.forms.length);k++){if(!valid())return;await delay(280);setPhase(t('Forma grammaticale…','Grammar form…'));await speak(w.forms[(start+k)%w.forms.length].jp,'ja-JP');if(!valid())return}}
+     if(state.withExamples){await delay(450);if(!valid())return;setPhase(t('Esempio in giapponese…','Japanese example…'));await speak(ex.jp,'ja-JP');if(!valid())return;
+       if(state.withTranslation){await delay(240);if(!valid())return;setPhase(t('Traduzione dell’esempio…','Example translation…'));await speak(ex[state.lang],langNative());if(!valid())return}
+     }
+     progressFor(w).seen++;state.sessionViewed++;state.exampleCycle[w.id]=(state.exampleCycle[w.id]||0)+1;save();
+     setPhase(t('Parola completata. Prossima…','Word completed. Next…'));await delay(680);if(!valid())return;
+     state.index++;if(state.index>=state.deck.length)break;renderStudy();
+   }
+   if(valid()){state.playing=false;state.paused=false;state.completed=true;bridgeOff();setPlaybackState();setPhase(t('Sessione completata. Ottimo lavoro.','Session complete. Well done.'));renderStudy();toast(t('Sessione terminata','Session finished'))}
+ }
+ async function startLesson(){if(state.playing){stopLesson();return}if(state.completed||state.index>=state.deck.length||!state.deck.length)newDeck();cancelLesson();state.playing=true;state.paused=false;state.phase=t('Avvio riproduzione…','Starting playback…');renderStudy();setPlaybackState();if(state.wheel)bridgeOn();pump()}
+ function nextWord(mark=false){if(mark){const w=current();progressFor(w).known++;save()};cancelLesson();state.answerShown=false;state.index++;if(state.index>=state.deck.length){state.playing=false;state.paused=false;state.completed=true;state.index=state.deck.length-1;bridgeOff();setPlaybackState();state.phase=t('Sessione completata. Riavvia per ripetere.','Session completed. Restart to repeat.');renderStudy();return}state.phase=t('Parola successiva','Next word');renderStudy();if(state.playing)pump()}
+ function repeatDifficult(){const w=current();progressFor(w).hard++;save();cancelLesson();state.answerShown=false;state.phase=t('Parola difficile: ripetizione','Difficult word: repeating');renderStudy();if(state.playing)pump();else toast(t('Segnata come difficile','Marked as difficult'))}
+ function moveExample(step){const w=current();state.exampleCycle[w.id]=((state.exampleCycle[w.id]||0)+step+10)%10;save();renderStudy()}
+ function setupMediaSession(){if(!('mediaSession'in navigator)){makeLog('MEDIA','Media Session API non disponibile');return}const handlers={
+   play:()=>{makeLog('MEDIA','play ricevuto');if(state.view==='diagnostics')bridgeOn();else if(!state.playing)startLesson()},pause:()=>{makeLog('MEDIA','pause ricevuto');if(state.view==='diagnostics')bridgeOff();else if(state.playing)stopLesson()},stop:()=>{makeLog('MEDIA','stop ricevuto');if(state.view==='diagnostics')bridgeOff();else stopLesson()},
+   nexttrack:()=>{makeLog('MEDIA','nexttrack ricevuto');if(state.view!=='diagnostics')nextWord(true)},previoustrack:()=>{makeLog('MEDIA','previoustrack ricevuto');if(state.view!=='diagnostics')repeatDifficult()},
+   seekforward:d=>{makeLog('MEDIA',`seekforward +${d.seekOffset||'?'}s`);if(state.view!=='diagnostics')nextWord(true)},seekbackward:d=>{makeLog('MEDIA',`seekbackward -${d.seekOffset||'?'}s`);if(state.view!=='diagnostics')repeatDifficult()},
+   seekto:d=>{makeLog('MEDIA',`seekto ${Math.round(d.seekTime||0)}s`)}
+  };for(const [key,fn] of Object.entries(handlers))try{navigator.mediaSession.setActionHandler(key,(details={})=>{state.hardwareCount++;renderCapabilities();fn(details)})}catch(e){makeLog('MEDIA',`${key}: handler non registrabile`)}
+  updateMediaMetadata();setPlaybackState()
+ }
+ async function manualSpeech(jp,text){if(state.playing)stopLesson(t('In pausa per ascolto manuale','Paused for manual playback'));interruptPreview();await speak(text,jp?'ja-JP':langNative())}
+ async function playTen(){const w=itemById(state.chosenWordId);if(!w)return;if(state.playing)stopLesson();interruptPreview();const token=state.previewId;$('btn-play-10').textContent=t('■ Ferma lettura','■ Stop reading');toast(t('Lettura di 10 esempi avviata','Reading 10 examples'));
+   for(let i=0;i<10;i++){if(token!==state.previewId)break;await speak(w.examples[i].jp,'ja-JP');if(token!==state.previewId)break;await delay(200);if(token!==state.previewId)break;await speak(w.examples[i][state.lang],langNative());if(token!==state.previewId)break;await delay(350)}$('btn-play-10').textContent=t('▶ Ascolta tutte','▶ Play all')}
+ // UI events
+ document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.tab)));
+ $('language-it').addEventListener('click',()=>{state.lang='it';save();renderLanguage();toast('Lingua madre: italiano')});
+ $('language-en').addEventListener('click',()=>{state.lang='en';save();renderLanguage();toast('Native language: English')});
+ $('btn-play').addEventListener('click',startLesson);$('btn-next').addEventListener('click',()=>nextWord(true));$('btn-repeat').addEventListener('click',repeatDifficult);
+ $('btn-reveal').addEventListener('click',()=>{state.answerShown=!state.answerShown;renderStudy()});
+ $('example-prev').addEventListener('click',()=>moveExample(-1));$('example-next').addEventListener('click',()=>moveExample(1));
+ $('btn-show-detail').addEventListener('click',()=>{state.chosenWordId=current().id;showView('library');renderDetail();if(window.innerWidth<681)setTimeout(()=>$('detail-panel').scrollIntoView({behavior:'smooth'}),160)});
+ $('study-category').addEventListener('change',e=>{state.category=e.target.value;save();resetSession()});
+ $('session-size').addEventListener('change',e=>{state.size=Number(e.target.value);save();resetSession()});
+ $('study-direction').addEventListener('change',e=>{state.direction=e.target.value;save();resetSession()});
+ $('wait-range').addEventListener('input',e=>{state.delay=Number(e.target.value);$('wait-value').textContent=state.delay+' sec';save()});
+ $('with-forms').addEventListener('change',e=>{state.withForms=e.target.checked;save()});
+ $('with-examples').addEventListener('change',e=>{state.withExamples=e.target.checked;save()});$('with-translation').addEventListener('change',e=>{state.withTranslation=e.target.checked;save()});
+ $('wheel-enabled').addEventListener('change',e=>{state.wheel=e.target.checked;save();if(!state.wheel)bridgeOff();else if(state.playing)bridgeOn()});
+ $('word-search').addEventListener('input',e=>{state.search=e.target.value;renderLibrary()});
+ document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{state.libraryFilter=b.dataset.filter;renderLibrary()}));
+ $('word-list').addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(b){state.chosenWordId=Number(b.dataset.id);renderLibrary();renderDetail();if(window.innerWidth<681)$('detail-panel').scrollIntoView({behavior:'smooth'})}});
+ $('btn-word-voice').addEventListener('click',()=>{manualSpeech(true,itemById(state.chosenWordId).jp)});
+ $('detail-forms').addEventListener('click',e=>{const b=e.target.closest('[data-form-jp]');if(b)manualSpeech(true,b.dataset.formJp)});
+ $('ex-list').addEventListener('click',e=>{const jp=e.target.closest('[data-ex-jp]'),native=e.target.closest('[data-ex-native]');const w=itemById(state.chosenWordId);if(jp)manualSpeech(true,w.examples[Number(jp.dataset.exJp)].jp);if(native)manualSpeech(false,w.examples[Number(native.dataset.exNative)][state.lang])});
+ $('btn-play-10').addEventListener('click',()=>{if($('btn-play-10').textContent.startsWith('■')){interruptPreview();$('btn-play-10').textContent=t('▶ Ascolta tutte','▶ Play all')}else playTen()});
+ $('btn-media').addEventListener('click',async()=>{const bed=$('media-bed');if(!bed.paused){bed.pause();makeLog('AUDIO','traccia diagnostica fermata')}else {try{await bed.play();makeLog('AUDIO','traccia diagnostica in riproduzione')}catch(e){makeLog('ERRORE',e.message)}}});
+ $('media-bed').addEventListener('play',()=>$('btn-media').textContent=t('■ Ferma traccia di test','■ Stop test audio'));
+ $('media-bed').addEventListener('pause',()=>$('btn-media').textContent=t('▶ Avvia traccia di test','▶ Start test audio'));
+ $('btn-ja').addEventListener('click',()=>manualSpeech(true,'この道をまっすぐ進んでください。'));
+ $('btn-it').addEventListener('click',async()=>{if(state.playing)stopLesson();interruptPreview();await speak('La lingua selezionata è italiana.','it-IT')});
+ $('btn-en').addEventListener('click',async()=>{if(state.playing)stopLesson();interruptPreview();await speak('The next Japanese word is about to begin.','en-US')});
+ $('sim-prev').addEventListener('click',()=>{makeLog('SIMULATO','previoustrack');repeatDifficult()});
+ $('sim-next').addEventListener('click',()=>{makeLog('SIMULATO','nexttrack');nextWord(true)});
+ $('sim-play').addEventListener('click',()=>{makeLog('SIMULATO',state.playing?'pause':'play');state.playing?stopLesson():startLesson()});
+ $('clear-log').addEventListener('click',()=>{state.events=[];$('event-log').textContent='Registro svuotato.'});
+ document.addEventListener('visibilitychange',()=>{makeLog('PAGINA',document.hidden?'nascosta':'visibile')});
+ if('speechSynthesis'in window){speechSynthesis.onvoiceschanged=loadVoices;loadVoices();setTimeout(loadVoices,800);setTimeout(loadVoices,2400)}
+ $('session-size').value=String(state.size);$('study-direction').value=state.direction;$('study-category').value=state.category;$('wait-range').value=String(state.delay);$('wait-value').textContent=state.delay+' sec';$('with-forms').checked=state.withForms;$('with-examples').checked=state.withExamples;$('with-translation').checked=state.withTranslation;$('wheel-enabled').checked=state.wheel;
+ newDeck();renderLanguage();setupMediaSession();makeLog('AVVIO','pagina demo pronta: la presenza dell’API non garantisce comandi hardware');
+ if('serviceWorker'in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
+ window.addEventListener('pagehide',()=>{cancelLesson();bridgeOff()});
+ })();
+ </script>
+</body>
+</html>
