@@ -1,39 +1,54 @@
-# Kotoba Drive — demo gratuita N4 (iPhone)
+# Kotoba Drive v0.2 — PWA audio giapponese N4
 
-Demo senza account, backend, API a pagamento o librerie esterne. Dati locali: **25 termini** (10 verbi, 5 sostantivi, 5 aggettivi な, 5 aggettivi い), **10 esempi per termine = 250 frasi**, con giapponese, lettura completa in kana, traduzione italiana e inglese. Ogni termine comprende coniugazioni grammaticali appropriate alla categoria.
+Una webapp statica, gratuita, senza account né API a pagamento. Ottimizzata per iPhone tenuto con lo schermo acceso. **I comandi del volante via Bluetooth restano sperimentali e devono essere verificati sull'auto reale, da fermi.**
 
-## Come usare la demo
+## Pubblicazione gratuita su GitHub Pages
 
-1. **Su computer:** apri `index.html` in Chrome, Edge o Safari. Non servono installazioni. Aprendo il file locale, la modalità PWA/offline tramite Service Worker non è attiva, ma contenuti e funzioni base sono incorporati.
-2. **Su iPhone:** pubblica gratuitamente i file del pacchetto su un hosting statico con HTTPS (per esempio Cloudflare Pages o GitHub Pages); apri poi l'URL pubblico in Safari. Non è necessario comprare un dominio. Se vuoi, scegli **Condividi → Aggiungi alla schermata Home**.
-3. Tocca **IT** o **EN** per cambiare in qualsiasi momento lingua madre. Cambiano significati, traduzioni degli esempi e lingua della voce di risposta.
-4. In **Vocabolario** puoi cercare e filtrare le parole, ascoltare singolarmente le parole, le coniugazioni, le frasi giapponesi o le traduzioni, oppure avviare la lettura di 10 esempi.
-5. In **Studio audio** scegli direzione, categorie, quantità di parole, pausa di richiamo, lettura opzionale delle coniugazioni, esempi e traduzioni. Premi **Avvia audio** **prima** di cominciare a guidare. Le sessioni sono di 20 termini per impostazione iniziale; il catalogo completo è di 25 perché la ripartizione richiesta (10+5+5+5) dà 25.
-6. In **Test volante**, **da fermo**, avvia la traccia diagnostica e premi i pulsanti del volante. Cerca nel registro eventi etichettati `MEDIA`. Quelli etichettati `SIMULATO` sono solo simulazioni via pagina.
+1. Estrai tutti i file del pacchetto ZIP.
+2. Apri un repository GitHub **pubblico**, per esempio `kotoba-drive`.
+3. Carica i file nella radice del repository. **`index.html` deve stare nella root**, non dentro `source/` né dentro un'altra cartella.
+4. In **Settings → Pages**, seleziona **Deploy from a branch**, branch `main` e cartella `/ (root)`.
+5. La pagina sarà accessibile a `https://TUO-USERNAME.github.io/kotoba-drive/` (l'attivazione può impiegare qualche minuto).
+6. Sul telefono, apri l'URL con Safari. Facoltativo: **Condividi → Aggiungi alla schermata Home**.
 
-## Controlli previsti
+Se aggiorni una versione precedente: sovrascrivi i file con gli stessi nomi, assicurati di aggiornare **anche `service-worker.js`**, pubblica le modifiche e riapri la pagina in Safari. In caso di cache temporaneamente vecchia, chiudi e riapri la PWA dopo l'aggiornamento del service worker.
 
-- Prossima traccia / salto avanti: registra "nota" e passa alla parola successiva.
-- Precedente traccia / salto indietro: registra "difficile" e ripete la parola.
-- Play/pausa: sospende o riprende la sessione.
+## Novità v0.2
 
-**Questa è una sperimentazione:** su iPhone il browser può non ricevere i comandi hardware dal volante, anche quando la Media Session API risulta disponibile. La demo usa in via facoltativa un file audio MP3 quasi silenzioso come bridge per attivare la sessione multimediale; la sintesi vocale usa `speechSynthesis` con le voci che il dispositivo mette a disposizione. Il comportamento in Bluetooth e la simultaneità fra TTS e audio vanno verificati sul dispositivo reale. Non possiamo garantirli con un test in Chromium. In mancanza di comandi hardware, lo studio resta utilizzabile con riproduzione automatica.
+- La schermata iniziale è una **flashcard a tutta altezza** (niente scroll verticale sulla pagina principale). Le altre sezioni sono accessibili con il **menu ☰**.
+- In **Impostazioni → Direzione**, la card inverte correttamente domanda e soluzione: lingua madre → giapponese o giapponese → lingua madre. Le forme ed esempi rimangono nascosti finché non si rivela la risposta.
+- In **Impostazioni → Esempi da leggere** puoi scegliere **0–10 esempi** per vocabolo. L'indice degli esempi avanza a ogni parola completata.
+- In **Impostazioni → Coniugazioni da leggere** puoi scegliere tutte le forme o le prime 1–6. L'opzione **Annuncia la forma grammaticale** pronuncia l'etichetta *nella lingua madre*, ad esempio «forma te», «forma masu», seguita dalla forma in giapponese.
+- In **Sequenza audio** puoi riordinare i gruppi e gli elementi con ↑/↓, spostare elementi fra gruppi, duplicarli aggiungendo nuovi elementi, attivarli/disattivarli con una casella, e ascoltare l'anteprima di un singolo elemento con ♪.
+- Ogni **elemento** ha un numero di ripetizioni e una pausa extra dopo l'elemento. Ogni **gruppo** ha un numero di ripetizioni e una pausa extra alla fine di **ogni ripetizione del gruppo**. La **pausa fra letture** è comune a tutte le battute vocali ed è additiva rispetto alle pause specifiche.
+- L'ordine della sequenza audio è memorizzato **separatamente per le due direzioni di traduzione**, e tutte le impostazioni vengono salvate nel browser.
+- Puoi provare un preset **«Parola ×2 · gruppo ×3»** che legge `parola giapponese, parola giapponese, significato` **tre volte di seguito**. I gruppi delle coniugazioni ed esempi rimangono disponibili dopo questo blocco.
+- Quando **Esempio giapponese** e **Traduzione esempio** sono consecutivi nello stesso gruppo, vengono letti a coppie per tutti gli esempi scelti: frase1→traduzione1→frase2→traduzione2, e così via.
+- Un'impostazione **Mantieni lo schermo acceso** prova la Screen Wake Lock API durante la sessione. L'effettivo supporto dipende da Safari/iOS.
 
-## Offline e dati
+## Controlli del volante (ancora da testare)
 
-Le parole e le frasi sono già dentro `index.html`; non vengono inviate a un server. Se distribuita su HTTPS, la PWA registra un Service Worker che salva in cache la pagina e gli asset principali. L'effettiva disponibilità delle voci TTS offline dipende dalle voci installate e da iOS. Contenuti e stato dei ripassi sono salvati localmente nel browser; il sistema operativo potrebbe eliminare dati e cache in condizioni particolari.
+La webapp prova a mappare play/pausa, traccia precedente e traccia successiva tramite Media Session API. Può mantenere un file MP3 quasi silenzioso in sottofondo per registrarsi come lettore multimediale, con il rischio che alcune configurazioni iOS gestiscano diversamente la sintesi vocale in parallelo. Vai in **☰ → Test volante** a veicolo fermo per distinguere gli eventi `MEDIA` reali dagli eventi `SIMULATO`. La presenza dell'API **non** significa che i pulsanti hardware funzioneranno.
 
-## Struttura file
+## Contenuto e costi
 
-- `index.html`: demo pronta per hosting e auto-contenuta (HTML, CSS, JavaScript, lessico e audio di supporto incorporati).
-- `vocab.json`: dataset originale per futuri ampliamenti.
-- `manifest.webmanifest`, `service-worker.js`, `icon.svg`, `icon-192.png`, `icon-512.png`: asset PWA.
-- `source/template.html`, `source/build_index.py`, `source/bridge.mp3`: codice modificabile per rigenerare `index.html` dopo una modifica a `vocab.json` (copiali insieme alla radice se vuoi eseguire `python3 build_index.py`).
+Il dataset originale contiene **25 termini** (10 verbi, 5 sostantivi, 5 aggettivi な, 5 aggettivi い), con **250 frasi** (10 per vocabolo), lettura kana e traduzioni in italiano e inglese. Il livello JLPT N4 è indicativo. Non ci sono chiamate a servizi cloud TTS, ma la sintesi vocale Web Speech API richiede che il dispositivo disponga delle voci necessarie, e il funzionamento offline delle voci dipende da iOS.
 
-## Modifica del vocabolario
+Non serve installare librerie JavaScript o utilizzare un processo di build per la pubblicazione: il file `index.html` contiene già HTML, CSS, JavaScript, vocabolario e una traccia audio incorporata. I progressi e la configurazione vengono memorizzati localmente; una cancellazione dei dati di Safari può eliminarli.
 
-Ogni voce in `vocab.json` ha `pos`, `jp`, `kana`, `meaning.it`, `meaning.en`, `forms` e `examples` (10 oggetti con `jp`, `kana`, `it`, `en`). Il file va verificato linguisticamente prima di un eventuale rilascio pubblico. Per rigenerare, copia il contenuto di `source/` nella directory che contiene `vocab.json` ed esegui `python3 build_index.py`.
+## File inclusi
 
-**Nota N4:** livello indicativo; il JLPT non pubblica una lista ufficiale di vocaboli/grammatica per i livelli post-2010. Alcune frasi usano vocaboli aggiuntivi più complessi per offrire contesti non banali.
+- `index.html` — pagina auto-contenuta pronta per GitHub Pages e anteprima locale
+- `vocab.json` — dati strutturati dei 25 termini / 250 esempi
+- `manifest.webmanifest`, `service-worker.js`, icone — installabilità PWA e cache
+- `source/template.html`, `source/app.css`, `source/app.js`, `source/build_index.py` — sorgenti modificabili
+- `bridge.mp3` — traccia quasi silenziosa utilizzata per rigenerare la pagina
+- `source/qa.py`, `source/qa_playback.py` — test browser, non necessari per usare la webapp
 
-**Sicurezza:** configura la sessione e verifica i controlli soltanto a veicolo fermo. Nessuna funzione della demo deve richiedere di guardare o toccare lo schermo durante la guida.
+### Ricompilare dopo una modifica al dataset o al codice
+
+Da una macchina con Python 3 installato, esegui `python3 source/build_index.py` nella cartella del progetto. Ricarica quindi `index.html` e `service-worker.js` su GitHub.
+
+I test automatici sono stati eseguiti su Chromium per i layout 390×844, 375×667, 320×568 e desktop 1440×900, incluse le sequenze audio con Web Speech API simulata. **Non sono test su Safari/iPhone fisico**.
+
+**Sicurezza**: imposta durata, sequenza e contenuti mentre sei fermo; evita di usare lo schermo mentre guidi.
