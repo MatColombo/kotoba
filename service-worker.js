@@ -1,7 +1,7 @@
 // Cache scoped to Kotoba Drive. Do not delete caches of unrelated apps hosted on github.io.
 const CACHE_PREFIX = 'kotoba-drive-';
-const CACHE_NAME = 'kotoba-drive-2026-10-13-v3';
-const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png'];
+const CACHE_NAME = 'kotoba-drive-2026-10-14-v3-voice-lab';
+const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './voice-sandbox.html'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)).then(() => self.skipWaiting()));
 });

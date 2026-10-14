@@ -52,3 +52,8 @@ Da una macchina con Python 3 installato, esegui `python3 source/build_index.py` 
 I test automatici sono stati eseguiti su Chromium per i layout 390×844, 375×667, 320×568 e desktop 1440×900, incluse le sequenze audio con Web Speech API simulata. **Non sono test su Safari/iPhone fisico**.
 
 **Sicurezza**: imposta durata, sequenza e contenuti mentre sei fermo; evita di usare lo schermo mentre guidi.
+
+
+## Laboratorio voci (standalone)
+
+Apri `/voice-sandbox.html` dal dominio GitHub Pages per selezionare fino a tre voci e testare alternanza, velocita, tono e volume. Questo laboratorio non altera i dati del deck o delle sessioni.
