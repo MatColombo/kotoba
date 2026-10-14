@@ -7,25 +7,26 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Kotoba Drive">
-  <meta name="description" content="Flashcard audio JLPT N4: sequenze personalizzate, ripetizioni e italiano o inglese.">
+  <meta name="description" content="Kotoba Drive v0.4: deck JSON indipendenti, IndexedDB, sequenze audio e TTS per lingua.">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="apple-touch-icon" href="./icon-192.png">
-  <title>Kotoba Drive — Studio audio N4</title>
+  <title>Kotoba Drive — Deck e studio audio</title>
   <style>__APP_CSS__</style>
 </head>
 <body>
  <div class="app" id="app">
   <header class="topbar">
    <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">N4 • STUDY AUDIO</div></div></div>
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.0 · CONTENUTI IN REVISIONE</div></div></div>
    <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
    <section class="view study-view" id="view-study" aria-label="Flashcard audio">
     <article class="study-card">
-     <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><span id="pos-pill" class="pos-badge">VERBO</span></div>
+     <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><div class="card-flags"><button type="button" id="study-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><span id="pos-pill" class="pos-badge">VERBO</span></div>
      <div class="progress-track"><div id="progress-bar"></div></div>
+     <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
      <div class="card-content">
       <div class="front-label" id="front-label">DOMANDA · GIAPPONESE</div>
       <div class="front-word" id="study-front" lang="ja">集める</div>
@@ -47,17 +48,53 @@
      </div>
      <div class="study-bottom">
       <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
-      <div class="controls"><button class="control secondary" id="btn-repeat" type="button"><span class="control-symbol">↶</span><span id="repeat-label">Ripeti</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button"><span id="next-label">Lo so</span><span class="control-symbol">→</span></button></div>
-      <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">10 esempi ↗</button></div>
+      <div class="controls"><button class="control secondary" id="btn-repeat" type="button"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
+      <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Esempi ↗</button></div>
      </div>
     </article>
    </section>
 
+   <section class="view scroll-view hidden" id="view-sessions" aria-label="Sessioni e progressi">
+    <div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">SESSIONI · LOCAL FIRST</div><h1>Sessioni e statistiche</h1></div></div>
+    <div class="sessions-layout">
+      <section class="surface session-pane"><h2>Crea sessione</h2><p class="small-copy">I filtri si combinano; l'ordine viene salvato e non cambia quando riprendi.</p>
+        <div class="field-block"><label for="create-deck">Deck</label><select class="input" id="create-deck"></select></div>
+        <div class="field-block"><label for="create-name">Nome sessione</label><input class="input" id="create-name" maxlength="80" placeholder="Ripasso N4"></div>
+        <div class="field-grid"><div class="field-block"><label for="create-size">Numero di carte</label><input class="input" id="create-size" type="number" min="1" max="15000" value="20"></div><div class="field-block"><label for="create-category">Categoria</label><select class="input" id="create-category"><option value="all">Tutte</option><option value="verb">Verbi</option><option value="noun">Sostantivi</option><option value="na">Aggettivi な</option><option value="i">Aggettivi い</option></select></div></div>
+        <div class="field-grid"><div class="field-block"><label for="create-language">Lingua madre</label><select class="input" id="create-language"><option value="it">Italiano</option><option value="en">English</option></select></div><div class="field-block"><label for="create-direction">Direzione</label><select class="input" id="create-direction"><option value="jp-native">Giapponese → Madre</option><option value="native-jp">Madre → Giapponese</option></select></div></div>
+        <div class="field-block"><label for="create-sequence">Sequenza audio</label><select class="input" id="create-sequence"></select></div>
+        <div class="field-grid"><div class="field-block"><label for="create-favorite">Preferiti</label><select class="input" id="create-favorite"><option value="all">Tutti</option><option value="only">Solo ★ preferiti</option></select></div><div class="field-block"><label for="create-known">Conoscenza dichiarata</label><select class="input" id="create-known"><option value="exclude">Escludi noti</option><option value="include">Includi noti</option><option value="only">Solo noti</option></select></div></div>
+        <div class="field-block"><label for="create-exposure">Esposizione</label><select class="input" id="create-exposure"><option value="all">Tutte le frequenze</option><option value="unseen">Mai ascoltate (0)</option><option value="low">Poco ascoltate (Q1)</option><option value="q1">0°–25° percentile</option><option value="q2">25°–50° percentile</option><option value="q3">50°–75° percentile</option><option value="q4">75°–100° percentile</option><option value="high">Molto ascoltate (Q4)</option></select><p class="field-hint">Percentile di esposizione, non di conoscenza. I valori uguali rimangono nella stessa fascia.</p></div>
+        <div class="field-grid"><div class="field-block"><label for="create-register">Registro (se disponibile)</label><select class="input" id="create-register"><option value="all">Tutti</option></select></div><div class="field-block"><label for="create-scenario">Scenario (se disponibile)</label><select class="input" id="create-scenario"><option value="all">Tutti</option></select></div></div>
+        <div class="field-grid"><div class="field-block"><label for="create-group">Gruppo narrativo</label><select class="input" id="create-group"><option value="all">Tutti i gruppi</option></select></div><div class="field-block"><label for="create-story">Storia collegata</label><select class="input" id="create-story"><option value="all">Nessuna storia specifica</option></select></div></div>
+        <div class="field-block"><label for="create-example-count">Esempi da leggere per card</label><select class="input" id="create-example-count"><option value="0">0 · nessuno</option><option value="1">1 esempio</option><option value="2">2 esempi</option><option value="3">3 esempi</option><option value="4">4 esempi</option><option value="5">5 esempi</option><option value="6">6 esempi</option><option value="7">7 esempi</option><option value="8">8 esempi</option><option value="9">9 esempi</option><option value="10">10 esempi</option></select></div>
+        <label class="session-check"><input type="checkbox" id="create-shuffle" checked><span><b>Mescola l'ordine delle carte (shuffle)</b><small>Una volta sola: l'ordine resterà invariato alla ripresa.</small></span></label>
+        <div id="session-eligible" class="session-eligible">Caricamento carte…</div><button class="solid-btn wide-btn" id="create-session" type="button">+ Crea e avvia sessione</button>
+      </section>
+      <section class="surface session-pane"><h2>Sessioni salvate</h2><div id="saved-sessions"></div></section>
+      <section class="surface session-pane"><h2>Statistiche del deck</h2><div id="deck-dashboard"></div><h3>Distribuzione degli ascolti</h3><div id="exposure-distribution"></div></section>
+    </div>
+   </section>
+
    <section class="view scroll-view hidden" id="view-library" aria-label="Vocabolario">
-    <div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">ARCHIVIO</div><h1>Vocabolario N4</h1></div><p>25 parole · 250 esempi</p></div>
+    <div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">ARCHIVIO</div><h1 id="library-deck-title">Vocabolario</h1></div><p id="library-deck-count">75 parole · 2.250 esempi</p></div>
     <div class="library-layout">
      <aside class="surface lib-panel"><input id="word-search" class="input search-input" type="search" placeholder="Cerca una parola o una traduzione" aria-label="Cerca vocaboli"><div class="filters"><button data-filter="all" class="filter active" type="button">Tutte</button><button data-filter="verb" class="filter" type="button">Verbi</button><button data-filter="noun" class="filter" type="button">Nomi</button><button data-filter="na" class="filter" type="button">な</button><button data-filter="i" class="filter" type="button">い</button></div><div id="word-list" class="word-list"></div></aside>
-     <article class="surface detail-panel" id="detail-panel"><div class="detail-head"><div><span class="pos-badge" id="detail-pos">Verbo</span><h2 id="detail-word" lang="ja"></h2><div id="detail-reading" class="detail-reading" lang="ja"></div><div id="detail-meaning" class="detail-meaning"></div></div><button id="btn-word-voice" class="round-voice" type="button" aria-label="Ascolta parola">♪</button></div><h3 class="detail-subtitle">Forme grammaticali <span>tocca per ascoltare</span></h3><div id="detail-forms" class="detail-forms"></div><div class="detail-examples-title"><h3>10 esempi</h3><button id="btn-play-10" class="outline-btn" type="button">▶ Ascolta tutte</button></div><p class="small-copy">Frasi in giapponese con lettura in kana e traduzione nella lingua selezionata.</p><div id="ex-list" class="ex-list"></div></article>
+     <article class="surface detail-panel" id="detail-panel"><div class="detail-head"><div><span class="pos-badge" id="detail-pos">Verbo</span><h2 id="detail-word" lang="ja"></h2><div id="detail-reading" class="detail-reading" lang="ja"></div><div id="detail-meaning" class="detail-meaning"></div></div><div class="detail-flags"><button type="button" id="detail-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="detail-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><button id="btn-word-voice" class="round-voice" type="button" aria-label="Ascolta parola">♪</button></div><h3 class="detail-subtitle">Forme grammaticali <span>tocca per ascoltare</span></h3><div id="detail-forms" class="detail-forms"></div><div class="detail-examples-title"><h3 id="detail-example-count">Esempi contestuali</h3><button id="btn-play-10" class="outline-btn" type="button">▶ Ascolta i primi 10</button></div><div class="field-grid"><div class="field-block"><label for="detail-register">Registro</label><select id="detail-register" class="input"></select></div><div class="field-block"><label for="detail-scenario">Scenario</label><select id="detail-scenario" class="input"></select></div></div><p class="small-copy">Le cornici degli esempi sono bozze automatiche. Richiedono revisione linguistica e sociale prima dell'uso intensivo.</p><div id="ex-list" class="ex-list"></div></article>
+    </div>
+   </section>
+
+   <section class="view scroll-view hidden" id="view-stories" aria-label="Storie giapponesi"><div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">STORIE · N4</div><h1>Racconti per gruppi</h1></div></div><div class="library-layout"><aside class="surface lib-panel"><div class="drawer-intro">Ogni storia usa i vocaboli del proprio gruppo. Ascolto alternato giapponese e traduzione.</div><div id="story-list" class="word-list"></div></aside><article class="surface detail-panel" id="story-detail"></article></div></section>
+   <section class="view scroll-view hidden" id="view-decks" aria-label="Gestione deck e backup">
+    <div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">LIBRERIA · LOCAL FIRST</div><h1>Deck e backup</h1></div><p id="active-deck-info">Caricamento...</p></div>
+    <div class="deck-management">
+      <section class="surface deck-pane"><h2>Deck installati</h2><p class="small-copy">Le carte vengono conservate localmente in IndexedDB. I progressi non sono contenuti nei deck.</p><div id="deck-list"></div></section>
+      <section class="surface deck-pane"><div class="panel-head"><h2>Catalogo online</h2><button id="catalog-refresh" class="outline-btn">Aggiorna catalogo</button></div><p class="small-copy">Manifest statico GitHub Pages. Scarica e installa i deck prima di studiare offline.</p><div id="catalog-list"></div></section>
+      <section class="surface deck-pane"><h2>Importazione JSON</h2><label class="field-block" for="deck-import-file">Seleziona deck.json, study.json o backup completo</label><input class="input" id="deck-import-file" type="file" accept=".json,application/json"><p class="small-copy">Anteprima prima dell'installazione; controlli ID, versioni e riferimenti.</p>
+       <div id="deck-import-preview" hidden><pre id="deck-import-report" class="import-report"></pre><p id="deck-removed-items" class="small-copy"></p><label class="field-block">Riferimenti mancanti</label><select class="input" id="deck-conflict-mode"><option value="retain">Conserva riferimenti mancanti (ignora temporaneamente)</option><option value="exclude">Escludi riferimenti mancanti dalle sessioni</option></select><label class="field-block" for="deck-mapping">Ricollega ID rimossi (facoltativo; uno per riga, vecchioID:nuovoID)</label><textarea id="deck-mapping" class="input" rows="2"></textarea><div class="deck-buttons"><button id="deck-confirm-import" class="solid-btn">Conferma importazione</button><button id="deck-cancel-import" class="outline-btn">Annulla</button></div></div>
+       <div id="study-import-preview" hidden><h3>Anteprima import memoria</h3><pre id="study-import-report" class="import-report"></pre><label for="study-import-mode">Modalità di importazione</label><select id="study-import-mode" class="input"><option value="merge">Fusione conservativa (nessun doppio conteggio)</option><option value="replace">Sostituzione completa</option></select><div class="deck-buttons"><button id="study-import-confirm" class="solid-btn">Conferma memoria</button><button id="study-import-cancel" class="outline-btn">Annulla</button></div></div>
+      </section>
+      <section class="surface deck-pane"><h2>Memoria di studio</h2><p class="small-copy">Le preferenze, le sequenze e le sessioni usano ID deck e carta; nessun testo didattico duplicato.</p><div class="deck-buttons"><button id="study-export" class="solid-btn">Esporta study.json</button><button id="backup-export" class="outline-btn">Backup completo (deck + studio)</button><button id="pre-import-backup" type="button" class="outline-btn">↓ Backup prima dell’ultima importazione</button><button id="legacy-backup" class="outline-btn">Backup precedenti preferenze</button></div></section>
     </div>
    </section>
 
@@ -71,34 +108,46 @@
  <div class="drawer-shade" id="drawer-shade" hidden></div>
  <aside class="drawer" id="app-drawer" role="dialog" aria-modal="true" aria-label="Menu e configurazione" aria-hidden="true" inert>
   <div class="drawer-header"><div><div class="section-kicker">KOTOBA DRIVE</div><h2>Personalizza la sessione</h2></div><button class="icon-btn drawer-close" id="btn-close-drawer" type="button" aria-label="Chiudi menu">×</button></div>
-  <nav class="drawer-nav" aria-label="Menu"><button data-drawer="settings" class="nav-button active" type="button">⚙ Impostazioni</button><button data-drawer="sequence" class="nav-button" type="button">≡ Sequenza audio</button><button data-menu-view="library" class="nav-button" type="button">▤ Vocabolario</button><button data-menu-view="diagnostics" class="nav-button" type="button">⌁ Test volante</button><button data-menu-view="study" class="nav-button" type="button">◉ Flashcard</button></nav>
+  <nav class="drawer-nav" aria-label="Menu"><button data-drawer="settings" class="nav-button active" type="button">⚙ Impostazioni</button><button data-drawer="sequence" class="nav-button" type="button">≡ Sequenza audio</button><button data-menu-view="sessions" class="nav-button" type="button">▤ Sessioni e statistiche</button><button data-menu-view="decks" class="nav-button" type="button">▦ Deck e backup</button><button data-menu-view="library" class="nav-button" type="button">▤ Vocabolario</button><button data-menu-view="stories" class="nav-button" type="button">▤ Storie</button><button data-menu-view="diagnostics" class="nav-button" type="button">⌁ Test volante</button><button data-menu-view="study" class="nav-button" type="button">◉ Flashcard</button></nav>
   <div class="drawer-content">
    <div id="drawer-settings" class="drawer-panel">
     <div class="drawer-intro">Configura tutto prima di iniziare a guidare. I cambiamenti vengono salvati automaticamente sul dispositivo.</div>
-    <div class="field-block"><label for="study-category">Categoria di parole</label><select id="study-category" class="input"><option value="all">Tutte le categorie</option><option value="verb">Verbi (10)</option><option value="noun">Sostantivi (5)</option><option value="na">Aggettivi な (5)</option><option value="i">Aggettivi い (5)</option></select></div>
-    <div class="field-grid"><div class="field-block"><label for="session-size">Parole per sessione</label><select id="session-size" class="input"><option value="5">5</option><option value="10">10</option><option value="20">20</option><option value="25">25 (tutte)</option></select></div><div class="field-block"><label for="example-count">Esempi da leggere</label><select id="example-count" class="input"><option value="0">0 · nessuno</option><option value="1">1 esempio</option><option value="2">2 esempi</option><option value="3">3 esempi</option><option value="4">4 esempi</option><option value="5">5 esempi</option><option value="6">6 esempi</option><option value="7">7 esempi</option><option value="8">8 esempi</option><option value="9">9 esempi</option><option value="10">10 esempi</option></select></div></div>
+    <div class="field-block"><label for="study-category">Categoria di parole</label><select id="study-category" class="input"><option value="all">Tutte le categorie</option><option value="verb">Verbi (30)</option><option value="noun">Sostantivi (15)</option><option value="na">Aggettivi な (15)</option><option value="i">Aggettivi い (15)</option></select></div>
+    <div class="field-grid"><div class="field-block"><label for="session-size">Parole per sessione</label><select id="session-size" class="input"><option value="5">5</option><option value="10">10</option><option value="20">20</option><option value="25">25</option><option value="40">40</option><option value="60">60</option><option value="75">75 (tutte)</option></select></div><div class="field-block"><label for="example-count">Esempi da leggere</label><select id="example-count" class="input"><option value="0">0 · nessuno</option><option value="1">1 esempio</option><option value="2">2 esempi</option><option value="3">3 esempi</option><option value="4">4 esempi</option><option value="5">5 esempi</option><option value="6">6 esempi</option><option value="7">7 esempi</option><option value="8">8 esempi</option><option value="9">9 esempi</option><option value="10">10 esempi</option></select></div></div>
     <div class="field-block"><label for="study-direction">Direzione della domanda</label><select id="study-direction" class="input"><option value="jp-native">Giapponese → Lingua madre</option><option value="native-jp">Lingua madre → Giapponese</option></select><p class="field-hint">La card inverte davvero il testo iniziale. Le due direzioni hanno sequenze audio configurabili separatamente.</p></div>
     <div class="field-grid"><div class="field-block"><label for="form-count">Coniugazioni da leggere</label><select class="input" id="form-count"><option value="all">Tutte</option><option value="1">Prima forma</option><option value="2">Prime 2</option><option value="3">Prime 3</option><option value="4">Prime 4</option><option value="5">Prime 5</option><option value="6">Prime 6</option></select></div><div class="field-block"><label for="global-gap">Pausa fra letture (s)</label><input id="global-gap" class="input" type="number" min="0" max="12" step="0.25" value="0.5" inputmode="decimal"></div></div>
+    <section class="audio-masters-panel" aria-label="Audio master per lingua">
+     <div class="master-head"><h3>Audio master per lingua</h3><p>Velocità, tono e volume per ciascuna lingua. Gli override della sequenza hanno precedenza.</p></div>
+     <div id="audio-masters" class="audio-masters"></div>
+    </section>
     <label class="toggle-line"><div><b>Annuncia la forma grammaticale</b><p>Per esempio «forma te», poi 「集めて」.</p></div><input type="checkbox" id="announce-forms" checked><span class="toggle-visual"></span></label>
     <label class="toggle-line"><div><b>Mantieni lo schermo acceso</b><p>Richiede Wake Lock, se supportato da Safari. Si attiva quando parte la lezione.</p></div><input type="checkbox" id="wake-enabled" checked><span class="toggle-visual"></span></label>
     <label class="toggle-line"><div><b>Bridge audio per il volante</b><p>Sperimentale: può interferire con la sintesi vocale su alcuni iPhone.</p></div><input type="checkbox" id="wheel-enabled" checked><span class="toggle-visual"></span></label>
-    <button id="reset-session" type="button" class="outline-btn wide-btn">↻ Rigenera sessione con le impostazioni correnti</button>
-    <div class="drawer-tip"><strong>Controlli proposti</strong><br>Play/pausa · Successivo = noto · Precedente = difficile. Il funzionamento dei pulsanti fisici dipende dall'iPhone e dall'auto.</div>
+    <button id="reset-session" type="button" class="outline-btn wide-btn">＋ Crea una nuova sessione</button>
+    <div class="drawer-tip"><strong>Controlli proposti</strong><br>Play/pausa · Avanti/indietro = capitoli; ai confini cambia card. Nessuna classificazione automatica. Il funzionamento dei pulsanti fisici dipende dall'iPhone e dall'auto.</div>
     <div id="study-stats" class="small-copy">Ripassi: 0</div>
    </div>
    <div id="drawer-sequence" class="drawer-panel hidden">
-    <p class="drawer-intro">Crea blocchi audio e gruppi. Puoi cambiarne l'ordine, attivare o disattivare ogni componente e ripeterlo. Un gruppo ripetuto esegue tutti i suoi elementi nell'ordine stabilito, poi ricomincia.</p>
+    <p class="drawer-intro">Crea blocchi audio e gruppi. Puoi cambiarne l'ordine, attivare o disattivare ogni componente e ripeterlo. Ogni gruppo principale è un capitolo navigabile. Le pause dopo elementi e gruppi si sommano agli intervalli standard, senza silenzio residuo alla fine della card.</p>
+    <div class="field-block"><label for="sequence-select">Sequenza attiva</label><select class="input" id="sequence-select"></select></div>
+    <div class="sequence-toolbar manage"><button id="seq-new" class="solid-btn" type="button">+ Nuova</button><button id="seq-duplicate" class="outline-btn" type="button">Duplica</button><button id="seq-rename" class="outline-btn" type="button">Rinomina</button><button id="seq-delete" class="outline-btn" type="button">Elimina</button></div>
+    <div class="field-block"><label for="sequence-description">Descrizione sequenza</label><input class="input" id="sequence-description" maxlength="200" placeholder="Descrizione facoltativa"></div>
     <div class="sequence-toolbar"><button id="preset-standard" class="outline-btn" type="button">Base</button><button id="preset-repeat" class="outline-btn" type="button">Parola ×2 · gruppo ×3</button><button id="add-group" class="solid-btn" type="button">+ Gruppo</button></div>
     <div class="field-block sequence-direction"><span>Sequenza in uso</span><strong id="sequence-direction-title">Giapponese → Italiano</strong></div>
     <div id="sequence-editor" class="sequence-editor"></div>
-    <div class="sequence-preview"><div class="preview-header"><h3>Anteprima della sequenza</h3><span id="preview-total">0 letture</span></div><div id="sequence-preview" class="preview-chips"></div><p class="small-copy">Gli elementi «Esempio» e «Traduzione» consecutivi nello stesso gruppo vengono riprodotti a coppie per ogni frase. Le pause extra si sommano alla pausa standard.</p></div>
+    <div class="sequence-preview"><div class="preview-header"><h3>Anteprima della sequenza</h3><span id="preview-total">0 letture</span></div><div id="sequence-preview" class="preview-chips"></div><p class="small-copy">Gli elementi «Esempio» e «Traduzione» consecutivi nello stesso gruppo vengono riprodotti a coppie per ogni frase. Anteprima e riproduzione utilizzano lo stesso piano di eventi; i gruppi sono capitoli. La durata della pronuncia TTS può variare.</p></div>
    </div>
   </div>
   <div class="drawer-bottom"><button id="btn-drawer-done" type="button" class="solid-btn wide-btn">✓ Torna alla flashcard</button></div>
  </aside>
+ <div id="boot-error" class="boot-error" hidden></div>
  <div class="toast" id="toast" role="status" aria-live="polite"></div>
  <audio id="media-bed" playsinline preload="auto" loop src="data:audio/mpeg;base64,__AUDIO_BASE64__"></audio>
- <script>const BANK=__VOCAB_DATA__;</script>
+ <script>let BANK=[];</script>
+ <script>__ENGINE_JS__</script>
+ <script>__STORAGE_JS__</script>
+ <script>__SESSIONS_JS__</script>
+ <script>__CONTENT_JS__</script>
  <script>__APP_JS__</script>
 </body>
 </html>

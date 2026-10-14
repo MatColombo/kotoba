@@ -1,0 +1,376 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kotoba-drive.invalid/schemas/deck.schema.json",
+  "title": "Kotoba Drive deck schema v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "deckId",
+    "revision",
+    "title",
+    "languages",
+    "cards"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "deckId": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_:.-]{0,127}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2
+    },
+    "license": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 15000,
+      "items": {
+        "$ref": "#/$defs/card"
+      }
+    },
+    "stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "cardIds",
+          "segments"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "groupId": {
+            "$ref": "#/$defs/id"
+          },
+          "cardIds": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/id"
+            }
+          },
+          "segments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/storySegment"
+            }
+          }
+        }
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "register",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "register": {
+            "enum": [
+              "informal",
+              "colleague",
+              "superior"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "descriptionEn": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "participants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "communicativeSituation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "storyGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "cardIds",
+          "storyId"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "cardIds": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/id"
+            }
+          },
+          "storyId": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_:.-]{0,127}$"
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ]
+    },
+    "localized": {
+      "type": "object",
+      "required": [
+        "it",
+        "en"
+      ],
+      "properties": {
+        "it": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      }
+    },
+    "example": {
+      "type": "object",
+      "required": [
+        "id",
+        "jp",
+        "kana",
+        "it",
+        "en"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "jp": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kana": {
+          "type": "string",
+          "minLength": 1
+        },
+        "it": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenarioId": {
+          "$ref": "#/$defs/id"
+        },
+        "register": {
+          "type": "string"
+        },
+        "cardId": {
+          "$ref": "#/$defs/id"
+        },
+        "grammarForm": {
+          "type": "string"
+        },
+        "speaker": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "reviewStatus": {
+          "type": "string"
+        },
+        "originExampleId": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "card": {
+      "type": "object",
+      "required": [
+        "id",
+        "pos",
+        "jp",
+        "kana",
+        "meaning",
+        "forms",
+        "examples"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "pos": {
+          "enum": [
+            "verb",
+            "noun",
+            "na",
+            "i"
+          ]
+        },
+        "jp": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kana": {
+          "type": "string",
+          "minLength": 1
+        },
+        "meaning": {
+          "$ref": "#/$defs/localized"
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "jp"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "jp": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/example"
+          }
+        },
+        "storyGroupId": {
+          "$ref": "#/$defs/id"
+        },
+        "storyIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "legacyExamples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/example"
+          }
+        }
+      }
+    },
+    "storySegment": {
+      "type": "object",
+      "required": [
+        "id",
+        "jp",
+        "kana",
+        "it",
+        "en",
+        "cardIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "jp": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kana": {
+          "type": "string",
+          "minLength": 1
+        },
+        "it": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cardIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "speaker": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

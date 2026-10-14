@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    {
+      "id": "informal-01",
+      "register": "informal",
+      "title": "Madre e figlio al supermercato",
+      "description": "Al supermercato, madre e figlio ne hanno parlato facendo la spesa.",
+      "descriptionEn": "At the supermarket, a mother and her son talked while shopping.",
+      "japaneseContext": "スーパーで母と息子が買い物をしながら話した。",
+      "kanaContext": "すーぱーでははとむすこがかいものをしながらはなした。",
+      "location": "Supermercato",
+      "participants": [
+        "Madre",
+        "figlio"
+      ],
+      "roles": [
+        "mother",
+        "son"
+      ],
+      "relationship": "Famiglia",
+      "communicativeSituation": "Madre e figlio al supermercato"
+    },
+    {
+      "id": "informal-02",
+      "register": "informal",
+      "title": "Amici dopo il ramen",
+      "description": "Due amici ne hanno parlato camminando dopo il ramen.",
+      "descriptionEn": "Two friends discussed it while walking after ramen.",
+      "japaneseContext": "ラーメン屋を出た二人の友達は歩きながら話した。",
+      "kanaContext": "らーめんやをでたふたりのともだちはあるきながらはなした。",
+      "location": "Fuori dal ramen shop",
+      "participants": [
+        "Due amici"
+      ],
+      "roles": [
+        "friends"
+      ],
+      "relationship": "Amicizia",
+      "communicativeSituation": "Amici dopo il ramen"
+    },
+    {
+      "id": "informal-03",
+      "register": "informal",
+      "title": "Fratelli che perdono il treno",
+      "description": "Due fratelli ne hanno parlato sulla panchina dopo aver perso il treno.",
+      "descriptionEn": "Two siblings discussed it on a bench after missing their train.",
+      "japaneseContext": "電車に乗り遅れた兄弟は駅のベンチで話した。",
+      "kanaContext": "でんしゃにのりおくれたきょうだいはえきのべんちではなした。",
+      "location": "Stazione",
+      "participants": [
+        "Fratelli"
+      ],
+      "roles": [
+        "siblings"
+      ],
+      "relationship": "Famiglia",
+      "communicativeSituation": "Fratelli che perdono il treno"
+    },
+    {
+      "id": "informal-04",
+      "register": "informal",
+      "title": "Coinquilini in cucina",
+      "description": "I coinquilini ne hanno parlato preparando la cena.",
+      "descriptionEn": "The roommates talked about it while cooking dinner.",
+      "japaneseContext": "夕飯を作っていたルームメイトたちは台所で話した。",
+      "kanaContext": "ゆうはんをつくっていたるーむめいとたちはだいどころではなした。",
+      "location": "Cucina",
+      "participants": [
+        "Coinquilini"
+      ],
+      "roles": [
+        "roommates"
+      ],
+      "relationship": "Coabitazione",
+      "communicativeSituation": "Coinquilini in cucina"
+    },
+    {
+      "id": "informal-05",
+      "register": "informal",
+      "title": "Escursione tra amici",
+      "description": "Degli amici ne hanno parlato organizzando una camminata in montagna.",
+      "descriptionEn": "Friends discussed it while planning a mountain hike.",
+      "japaneseContext": "山歩きの計画を立てる友達同士が話した。",
+      "kanaContext": "やまあるきのけいかくをたてるともだちどうしがはなした。",
+      "location": "Parco",
+      "participants": [
+        "Amici"
+      ],
+      "roles": [
+        "friends"
+      ],
+      "relationship": "Amicizia",
+      "communicativeSituation": "Escursione tra amici"
+    },
+    {
+      "id": "informal-06",
+      "register": "informal",
+      "title": "Compiti e scadenze in famiglia",
+      "description": "Padre e figlia ne hanno parlato mentre facevano i compiti.",
+      "descriptionEn": "A father and his daughter discussed it over homework.",
+      "japaneseContext": "宿題を見ていた父と娘は机の前で話した。",
+      "kanaContext": "しゅくだいをみていたちちとむすめはつくえのまえではなした。",
+      "location": "Casa",
+      "participants": [
+        "Padre",
+        "figlia"
+      ],
+      "roles": [
+        "father",
+        "daughter"
+      ],
+      "relationship": "Famiglia",
+      "communicativeSituation": "Compiti e scadenze in famiglia"
+    },
+    {
+      "id": "informal-07",
+      "register": "informal",
+      "title": "Dopo l’allenamento",
+      "description": "I compagni ne hanno parlato dopo l’allenamento.",
+      "descriptionEn": "Teammates discussed it after practice.",
+      "japaneseContext": "練習を終えた仲間たちは更衣室の前で話した。",
+      "kanaContext": "れんしゅうをおえたなかまたちはこういしつのまえではなした。",
+      "location": "Palestra",
+      "participants": [
+        "Compagni"
+      ],
+      "roles": [
+        "teammates"
+      ],
+      "relationship": "Sport",
+      "communicativeSituation": "Dopo l’allenamento"
+    },
+    {
+      "id": "informal-08",
+      "register": "informal",
+      "title": "Ombrello smarrito",
+      "description": "Due amici ne hanno parlato cercando un ombrello smarrito.",
+      "descriptionEn": "Two friends talked while looking for a missing umbrella.",
+      "japaneseContext": "なくした傘を探す二人は駅前で話した。",
+      "kanaContext": "なくしたかさをさがすふたりはえきまえではなした。",
+      "location": "Piazza della stazione",
+      "participants": [
+        "Due amici"
+      ],
+      "roles": [
+        "friends"
+      ],
+      "relationship": "Amicizia",
+      "communicativeSituation": "Ombrello smarrito"
+    },
+    {
+      "id": "informal-09",
+      "register": "informal",
+      "title": "Trasloco fra amici",
+      "description": "Gli amici ne hanno parlato fra gli scatoloni durante il trasloco.",
+      "descriptionEn": "Friends talked among boxes while helping with a move.",
+      "japaneseContext": "引っ越しを手伝っていた友達は荷物のそばで話した。",
+      "kanaContext": "ひっこしをてつだっていたともだちはにもつのそばではなした。",
+      "location": "Casa nuova",
+      "participants": [
+        "Amici"
+      ],
+      "roles": [
+        "friends"
+      ],
+      "relationship": "Amicizia",
+      "communicativeSituation": "Trasloco fra amici"
+    },
+    {
+      "id": "informal-10",
+      "register": "informal",
+      "title": "Festa a sorpresa",
+      "description": "Gli amici ne hanno parlato sottovoce preparando una festa a sorpresa.",
+      "descriptionEn": "Friends whispered about it while planning a surprise party.",
+      "japaneseContext": "内緒のパーティーを準備していた友達は小声で話した。",
+      "kanaContext": "ないしょのぱーてぃーをじゅんびしていたともだちはこごえではなした。",
+      "location": "Salotto",
+      "participants": [
+        "Amici"
+      ],
+      "roles": [
+        "friends"
+      ],
+      "relationship": "Amicizia",
+      "communicativeSituation": "Festa a sorpresa"
+    },
+    {
+      "id": "colleague-01",
+      "register": "colleague",
+      "title": "Riunione del mattino",
+      "description": "Durante la riunione del mattino, un collega ha spiegato la situazione.",
+      "descriptionEn": "During the morning meeting, a colleague explained the situation.",
+      "japaneseContext": "朝の打ち合わせで同僚が状況を説明した。",
+      "kanaContext": "あさのうちあわせでどうりょうがじょうきょうをせつめいした。",
+      "location": "Ufficio",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Riunione del mattino"
+    },
+    {
+      "id": "colleague-02",
+      "register": "colleague",
+      "title": "Requisiti di progetto",
+      "description": "Durante il chiarimento dei requisiti, un collega ha espresso un’opinione.",
+      "descriptionEn": "During requirements clarification, a colleague expressed an opinion.",
+      "japaneseContext": "要件を確認する席で同僚が意見を述べた。",
+      "kanaContext": "ようけんをかくにんするせきでどうりょうがいけんをのべた。",
+      "location": "Sala progetto",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Requisiti di progetto"
+    },
+    {
+      "id": "colleague-03",
+      "register": "colleague",
+      "title": "Prenotazione sala",
+      "description": "Dopo aver prenotato una sala, due colleghi ne hanno discusso.",
+      "descriptionEn": "Two coworkers discussed it after booking a meeting room.",
+      "japaneseContext": "会議室を予約した後、二人の同僚が話し合った。",
+      "kanaContext": "かいぎしつをよやくしたあと、ふたりのどうりょうがはなしあった。",
+      "location": "Sala riunioni",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Prenotazione sala"
+    },
+    {
+      "id": "colleague-04",
+      "register": "colleague",
+      "title": "Revisione report",
+      "description": "Durante la revisione del report, il referente ha aggiunto un chiarimento.",
+      "descriptionEn": "While reviewing a report, the owner added clarification.",
+      "japaneseContext": "報告書の確認中に担当者が補足した。",
+      "kanaContext": "ほうこくしょのかくにんちゅうにたんとうしゃがほそくした。",
+      "location": "Sala progetto",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Revisione report"
+    },
+    {
+      "id": "colleague-05",
+      "register": "colleague",
+      "title": "Passaggio di consegne",
+      "description": "Durante un passaggio di consegne, due colleghi ne hanno parlato.",
+      "descriptionEn": "Two colleagues talked during a handoff.",
+      "japaneseContext": "仕事を引き継ぐ際に先輩と後輩が話した。",
+      "kanaContext": "しごとをひきつぐさいにせんぱいとこうはいがはなした。",
+      "location": "Ufficio",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Tra pari",
+      "communicativeSituation": "Passaggio di consegne"
+    },
+    {
+      "id": "colleague-06",
+      "register": "colleague",
+      "title": "Demo software",
+      "description": "Dopo una demo software, i responsabili ne hanno parlato.",
+      "descriptionEn": "The team members discussed it after a software demo.",
+      "japaneseContext": "ソフトウェアの実演後、担当者同士が話した。",
+      "kanaContext": "そふとうぇあのじつえんご、たんとうしゃどうしがはなした。",
+      "location": "Sala dimostrazioni",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Demo software"
+    },
+    {
+      "id": "colleague-07",
+      "register": "colleague",
+      "title": "Consegna fornitore",
+      "description": "I colleghi presenti alla consegna del fornitore ne hanno discusso.",
+      "descriptionEn": "Coworkers receiving a supplier delivery discussed it.",
+      "japaneseContext": "納品に立ち会った同僚たちが確認した。",
+      "kanaContext": "のうひんにたちあったどうりょうたちがかくにんした。",
+      "location": "Magazzino",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Consegna fornitore"
+    },
+    {
+      "id": "colleague-08",
+      "register": "colleague",
+      "title": "Pranzo con una nuova collega",
+      "description": "L’argomento è emerso a pranzo con una nuova collega.",
+      "descriptionEn": "The subject came up over lunch with a new coworker.",
+      "japaneseContext": "新しい同僚との昼食で話題になった。",
+      "kanaContext": "あたらしいどうりょうとのちゅうしょくでわだいになった。",
+      "location": "Mensa",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Pranzo con una nuova collega"
+    },
+    {
+      "id": "colleague-09",
+      "register": "colleague",
+      "title": "Riprogrammazione call",
+      "description": "Dopo la telefonata per spostare una riunione, ne hanno parlato tra colleghi.",
+      "descriptionEn": "Coworkers discussed it after a call to reschedule a meeting.",
+      "japaneseContext": "予定を調整する電話の後で同僚と話した。",
+      "kanaContext": "よていをちょうせいするでんわのあとでどうりょうとはなした。",
+      "location": "Ufficio",
+      "participants": [
+        "Colleghi"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Riprogrammazione call"
+    },
+    {
+      "id": "colleague-10",
+      "register": "colleague",
+      "title": "Retrospettiva",
+      "description": "Il team ne ha discusso durante la retrospettiva.",
+      "descriptionEn": "The team discussed it during the retrospective.",
+      "japaneseContext": "振り返り会議でチームが意見を交換した。",
+      "kanaContext": "ふりかえりかいぎでちーむがいけんをこうかんした。",
+      "location": "Sala riunioni",
+      "participants": [
+        "Team"
+      ],
+      "roles": [
+        "coworkers"
+      ],
+      "relationship": "Pari grado",
+      "communicativeSituation": "Retrospettiva"
+    },
+    {
+      "id": "superior-01",
+      "register": "superior",
+      "title": "Aggiornamento al responsabile",
+      "description": "Il referente lo ha spiegato durante l’aggiornamento al responsabile.",
+      "descriptionEn": "The person in charge explained it during a manager update.",
+      "japaneseContext": "上司への進捗報告の場で担当者がご説明した。",
+      "kanaContext": "じょうしへのしんちょくほうこくのばでたんとうしゃがごせつめいした。",
+      "location": "Ufficio direzione",
+      "participants": [
+        "Dipendente",
+        "responsabile"
+      ],
+      "roles": [
+        "employee",
+        "manager"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Aggiornamento al responsabile"
+    },
+    {
+      "id": "superior-02",
+      "register": "superior",
+      "title": "Approvazione del budget",
+      "description": "Il referente lo ha esposto chiedendo l’approvazione del budget.",
+      "descriptionEn": "The employee stated it when requesting budget approval.",
+      "japaneseContext": "予算の承認をお願いする際に担当者が申し上げた。",
+      "kanaContext": "よさんのしょうにんをおねがいするさいにたんとうしゃがもうしあげた。",
+      "location": "Sala direzione",
+      "participants": [
+        "Dipendente",
+        "direttore"
+      ],
+      "roles": [
+        "employee",
+        "director"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Approvazione del budget"
+    },
+    {
+      "id": "superior-03",
+      "register": "superior",
+      "title": "Accoglienza dirigente",
+      "description": "L’addetto lo ha comunicato accogliendo un dirigente.",
+      "descriptionEn": "The host communicated it while welcoming an executive.",
+      "japaneseContext": "役員をお迎えした担当者が丁寧にお伝えした。",
+      "kanaContext": "やくいんをおむかえしたたんとうしゃがていねいにおつたえした。",
+      "location": "Ingresso sede",
+      "participants": [
+        "Addetto",
+        "dirigente"
+      ],
+      "roles": [
+        "employee",
+        "executive"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Accoglienza dirigente"
+    },
+    {
+      "id": "superior-04",
+      "register": "superior",
+      "title": "Scuse per un errore",
+      "description": "Dopo essersi scusato per un errore, il referente ha fornito una spiegazione.",
+      "descriptionEn": "After apologizing for a mistake, the employee provided an explanation.",
+      "japaneseContext": "不手際についておわびした後、担当者がご説明した。",
+      "kanaContext": "ふてぎわについておわびしたあと、たんとうしゃがごせつめいした。",
+      "location": "Ufficio",
+      "participants": [
+        "Dipendente",
+        "responsabile"
+      ],
+      "roles": [
+        "employee",
+        "manager"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Scuse per un errore"
+    },
+    {
+      "id": "superior-05",
+      "register": "superior",
+      "title": "Reclamo importante",
+      "description": "Il referente ha riferito dopo un reclamo di un cliente importante.",
+      "descriptionEn": "An employee reported after feedback from a key customer.",
+      "japaneseContext": "重要なお客様からのご指摘を受けて担当者がご報告した。",
+      "kanaContext": "じゅうようなおきゃくさまからのごしてきをうけてたんとうしゃがごほうこくした。",
+      "location": "Sala clienti",
+      "participants": [
+        "Dipendente",
+        "dirigente"
+      ],
+      "roles": [
+        "employee",
+        "manager"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Reclamo importante"
+    },
+    {
+      "id": "superior-06",
+      "register": "superior",
+      "title": "Richiesta di proroga",
+      "description": "Il dipendente ha illustrato i motivi chiedendo una proroga.",
+      "descriptionEn": "The employee explained the circumstances when requesting an extension.",
+      "japaneseContext": "締め切りの延長をお願いする際に事情をご説明した。",
+      "kanaContext": "しめきりのえんちょうをおねがいするさいにじじょうをごせつめいした。",
+      "location": "Ufficio",
+      "participants": [
+        "Dipendente",
+        "responsabile"
+      ],
+      "roles": [
+        "employee",
+        "manager"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Richiesta di proroga"
+    },
+    {
+      "id": "superior-07",
+      "register": "superior",
+      "title": "Istruzioni del direttore",
+      "description": "Dopo aver ricevuto le istruzioni del direttore, il referente ha riferito.",
+      "descriptionEn": "The employee reported after hearing the director’s instructions.",
+      "japaneseContext": "部長のご指示を伺った後で担当者がご報告した。",
+      "kanaContext": "ぶちょうのごしじをうかがったあとでたんとうしゃがごほうこくした。",
+      "location": "Direzione",
+      "participants": [
+        "Dipendente",
+        "direttore"
+      ],
+      "roles": [
+        "employee",
+        "director"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Istruzioni del direttore"
+    },
+    {
+      "id": "superior-08",
+      "register": "superior",
+      "title": "Ringraziamento formazione",
+      "description": "Il dipendente ha parlato con cortesia ringraziando per la formazione.",
+      "descriptionEn": "The employee spoke politely while thanking a manager for training.",
+      "japaneseContext": "研修のお礼を申し上げる席で担当者が丁寧に話した。",
+      "kanaContext": "けんしゅうのおれいをもうしあげるせきでたんとうしゃがていねいにはなした。",
+      "location": "Ufficio",
+      "participants": [
+        "Dipendente",
+        "superiore"
+      ],
+      "roles": [
+        "employee",
+        "manager"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Ringraziamento formazione"
+    },
+    {
+      "id": "superior-09",
+      "register": "superior",
+      "title": "Comunicazione di assenza",
+      "description": "Il dipendente ha spiegato le circostanze comunicando l’assenza.",
+      "descriptionEn": "The employee explained the circumstances while notifying an absence.",
+      "japaneseContext": "欠勤のご連絡を差し上げる際に事情をお伝えした。",
+      "kanaContext": "けっきんのごれんらくをさしあげるさいにじじょうをおつたえした。",
+      "location": "Telefono",
+      "participants": [
+        "Dipendente",
+        "responsabile"
+      ],
+      "roles": [
+        "employee",
+        "manager"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Comunicazione di assenza"
+    },
+    {
+      "id": "superior-10",
+      "register": "superior",
+      "title": "Riunione direzionale",
+      "description": "Il referente ha risposto a una domanda durante la riunione direzionale.",
+      "descriptionEn": "The staff member answered a question during an executive meeting.",
+      "japaneseContext": "経営会議でご質問を受けた担当者が回答した。",
+      "kanaContext": "けいえいかいぎでごしつもんをうけたたんとうしゃがかいとうした。",
+      "location": "Sala consiglio",
+      "participants": [
+        "Dipendente",
+        "direzione"
+      ],
+      "roles": [
+        "employee",
+        "executives"
+      ],
+      "relationship": "Gerarchico",
+      "communicativeSituation": "Riunione direzionale"
+    }
+  ]
+}

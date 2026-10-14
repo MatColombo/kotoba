@@ -1,0 +1,20 @@
+'use strict';
+const {performance}=require('node:perf_hooks');
+const fs=require('node:fs');
+const path=require('node:path');
+const Store=require('../source/storage.js');
+const Core=require('../source/engine.js');
+const Sessions=require('../source/sessions.js');
+const raw=fs.readFileSync(path.join(__dirname,'../decks/n4-core.json'),'utf8');
+let start=performance.now(),deck=JSON.parse(raw),parseMs=performance.now()-start;
+start=performance.now();const result=Store.normalizeDeck(deck);const validateMs=performance.now()-start;
+if(result.errors.length)throw Error(result.errors.join(';'));
+const seq=Core.makeDefault('jp-native');
+start=performance.now();let speechEvents=0;
+for(const card of deck.cards){const output=Core.compileSequence(card,seq,{nativeLanguage:'it',exampleCount:10,audioMasters:Core.audioMasters()});speechEvents+=output.sayCount}
+const compileMs=performance.now()-start;
+start=performance.now();
+for(let i=0;i<100;i++)Sessions.filterCards(deck.cards,{}, {known:'exclude',exposure:'all',category:'all'});
+const filter100Ms=performance.now()-start;
+const out={environment:`Node ${process.version} (container, not iPhone)`,deckBytes:Buffer.byteLength(raw),cards:deck.cards.length,contextExamples:deck.cards.reduce((n,c)=>n+c.examples.length,0),parseMs:Math.round(parseMs*100)/100,validateMs:Math.round(validateMs*100)/100,compile75CardsMs:Math.round(compileMs*100)/100,compiledSpeechEvents:speechEvents,filter100IterationsMs:Math.round(filter100Ms*100)/100,heapUsedMB:Math.round(process.memoryUsage().heapUsed/1048576*100)/100};
+console.log(JSON.stringify(out,null,2));

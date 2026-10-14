@@ -1,0 +1,397 @@
+{
+  "1": [
+    {
+      "jp": "土曜日の予定を決めるために、四人の友達が旅行の資料を集めて駅前に集まった。",
+      "kana": "どようびのよていをきめるために、よにんのともだちがりょこうのしりょうをあつめてえきまえにあつまった。",
+      "it": "Quattro amici hanno raccolto materiale per il viaggio e si sono trovati davanti alla stazione per decidere il programma di sabato.",
+      "en": "Four friends gathered travel materials and met in front of the station to decide Saturday's plans.",
+      "cardIds": [
+        1,
+        3,
+        11
+      ]
+    },
+    {
+      "jp": "先週の約束を覚えていたので、必要な切符を先に調べた。",
+      "kana": "せんしゅうのやくそくをおぼえていたので、ひつようなきっぷをさきにしらべた。",
+      "it": "Ricordando la promessa della settimana prima, hanno controllato prima i biglietti necessari.",
+      "en": "Remembering their promise from last week, they checked the necessary tickets first.",
+      "cardIds": [
+        14,
+        16
+      ]
+    },
+    {
+      "jp": "便利なサイトで宿を比べてから、景色のいい部屋を選んだ。",
+      "kana": "べんりなさいとでやどをくらべてから、けしきのいいへやをえらんだ。",
+      "it": "Hanno confrontato gli alloggi su un sito comodo e scelto una stanza con una bella vista.",
+      "en": "They compared lodgings on a convenient website and chose a room with a nice view.",
+      "cardIds": [
+        17,
+        29,
+        2
+      ]
+    },
+    {
+      "jp": "人気の旅館は早くいっぱいになるので、その場で予約した。",
+      "kana": "にんきのりょかんははやくいっぱいになるので、そのばでよやくした。",
+      "it": "Dato che le locande più richieste si riempiono presto, hanno prenotato subito.",
+      "en": "Since popular inns fill up quickly, they booked immediately.",
+      "cardIds": [
+        9
+      ]
+    },
+    {
+      "jp": "最後に代金を払って、みんな笑顔で帰った。",
+      "kana": "さいごにだいきんをはらって、みんなえがおでかえった。",
+      "it": "Infine hanno pagato e sono tornati a casa sorridendo.",
+      "en": "Finally they paid and headed home smiling.",
+      "cardIds": [
+        38
+      ]
+    }
+  ],
+  "2": [
+    {
+      "jp": "引っ越しの日、友達は朝から手伝いに来て、荷物を運び続けた。",
+      "kana": "ひっこしのひ、ともだちはあさからてつだいにきて、にもつをはこびつづけた。",
+      "it": "Il giorno del trasloco, gli amici sono arrivati presto ad aiutare e hanno continuato a trasportare scatoloni.",
+      "en": "On moving day, friends came early to help and kept carrying boxes.",
+      "cardIds": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "jp": "重い本の箱は二人で持ち、軽い袋は子供たちが片付けた。",
+      "kana": "おもいほんのはこはふたりでもち、かるいふくろはこどもたちがかたづけた。",
+      "it": "Hanno sollevato in due le scatole pesanti di libri, mentre i bambini hanno sistemato le borse leggere.",
+      "en": "Two people carried the heavy book boxes, while the children put away the light bags.",
+      "cardIds": [
+        69,
+        70,
+        28
+      ]
+    },
+    {
+      "jp": "新しい家で古い時計を見つけたので、父が直してくれた。",
+      "kana": "あたらしいいえでふるいとけいをみつけたので、ちちがなおしてくれた。",
+      "it": "Nella casa nuova hanno trovato un vecchio orologio e il padre l'ha riparato.",
+      "en": "They found an old clock in the new house, and Dad fixed it.",
+      "cardIds": [
+        35,
+        6
+      ]
+    },
+    {
+      "jp": "もう使わない家具は捨てずに、必要な人に届けることにした。",
+      "kana": "もうつかわないかぐはすてずに、ひつようなひとにとどけることにした。",
+      "it": "Invece di buttare i mobili inutilizzati, hanno deciso di consegnarli a qualcuno che ne aveva bisogno.",
+      "en": "Instead of throwing away unused furniture, they decided to deliver it to someone who needed it.",
+      "cardIds": [
+        37,
+        27
+      ]
+    }
+  ],
+  "3": [
+    {
+      "jp": "朝、駅に着いた時には電車に間に合わず、その理由が分からなかった。",
+      "kana": "あさ、えきについたときにはでんしゃにまにあわず、そのりゆうがわからなかった。",
+      "it": "Quando sono arrivati in stazione la mattina, avevano perso il treno e non ne capivano il motivo.",
+      "en": "When they reached the station in the morning, they had missed the train and didn't know why.",
+      "cardIds": [
+        8,
+        12
+      ]
+    },
+    {
+      "jp": "時刻を一時間間違えたと気づき、予定を変えることにした。",
+      "kana": "じこくをいちじかんまちがえたときづき、よていをかえることにした。",
+      "it": "Si sono accorti di aver sbagliato l'orario di un'ora e hanno deciso di cambiare programma.",
+      "en": "They realized they had gotten the time wrong by an hour and decided to change their plans.",
+      "cardIds": [
+        34,
+        10
+      ]
+    },
+    {
+      "jp": "こんな場合は、駅員に相談する方法を調べるのが一番だ。",
+      "kana": "こんなばあいは、えきいんにそうだんするほうほうをしらべるのがいちばんだ。",
+      "it": "In un caso del genere, la cosa migliore è informarsi su come chiedere aiuto al personale della stazione.",
+      "en": "In such cases, the best approach is to find out how to ask station staff for help.",
+      "cardIds": [
+        15,
+        51,
+        26
+      ]
+    },
+    {
+      "jp": "運行情報を確かめると、別の路線にも乗り換えられると分かった。",
+      "kana": "うんこうじょうほうをたしかめると、べつのろせんにものりかえられるとわかった。",
+      "it": "Verificando le informazioni sui treni, hanno scoperto che potevano cambiare su un'altra linea.",
+      "en": "After verifying train information, they learned they could transfer to another line.",
+      "cardIds": [
+        52,
+        44
+      ]
+    },
+    {
+      "jp": "ただし、その切符には時間の条件があり、もう一度確認した。",
+      "kana": "ただし、そのきっぷにはじかんのじょうけんがあり、もういちどかくにんした。",
+      "it": "Quel biglietto, però, aveva condizioni di orario, perciò le hanno ricontrollate.",
+      "en": "However, the ticket had time restrictions, so they checked again.",
+      "cardIds": [
+        54
+      ]
+    }
+  ],
+  "4": [
+    {
+      "jp": "初めて日本の文化に触れる旅は、私にとって大切な経験になった。",
+      "kana": "はじめてにほんのぶんかにふれるたびは、わたしにとってたいせつなけいけんになった。",
+      "it": "Il mio primo viaggio alla scoperta della cultura giapponese è diventato un'esperienza preziosa.",
+      "en": "My first trip exploring Japanese culture became an important experience for me.",
+      "cardIds": [
+        46,
+        13
+      ]
+    },
+    {
+      "jp": "案内人は説明がとても丁寧で、危険な場所では安全な道を選んでくれた。",
+      "kana": "あんないにんはせつめいがとてもていねいで、きけんなばしょではあんぜんなみちをえらんでくれた。",
+      "it": "La guida spiegava con molta cura e nelle zone pericolose sceglieva un percorso sicuro.",
+      "en": "The guide explained things carefully and chose a safe route through dangerous areas.",
+      "cardIds": [
+        19,
+        18
+      ]
+    },
+    {
+      "jp": "深い川のそばで、細かい模様のある古い石を見つけた。",
+      "kana": "ふかいかわのそばで、こまかいもようのあるふるいいしをみつけた。",
+      "it": "Vicino a un fiume profondo ho trovato una vecchia pietra con disegni minuti.",
+      "en": "Beside a deep river I found an old stone with intricate patterns.",
+      "cardIds": [
+        21,
+        22
+      ]
+    },
+    {
+      "jp": "優しい案内人は、正しい道を教えるだけでなく、その珍しい石の歴史も話してくれた。",
+      "kana": "やさしいあんないにんは、ただしいみちをおしえるだけでなく、そのめずらしいいしのれきしもはなしてくれた。",
+      "it": "La guida gentile non solo mi ha indicato la strada giusta, ma mi ha anche raccontato la storia di quella pietra rara.",
+      "en": "The kind guide not only showed me the right path but also told me the history of the rare stone.",
+      "cardIds": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "jp": "午後は自由な時間があり、町の古い建物をゆっくり見て回った。",
+      "kana": "ごごはじゆうなじかんがあり、まちのふるいたてものをゆっくりみてまわった。",
+      "it": "Il pomeriggio era libero e ho visitato con calma gli edifici antichi della città.",
+      "en": "I had free time in the afternoon and leisurely explored the town's old buildings.",
+      "cardIds": [
+        20
+      ]
+    }
+  ],
+  "5": [
+    {
+      "jp": "海外のお客様を駅まで迎える前に、同僚たちへ予定を伝えた。",
+      "kana": "かいがいのおきゃくさまをえきまでむかえるまえに、どうりょうたちへよていをつたえた。",
+      "it": "Prima di accogliere gli ospiti stranieri in stazione, ho comunicato il programma ai colleghi.",
+      "en": "Before meeting our overseas guests at the station, I told my colleagues the plan.",
+      "cardIds": [
+        31,
+        30
+      ]
+    },
+    {
+      "jp": "部長はお客様を会議に招待し、私たちに会社について説明するように頼んだ。",
+      "kana": "ぶちょうはおきゃくさまをかいぎにしょうたいし、わたしたちにかいしゃについてせつめいするようにたのんだ。",
+      "it": "Il direttore ha invitato gli ospiti alla riunione e ci ha chiesto di spiegare l'azienda.",
+      "en": "The director invited the guests to a meeting and asked us to explain the company.",
+      "cardIds": [
+        42,
+        41
+      ]
+    },
+    {
+      "jp": "私は資料を翻訳し、先方の意見を注意して聞いた。",
+      "kana": "わたしはしりょうをほんやくし、せんぽうのいけんをちゅういしてきいた。",
+      "it": "Ho tradotto i documenti e ascoltato con attenzione le opinioni degli ospiti.",
+      "en": "I translated the documents and listened carefully to the guests' opinions.",
+      "cardIds": [
+        43,
+        55
+      ]
+    },
+    {
+      "jp": "時間が合わず、食事の誘いを丁寧に断る方もいた。",
+      "kana": "じかんがあわず、しょくじのさそいをていねいにことわるかたもいた。",
+      "it": "Alcuni hanno rifiutato cortesemente l'invito a cena perché non avevano tempo.",
+      "en": "Some politely declined the dinner invitation because their schedules didn't match.",
+      "cardIds": [
+        33,
+        32
+      ]
+    },
+    {
+      "jp": "帰り際に書類を受け取り、新しい表現をいくつも覚えた。",
+      "kana": "かえりぎわにしょるいをうけとり、あたらしいひょうげんをいくつもおぼえた。",
+      "it": "Al momento dei saluti ho ricevuto i documenti e imparato varie nuove espressioni.",
+      "en": "As we said goodbye, I received the documents and learned several new expressions.",
+      "cardIds": [
+        36,
+        45
+      ]
+    }
+  ],
+  "6": [
+    {
+      "jp": "静かな町では、春になるとみんなで花を育てる習慣がある。",
+      "kana": "しずかなまちでは、はるになるとみんなではなをそだてるしゅうかんがある。",
+      "it": "In una cittadina tranquilla, in primavera c'è l'abitudine di coltivare fiori insieme.",
+      "en": "In a quiet town, people have a tradition of growing flowers together in spring.",
+      "cardIds": [
+        58,
+        39,
+        47
+      ]
+    },
+    {
+      "jp": "今年は古い小屋の代わりに、小さな温室を建てることになった。",
+      "kana": "ことしはふるいこやのかわりに、ちいさなおんしつをたてることになった。",
+      "it": "Quest'anno hanno deciso di costruire una piccola serra al posto della vecchia baracca.",
+      "en": "This year they decided to build a small greenhouse instead of the old shed.",
+      "cardIds": [
+        40
+      ]
+    },
+    {
+      "jp": "環境への影響を考えると、材料を選ぶ方法はそれほど簡単ではなかった。",
+      "kana": "かんきょうへのえいきょうをかんがえると、ざいりょうをえらぶほうほうはそれほどかんたんではなかった。",
+      "it": "Considerando l'impatto sull'ambiente, scegliere come procurarsi i materiali non è stato così semplice.",
+      "en": "Considering the environmental impact, choosing how to source materials wasn't so simple.",
+      "cardIds": [
+        53,
+        49,
+        56
+      ]
+    },
+    {
+      "jp": "手続きは複雑だったが、住民の関係は少しずつよくなった。",
+      "kana": "てつづきはふくざつだったが、じゅうみんのかんけいはすこしずつよくなった。",
+      "it": "Le procedure erano complicate, ma i rapporti tra residenti sono migliorati poco a poco.",
+      "en": "The paperwork was complicated, but relationships among residents improved gradually.",
+      "cardIds": [
+        57,
+        50
+      ]
+    },
+    {
+      "jp": "完成した庭を見た人たちの印象はとてもよく、次の年も続けようと話した。",
+      "kana": "かんせいしたにわをみたひとたちのいんしょうはとてもよく、つぎのとしもつづけようとはなした。",
+      "it": "Il giardino finito ha fatto un'ottima impressione e tutti hanno parlato di ripetere l'iniziativa l'anno successivo.",
+      "en": "The finished garden made a strong impression, and everyone talked about repeating the project the next year.",
+      "cardIds": [
+        48
+      ]
+    }
+  ],
+  "7": [
+    {
+      "jp": "熱心な学生のユキは、厳しい先生の前で発表することになった。",
+      "kana": "ねっしんながくせいのゆきは、きびしいせんせいのまえではっぴょうすることになった。",
+      "it": "Yuki, una studentessa molto diligente, doveva presentare davanti a un insegnante severo.",
+      "en": "Yuki, a dedicated student, had to present in front of a strict teacher.",
+      "cardIds": [
+        59,
+        66
+      ]
+    },
+    {
+      "jp": "前の晩は心配で眠いのに、なかなか寝られなかった。",
+      "kana": "まえのばんはしんぱいでねむいのに、なかなかねられなかった。",
+      "it": "La sera prima era preoccupata e, nonostante il sonno, non riusciva ad addormentarsi.",
+      "en": "The night before she was worried and, although sleepy, couldn't fall asleep.",
+      "cardIds": [
+        60,
+        68
+      ]
+    },
+    {
+      "jp": "準備は十分だったので、友達は「無理をしないで」と声をかけた。",
+      "kana": "じゅんびはじゅうぶんだったので、ともだちは「むりをしないで」とこえをかけた。",
+      "it": "Dato che la preparazione era sufficiente, un'amica le ha detto di non sforzarsi troppo.",
+      "en": "Since she was well prepared, a friend told her not to push herself too hard.",
+      "cardIds": [
+        62,
+        64
+      ]
+    },
+    {
+      "jp": "発表中に恥ずかしい言い間違いをしたが、先生は最後まで聞いてくれた。",
+      "kana": "はっぴょうちゅうにはずかしいいいまちがいをしたが、せんせいはさいごまできいてくれた。",
+      "it": "Durante la presentazione ha fatto un imbarazzante errore di parola, ma l'insegnante l'ha ascoltata fino alla fine.",
+      "en": "During her presentation she made an embarrassing verbal slip, but the teacher listened to the end.",
+      "cardIds": [
+        67
+      ]
+    },
+    {
+      "jp": "点数は少し残念だったけれど、大切な経験となり、特別な一日になった。",
+      "kana": "てんすうはすこしざんねんだったけれど、たいせつなけいけんとなり、とくべつないちにちになった。",
+      "it": "Il voto è stato un po' deludente, ma ne è nata un'esperienza importante e una giornata speciale.",
+      "en": "The grade was a little disappointing, but it became an important experience and a special day.",
+      "cardIds": [
+        65,
+        61,
+        63
+      ]
+    }
+  ],
+  "8": [
+    {
+      "jp": "夜の山道は暗く、遠くから恐ろしい音が聞こえた。",
+      "kana": "よるのやまみちはくらく、とおくからおそろしいおとがきこえた。",
+      "it": "Il sentiero di montagna era buio e in lontananza si sentiva un rumore spaventoso.",
+      "en": "The mountain path was dark, and a frightening sound came from afar.",
+      "cardIds": [
+        73
+      ]
+    },
+    {
+      "jp": "風がうるさいほど強くなり、歩くのも苦しくなった。",
+      "kana": "かぜがうるさいほどつよくなり、あるくのもくるしくなった。",
+      "it": "Il vento è diventato così forte e rumoroso che persino camminare era faticoso.",
+      "en": "The wind grew so strong and noisy that even walking became difficult.",
+      "cardIds": [
+        74,
+        71
+      ]
+    },
+    {
+      "jp": "ところが雲が消えると、美しい星空が突然現れた。",
+      "kana": "ところがくもがきえると、うつくしいほしぞらがとつぜんあらわれた。",
+      "it": "Poi, quando le nuvole si sono dissolte, è apparso all'improvviso uno splendido cielo stellato.",
+      "en": "Then the clouds cleared, and a beautiful starry sky suddenly appeared.",
+      "cardIds": [
+        72
+      ]
+    },
+    {
+      "jp": "友達は「こんなすばらしい景色を見られてよかったね」と笑った。",
+      "kana": "ともだちは「こんなすばらしいけしきをみられてよかったね」とわらった。",
+      "it": "L'amico ha sorriso dicendo: «Che bello aver potuto vedere un panorama così magnifico!»",
+      "en": "The friend smiled and said, “I'm so glad we got to see such a wonderful view!”",
+      "cardIds": [
+        75
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "environment": "Node v22.16.0 (container, not iPhone)",
+  "deckBytes": 3037748,
+  "cards": 75,
+  "contextExamples": 2250,
+  "parseMs": 9.01,
+  "validateMs": 21.5,
+  "compile75CardsMs": 29.61,
+  "compiledSpeechEvents": 2410,
+  "filter100IterationsMs": 9.56,
+  "heapUsedMB": 21.91
+}

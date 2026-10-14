@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kotoba-drive.invalid/schemas/study.schema.json",
+  "title": "Kotoba Drive study data v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "deckStates",
+    "sessions",
+    "settings",
+    "audioMasters"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "activeDeckId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deckStates": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "cards"
+        ],
+        "properties": {
+          "lastSeenRevision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "cards": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "exposures": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "partial": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "seen": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "firstSeen": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "lastSeen": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "favorite": {
+                  "type": "boolean"
+                },
+                "known": {
+                  "type": "boolean"
+                },
+                "exampleCounts": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "listenedMs": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "knownChangedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "creditedRuns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "deckId",
+          "orderedCardIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "deckId": {
+            "type": "string"
+          },
+          "orderedCardIds": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            }
+          },
+          "currentCardIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "currentChapterIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "created",
+              "in-progress",
+              "completed",
+              "archived"
+            ]
+          },
+          "filters": {
+            "type": "object"
+          },
+          "requestedCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "shuffleEnabled": {
+            "type": "boolean"
+          },
+          "shuffleSeed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "language": {
+            "enum": [
+              "it",
+              "en"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "jp-native",
+              "native-jp"
+            ]
+          },
+          "sequenceId": {
+            "type": "string"
+          },
+          "completedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "activeRun": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "sequences": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "settings": {
+      "type": "object"
+    },
+    "audioMasters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "rate": {
+            "type": "number",
+            "minimum": 0.1,
+            "maximum": 10
+          },
+          "pitch": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "volume": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    },
+    "exportedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
