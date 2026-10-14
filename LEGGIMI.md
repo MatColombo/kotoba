@@ -1,78 +1,64 @@
-# Kotoba Drive v0.4.0 — Guida e note di rilascio
+# Kotoba Drive v0.4.1 — Istruzioni
 
-PWA statica gratuita per ripassare vocaboli giapponesi N4 dall'iPhone con sintesi vocale e controlli multimediali sperimentali. **La release tecnica v0.4.0 è pronta da distribuire su GitHub Pages, ma non è ancora certificata su Safari/iPhone o su un'autoradio reale. I contenuti contestuali restano in revisione linguistica.**
+Versione di aggiornamento della PWA Kotoba Drive v0.4.0. Hosting gratuito GitHub Pages, Web Speech API e IndexedDB, senza backend.
 
-## Installazione / aggiornamento GitHub Pages
+## Aggiornamento dal sito esistente
 
-1. Dalla PWA attualmente installata aprire **☰ → Deck e backup → Esporta study.json** e, meglio ancora, **Backup completo (deck + studio)**. Conservare i file fuori dall'iPhone.
-2. Estrarre il pacchetto `kotoba-drive-v0.4.0-github-pages.zip`.
-3. Caricare **i file e le cartelle estratti**, non lo ZIP, nella root del repository GitHub (`index.html`, `service-worker.js`, `decks/`, ecc.).
-4. In **Settings → Pages** selezionare `Deploy from a branch`, branch `main`, `/ (root)`.
-5. Attendere la pubblicazione HTTPS, aprire `https://USERNAME.github.io/REPOSITORY/` in Safari e ricaricare. La versione in alto deve indicare **v0.4.0**.
-6. Per l'installazione dalla schermata Home: in Safari usare **Condividi → Aggiungi alla schermata Home**. Se compare ancora la versione precedente, chiudere la PWA, aprire una volta il sito in Safari e riavviare la PWA; può essere necessario attendere l'aggiornamento del Service Worker.
-7. Verificare subito deck, sessioni salvate, lingua, master TTS, sequenze e preferiti. Se mancano dati, usare l'importazione del backup anziché cancellare l'app.
+1. **Prima di installare la nuova versione** aprire la PWA attuale → **☰ → Deck e backup → Esporta study.json**, e possibilmente **Backup completo (deck + studio)**. Conservare il file al di fuori dell'app.
+2. Scaricare ed estrarre `kotoba-drive-v0.4.1-github-pages.zip` e caricare tutti i file estratti nella root del repository GitHub Pages; non caricare il file ZIP tal quale.
+3. Assicurarsi che `decks/n4-core.json` (revisione **6**) e `decks/catalog.json` siano pubblicati; se il sito è in una sottocartella, mantenere la stessa struttura dei percorsi.
+4. In **Settings → Pages**, se necessario, usare `Deploy from a branch`, branch `main`, directory `/ (root)`.
+5. Aprire il sito HTTPS su Safari, attendere il nuovo Service Worker, chiudere e riaprire la PWA dalla schermata Home. La versione nell'intestazione deve indicare **v0.4.1**.
+6. Controllare deck, progressi, sessioni, audio master e sequenze. Per compatibilità degli ID, il deck N4 integrato passa automaticamente dalla revisione 4 o 5 alla 6; prima della sostituzione editoriale viene generato un backup recuperabile dalla sezione **Deck e backup**.
+7. In caso di dati mancanti non eliminare subito lo storage: ripristinare un backup tramite la funzione di importazione.
 
-Non cancellare il vecchio sito o i dati di Safari prima di aver verificato il backup. Lo storage iOS può essere rimosso dal sistema: esportare periodicamente `study.json`.
+L'aggiornamento del Service Worker non può garantire un refresh immediato su ogni versione di Safari; se il sito mostra vecchi esempi, verificare anzitutto la revisione del deck installato e la cache PWA.
 
-## Funzioni principali
+## Cosa cambia
 
-- **Audio e capitoli:** compilatore di eventi deterministico, pause annidate, ripetizioni, sezioni navigabili con i controlli multimediali disponibili.
-- **Audio master:** velocità (`rate`), tono (`pitch`), volume per `ja-JP`, `it-IT`, `en-US`; override separati per gruppo ed elemento.
-- **Deck e memoria separati:** `decks/n4-core.json` contiene il materiale didattico, IndexedDB conserva progressi, sessioni e sequenze, esportabili in `study.json`.
-- **Sessioni:** filtri, shuffle una volta sola, ordine e posizione persistenti, stella preferito e flag Noto, contatori di ascolti, percentili di esposizione.
-- **Contenuti:** 75 vocaboli; 750 esempi originali conservati; 2.250 esempi contestualizzati **in bozza**; 30 scenari, 8 gruppi e 8 storie.
-- **Voce sandbox:** `voice-sandbox.html` è separato e sperimentale; non assegna voci differenti alle frasi dei deck.
+### Rivelazione su flashcard
 
-## Gestione dati e backup
+Durante la lettura normale, significato, forme, esempio giapponese e traduzione vengono mostrati progressivamente quando il relativo elemento audio viene riprodotto. Premere **Successivo** per saltare a un altro capitolo della stessa carta svela anche le parti ancora nascoste. La rivelazione rimane fino al passaggio alla carta successiva, che ricomincia nascosta. Il pulsante **Mostra soluzione** svela tutto manualmente.
 
-| File / archivio | Contenuto | Portabilità |
-|---|---|---|
-| `decks/n4-core.json` | Vocabolario, forme, esempi, scenari, storie e ID stabili | Condivisibile, indipendente dai progressi |
-| `IndexedDB` | Dati operativi locali e transazioni | Legato all'installazione/browser |
-| `study.json` | Sessioni, `deckId` / `cardId`, ascolti, preferenze, sequenze e master | Esportabile/importabile; **non** include il testo dei deck |
-| Backup completo | `format: kotoba-backup`, deck e studio | Consigliato per trasferire l'app su un altro dispositivo |
+La zona esempi ha più spazio. Giapponese, kana e traduzione possono andare a capo; se un testo supera l'altezza disponibile, si sposta verticalmente con movimento lento. In impostazioni di accessibilità con movimento ridotto, l'animazione è disabilitata e l'area è scorrevole manualmente.
 
-L'importazione confronta versioni e ID: le aggiunte vengono riconciliate, mentre rimozioni e cambio ID richiedono intervento o scelta esplicita. **Prima di una sostituzione o di un aggiornamento del deck**, la PWA salva una copia recuperabile nell'archivio locale `pre-import-backup`. La si può scaricare tramite **Deck e backup → Backup prima dell'ultima importazione**. Il backup di sicurezza conserva l'ultima operazione soltanto; non sostituisce i download manuali, soprattutto prima di un aggiornamento della PWA stessa.
+### Contatore del significato
 
-Se importi `study.json` su un dispositivo diverso, installa prima gli stessi deck (stessi `deckId` e ID delle carte). La fusione adotta il massimo dei contatori anziché sommarli; non può ricostruire cronologie complete da soli contatori aggregati.
+Il badge `Significato ♫ N` sulla flashcard, nel vocabolario e nel dettaglio indica quante letture **effettivamente terminate** del significato sono state confermate dal lettore Web Speech. Un salto durante il parlato o un errore non incrementano il contatore. È distinto dalle **esposizioni complete**, che richiedono il completamento di tutta la card. L'audio singolo di prova, esterno alla sessione, non incrementa il contatore.
 
-## Riproduzione e definizione delle statistiche
+### Shuffle degli esempi
 
-Un ascolto **completo** viene conteggiato soltanto quando la sequenza termina naturalmente, senza salto di capitolo o errore TTS. Una riproduzione interrotta dopo l'avvio può costituire un ascolto **parziale**. Pause, salti e callback TTS ritardate non attribuiscono completamenti. Se il sistema non può pronunciare un elemento o interviene un timeout, la sequenza si arresta e la carta non viene considerata completamente ascoltata.
+Aprire **☰ → Sessioni e statistiche** e nella creazione sessione abilitare **Mescola anche gli esempi**. La checkbox è indipendente da **Mescola l'ordine delle carte**. L'ordine viene determinato e salvato **una volta per sessione e per vocabolo**, con seed e ID degli esempi. I filtri per registro e scenario vengono applicati prima del mescolamento. Chiudere e riprendere la sessione non rimescola né esempi né carte. Le impostazioni non cambiano l'ordine del deck originale.
 
-Il percentile rappresenta la **frequenza di esposizione**, non la conoscenza linguistica. I contatori uguali sono mantenuti nella stessa fascia; "Noto" è una classificazione esplicita effettuata dall'utente. Lo shuffle è fissato e registrato alla creazione della sessione.
+### Contenuti contestuali
 
-## Architettura
+Il deck N4 è aggiornato alla **revisione 6**: 2.250 frasi contestuali nuove (30 per ciascuna delle 75 parole, distribuite sui tre registri), senza ripetere esattamente nessuno dei 750 esempi storici. I 750 esempi precedenti restano nel gruppo **Originali (v0.3)** e conservano gli ID. Sono mantenuti 30 scenari, otto storie e tutti gli ID delle carte e degli esempi contestuali già memorizzati nelle sessioni.
 
-- `source/engine.js`: sequenze, profili audio, SpeechAdapter, PlaybackController, navigazione capitoli.
-- `source/storage.js`: contratti JSON, differenze tra deck, import/export, repository IndexedDB e backup atomici.
-- `source/sessions.js`: filtri, shuffle, percentili, contatori e checkpoint.
-- `source/content.js`: selezione di registri, esempi e storie.
-- `source/app.js`: UI e collegamento dei componenti.
-- `source/template.html`, `source/app.css`, `source/build_index.py`: sorgenti e costruzione di `index.html` monolitico compatibile con GitHub Pages.
-- `decks/catalog.json`: catalogo statico (URL relativi); `schemas/`: JSON Schema per file portabili.
-- `service-worker.js`: cache versionata per risorse statiche. Dati personali **non** salvati nella Cache API.
+**Qualità linguistica:** 60 esempi per `場合` e `心配` sono stati scritti individualmente; altri 2.190 esempi sono stati costruiti da temi lessicali e modelli di frasi con forme verbali e aggettivali diverse. Si tratta di nuove bozze, NON di 2.250 frasi certificate dopo rilettura individuale: rimane necessaria una revisione competente di giapponese, keigo, kana e traduzioni. `CONTENT_QA.json` misura la correttezza formale, non la naturalezza del testo.
 
-Per ricostruire `index.html`: `python3 source/build_index.py`. La build pubblicata è generata dai sorgenti; evitare di modificare solo `index.html` se si vogliono mantenere modifiche successive.
+## Architettura dei dati
 
-## Test e verifica
+- `decks/n4-core.json`: parole, forme, esempi, scenari e storie. ID permanenti, revisione 6.
+- `IndexedDB`: deck installati, memorie di ascolto e preferiti, sequenze e sessioni.
+- `study.json`: backup portabile dei dati personali; memorizza `meaningPlays`, progressi, master TTS e, per le sessioni mescolate, `exampleShuffleSeed`, `exampleOrders`, `exampleOffsets`.
+- `schemas/`: schemi JSON per i formati portabili.
+- `service-worker.js`: cache versionata, distinta dallo storage personale.
+- `voice-sandbox.html`: pagina sperimentale di voci, separata dai deck.
 
-```bash
+Per ricostruire la build monolitica, modificare i sorgenti in `source/` e lanciare `python3 source/build_index.py`.
+
+## Test
+
+```sh
 npm test
 python3 tools/validate_content.py
-python3 tests/browser_phase5_mock.py
-node tools/bench-release.cjs
+python3 tests/browser_revision041_mock.py
 ```
 
-I test browser con storage **simulato** richiedono Playwright Python e Chromium. Non testano IndexedDB reale. `TEST_REPORT.md` distingue ciò che è stato verificato da ciò che richiede un iPhone. `GUIDA_TEST_IPHONE.md` include la checklist manuale. `PERFORMANCE_DATA.json` raccoglie le misure eseguite su Node nel container, non sull'iPhone.
+I test Playwright richiedono Chromium e Playwright Python. I test UI usano un archivio e un TTS simulati, quindi non dimostrano la persistenza IndexedDB reale né la qualità delle voci su iPhone. I test in un contesto reale sono stati bloccati da una policy di navigazione nell'ambiente di esecuzione. Vedere `TEST_REPORT.md` e `GUIDA_TEST_IPHONE.md`.
 
-## Limitazioni note
+## Uso alla guida
 
-- **iPhone Safari:** funzionamento reale con voci TTS, IndexedDB persistente, Wake Lock, ricaricamento della PWA e ricezione dei comandi Bluetooth **da verificare sul dispositivo**.
-- Il TTS giapponese/iOS può esporre soltanto Kyoko standard; la PWA non può richiedere tutte le voci installate. Voce offline non garantita.
-- La Media Session API non assicura che `nexttrack`/`previoustrack` del volante siano inoltrati alla PWA.
-- **Contenuti:** 2.250 esempi sono derivazioni situazionali delle frasi originali, non dialoghi naturali riscritti nei tre registri; il keigo non è verificato. 201 segnalazioni automatiche richiedono revisione umana. Non utilizzare questi esempi come riferimento di correttezza definitiva.
-- Il controllo "Esporta backup prima dell'ultima importazione" dipende anch'esso dalla persistenza IndexedDB; conservare sempre una copia scaricata altrove.
-- Nessun mixing Web Audio, enfasi SSML, backend, riconoscimento vocale o voci assegnate ai personaggi.
+Configurare sessione, filtri, shuffle e sequenze prima di mettersi al volante. Non interagire con lo schermo durante la guida. Safari può non inoltrare i comandi media Bluetooth alla Web Speech API; il comportamento dell'auto richiede un test reale.
 
-**Sicurezza durante la guida:** preparare sessione, filtri e impostazioni a veicolo fermo. Non interagire con lo schermo durante la guida.
+**Aggiornamento della verifica finale:** corretti anche 58 casi di disallineamento evidente fra passato giapponese e traduzioni inglesi e introdotto un test specifico. La revisione madrelingua completa resta da eseguire.

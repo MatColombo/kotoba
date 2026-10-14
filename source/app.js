@@ -23,7 +23,7 @@
  // One-time non-destructive migration: read the previous settings without overwriting them.
  if(!Object.keys(stored).length){try{const previous=JSON.parse(localStorage.getItem('kotoba-drive-v2')||'{}');if(previous&&typeof previous==='object')stored=previous}catch(e){}}
  if(!Object.keys(stored).length){try{const old=JSON.parse(localStorage.getItem('kotoba-drive-demo-v1')||'{}');if(old&&typeof old==='object'){for(const key of ['lang','direction','category','size','wheel','progress','exampleCycle'])if(old[key]!==undefined)stored[key]=old[key]}}catch(e){}}
- const state={...defaults,...stored,sessionId:null,playing:false,paused:false,completed:false,view:'study',drawerOpen:false,chapterIndex:0,activePlan:null,drawerTab:'settings',deck:[],index:0,answerShown:false,visibleExampleIndex:null,previewId:0,voices:[],phase:'',libraryFilter:'all',search:'',chosenWordId:1,hardwareCount:0,events:[]};
+ const state={...defaults,...stored,sessionId:null,playing:false,paused:false,completed:false,view:'study',drawerOpen:false,chapterIndex:0,activePlan:null,drawerTab:'settings',deck:[],index:0,answerShown:false,revealed:{answer:false,forms:false,exampleJP:false,exampleNative:false},visibleExampleIndex:null,previewId:0,voices:[],phase:'',libraryFilter:'all',search:'',chosenWordId:1,hardwareCount:0,events:[]};
  if(state.lang!=='en')state.lang='it';if(!['jp-native','native-jp'].includes(state.direction))state.direction='jp-native';
  if(!['all','verb','noun','na','i'].includes(state.category))state.category='all';
  state.size=num(state.size,5,15000,20);state.exampleCount=num(state.exampleCount,0,10,1);
@@ -35,12 +35,16 @@
  const t=(it,en)=>state.lang==='it'?it:en;
  const locale=()=>state.lang==='it'?'it-IT':'en-US';
  const wordById=id=>BANK.find(w=>String(w.id)===String(id));
+ const resetReveal=()=>{state.answerShown=false;state.revealed={answer:false,forms:false,exampleJP:false,exampleNative:false};};
+ const revealAll=()=>{state.answerShown=true;state.revealed={answer:true,forms:true,exampleJP:true,exampleNative:true};};
+ const allRevealed=()=>Object.values(state.revealed).every(Boolean);
  const currentSession=()=>studyDoc.sessions.find(s=>s.id===state.sessionId);
  const sessionById=id=>studyDoc.sessions.find(s=>s.id===id);
  const current=()=>state.deck[Math.min(state.index,Math.max(0,state.deck.length-1))]||BANK[0];
  const selectedSequence=()=>sequenceRepo.active(state.direction);
- const examplesForCard=(w)=>Content.examplesFor(w,currentSession()?.filters||{});
- const selectedExample=(w)=>{const examples=examplesForCard(w);if(!examples.length)return {example:{jp:'',kana:'',it:'',en:''},index:0};const base=state.visibleExampleIndex??num(state.exampleCycle[w.id]||0,0,10000,0)%examples.length;return {example:examples[base%examples.length],index:base%examples.length}};
+ const examplesForCard=(w)=>{const session=currentSession();return Content.examplesFor(w,session?.filters||{},session?.exampleShuffleEnabled?session.exampleOrders?.[String(w.id)]:null);};
+ const exampleStart=(w)=>{const session=currentSession();return session?.exampleShuffleEnabled?(Number(session.exampleOffsets?.[String(w.id)])||0):(Number(state.exampleCycle[w.id])||0);};
+ const selectedExample=(w)=>{const examples=examplesForCard(w);if(!examples.length)return {example:{jp:'',kana:'',it:'',en:''},index:0};const base=state.visibleExampleIndex??(exampleStart(w)%examples.length);return {example:examples[base%examples.length],index:base%examples.length}};
  const settingFields=['lang','direction','category','size','exampleCount','formCount','globalGap','announceForms','wheel','wake','exampleCycle'];
  function snapshotStudy(){
    if(!db||!activeDeckId)return null;
@@ -73,7 +77,7 @@
    const previous=$('create-deck').value||activeDeckId;
    $('create-deck').innerHTML=installedDecks.map(d=>`<option value="${textSafe(d.deckId)}">${textSafe(d.title)} (${d.cards.length})</option>`).join('');
    $('create-deck').value=installedDecks.some(d=>d.deckId===previous)?previous:activeDeckId;
-   $('create-language').value=state.lang;$('create-direction').value=state.direction;
+   $('create-language').value=state.lang;$('create-direction').value=state.direction;$('create-shuffle-examples').checked=!!(currentSession()?.exampleShuffleEnabled);
    $('create-size').value=state.size;$('create-example-count').value=state.exampleCount;
    $('create-category').value=state.category;
    renderCreateSequences();updateAvailableOptions();updateEligible();
@@ -125,7 +129,7 @@
    state.lang=session.language||'it';state.direction=session.direction||'jp-native';
    if(session.sequenceId)sequenceRepo.select(state.direction,session.sequenceId);
    state.size=Number(session.requestedCount)||resolved.cards.length;state.category=session.filters?.category||'all';state.exampleCount=Math.min(10,Math.max(0,Number(session.exampleCount??state.exampleCount)));$('example-count').value=state.exampleCount;
-   state.completed=session.status==='completed';state.paused=false;state.playing=false;state.activePlan=null;state.answerShown=false;state.visibleExampleIndex=null;
+   state.completed=session.status==='completed';state.paused=false;state.playing=false;state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
    state.phase=recover?'Sessione ripristinata':'Sessione pronta';
    $('language-it').classList.toggle('active',state.lang==='it');$('language-en').classList.toggle('active',state.lang==='en');
    // A created session remains 'created' until audio actually starts.
@@ -137,7 +141,7 @@
    const deck=installedDecks.find(d=>d.deckId===(options.deckId||activeDeckId))||activeDeck;
    const filters=options.filters||{category:state.category,known:'exclude',favorite:'all',exposure:'all',register:'all',scenario:'all'};
    const session=Sessions.buildSession({deckId:deck.deckId,cards:deck.cards,progress:studyDoc.deckStates[deck.deckId]?.cards||{},filters,
-    count:options.count??state.size,shuffle:options.shuffle??true,seed:options.seed,sequenceId:options.sequenceId||sequenceRepo.active(options.direction||state.direction).sequenceId,
+    count:options.count??state.size,shuffle:options.shuffle??true,seed:options.seed,shuffleExamples:options.shuffleExamples??false,exampleSeed:options.exampleSeed,sequenceId:options.sequenceId||sequenceRepo.active(options.direction||state.direction).sequenceId,
     language:options.language||state.lang,direction:options.direction||state.direction,name:options.name||''});
    session.exampleCount=Number(options.exampleCount??state.exampleCount);
    studyDoc.sessions.push(session);activateSession(session);renderSessions();return session;
@@ -159,7 +163,7 @@
      nativeLanguage:state.lang,exampleCount:opts.exampleCount??state.exampleCount,
      formCount:state.formCount,announceForms:state.announceForms,
      pauseBetweenElementsMs:Math.round((opts.globalGap??state.globalGap)*1000),
-     startExample:Number(state.exampleCycle[w.id]||0),audioMasters:state.audioMasters,formName
+     startExample:exampleStart(w),audioMasters:state.audioMasters,formName
    });
  }
  function previewPlan(){
@@ -182,30 +186,37 @@
    $('study-front').classList.toggle('native',nativeFirst);
    $('study-front').lang=nativeFirst?state.lang:'ja';
    $('study-front-reading').textContent=nativeFirst?'':w.kana;
-   $('study-answer').textContent=state.answerShown?(nativeFirst?w.jp:w.meaning[state.lang]):'••••';
+   $('study-answer').textContent=(state.revealed.answer||state.answerShown)?(nativeFirst?w.jp:w.meaning[state.lang]):'••••';
    $('study-answer').lang=nativeFirst?'ja':state.lang;
    $('study-answer').classList.toggle('jp',nativeFirst);
-   $('study-answer').classList.toggle('masked',!state.answerShown);
-   $('study-answer-reading').textContent=state.answerShown&&nativeFirst?w.kana:'';
+   $('study-answer').classList.toggle('masked',!(state.revealed.answer||state.answerShown));
+   $('study-answer-reading').textContent=(state.revealed.answer||state.answerShown)&&nativeFirst?w.kana:'';
    $('forms-heading').textContent=t('FORME GRAMMATICALI','GRAMMAR FORMS');
    $('forms-count').textContent=t(`${w.forms.length} forme`,`${w.forms.length} forms`);
-   $('study-forms').innerHTML=state.answerShown?w.forms.slice(0,3).map(f=>`<span class="form-pill"><span>${textSafe(f.label)}</span>${textSafe(f.jp)}</span>`).join('')+(w.forms.length>3?`<span class="extra-counter">+${w.forms.length-3}</span>`:''):`<span class="muted-placeholder">${t('Visibili dopo la risposta','Shown after the answer')}</span>`;
+   $('study-forms').innerHTML=(state.revealed.forms||state.answerShown)?w.forms.slice(0,3).map(f=>`<span class="form-pill"><span>${textSafe(f.label)}</span>${textSafe(f.jp)}</span>`).join('')+(w.forms.length>3?`<span class="extra-counter">+${w.forms.length-3}</span>`:''):`<span class="muted-placeholder">${t('Visibili dopo la risposta','Shown after the answer')}</span>`;
    $('example-heading').textContent=t(`ESEMPIO ${Math.min(exIndex+1,examplesForCard(w).length)} / ${examplesForCard(w).length}`,`EXAMPLE ${Math.min(exIndex+1,examplesForCard(w).length)} / ${examplesForCard(w).length}`);
-   $('study-example-jp').textContent=state.answerShown?example.jp:t('Frase nascosta fino alla soluzione','Sentence hidden until the answer');
-   $('study-example-kana').textContent=state.answerShown?example.kana:'';
-   $('study-example-native').textContent=state.answerShown?example[state.lang]:'';
+   $('study-example-jp').textContent=(state.revealed.exampleJP||state.answerShown)?example.jp:t('Frase nascosta fino alla soluzione','Sentence hidden until the answer');
+   $('study-example-kana').textContent=(state.revealed.exampleJP||state.answerShown)?example.kana:'';
+   $('study-example-native').textContent=(state.revealed.exampleNative||state.answerShown)?example[state.lang]:'';
    $('btn-play').innerHTML=state.playing?`<span class="control-symbol">Ⅱ</span><span>${t('Pausa','Pause')}</span>`:`<span class="control-symbol">▶</span><span>${state.completed?t('Nuova','New'):state.paused?t('Riprendi','Resume'):t('Avvia audio','Start audio')}</span>`;
    $('repeat-label').textContent=t('Precedente','Previous');$('next-label').textContent=t('Successivo','Next');
-   $('btn-reveal').textContent=state.answerShown?t('Nascondi soluzione','Hide answer'):t('Mostra soluzione','Reveal answer');
+   $('btn-reveal').textContent=allRevealed()?t('Nascondi soluzione','Hide answer'):t('Mostra soluzione','Reveal answer');
    $('btn-show-detail').textContent=t('Esempi ↗','Examples ↗');
    const flags=progressFor(w);for(const [kind,name] of [['favorite','favorite'],['known','known']]){const btn=$(`study-${name}`);btn.setAttribute('aria-pressed',String(!!flags[kind]));btn.classList.toggle('active',!!flags[kind]);btn.textContent=kind==='favorite'?(flags[kind]?'★':'☆'):(flags[kind]?t('✓ Noto','✓ Known'):t('Noto','Known'));}
+   $('study-meaning-count').textContent=t(`Significato ♫ ${flags.meaningPlays||0}`,`Meaning ♫ ${flags.meaningPlays||0}`);
+   scheduleExampleScroll();
    $('playback-status').textContent=state.phase;$('status-dot').classList.toggle('live',state.playing);updateMediaMetadata();updateStats();
  }
+ let exampleScrollFrame=0;
+ function scheduleExampleScroll(){if(exampleScrollFrame)cancelAnimationFrame(exampleScrollFrame);exampleScrollFrame=requestAnimationFrame(()=>{exampleScrollFrame=0;for(const n of document.querySelectorAll('.example-viewport')){
+  const el=n.firstElementChild;if(!el)continue;const signature=[el.textContent,n.clientWidth,n.clientHeight].join('|');if(el.dataset.scrollSignature===signature)continue;el.dataset.scrollSignature=signature;el.classList.remove('scrolling');el.style.removeProperty('--scroll-distance');el.style.removeProperty('--scroll-duration');
+  const overflow=el.scrollHeight-n.clientHeight;if(overflow>3){el.style.setProperty('--scroll-distance',`-${Math.ceil(overflow)}px`);el.style.setProperty('--scroll-duration',`${Math.max(18,Math.ceil(overflow/12)*2+6)}s`);el.classList.add('scrolling')}
+ }});}
  function renderSessions(){if(!$('saved-sessions')||!activeDeck)return;
    const select=$('create-deck');if(!select.options.length)syncSessionCreator();
    const sessions=studyDoc.sessions.filter(x=>x.deckId===activeDeckId).sort((a,b)=>String(b.updatedAt||'').localeCompare(String(a.updatedAt||'')));
    $('saved-sessions').innerHTML=sessions.map(s=>{const resolved=Sessions.resolveSession(s,BANK),missing=resolved.missingIds.length;
-    return `<article class="session-entry"><div><strong>${textSafe(s.name||s.id)}</strong><p class="small-copy">${textSafe(s.status||'created')} · ${s.orderedCardIds.length} carte · ${Math.min((s.currentCardIndex||0)+1,s.orderedCardIds.length)}/${s.orderedCardIds.length} · ${s.shuffleEnabled?'Shuffle':'Ordine deck'}${missing?' · ⚠ '+missing+' mancanti':''}</p></div><div class="deck-buttons"><button class="solid-btn" data-session-resume="${textSafe(s.id)}">${s.status==='completed'?'Rivedi':'Riprendi'}</button><button class="outline-btn" data-session-copy="${textSafe(s.id)}">Duplica</button><button class="outline-btn" data-session-archive="${textSafe(s.id)}">${s.status==='archived'?'Riattiva':'Archivia'}</button><button class="outline-btn" data-session-delete="${textSafe(s.id)}">Elimina</button></div></article>`}).join('')||'<p class="small-copy">Nessuna sessione salvata per questo deck.</p>';
+    return `<article class="session-entry"><div><strong>${textSafe(s.name||s.id)}</strong><p class="small-copy">${textSafe(s.status||'created')} · ${s.orderedCardIds.length} carte · ${Math.min((s.currentCardIndex||0)+1,s.orderedCardIds.length)}/${s.orderedCardIds.length} · ${s.shuffleEnabled?'Shuffle carte':'Ordine deck'}${s.exampleShuffleEnabled?' · Shuffle esempi':''}${missing?' · ⚠ '+missing+' mancanti':''}</p></div><div class="deck-buttons"><button class="solid-btn" data-session-resume="${textSafe(s.id)}">${s.status==='completed'?'Rivedi':'Riprendi'}</button><button class="outline-btn" data-session-copy="${textSafe(s.id)}">Duplica</button><button class="outline-btn" data-session-archive="${textSafe(s.id)}">${s.status==='archived'?'Riattiva':'Archivia'}</button><button class="outline-btn" data-session-delete="${textSafe(s.id)}">Elimina</button></div></article>`}).join('')||'<p class="small-copy">Nessuna sessione salvata per questo deck.</p>';
    const stats=Sessions.dashboard(BANK,state.progress,sessions);const metric=(n,label)=>`<div class="session-metric"><strong>${n}</strong><span>${label}</span></div>`;
    $('deck-dashboard').innerHTML=`<div class="metric-grid">${metric(stats.total,'Carte')}${metric(stats.heard,'Ascoltate')}${metric(stats.unheard,'Mai ascoltate')}${metric(stats.coverage.toFixed(1)+'%','Copertura')}${metric(stats.exposures,'Esposizioni')}${metric(stats.known,'Note')}${metric(stats.favorites,'Preferite')}${metric(stats.completedSessions,'Sessioni concluse')}</div><p class="small-copy">La copertura misura gli ascolti, non la conoscenza dichiarata.</p>`;
    const max=Math.max(1,...stats.distribution.map(x=>x.count));
@@ -232,11 +243,11 @@
  function closeDrawer(){state.drawerOpen=false;$('app-drawer').classList.remove('open');$('app-drawer').setAttribute('aria-hidden','true');$('app-drawer').inert=true;$('drawer-shade').hidden=true;$('btn-menu').setAttribute('aria-expanded','false');$('btn-menu').focus()}
  function switchDrawerTab(tab){state.drawerTab=tab;for(const v of ['settings','sequence'])$('drawer-'+v).classList.toggle('hidden',v!==tab);document.querySelectorAll('[data-drawer]').forEach(b=>b.classList.toggle('active',b.dataset.drawer===tab));if(tab==='sequence')renderSequenceEditor();$('app-drawer').querySelector('.drawer-content').scrollTop=0}
  function renderLibrary(){const search=state.search.toLowerCase().trim();const rows=BANK.filter(w=>(state.libraryFilter==='all'||w.pos===state.libraryFilter)&&[w.jp,w.kana,w.meaning.it,w.meaning.en].join(' ').toLowerCase().includes(search));
-   $('word-list').innerHTML=rows.map(w=>`<button class="word-row ${String(state.chosenWordId)===String(w.id)?'active':''}" type="button" data-word-id="${w.id}"><span><strong lang="ja">${textSafe(w.jp)}</strong><small lang="ja">${textSafe(w.kana)}</small></span><span class="word-translation">${progressFor(w).favorite?'★ ':''}${progressFor(w).known?'✓ ':''}${textSafe(w.meaning[state.lang])}</span></button>`).join('')||`<p class="small-copy">${t('Nessun risultato','No results')}</p>`;document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',state.libraryFilter===b.dataset.filter));
+   $('word-list').innerHTML=rows.map(w=>`<button class="word-row ${String(state.chosenWordId)===String(w.id)?'active':''}" type="button" data-word-id="${w.id}"><span><strong lang="ja">${textSafe(w.jp)}</strong><small lang="ja">${textSafe(w.kana)}</small><small class="word-exposure">${t('Significato','Meaning')} ♫ ${progressFor(w).meaningPlays||0} · ${t('Completata','Completed')} ${progressFor(w).exposures||0}</small></span><span class="word-translation">${progressFor(w).favorite?'★ ':''}${progressFor(w).known?'✓ ':''}${textSafe(w.meaning[state.lang])}</span></button>`).join('')||`<p class="small-copy">${t('Nessun risultato','No results')}</p>`;document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',state.libraryFilter===b.dataset.filter));
  }
  function renderDetail(){
   const w=wordById(state.chosenWordId)||BANK[0];if(!w)return;
-  $('detail-pos').textContent=POS[w.pos][state.lang];$('detail-word').textContent=w.jp;$('detail-reading').textContent=w.kana;$('detail-meaning').textContent=w.meaning[state.lang];
+  $('detail-pos').textContent=POS[w.pos][state.lang];$('detail-word').textContent=w.jp;$('detail-reading').textContent=w.kana;$('detail-meaning').textContent=w.meaning[state.lang];$('detail-meaning-count').textContent=t(`Significato ascoltato ${progressFor(w).meaningPlays||0} volte · Card completata ${progressFor(w).exposures||0} volte`,`Meaning played ${progressFor(w).meaningPlays||0} times · Card completed ${progressFor(w).exposures||0} times`);
   for(const kind of ['favorite','known']){const btn=$(`detail-${kind}`),on=!!progressFor(w)[kind];btn.classList.toggle('active',on);btn.setAttribute('aria-pressed',String(on));btn.textContent=kind==='favorite'?(on?'★':'☆'):(on?'✓ Noto':'Noto')}
   $('detail-forms').innerHTML=w.forms.map((f,i)=>`<button class="form-chip" data-form-index="${i}" type="button"><small>${textSafe(f.label)} · ${textSafe(formName(f.label,w))}</small><span lang="ja">${textSafe(f.jp)} ♪</span></button>`).join('');
   const regs=[...new Set((activeDeck?.scenarios||[]).map(x=>x.register))],names={informal:'Informale',colleague:'Colleghi',superior:'Superiori',legacy:'Originali (v0.3)'};if(w.legacyExamples?.length)regs.push('legacy');
@@ -314,7 +325,7 @@
  function setPhase(msg){state.phase=msg;$('playback-status').textContent=msg}
  function beginRun(cardId,chapterIndex){
    if(currentRun&&String(currentRun.cardId)===String(cardId))return;
-   currentRun={id:uid(),cardId:String(cardId),startedAt:new Date().toISOString(),started: false,heardSay:0,exampleIds:new Set(),chapters:new Set(),skipped:chapterIndex>0,startedMs:Date.now(),pausedMs:0};
+   currentRun={id:uid(),cardId:String(cardId),meaningEventIds:new Set(),startedAt:new Date().toISOString(),started: false,heardSay:0,exampleIds:new Set(),chapters:new Set(),skipped:chapterIndex>0,startedMs:Date.now(),pausedMs:0};
  }
  function finalizeRun(complete=false){
    if(!currentRun)return;
@@ -328,6 +339,11 @@
  function onSpeechResult(step,result){
    if(result!=='done'||!currentRun||String(currentRun.cardId)!==String(current().id))return;
    currentRun.started=true;currentRun.heardSay++;
+   if(step.type==='meaning'&&!currentRun.meaningEventIds.has(step.eventId)){
+     currentRun.meaningEventIds.add(step.eventId);
+     const card=current();state.progress[card.id]=Sessions.normalizeProgress(progressFor(card));state.progress[card.id].meaningPlays++;
+     save();renderStudy();if(state.view==='library'){renderLibrary();renderDetail();}
+   }
    if(step.exIndex!==null&&step.exIndex!==undefined){const e=examplesForCard(current())[step.exIndex];if(e)currentRun.exampleIds.add(String(e.id??`${current().id}:ex:${step.exIndex+1}`))}
    if(currentRun.heardSay===1)save();
  }
@@ -340,29 +356,34 @@
    if(step.kind==='pause'){setPhase(t(`Pausa ${step.seconds}s`,`Pause ${step.seconds}s`));return}
    if(step.kind!=='say')return;
    const nativeFirst=state.direction==='native-jp';
-   const reveal=nativeFirst?['word','form','exampleJP'].includes(step.type):['meaning','exampleNative'].includes(step.type);
-   if(reveal&&!state.answerShown){state.answerShown=true;renderStudy()}
-   if(step.exIndex!==null&&step.exIndex!==undefined){state.visibleExampleIndex=step.exIndex;if(state.answerShown)renderStudy()}
-   setPhase(t(`In ascolto · ${step.label}`,`Listening · ${step.label}`));
+   if(step.exIndex!==null&&step.exIndex!==undefined){
+     if(state.visibleExampleIndex!==step.exIndex&&!state.answerShown){state.revealed.exampleJP=false;state.revealed.exampleNative=false;}
+     state.visibleExampleIndex=step.exIndex;
+   }
+   if((nativeFirst&&step.type==='word')||(!nativeFirst&&step.type==='meaning'))state.revealed.answer=true;
+   if(step.type==='form'||step.type==='formLabel')state.revealed.forms=true;
+   if(step.type==='exampleJP')state.revealed.exampleJP=true;
+   if(step.type==='exampleNative')state.revealed.exampleNative=true;
+   renderStudy();setPhase(t(`In ascolto · ${step.label}`,`Listening · ${step.label}`));
  }
  function finishedCard(){
    if(!state.playing)return;
-   const w=current();if(!currentRun?.heardSay){stopLesson('TTS non disponibile: ascolto non conteggiato');return;}finalizeRun(true);state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+state.exampleCount)%Math.max(1,w.examples.length);save();
-   state.index++;state.chapterIndex=0;save();state.activePlan=null;state.answerShown=false;state.visibleExampleIndex=null;
+   const w=current();if(!currentRun?.heardSay){stopLesson('TTS non disponibile: ascolto non conteggiato');return;}finalizeRun(true);if(currentSession()?.exampleShuffleEnabled){const s=currentSession();s.exampleOffsets??={};s.exampleOffsets[String(w.id)]=(exampleStart(w)+state.exampleCount)%Math.max(1,examplesForCard(w).length);}else state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+state.exampleCount)%Math.max(1,examplesForCard(w).length);save();
+   state.index++;state.chapterIndex=0;save();state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
    if(state.index<state.deck.length){playCardAtChapter(0);return}
-   state.playing=false;state.paused=false;state.completed=true;const session=currentSession();if(session){session.status='completed';session.completedAt=new Date().toISOString();}releaseWake();bridgeOff();setPlaybackState();state.index=Math.max(0,state.deck.length-1);state.answerShown=true;state.phase=t('Sessione completata','Session complete');renderStudy();save();renderSessions();toast(t('Sessione terminata','Session finished'));
+   state.playing=false;state.paused=false;state.completed=true;const session=currentSession();if(session){session.status='completed';session.completedAt=new Date().toISOString();}releaseWake();bridgeOff();setPlaybackState();state.index=Math.max(0,state.deck.length-1);revealAll();state.phase=t('Sessione completata','Session complete');renderStudy();save();renderSessions();toast(t('Sessione terminata','Session finished'));
  }
  const playbackController=new Core.PlaybackController({speech:speechAdapter,onEvent:onPlayEvent,onSpeechResult,
    onSpeechStart:()=>{if(currentRun&&!currentRun.started){currentRun.started=true;save();}},
    onFailure:status=>{makeLog('TTS',`Interruzione riproduzione: ${status}`);stopLesson(`Audio interrotto (${status}). Ripeti la carta.`)},
    onComplete:finishedCard});
  const previewPlayback=new Core.PlaybackController({speech:speechAdapter,onEvent:s=>{if(s.kind==='say')makeLog('ANTEPRIMA',`${s.lang}: ${s.label}`)}});
- function playCardAtChapter(chapterIndex=0){
+ function playCardAtChapter(chapterIndex=0,preserveReveal=false){
    const result=compileSequence(current());
    if(!result.chapters.length||!result.sayCount){state.playing=false;state.paused=false;toast(t('Nessun elemento audio attivo','No enabled audio element'));renderStudy();return false}
    state.activePlan=result;state.chapterIndex=Math.max(0,Math.min(result.chapters.length-1,chapterIndex));
-   beginRun(current().id,state.chapterIndex);const session=currentSession();if(session&&session.status==='created')session.status='in-progress';
-   state.playing=true;state.paused=false;state.completed=false;state.answerShown=false;state.visibleExampleIndex=null;
+   beginRun(current().id,state.chapterIndex);if(currentRun)currentRun.meaningEventIds=new Set();const session=currentSession();if(session&&session.status==='created')session.status='in-progress';
+   state.playing=true;state.paused=false;state.completed=false;if(!preserveReveal){resetReveal();state.visibleExampleIndex=null;}
    const start=result.chapters[state.chapterIndex].startEventIndex;
    playbackController.start(result.plan,start);setPlaybackState();renderStudy();return true;
  }
@@ -381,18 +402,22 @@
    const moved=Core.NavigationController.move(result.chapters,state.chapterIndex,direction);
    const wasPlaying=state.playing;
    if(currentRun){currentRun.skipped=true;if(moved.deltaCard!==0)finalizeRun(false)}
-   playbackController.stop();state.activePlan=null;state.answerShown=false;state.visibleExampleIndex=null;
+   playbackController.stop();state.activePlan=null;if(direction>0)revealAll();
    if(moved.deltaCard!==0){
      const next=state.index+moved.deltaCard;
      if(next<0){state.chapterIndex=0;state.phase=t('Prima carta della sessione','First card of session');renderStudy();if(wasPlaying)playCardAtChapter(0);return}
      if(next>=state.deck.length){state.completed=true;state.playing=false;state.paused=false;releaseWake();bridgeOff();setPlaybackState();state.phase=t('Sessione conclusa con salto','Session ended by skipping');const session=currentSession();if(session){session.status='completed';session.completedAt=new Date().toISOString();}save();renderStudy();return}
-     state.index=next;const adjacent=compileSequence(current());
+     state.index=next;resetReveal();state.visibleExampleIndex=null;const adjacent=compileSequence(current());
      state.chapterIndex=moved.deltaCard<0?Math.max(0,adjacent.chapters.length-1):0;
    }else state.chapterIndex=moved.chapterIndex;
    state.phase=t('Capitolo selezionato','Chapter selected');save();state.playing=false;state.paused=!wasPlaying;
-   renderStudy();if(wasPlaying)playCardAtChapter(state.chapterIndex);
+   renderStudy();if(wasPlaying)playCardAtChapter(state.chapterIndex,moved.deltaCard===0);
  }
- function moveExample(direction){const w=current();state.visibleExampleIndex=null;const length=examplesForCard(w).length;state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+direction+Math.max(1,length))%Math.max(1,length);save();renderStudy()}
+ function moveExample(direction){const w=current(),length=examplesForCard(w).length;if(!length)return;state.visibleExampleIndex=null;
+   const session=currentSession();if(session?.exampleShuffleEnabled){session.exampleOffsets??={};session.exampleOffsets[String(w.id)]=(exampleStart(w)+direction+length)%length;}
+   else state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+direction+length)%length;
+   if(!state.answerShown){state.revealed.exampleJP=false;state.revealed.exampleNative=false;}save();renderStudy();}
+
  async function manualSpeech(text,lang){if(state.playing||state.paused)stopLesson(t('Pausa per ascolto singolo','Stopped for single playback'));interruptPreview();await speak(text,lang)}
  function previewSingle(g,el){
    if(state.playing||state.paused)stopLesson();interruptPreview();
@@ -516,8 +541,16 @@
    try{const response=await fetch('./decks/n4-core.json');if(!response.ok)throw Error('Deck statico non disponibile');const checked=Store.normalizeDeck(await response.json());if(checked.errors.length)throw Error(checked.errors.join('; '));const builtIn=checked.deck;const installed=installedDecks.find(x=>x.deckId===builtIn.deckId);
      if(!installed){await deckRepo.save(builtIn);await loadInstalled()}
      else if((installed.revision||0)<builtIn.revision){const diff=Store.compareDeck(installed,builtIn);
-       if(diff.kind==='additive'){await deckRepo.save(builtIn);await loadInstalled();makeLog('DECK',`Aggiornamento additivo ${installed.revision}→${builtIn.revision}; i progressi restano invariati`)}
-       else makeLog('DECK',`Revisione ${builtIn.revision} disponibile: confronta manualmente da Deck e backup (${diff.kind})`);
+       // Stable card and example IDs: install compatible editorial revisions transactionally.
+       // Keep an on-device backup because all contextual example texts changed in revision 5 and were corrected in revision 6.
+       if(['additive','editorial'].includes(diff.kind)&&!diff.removed.length&&!diff.exampleRemoved.length){
+         const backup=safetyBackup();const reconciled=Store.reconcileStudy(studyDoc,builtIn.deckId,{...diff,nextCardIds:builtIn.cards.map(c=>String(c.id))});
+         reconciled.deckStates[builtIn.deckId]??={cards:{}};
+         reconciled.deckStates[builtIn.deckId].lastSeenRevision=builtIn.revision;
+         await db.applyDeckUpdate(builtIn,reconciled,reconciled.sessions,reconciled.sequences,backup);
+         studyDoc=reconciled;await loadInstalled();
+         makeLog('DECK',`Deck aggiornato rev. ${installed.revision}→${builtIn.revision}; ${diff.exampleModified.length} frasi corrette; backup pre-importazione conservato`);
+       }else makeLog('DECK',`Revisione ${builtIn.revision} disponibile: confronta manualmente da Deck e backup (${diff.kind})`);
      }
    }catch(error){if(!installedDecks.length)throw error;makeLog('DECK','Aggiornamento statico non disponibile: '+error.message)}
    
@@ -529,7 +562,7 @@
    state.exampleCycle=studyDoc.settings.exampleCycleByDeck?.[activeDeckId]||state.exampleCycle||{};
    state.lang=state.lang==='en'?'en':'it';state.size=Math.max(5,Math.min(BANK.length,Number(state.size)||20));state.chosenWordId=String(BANK[0].id);
    initializeSettings();syncSessionCreator();restoreSessionOrCreate();renderLanguage();renderSessions();setupMediaSession();await refreshCatalog();save();
-   $('boot-error').hidden=true;makeLog('AVVIO','Kotoba Drive v0.4.0: test reali iPhone ancora richiesti; esempi contestuali in bozza');
+   $('boot-error').hidden=true;makeLog('AVVIO','Kotoba Drive v0.4.1: test reali iPhone ancora richiesti; esempi contestuali in bozza');
  }
  // Deck manager events: all file contents are validated before writing to IndexedDB.
  $('deck-list').addEventListener('click',async e=>{const btn=e.target.closest('button');if(!btn)return;try{
@@ -550,16 +583,16 @@
  $('pre-import-backup').addEventListener('click',async()=>{const data=(await db.read('meta','pre-import-backup'))?.data;if(!data)return toast('Nessun backup pre-importazione disponibile');downloadJSON('kotoba-backup-prima-importazione.json',data)});
 
  // Persistent session creator and manager.
- for(const id of ['create-deck','create-name','create-size','create-category','create-language','create-direction','create-sequence','create-favorite','create-known','create-exposure','create-register','create-scenario','create-group','create-story','create-example-count','create-shuffle']){
+ for(const id of ['create-deck','create-name','create-size','create-category','create-language','create-direction','create-sequence','create-favorite','create-known','create-exposure','create-register','create-scenario','create-group','create-story','create-example-count','create-shuffle','create-shuffle-examples']){
    $(id).addEventListener('change',()=>{if(['create-deck','create-register','create-group'].includes(id))updateAvailableOptions();if(id==='create-direction')renderCreateSequences();updateEligible()});
  }
  $('create-session').addEventListener('click',()=>{try{
-   const options={deckId:$('create-deck').value,name:$('create-name').value,count:Number($('create-size').value),filters:sessionFiltersFromForm(),shuffle:$('create-shuffle').checked,language:$('create-language').value,direction:$('create-direction').value,sequenceId:$('create-sequence').value,exampleCount:Number($('create-example-count').value)};
+   const options={deckId:$('create-deck').value,name:$('create-name').value,count:Number($('create-size').value),filters:sessionFiltersFromForm(),shuffle:$('create-shuffle').checked,shuffleExamples:$('create-shuffle-examples').checked,language:$('create-language').value,direction:$('create-direction').value,sequenceId:$('create-sequence').value,exampleCount:Number($('create-example-count').value)};
    createNewSession(options);renderLanguage();showView('study');toast('Sessione creata: ordine salvato');
  }catch(e){toast(e.message)}});
  $('saved-sessions').addEventListener('click',e=>{const btn=e.target.closest('button');if(!btn)return;const action=Object.keys(btn.dataset).find(k=>k.startsWith('session'));const id=btn.dataset[action],session=sessionById(id);if(!session)return;
    if(action==='sessionResume'){try{if(session.status==='completed'){session.status='in-progress';session.currentCardIndex=0;session.currentChapterIndex=0;session.completedAt=null}activateSession(session);renderLanguage();showView('study')}catch(err){toast(err.message)}return}
-   if(action==='sessionCopy'){const deck=installedDecks.find(d=>d.deckId===session.deckId);if(!deck)return toast('Deck non installato');try{createNewSession({deckId:deck.deckId,filters:session.filters,count:session.requestedCount||session.orderedCardIds.length,shuffle:session.shuffleEnabled,language:session.language,direction:session.direction,sequenceId:session.sequenceId,name:(session.name||'Sessione')+' (copia)',exampleCount:session.exampleCount||state.exampleCount});renderLanguage();showView('study')}catch(err){toast(err.message)}return}
+   if(action==='sessionCopy'){const deck=installedDecks.find(d=>d.deckId===session.deckId);if(!deck)return toast('Deck non installato');try{createNewSession({deckId:deck.deckId,filters:session.filters,count:session.requestedCount||session.orderedCardIds.length,shuffle:session.shuffleEnabled,shuffleExamples:session.exampleShuffleEnabled,language:session.language,direction:session.direction,sequenceId:session.sequenceId,name:(session.name||'Sessione')+' (copia)',exampleCount:session.exampleCount||state.exampleCount});renderLanguage();showView('study')}catch(err){toast(err.message)}return}
    if(action==='sessionArchive'){if(session.id===state.sessionId)stopLesson();session.status=session.status==='archived'?'in-progress':'archived';save();renderSessions();return}
    if(action==='sessionDelete'){if(!confirm('Eliminare la sessione? I progressi delle carte rimarranno salvati.'))return;if(session.id===state.sessionId){stopLesson();state.sessionId=null;}studyDoc.sessions=studyDoc.sessions.filter(s=>s.id!==id);save();renderSessions();}
  });
@@ -576,16 +609,16 @@
  document.querySelectorAll('[data-menu-view]').forEach(b=>b.addEventListener('click',()=>{showView(b.dataset.menuView);closeDrawer()}));
  document.querySelectorAll('[data-goto-study]').forEach(b=>b.addEventListener('click',()=>showView('study')));
  for(const lang of ['it','en'])$('language-'+lang).addEventListener('click',()=>{
-    if(state.lang===lang)return;if(state.playing||state.paused)stopLesson();interruptPreview();state.chapterIndex=0;state.activePlan=null;state.lang=lang;const session=currentSession();if(session)session.language=lang;state.answerShown=false;state.visibleExampleIndex=null;state.phase=lang==='it'?'Pronto per iniziare':'Ready to start';save();renderLanguage();toast(lang==='it'?'Lingua madre: italiano':'Native language: English')
+    if(state.lang===lang)return;if(state.playing||state.paused)stopLesson();interruptPreview();state.chapterIndex=0;state.activePlan=null;state.lang=lang;const session=currentSession();if(session)session.language=lang;resetReveal();state.visibleExampleIndex=null;state.phase=lang==='it'?'Pronto per iniziare':'Ready to start';save();renderLanguage();toast(lang==='it'?'Lingua madre: italiano':'Native language: English')
  });
  $('btn-play').addEventListener('click',startLesson);$('btn-repeat').addEventListener('click',()=>navigateChapter(-1));$('btn-next').addEventListener('click',()=>navigateChapter(1));
- $('btn-reveal').addEventListener('click',()=>{state.answerShown=!state.answerShown;renderStudy()});
+ $('btn-reveal').addEventListener('click',()=>{if(allRevealed())resetReveal();else revealAll();renderStudy()});
  $('example-prev').addEventListener('click',()=>moveExample(-1));$('example-next').addEventListener('click',()=>moveExample(1));
  $('btn-show-detail').addEventListener('click',()=>{state.chosenWordId=current().id;showView('library');renderDetail();if(innerWidth<721)$('detail-panel').scrollIntoView({behavior:'smooth',block:'start'})});
  // Session settings; the sequence for each translation direction is saved separately.
  $('study-category').addEventListener('change',e=>{state.category=e.target.value;$('create-category').value=state.category;save();updateEligible()});
  $('session-size').addEventListener('change',e=>{state.size=num(e.target.value,5,15000,20);$('create-size').value=state.size;save();updateEligible()});
- $('study-direction').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.chapterIndex=0;state.activePlan=null;state.direction=e.target.value;const session=currentSession();if(session){session.direction=state.direction;session.sequenceId=sequenceRepo.active(state.direction).sequenceId;}state.answerShown=false;state.visibleExampleIndex=null;state.phase=t('Direzione cambiata','Direction changed');save();renderStudy();renderSequenceEditor()});
+ $('study-direction').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.chapterIndex=0;state.activePlan=null;state.direction=e.target.value;const session=currentSession();if(session){session.direction=state.direction;session.sequenceId=sequenceRepo.active(state.direction).sequenceId;}resetReveal();state.visibleExampleIndex=null;state.phase=t('Direzione cambiata','Direction changed');save();renderStudy();renderSequenceEditor()});
  $('example-count').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.exampleCount=num(e.target.value,0,10,1);save();renderStudy();previewPlan()});
  $('form-count').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.formCount=e.target.value;save();previewPlan()});
  $('global-gap').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.globalGap=num(e.target.value,0,12,.4);e.target.value=state.globalGap;save();previewPlan()});

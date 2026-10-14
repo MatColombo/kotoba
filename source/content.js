@@ -1,9 +1,10 @@
 /* Kotoba Drive v0.4 phase 4: contextual content selection, no persistent user data. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.KotobaContent=api})(typeof globalThis!=='undefined'?globalThis:this,function(){'use strict';
  const REGISTERS=['informal','colleague','superior'];
- function examplesFor(card, filters={}){const xs=filters.register==='legacy'?(card?.legacyExamples||[]):(Array.isArray(card?.examples)?card.examples:[]);
+ function examplesFor(card, filters={}, orderIds=null){const xs=filters.register==='legacy'?(card?.legacyExamples||[]):(Array.isArray(card?.examples)?card.examples:[]);
   const chosen=xs.filter(e=>(!filters.register||filters.register==='all'||filters.register==='legacy'||e.register===filters.register)&&(!filters.scenario||filters.scenario==='all'||e.scenarioId===filters.scenario));
-  if((!filters.register||filters.register==='all')&&(!filters.scenario||filters.scenario==='all'))return chosen.sort((a,b)=>{const ao=Number(a.scenarioId?.split('-').at(-1))||0,bo=Number(b.scenarioId?.split('-').at(-1))||0;return ao-bo||REGISTERS.indexOf(a.register)-REGISTERS.indexOf(b.register)});
+  if((!filters.register||filters.register==='all')&&(!filters.scenario||filters.scenario==='all'))chosen.sort((a,b)=>{const ao=Number(a.scenarioId?.split('-').at(-1))||0,bo=Number(b.scenarioId?.split('-').at(-1))||0;return ao-bo||REGISTERS.indexOf(a.register)-REGISTERS.indexOf(b.register)});
+  if(Array.isArray(orderIds)&&orderIds.length){const rank=new Map(orderIds.map((id,i)=>[String(id),i]));chosen.sort((a,b)=>(rank.get(String(a.id))??Number.MAX_SAFE_INTEGER)-(rank.get(String(b.id))??Number.MAX_SAFE_INTEGER));}
   return chosen;
  }
  function availableScenarios(deck,register='all'){return (deck?.scenarios||[]).filter(s=>register==='all'||s.register===register)}

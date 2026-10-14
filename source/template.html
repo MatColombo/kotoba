@@ -18,13 +18,13 @@
  <div class="app" id="app">
   <header class="topbar">
    <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.0 · CONTENUTI IN REVISIONE</div></div></div>
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.1 · CONTENUTI IN REVISIONE</div></div></div>
    <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
    <section class="view study-view" id="view-study" aria-label="Flashcard audio">
     <article class="study-card">
-     <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><div class="card-flags"><button type="button" id="study-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><span id="pos-pill" class="pos-badge">VERBO</span></div>
+     <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><span class="meaning-counter card-meaning-count" id="study-meaning-count" title="Letture audio concluse del significato">Significato ♫ 0</span><div class="card-flags"><button type="button" id="study-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><span id="pos-pill" class="pos-badge">VERBO</span></div>
      <div class="progress-track"><div id="progress-bar"></div></div>
      <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
      <div class="card-content">
@@ -42,9 +42,11 @@
       <div id="study-forms" class="compact-forms"></div>
       <div class="example-divider"></div>
       <div class="extra-heading"><span id="example-heading">ESEMPIO 1 / 10</span><span class="example-actions"><button id="example-prev" class="mini-icon" type="button" aria-label="Esempio precedente">‹</button><button id="example-next" class="mini-icon" type="button" aria-label="Esempio successivo">›</button></span></div>
-      <div class="example-jp" id="study-example-jp" lang="ja"></div>
-      <div class="example-kana" id="study-example-kana" lang="ja"></div>
-      <div class="example-native" id="study-example-native"></div>
+      <div class="example-stage" id="example-stage">
+       <div class="example-viewport jp-viewport"><div class="example-scroll-inner example-jp" id="study-example-jp" lang="ja"></div></div>
+       <div class="example-viewport kana-viewport"><div class="example-scroll-inner example-kana" id="study-example-kana" lang="ja"></div></div>
+       <div class="example-viewport native-viewport"><div class="example-scroll-inner example-native" id="study-example-native"></div></div>
+      </div>
      </div>
      <div class="study-bottom">
       <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
@@ -69,6 +71,7 @@
         <div class="field-grid"><div class="field-block"><label for="create-group">Gruppo narrativo</label><select class="input" id="create-group"><option value="all">Tutti i gruppi</option></select></div><div class="field-block"><label for="create-story">Storia collegata</label><select class="input" id="create-story"><option value="all">Nessuna storia specifica</option></select></div></div>
         <div class="field-block"><label for="create-example-count">Esempi da leggere per card</label><select class="input" id="create-example-count"><option value="0">0 · nessuno</option><option value="1">1 esempio</option><option value="2">2 esempi</option><option value="3">3 esempi</option><option value="4">4 esempi</option><option value="5">5 esempi</option><option value="6">6 esempi</option><option value="7">7 esempi</option><option value="8">8 esempi</option><option value="9">9 esempi</option><option value="10">10 esempi</option></select></div>
         <label class="session-check"><input type="checkbox" id="create-shuffle" checked><span><b>Mescola l'ordine delle carte (shuffle)</b><small>Una volta sola: l'ordine resterà invariato alla ripresa.</small></span></label>
+        <label class="session-check"><input type="checkbox" id="create-shuffle-examples"><span><b>Mescola anche gli esempi</b><small>Ordine indipendente per ogni vocabolo, salvato nella sessione. Non dipende dallo shuffle delle carte.</small></span></label>
         <div id="session-eligible" class="session-eligible">Caricamento carte…</div><button class="solid-btn wide-btn" id="create-session" type="button">+ Crea e avvia sessione</button>
       </section>
       <section class="surface session-pane"><h2>Sessioni salvate</h2><div id="saved-sessions"></div></section>
@@ -80,7 +83,7 @@
     <div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">ARCHIVIO</div><h1 id="library-deck-title">Vocabolario</h1></div><p id="library-deck-count">75 parole · 2.250 esempi</p></div>
     <div class="library-layout">
      <aside class="surface lib-panel"><input id="word-search" class="input search-input" type="search" placeholder="Cerca una parola o una traduzione" aria-label="Cerca vocaboli"><div class="filters"><button data-filter="all" class="filter active" type="button">Tutte</button><button data-filter="verb" class="filter" type="button">Verbi</button><button data-filter="noun" class="filter" type="button">Nomi</button><button data-filter="na" class="filter" type="button">な</button><button data-filter="i" class="filter" type="button">い</button></div><div id="word-list" class="word-list"></div></aside>
-     <article class="surface detail-panel" id="detail-panel"><div class="detail-head"><div><span class="pos-badge" id="detail-pos">Verbo</span><h2 id="detail-word" lang="ja"></h2><div id="detail-reading" class="detail-reading" lang="ja"></div><div id="detail-meaning" class="detail-meaning"></div></div><div class="detail-flags"><button type="button" id="detail-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="detail-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><button id="btn-word-voice" class="round-voice" type="button" aria-label="Ascolta parola">♪</button></div><h3 class="detail-subtitle">Forme grammaticali <span>tocca per ascoltare</span></h3><div id="detail-forms" class="detail-forms"></div><div class="detail-examples-title"><h3 id="detail-example-count">Esempi contestuali</h3><button id="btn-play-10" class="outline-btn" type="button">▶ Ascolta i primi 10</button></div><div class="field-grid"><div class="field-block"><label for="detail-register">Registro</label><select id="detail-register" class="input"></select></div><div class="field-block"><label for="detail-scenario">Scenario</label><select id="detail-scenario" class="input"></select></div></div><p class="small-copy">Le cornici degli esempi sono bozze automatiche. Richiedono revisione linguistica e sociale prima dell'uso intensivo.</p><div id="ex-list" class="ex-list"></div></article>
+     <article class="surface detail-panel" id="detail-panel"><div class="detail-head"><div><span class="pos-badge" id="detail-pos">Verbo</span><h2 id="detail-word" lang="ja"></h2><div id="detail-reading" class="detail-reading" lang="ja"></div><div id="detail-meaning" class="detail-meaning"></div><div id="detail-meaning-count" class="meaning-counter detail-meaning-count"></div></div><div class="detail-flags"><button type="button" id="detail-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="detail-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><button id="btn-word-voice" class="round-voice" type="button" aria-label="Ascolta parola">♪</button></div><h3 class="detail-subtitle">Forme grammaticali <span>tocca per ascoltare</span></h3><div id="detail-forms" class="detail-forms"></div><div class="detail-examples-title"><h3 id="detail-example-count">Esempi contestuali</h3><button id="btn-play-10" class="outline-btn" type="button">▶ Ascolta i primi 10</button></div><div class="field-grid"><div class="field-block"><label for="detail-register">Registro</label><select id="detail-register" class="input"></select></div><div class="field-block"><label for="detail-scenario">Scenario</label><select id="detail-scenario" class="input"></select></div></div><p class="small-copy">Le frasi contestuali sono state riscritte con temi e forme grammaticali differenti. Restano bozze, non revisionate da un madrelingua.</p><div id="ex-list" class="ex-list"></div></article>
     </div>
    </section>
 

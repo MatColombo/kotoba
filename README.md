@@ -1,13 +1,19 @@
-# Kotoba Drive v0.4.0
+# Kotoba Drive v0.4.1
 
-Webapp PWA gratuita, local-first, per flashcard audio di vocabolario giapponese. Hosting statico GitHub Pages: nessuna chiave API, nessun database server.
+PWA statica, local-first e gratuita per ripassare vocaboli giapponesi N4 con audio. Distribuibile su GitHub Pages, senza backend o servizi a pagamento.
 
-- Installazione, backup, architettura e limitazioni: **[LEGGIMI.md](LEGGIMI.md)**
-- Test e stato dei requisiti: **[TEST_REPORT.md](TEST_REPORT.md)**
-- Test manuali su Safari iPhone: **[GUIDA_TEST_IPHONE.md](GUIDA_TEST_IPHONE.md)**
-- Problemi noti e limiti linguistici: **[PROBLEMI_NOTI.md](PROBLEMI_NOTI.md)**
-- Schemi: **`schemas/deck.schema.json`** e **`schemas/study.schema.json`**
+- **[LEGGIMI.md](LEGGIMI.md):** installazione, migrazione, import/export, istruzioni e opzioni di shuffle.
+- **[CHANGES.md](CHANGES.md):** modifiche v0.4.1.
+- **[TEST_REPORT.md](TEST_REPORT.md):** risultati verificati e limiti.
+- **[GUIDA_TEST_IPHONE.md](GUIDA_TEST_IPHONE.md):** prova manuale su iPhone e volante.
+- **[PROBLEMI_NOTI.md](PROBLEMI_NOTI.md):** stato di revisione linguistica e limiti iOS.
 
-Build: `python3 source/build_index.py` · Test: `npm test` · Release: `0.4.0`.
+Sorgenti in `source/`, deck in `decks/`, formati in `schemas/`.
 
-**Nota:** la struttura e i test automatici sono completi, ma la verifica su iPhone/volante e la revisione linguistica dei 2.250 esempi contestuali non sono state effettuate.
+```sh
+python3 source/build_index.py
+npm test
+python3 tools/validate_content.py
+```
+
+**Contenuti:** 75 parole, 750 esempi precedenti preservati, 2.250 esempi contestuali riscritti in bozza, 30 scenari e otto storie. Le nuove frasi **non sono certificate da un revisore madrelingua**; non usarle come modello definitivo di keigo senza controllo specialistico.

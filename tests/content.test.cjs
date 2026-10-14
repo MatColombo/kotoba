@@ -11,10 +11,10 @@ test('phase4 2250 contextual examples 30 for each card, 10 per register',()=>{
 });
 test('all contextual examples have stable IDs, complete text, correct scenario and review status',()=>{
  const scen=new Map(deck.scenarios.map(s=>[s.id,s]));const ids=new Set();
- for(const c of deck.cards)for(const e of c.examples){assert(!ids.has(e.id));ids.add(e.id);assert.equal(e.cardId,String(c.id));assert.equal(e.register,scen.get(e.scenarioId).register);assert(e.jp.length&&e.kana.length&&e.it.length&&e.en.length);assert(!/[\u4e00-\u9fff]/.test(e.kana));assert.equal(e.reviewStatus,'draft-contextual-framing')}
+ for(const c of deck.cards)for(const e of c.examples){assert(!ids.has(e.id));ids.add(e.id);assert.equal(e.cardId,String(c.id));assert.equal(e.register,scen.get(e.scenarioId).register);assert(e.jp.length&&e.kana.length&&e.it.length&&e.en.length);assert(!/[\u4e00-\u9fff]/.test(e.kana));assert.equal(e.reviewStatus,'new-original-draft')}
 });
-test('catalog specifies four revision; all 30 scenarios have unique IDs',()=>{
- assert.equal(deck.revision,4);assert.equal(require('../decks/catalog.json').decks[0].revision,4);
+test('catalog specifies revision six; all 30 scenarios have unique IDs',()=>{
+ assert.equal(deck.revision,6);assert.equal(require('../decks/catalog.json').decks[0].revision,6);
  assert.equal(deck.scenarios.length,30);assert.equal(new Set(deck.scenarios.map(s=>s.id)).size,30);
  assert.deepEqual(deck.scenarios.reduce((a,s)=>(a[s.register]=(a[s.register]||0)+1,a),{}),{informal:10,colleague:10,superior:10});
 });

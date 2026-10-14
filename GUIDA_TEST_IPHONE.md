@@ -36,3 +36,18 @@
 6. Esportare `study.json`, importarlo su un'altra installazione di prova con lo stesso deck e verificare i progressi.
 
 Un evento Media Session ricevuto non dimostra la compatibilità con *tutti* i comandi fisici o tutte le autoradio. Non dare esito "Superato" senza una verifica effettiva del dispositivo.
+
+## Test aggiuntivi specifici della v0.4.1
+
+- [ ] Avvia una carta senza premere «Mostra soluzione»: significato, forme ed esempi sono inizialmente nascosti e appaiono solo quando viene raggiunta la rispettiva lettura audio.
+- [ ] Durante il primo capitolo premi **Successivo**: tutte le aree ancora nascoste diventano visibili; un ulteriore salto della stessa carta non le nasconde di nuovo.
+- [ ] Alla nuova carta le sezioni ripartono nascoste.
+- [ ] Su una frase molto lunga verifica l'andata/ritorno lento del testo giapponese, del kana e della traduzione; nessun carattere deve restare definitivamente inaccessibile.
+- [ ] Il badge `Significato ♫ N` appare nell'angolo della carta; dopo una lettura completa del significato avanza di 1 e il valore è identico nel vocabolario e nel dettaglio.
+- [ ] Interrompendo prima della fine la lettura del significato il badge **non** deve avanzare.
+- [ ] Crea una sessione con shuffle **esempi attivo** ma shuffle **carte disattivo**; l'ordine delle carte è invariato e gli esempi variano fra i vocaboli.
+- [ ] Chiudi e riapri la PWA: seed, ordine dei singoli esempi, posizione della sessione, preferiti e contatori devono restare invariati.
+- [ ] In «Deck e backup», verifica deck N4 **revisione 5**; se è rimasta la 4, verifica l'aggiornamento del sito, la cache PWA e l'import del deck.
+- [ ] Esegui un export di `study.json`, verifica che contenga `meaningPlays`, `exampleOrders` e `exampleShuffleSeed` per le sessioni nuove; ripristina solo dopo aver conservato un backup esterno.
+
+Il controllo linguistico individuale di nuove frasi e storie non è coperto da questa checklist tecnica.

@@ -7,7 +7,7 @@
       "description": "75 vocaboli N4, 30 scenari, 2250 esempi contestuali in bozza, 8 storie IT/EN.",
       "level": "N4",
       "url": "./n4-core.json",
-      "revision": 4,
+      "revision": 6,
       "cardCount": 75,
       "languages": [
         "ja",

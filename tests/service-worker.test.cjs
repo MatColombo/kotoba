@@ -38,7 +38,7 @@ test('activation deletes old versioned caches without deleting unrelated applica
  const sw=mockWorker();await sw.caches.open('kotoba-drive-old-cache');await sw.caches.open('unrelated-app-cache');
  await sw.emit('install');await sw.emit('activate');
  const keys=await sw.caches.keys();
- assert.ok(!keys.includes('kotoba-drive-old-cache'));assert.ok(keys.includes('unrelated-app-cache'));assert.ok(keys.some(x=>x.includes('release')));
+ assert.ok(!keys.includes('kotoba-drive-old-cache'));assert.ok(keys.includes('unrelated-app-cache'));assert.ok(keys.some(x=>x.startsWith('kotoba-drive-2026-10-14-v041')));
 });
 test('service worker does not intercept POST or cross-origin traffic',async()=>{
  const sw=mockWorker();await sw.emit('install');await sw.emit('activate');

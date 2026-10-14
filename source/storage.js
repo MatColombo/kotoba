@@ -9,7 +9,7 @@
  const stableString=v=>JSON.stringify(v,(k,x)=>isObj(x)?Object.fromEntries(Object.keys(x).sort().map(key=>[key,x[key]])):x);
  const hash=v=>{let h=2166136261;for(const ch of stableString(v)){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0).toString(16).padStart(8,'0')};
  const cardFingerprint=c=>hash({jp:c.jp,kana:c.kana,pos:c.pos,meaning:c.meaning,forms:c.forms});
- const progressDefault=()=>({exposures:0,partial:0,seen:0,hard:0,known:false,favorite:false,firstSeen:null,lastSeen:null,knownChangedAt:null,exampleCounts:{},listenedMs:0,creditedRuns:[]});
+ const progressDefault=()=>({exposures:0,partial:0,seen:0,hard:0,known:false,favorite:false,meaningPlays:0,firstSeen:null,lastSeen:null,knownChangedAt:null,exampleCounts:{},listenedMs:0,creditedRuns:[]});
  const emptyStudy=()=>({schemaVersion:1,deckStates:{},sessions:[],sequences:null,settings:{},audioMasters:{},activeDeckId:null,exportedAt:null});
  function normalizeDeck(raw,{allowLegacy=false,legacyDeckId='jlpt-n4-core',legacyTitle='JLPT N4'}={}){
   const errors=[],warnings=[];
@@ -123,7 +123,7 @@
    const dest=out.deckStates[id].cards;for(const [cardId,other] of Object.entries(next.cards)){
     if(!dest[cardId]){dest[cardId]=copy(other);continue}
     const p=dest[cardId];
-    for(const key of ['exposures','partial','seen','hard','listenedMs'])p[key]=Math.max(Number(p[key])||0,Number(other[key])||0);
+    for(const key of ['exposures','partial','seen','hard','meaningPlays','listenedMs'])p[key]=Math.max(Number(p[key])||0,Number(other[key])||0);
     const oldTime=Date.parse(p.updatedAt||p.lastSeen||0)||0,newTime=Date.parse(other.updatedAt||other.lastSeen||0)||0;
     if(newTime>oldTime){p.favorite=!!other.favorite;p.known=!!other.known;p.knownChangedAt=other.knownChangedAt||p.knownChangedAt;p.updatedAt=other.updatedAt||p.updatedAt;p.lastSeen=other.lastSeen||p.lastSeen;}
     else if(newTime===oldTime&&(p.favorite!==other.favorite||p.known!==other.known))conflicts.push(`Flag carta ${id}/${cardId}: conservato stato locale`);
@@ -140,7 +140,7 @@
  function reconcileStudy(doc,deckId,diff,{mode='retain',mapping={}}={}){
   const out=normalizeStudy(doc),valid=new Set(diff.nextCardIds||[]),mapped={};
   for(const [oldId,newId] of Object.entries(mapping)){if(!diff.removed.includes(oldId)||!valid.has(idKey(newId)))throw Error(`Mappatura non valida ${oldId} → ${newId}`);mapped[idKey(oldId)]=idKey(newId)}
-  const state=out.deckStates[deckId];if(state)for(const [oldId,newId] of Object.entries(mapped)){if(state.cards[oldId]){if(!state.cards[newId])state.cards[newId]=state.cards[oldId];else{const p=state.cards[newId],prior=state.cards[oldId];for(const key of ['exposures','partial','seen'])p[key]=Math.max(p[key]||0,prior[key]||0)}delete state.cards[oldId]}}
+  const state=out.deckStates[deckId];if(state)for(const [oldId,newId] of Object.entries(mapped)){if(state.cards[oldId]){if(!state.cards[newId])state.cards[newId]=state.cards[oldId];else{const p=state.cards[newId],prior=state.cards[oldId];for(const key of ['exposures','partial','seen','meaningPlays'])p[key]=Math.max(p[key]||0,prior[key]||0)}delete state.cards[oldId]}}
   for(const session of out.sessions.filter(s=>s.deckId===deckId)){
    session.orderedCardIds=session.orderedCardIds.map(c=>mapped[idKey(c)]||idKey(c));
    if(mode==='exclude')session.orderedCardIds=session.orderedCardIds.filter(c=>valid.has(idKey(c)));

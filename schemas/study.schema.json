@@ -89,6 +89,10 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "meaningPlays": {
+                  "type": "integer",
+                  "minimum": 0
                 }
               }
             }
@@ -183,6 +187,31 @@
               "object",
               "null"
             ]
+          },
+          "exampleShuffleEnabled": {
+            "type": "boolean"
+          },
+          "exampleShuffleSeed": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4294967295
+          },
+          "exampleOrders": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            }
+          },
+          "exampleOffsets": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 0
+            }
           }
         }
       }

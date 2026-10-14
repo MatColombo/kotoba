@@ -1,32 +1,39 @@
-# Kotoba Drive v0.4.0 — Rapporto di test (14 ottobre 2026)
+# Report di verifica — Kotoba Drive v0.4.1
 
-## Risultati effettivamente verificati
+## Automatici eseguiti
 
-| Sistema | Verifica | Esito |
-|---|---|---|
-| Node 22 | `npm test` | **73/73 superati** |
-| Motore audio | Ripetizioni, pause, master, gerarchia, stop, timeout, TTS fail, callback tardive | Test con fake TTS e scheduler superati |
-| Deck & backup | Schema/ID, aggiornamento additivo, remap, rimozioni, backup atomico, import duplicato | Test funzionali e transazionali simulati superati |
-| Sessioni | Shuffle, checkpoint, classificazione, complete/partial, percentili, filtri | Test unitari superati |
-| Service Worker | Cache di deck e fallback navigazione offline, pulizia versioni, cross-origin e POST | Test in ambiente Service Worker simulato superati |
-| Contenuti | 75 carte, 750 esempi originali, 2.250 nuovi, 30 scenari, 8 storie, 38 segmenti | **0 errori strutturali** |
-| Chromium `set_content` | Browser con database e TTS **simulati** | UI e navigazione, 5 viewport, errori JS: **0** |
-| Prestazioni (Node) | Parse, validazione, compilazione, filtri su deck reale | Vedi `PERFORMANCE_DATA.json` |
+| Verifica | Esito |
+|---|---|
+| `npm test` (Node.js, motore/deck/storage/sessioni/SW) | **81/81 passati** |
+| Esempi contestuali | **2.250** nuove frasi giapponesi, globalmente uniche |
+| Confronto testuale con 750 esempi precedenti | **0 frasi identiche** |
+| Distribuzione | 75 carte × 3 registri × 10 esempi |
+| Diversità etichette grammaticali | Almeno **12** etichette distinte per carta |
+| `tools/validate_content.py` | **0 errori strutturali, 0 segnalazioni euristiche**, revisione madrelingua **non eseguita** |
+| Conservazione delle 750 frasi originali e degli ID delle carte | Testata |
+| Sessioni con shuffle esempi indipendente, seed, ordine per ID e filtri | Testata a livello di funzioni |
+| Contatore del significato dopo fine TTS, separato dall'esposizione | Test unitario e browser simulato |
+| Backup/import ripetuto: conteggio significati via massimo | Testato a livello di funzioni |
+| Service Worker cache offline e pulizia vecchie versioni | Test automatici simulati |
 
-## Qualità linguistica
+## Browser con archivio e sintesi simulati
 
-- **201** segnalazioni automatiche in `CONTENT_QA.json` (possibili problemi morfologici/di matching, non errori accertati).
-- **Revisione madrelingua: NON effettuata.** I registri, soprattutto il keigo, sono in fase di bozza.
+`tests/browser_revision041_mock.py` in Chromium headless: **passato**.
 
-## Test non eseguiti o non dimostrabili qui
+Controllati: rivelazione inizialmente nascosta, salto capitolo in avanti che svela tutto, rivelazione persistente negli altri capitoli, reset alla card successiva, sessione con shuffle esempi attivo e shuffle carte disattivo, contatore incrementato da lettura significato conclusa, dettaglio vocabolo aggiornato, viewport 320 × 568 / 390 × 844 / 1366 × 768 senza scroll pagina e senza errori JavaScript. Sul viewport 320 è stato corretto un collasso iniziale della parola giapponese.
 
-- IndexedDB *reale* tra riavvii di un browser: **non verificato**. Chromium blocca la navigazione su URL di prova in questo ambiente; le simulazioni non equivalgono a verifica IndexedDB reale.
-- Installazione reale e aggiornamento PWA su Safari iPhone: **non verificati**.
-- Comportamento offline su iPhone (Service Worker e voci TTS installate): **non verificato**.
-- Volume, tono e velocità *effettivamente percepiti* in Kotoba Drive 0.4.0 su iPhone: **non testati**, nonostante la sandbox precedente abbia funzionato sull'iPhone dell'utente.
-- Comandi Bluetooth fisici del volante, telefonate/interruzioni e Wake Lock: **non verificati**.
-- Autenticità linguistica dei 2250 esempi nei 3 registri: **non certificata**.
+La nuova zona esempi usa `overflow:hidden` e scorrimento CSS per testo troppo alto; movimento ridotto rispettato. Il risultato visivo effettivo deve essere controllato su iPhone.
 
-## Decisione di rilascio
+## Test non eseguiti o non conclusivi
 
-**Build statica 0.4.0 prodotta e verificata automaticamente.** Non è corretto definirla universalmente stabile o certificata su iOS. La compatibilità iPhone richiede esecuzione della checklist in `GUIDA_TEST_IPHONE.md`. Il materiale didattico contestuale resta esplicitamente in revisione.
+- **IndexedDB reale con pagina ricaricata:** tentata navigazione Chromium verso origin HTTPS sintetico, bloccata da `ERR_BLOCKED_BY_ADMINISTRATOR`. Non dichiarata superata.
+- **Safari iPhone reale, sintesi vocale, persistenza tra chiusure e comandi volante:** da eseguire sul dispositivo.
+- **Revisione linguistica madrelingua di ogni frase e delle otto storie:** non eseguita. I 2.250 esempi sono nuove bozze, non testi grammaticalmente certificati.
+
+## Rilascio
+
+La build monolitica `index.html` viene generata da `source/` con `python3 source/build_index.py`; il deck N4 integrato è versione 6. Il pacchetto statico è predisposto per GitHub Pages ed è accompagnato da sorgenti, schemi e istruzioni. L'installazione effettiva su GitHub non è stata eseguita da questo ambiente.
+
+## Verifica aggiuntiva di concordanza temporale
+
+Individuati e corretti 58 casi con aggettivi al passato in giapponese ma traduzione inglese al presente. Aggiornate inoltre le traduzioni parallele al passato e al negativo generate dagli stessi modelli; test regressione aggiunto. Non rappresenta una verifica globale delle 2.250 frasi.

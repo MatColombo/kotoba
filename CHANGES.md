@@ -1,20 +1,37 @@
-# Changelog — Kotoba Drive v0.4.0
+# Changelog — Kotoba Drive v0.4.1
 
-## Stabilizzazione della Fase 5
+## Flashcard e player
 
-- **Playback:** un errore di Web Speech (`unavailable`, `error`, `timeout`) arresta l'esecuzione. Non è più possibile completare una carta quando la pronuncia è fallita. Il watchdog cancella la voce in timeout; callback tardive non completano sessioni precedenti.
-- **Memoria:** i checkpoint vengono salvati quando il TTS inizia realmente a parlare e allo stop; le esposizioni complete richiedono fine naturale. Un ascolto interrotto può diventare parziale.
-- **Import e backup:** prima della sostituzione di `study.json`, di un backup completo o di un aggiornamento manuale di deck esistente si salva un **backup di sicurezza nell'archivio IndexedDB**, in transazione con l'operazione. Nuovo comando per scaricarlo.
-- **Validazione JSON:** controlli aggiuntivi su oggetti annidati malformati, ID e duplicati di sessioni, sequenze e gruppi. Conservata compatibilità con sequenze legacy sparse.
-- **UI:** corretta l'etichetta "10 esempi" e aggiornata la versione visibile a 0.4.0, mantenendo evidente la revisione incompleta dei contenuti.
-- **Distribuzione:** cache Service Worker aggiornata, build GitHub Pages ricostruita, PWA offline con asset statici precache; backup personali non inseriti nella cache.
-- **QA:** 73 test Node (inclusi playback fault, backup atomico e simulazione offline SW), validazione contenuti, browser simulato su cinque viewport, benchmark riproducibile.
+- Rivelazione progressiva per `meaning`, forme grammaticali, frase giapponese e traduzione: ciascun elemento appare quando raggiunto dalla lettura audio.
+- Se l'utente salta **in avanti** a un altro capitolo della stessa carta, ogni area ancora nascosta viene svelata e rimane visibile nei capitoli successivi. La carta nuova parte nuovamente nascosta.
+- Pannello esempi ampliato: testo giapponese, lettura kana e traduzione ora vanno a capo; se la loro area non basta, scorrimento verticale automatico lento avanti/indietro. L'animazione non viene riavviata a ogni aggiornamento dell'interfaccia; rispetta `prefers-reduced-motion`.
+- Corretto il layout a 320×568, che inizialmente comprimeva a zero la parola giapponese. Il contatore resta visibile anche su schermi bassi.
+- Contatore `meaningPlays`: incrementa **solo quando termina con successo** una lettura TTS dell'elemento significato. È visibile in un angolo della carta, nell'elenco lessicale e nel dettaglio.
+- `meaningPlays` è indipendente dal conteggio esposizioni complete; sopravvive a salvataggi, backup, fusioni e riconciliazione degli ID.
 
-## Storia delle fasi precedenti
+## Sessioni
 
-- **Fase 1:** riproduzione per capitoli, sequenze multiple, pause annidate, master TTS JA/IT/EN e override gruppi/elementi.
-- **Fase 2:** deck JSON e `study.json` separati, IndexedDB, catalogo, riconciliazione e import/export.
-- **Fase 3:** sessioni persistenti, shuffle, filtri, preferiti, noti, percentili e contatori.
-- **Fase 4:** trenta scenari, tre registri, 2.250 esempi contestualizzati in bozza, otto storie.
+- Nuova opzione indipendente **Mescola anche gli esempi** nel creatore della sessione.
+- L'ordine per carta è estratto una sola volta, con seed e lista ordinata degli ID degli esempi salvati nella sessione. I filtri di registro/scenario si applicano prima del sorteggio; nuovi esempi di una revisione successiva finiscono in fondo, senza alterare l'ordine iniziale.
+- Shuffle carte e shuffle esempi possono essere attivi, disattivi o combinati.
 
-Verifiche **non completate**: Safari iPhone reale, IndexedDB browser reale, ricezione Bluetooth fisica e revisione madrelingua del dataset.
+## Contenuti
+
+- Deck N4 alla **revisione 6**: tutte le 2.250 frasi contestuali hanno ora testo giapponese nuovo e distinto. Nessuna è identica a una delle 750 frasi originali.
+- Composizione di proposizioni con vocaboli e forme grammaticali diverse, senza più citazioni del vecchio esempio incorniciate nello scenario. Sono incluse 60 frasi scritte individualmente per 場合 e 心配; le altre 2.190 frasi sono bozze costruite da modelli grammaticali e associazioni lessicali curate.
+- ID dei 75 vocaboli, ID delle 2.250 frasi contestuali e 750 vecchi esempi mantenuti; le otto storie e i trenta scenari restano disponibili.
+- **Attenzione:** la revisione madrelingua individuale non è stata eseguita. Generazione, verifica della struttura e originalità testuale non certificano naturalezza, accuratezza delle traduzioni o uso corretto del keigo. Il deck rimane indicato come «contenuti in revisione».
+- Aggiornamento automatico e transazionale dalla revisione 4 o 5 alla 6 se gli ID rimangono compatibili: copia recuperabile della precedente revisione dei deck e della memoria archiviata nel backup pre-importazione.
+
+## Test
+
+- 80/80 test Node.js, comprendendo motore audio, archivio, backup, shuffle degli esempi, contatore separato e originalità delle 2.250 nuove frasi.
+- Browser Chromium con archivio e sintesi simulati: salto in avanti, nuova carta, contatore TTS, salvataggio della sessione e layout 320/390/1366 px; nessun errore JavaScript rilevato.
+- 0 errori di struttura, 0 segnalazioni euristiche superficiali; **nessuna revisione linguistica madrelingua**.
+- IndexedDB reale in browser non verificato a causa di blocco alle navigazioni locali/intercettate; test iPhone, volante Bluetooth e TTS reale restano da eseguire.
+
+## Verifica finale del pacchetto
+
+- Corretti i casi sistematici di mancato allineamento del tempo verbale fra aggettivi giapponesi al passato e traduzione inglese/italiana in frasi generate (58 esempi segnalati nella prima verifica).
+- Aggiunto test automatico sul tempo passato degli aggettivi e aggiornato il nome cache del Service Worker per distribuire i nuovi contenuti.
+- Il controllo non equivale a una revisione linguistica individuale dei 2.250 esempi.
