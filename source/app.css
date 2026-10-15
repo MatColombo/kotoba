@@ -70,3 +70,54 @@
 @media(max-height:630px){.card-content{flex:0 0 auto;min-height:158px}.front-word{flex-shrink:0}.front-reading{flex-shrink:0}.answer-panel{flex-shrink:0}.learning-extras{flex:1 1 25%;min-height:84px}}
 @media(max-height:520px){.card-content{min-height:125px}.front-word{flex-shrink:0}.learning-extras{min-height:65px}.card-meaning-count{display:inline-flex}}
 @media(max-width:350px) and (max-height:640px){.card-top .pos-badge{display:none}.card-content{min-height:139px}.answer-panel{min-height:41px;margin-top:3px;padding:4px 7px}.learning-extras{min-height:103px}.compact-forms{min-height:17px;margin-top:1px}.example-stage{gap:1px}.front-word{font-size:clamp(31px,7vh,43px)}}
+
+
+/* v0.4.2 — headword-first layout. Give the complete Japanese text priority over
+   examples and badges: it never participates in the shrinking area and never
+   uses clipping, line clamps or a fixed maximum height. */
+.study-view{padding-inline:clamp(4px,1.2vw,10px)}
+.study-card{min-width:0;padding-inline:clamp(11px,2.8vw,26px)}
+.card-chapter-row{display:flex;align-items:center;justify-content:space-between;gap:9px;min-width:0;min-height:18px;margin-top:4px}
+.card-chapter-row .chapter-line{margin:0;min-width:0;flex:1 1 auto;max-width:none;min-height:0;text-align:left}
+.card-chapter-row .front-label{min-width:0;max-width:47%;flex:0 1 auto;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;letter-spacing:1px;font-size:10px}
+.study-card .card-content{flex:0 0 auto;min-height:0;max-width:100%;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2px 0 4px;overflow:visible}
+.study-card .front-word{width:100%;min-width:0;min-height:1.26em;max-width:100%;max-height:none;flex-shrink:0;line-height:1.26;white-space:normal;line-break:anywhere;overflow-wrap:anywhere;overflow:visible;padding:.08em .015em .1em}
+.study-card .front-reading{min-height:0;flex-shrink:0;line-height:1.4}
+.study-card .answer-panel{min-height:0;max-width:100%;flex-shrink:0;overflow-wrap:anywhere}
+.study-card .learning-extras{flex:1 1 0;min-width:0;min-height:0;overflow:hidden}
+.study-card .study-bottom{flex:none}
+/* Compact, short Japanese headwords: use the empty horizontal area for the
+   translation, keeping the font sizes of both elements unchanged. */
+@media (min-width:380px) and (max-width:899px) and (min-height:700px){
+ .study-card.inline-headword .card-content{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);grid-template-rows:auto auto;column-gap:12px;justify-items:center;align-items:center}
+ .study-card.inline-headword .front-word{grid-column:1;grid-row:1;align-self:end}
+ .study-card.inline-headword .front-reading{grid-column:1;grid-row:2;align-self:start}
+ .study-card.inline-headword .answer-panel{grid-column:2;grid-row:1 / span 2;margin-top:0;width:100%;min-width:0;padding-inline:8px}
+}
+/* Wide screens also use a column for the answer instead of wasting space
+   alongside the central word. Longer words wrap completely when necessary. */
+@media (min-width:900px) and (min-height:550px){
+ .study-card .card-content{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);grid-template-rows:auto auto;column-gap:20px;justify-items:center;align-items:center}
+ .study-card .front-word{grid-column:1;grid-row:1;align-self:end}
+ .study-card .front-reading{grid-column:1;grid-row:2;align-self:start}
+ .study-card .answer-panel{grid-column:2;grid-row:1 / span 2;margin-top:0;width:100%;min-width:0}
+}
+/* At low heights, reduce margins and ancillary material before anything can
+   obscure the Japanese word. Buttons retain their full touch dimensions. */
+@media (max-height:630px){
+ .study-card .card-content{min-height:0;padding:0 0 3px}
+ .study-card .learning-extras{min-height:0;flex:1 1 0}
+ .card-chapter-row{margin-top:2px}
+}
+@media (max-height:520px){
+ .study-card .learning-extras{display:none}
+ .study-card .card-content{flex:1 0 auto;min-height:0}
+ .study-card .study-bottom{margin-top:auto}
+}
+
+/* Keep previous/next full-size touch targets, but avoid cropping their captions
+   on a very narrow screen: the large arrows remain identifiable. */
+@media (max-width:350px){
+ .study-card #repeat-label,.study-card #next-label{display:none}
+ .study-card .control.secondary .control-symbol{font-size:22px}
+}

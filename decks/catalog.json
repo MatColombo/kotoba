@@ -15,6 +15,21 @@
         "en"
       ],
       "license": "Contenuti originali Kotoba Drive; verificare la licenza prima della redistribuzione"
+    },
+    {
+      "deckId": "openjlpt-n5",
+      "title": "JLPT N5 — OpenJLPT (EN, bozza)",
+      "description": "674 vocaboli N5. Traduzioni italiane ed esempi contestuali da completare.",
+      "level": "N5",
+      "url": "./jlpt-n5-openjlpt.json",
+      "revision": 1,
+      "cardCount": 674,
+      "languages": [
+        "ja",
+        "it",
+        "en"
+      ],
+      "license": "OpenJLPT CC BY-SA 4.0; verificare licenze delle frasi Tatoeba"
     }
   ]
 }

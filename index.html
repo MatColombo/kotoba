@@ -84,23 +84,76 @@
 @media(max-height:630px){.card-content{flex:0 0 auto;min-height:158px}.front-word{flex-shrink:0}.front-reading{flex-shrink:0}.answer-panel{flex-shrink:0}.learning-extras{flex:1 1 25%;min-height:84px}}
 @media(max-height:520px){.card-content{min-height:125px}.front-word{flex-shrink:0}.learning-extras{min-height:65px}.card-meaning-count{display:inline-flex}}
 @media(max-width:350px) and (max-height:640px){.card-top .pos-badge{display:none}.card-content{min-height:139px}.answer-panel{min-height:41px;margin-top:3px;padding:4px 7px}.learning-extras{min-height:103px}.compact-forms{min-height:17px;margin-top:1px}.example-stage{gap:1px}.front-word{font-size:clamp(31px,7vh,43px)}}
+
+
+/* v0.4.2 — headword-first layout. Give the complete Japanese text priority over
+   examples and badges: it never participates in the shrinking area and never
+   uses clipping, line clamps or a fixed maximum height. */
+.study-view{padding-inline:clamp(4px,1.2vw,10px)}
+.study-card{min-width:0;padding-inline:clamp(11px,2.8vw,26px)}
+.card-chapter-row{display:flex;align-items:center;justify-content:space-between;gap:9px;min-width:0;min-height:18px;margin-top:4px}
+.card-chapter-row .chapter-line{margin:0;min-width:0;flex:1 1 auto;max-width:none;min-height:0;text-align:left}
+.card-chapter-row .front-label{min-width:0;max-width:47%;flex:0 1 auto;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;letter-spacing:1px;font-size:10px}
+.study-card .card-content{flex:0 0 auto;min-height:0;max-width:100%;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2px 0 4px;overflow:visible}
+.study-card .front-word{width:100%;min-width:0;min-height:1.26em;max-width:100%;max-height:none;flex-shrink:0;line-height:1.26;white-space:normal;line-break:anywhere;overflow-wrap:anywhere;overflow:visible;padding:.08em .015em .1em}
+.study-card .front-reading{min-height:0;flex-shrink:0;line-height:1.4}
+.study-card .answer-panel{min-height:0;max-width:100%;flex-shrink:0;overflow-wrap:anywhere}
+.study-card .learning-extras{flex:1 1 0;min-width:0;min-height:0;overflow:hidden}
+.study-card .study-bottom{flex:none}
+/* Compact, short Japanese headwords: use the empty horizontal area for the
+   translation, keeping the font sizes of both elements unchanged. */
+@media (min-width:380px) and (max-width:899px) and (min-height:700px){
+ .study-card.inline-headword .card-content{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);grid-template-rows:auto auto;column-gap:12px;justify-items:center;align-items:center}
+ .study-card.inline-headword .front-word{grid-column:1;grid-row:1;align-self:end}
+ .study-card.inline-headword .front-reading{grid-column:1;grid-row:2;align-self:start}
+ .study-card.inline-headword .answer-panel{grid-column:2;grid-row:1 / span 2;margin-top:0;width:100%;min-width:0;padding-inline:8px}
+}
+/* Wide screens also use a column for the answer instead of wasting space
+   alongside the central word. Longer words wrap completely when necessary. */
+@media (min-width:900px) and (min-height:550px){
+ .study-card .card-content{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);grid-template-rows:auto auto;column-gap:20px;justify-items:center;align-items:center}
+ .study-card .front-word{grid-column:1;grid-row:1;align-self:end}
+ .study-card .front-reading{grid-column:1;grid-row:2;align-self:start}
+ .study-card .answer-panel{grid-column:2;grid-row:1 / span 2;margin-top:0;width:100%;min-width:0}
+}
+/* At low heights, reduce margins and ancillary material before anything can
+   obscure the Japanese word. Buttons retain their full touch dimensions. */
+@media (max-height:630px){
+ .study-card .card-content{min-height:0;padding:0 0 3px}
+ .study-card .learning-extras{min-height:0;flex:1 1 0}
+ .card-chapter-row{margin-top:2px}
+}
+@media (max-height:520px){
+ .study-card .learning-extras{display:none}
+ .study-card .card-content{flex:1 0 auto;min-height:0}
+ .study-card .study-bottom{margin-top:auto}
+}
+
+/* Keep previous/next full-size touch targets, but avoid cropping their captions
+   on a very narrow screen: the large arrows remain identifiable. */
+@media (max-width:350px){
+ .study-card #repeat-label,.study-card #next-label{display:none}
+ .study-card .control.secondary .control-symbol{font-size:22px}
+}
 </style>
 </head>
 <body>
  <div class="app" id="app">
   <header class="topbar">
    <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.1 · CONTENUTI IN REVISIONE</div></div></div>
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.2 · CONTENUTI IN REVISIONE</div></div></div>
    <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
    <section class="view study-view" id="view-study" aria-label="Flashcard audio">
-    <article class="study-card">
+    <article class="study-card" id="study-card">
      <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><span class="meaning-counter card-meaning-count" id="study-meaning-count" title="Letture audio concluse del significato">Significato ♫ 0</span><div class="card-flags"><button type="button" id="study-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><span id="pos-pill" class="pos-badge">VERBO</span></div>
      <div class="progress-track"><div id="progress-bar"></div></div>
-     <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
-     <div class="card-content">
+     <div class="card-chapter-row">
+      <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
       <div class="front-label" id="front-label">DOMANDA · GIAPPONESE</div>
+     </div>
+     <div class="card-content">
       <div class="front-word" id="study-front" lang="ja">集める</div>
       <div class="front-reading" id="study-front-reading">あつめる</div>
       <div class="answer-panel" id="answer-panel">
@@ -122,7 +175,7 @@
      </div>
      <div class="study-bottom">
       <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
-      <div class="controls"><button class="control secondary" id="btn-repeat" type="button"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
+      <div class="controls"><button class="control secondary" id="btn-repeat" type="button" aria-label="Capitolo precedente"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button" aria-label="Capitolo successivo"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
       <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Esempi ↗</button></div>
      </div>
     </article>
@@ -640,7 +693,7 @@
    if(!isObj(c)){errors.push(`cards[${i}] non è un oggetto.`);continue}
    if(c.id===undefined||c.id===null||!safeId(idKey(c.id))){errors.push(`cards[${i}].id non valido.`);continue}
    const cid=idKey(c.id);if(ids.has(cid))errors.push(`ID carta duplicato: ${cid}`);ids.add(cid);
-   if(!['verb','noun','na','i'].includes(c.pos))errors.push(`Carta ${cid}: pos non valida.`);
+   if(!['verb','noun','na','i','pronoun','determiner','adverb','interjection','expression','numeral','conjunction','particle','counter','prefix','suffix','auxiliary','other'].includes(c.pos))errors.push(`Carta ${cid}: pos non valida.`);
    if(typeof c.jp!=='string'||!c.jp.trim()||typeof c.kana!=='string'||!c.kana.trim())errors.push(`Carta ${cid}: jp/kana obbligatori.`);
    if(!isObj(c.meaning)||typeof c.meaning.it!=='string'||typeof c.meaning.en!=='string')errors.push(`Carta ${cid}: meaning.it/en obbligatori.`);
    if(!Array.isArray(c.forms))errors.push(`Carta ${cid}: forms deve essere un array.`);
@@ -899,6 +952,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  const Core=window.KotobaCore;
  const textSafe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const POS={verb:{it:'VERBO · 動詞',en:'VERB · 動詞'},noun:{it:'SOSTANTIVO · 名詞',en:'NOUN · 名詞'},na:{it:'AGGETTIVO な',en:'な ADJECTIVE'},i:{it:'AGGETTIVO い',en:'い ADJECTIVE'}};
+ const EXTRA_POS={pronoun:{it:'PRONOME',en:'PRONOUN'},determiner:{it:'DETERMINANTE',en:'DETERMINER'},adverb:{it:'AVVERBIO',en:'ADVERB'},interjection:{it:'INTERIEZIONE',en:'INTERJECTION'},expression:{it:'ESPRESSIONE',en:'EXPRESSION'},numeral:{it:'NUMERALE',en:'NUMERAL'},conjunction:{it:'CONGIUNZIONE',en:'CONJUNCTION'},particle:{it:'PARTICELLA',en:'PARTICLE'},counter:{it:'CONTATORE',en:'COUNTER'},prefix:{it:'PREFISSO',en:'PREFIX'},suffix:{it:'SUFFISSO',en:'SUFFIX'},auxiliary:{it:'AUSILIARE',en:'AUXILIARY'},other:{it:'ALTRO',en:'OTHER'}};Object.assign(POS,EXTRA_POS);
  const TYPES={word:{it:'Parola giapponese',en:'Japanese word'},meaning:{it:'Significato',en:'Meaning'},forms:{it:'Coniugazioni (con etichetta)',en:'Grammar forms (with label)'},exampleJP:{it:'Esempio giapponese',en:'Japanese example'},exampleNative:{it:'Traduzione esempio',en:'Example translation'}};
  const TYPE_KEYS=Object.keys(TYPES);
  const keyStorage='kotoba-drive-v04-alpha1';
@@ -1078,6 +1132,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    $('pos-pill').textContent=POS[w.pos][state.lang];
    $('front-label').textContent=nativeFirst?t(`DOMANDA · ${state.lang==='it'?'ITALIANO':'INGLESE'}`,`QUESTION · ENGLISH`):t('DOMANDA · GIAPPONESE','QUESTION · JAPANESE');
    $('answer-label').textContent=nativeFirst?t('SOLUZIONE · GIAPPONESE','ANSWER · JAPANESE'):t(`SOLUZIONE · ${state.lang==='it'?'ITALIANO':'INGLESE'}`,'ANSWER · ENGLISH');
+   $('study-card').classList.toggle('inline-headword',!nativeFirst&&Array.from(w.jp).length<=3);
    $('study-front').textContent=nativeFirst?w.meaning[state.lang]:w.jp;
    $('study-front').classList.toggle('native',nativeFirst);
    $('study-front').lang=nativeFirst?state.lang:'ja';

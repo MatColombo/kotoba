@@ -1,12 +1,14 @@
-# Kotoba Drive v0.4.1
+# Kotoba Drive v0.4.2
 
 PWA statica, local-first e gratuita per ripassare vocaboli giapponesi N4 con audio. Distribuibile su GitHub Pages, senza backend o servizi a pagamento.
 
 - **[LEGGIMI.md](LEGGIMI.md):** installazione, migrazione, import/export, istruzioni e opzioni di shuffle.
-- **[CHANGES.md](CHANGES.md):** modifiche v0.4.1.
+- **[CHANGES.md](CHANGES.md):** modifiche v0.4.2.
 - **[TEST_REPORT.md](TEST_REPORT.md):** risultati verificati e limiti.
 - **[GUIDA_TEST_IPHONE.md](GUIDA_TEST_IPHONE.md):** prova manuale su iPhone e volante.
 - **[PROBLEMI_NOTI.md](PROBLEMI_NOTI.md):** stato di revisione linguistica e limiti iOS.
+
+La v0.4.2 protegge la visualizzazione integrale dei kanji, ricolloca le etichette secondarie e usa due colonne sulle card con parole brevi quando lo schermo lo consente. Nessuna modifica agli ID del deck o della memoria.
 
 Sorgenti in `source/`, deck in `decks/`, formati in `schemas/`.
 

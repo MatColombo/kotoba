@@ -1,0 +1,4046 @@
+[
+  {
+    "sourceId": "ada066edfd",
+    "cardId": "openjlpt-n5:ada066edfd",
+    "sourceIndex": 0,
+    "jp": "会う"
+  },
+  {
+    "sourceId": "ebec658463",
+    "cardId": "openjlpt-n5:ebec658463",
+    "sourceIndex": 1,
+    "jp": "青"
+  },
+  {
+    "sourceId": "51a671ec17",
+    "cardId": "openjlpt-n5:51a671ec17",
+    "sourceIndex": 2,
+    "jp": "青い"
+  },
+  {
+    "sourceId": "2dacb910b2",
+    "cardId": "openjlpt-n5:2dacb910b2",
+    "sourceIndex": 3,
+    "jp": "赤"
+  },
+  {
+    "sourceId": "44ba38cf8b",
+    "cardId": "openjlpt-n5:44ba38cf8b",
+    "sourceIndex": 4,
+    "jp": "赤い"
+  },
+  {
+    "sourceId": "91987ae840",
+    "cardId": "openjlpt-n5:91987ae840",
+    "sourceIndex": 5,
+    "jp": "明るい"
+  },
+  {
+    "sourceId": "8dc7006bda",
+    "cardId": "openjlpt-n5:8dc7006bda",
+    "sourceIndex": 6,
+    "jp": "秋"
+  },
+  {
+    "sourceId": "fc3bc1e6f1",
+    "cardId": "openjlpt-n5:fc3bc1e6f1",
+    "sourceIndex": 7,
+    "jp": "開く"
+  },
+  {
+    "sourceId": "321963ed35",
+    "cardId": "openjlpt-n5:321963ed35",
+    "sourceIndex": 8,
+    "jp": "開ける"
+  },
+  {
+    "sourceId": "9661cbac61",
+    "cardId": "openjlpt-n5:9661cbac61",
+    "sourceIndex": 9,
+    "jp": "上げる"
+  },
+  {
+    "sourceId": "d46ae79a26",
+    "cardId": "openjlpt-n5:d46ae79a26",
+    "sourceIndex": 10,
+    "jp": "朝"
+  },
+  {
+    "sourceId": "98bc6f72ae",
+    "cardId": "openjlpt-n5:98bc6f72ae",
+    "sourceIndex": 11,
+    "jp": "朝ごはん"
+  },
+  {
+    "sourceId": "b3b4041c52",
+    "cardId": "openjlpt-n5:b3b4041c52",
+    "sourceIndex": 12,
+    "jp": "あさって"
+  },
+  {
+    "sourceId": "27df3d5802",
+    "cardId": "openjlpt-n5:27df3d5802",
+    "sourceIndex": 13,
+    "jp": "足"
+  },
+  {
+    "sourceId": "115ec83476",
+    "cardId": "openjlpt-n5:115ec83476",
+    "sourceIndex": 14,
+    "jp": "明日"
+  },
+  {
+    "sourceId": "bee501faf0",
+    "cardId": "openjlpt-n5:bee501faf0",
+    "sourceIndex": 15,
+    "jp": "あそこ"
+  },
+  {
+    "sourceId": "2d55571300",
+    "cardId": "openjlpt-n5:2d55571300",
+    "sourceIndex": 16,
+    "jp": "遊ぶ"
+  },
+  {
+    "sourceId": "f665c2128a",
+    "cardId": "openjlpt-n5:f665c2128a",
+    "sourceIndex": 17,
+    "jp": "暖かい"
+  },
+  {
+    "sourceId": "b62cb9ce4c",
+    "cardId": "openjlpt-n5:b62cb9ce4c",
+    "sourceIndex": 18,
+    "jp": "頭"
+  },
+  {
+    "sourceId": "8ae27e3b51",
+    "cardId": "openjlpt-n5:8ae27e3b51",
+    "sourceIndex": 19,
+    "jp": "新しい"
+  },
+  {
+    "sourceId": "34e6f7d220",
+    "cardId": "openjlpt-n5:34e6f7d220",
+    "sourceIndex": 20,
+    "jp": "あちら"
+  },
+  {
+    "sourceId": "9949d87445",
+    "cardId": "openjlpt-n5:9949d87445",
+    "sourceIndex": 21,
+    "jp": "厚い"
+  },
+  {
+    "sourceId": "7b4aecdf7b",
+    "cardId": "openjlpt-n5:7b4aecdf7b",
+    "sourceIndex": 22,
+    "jp": "暑い"
+  },
+  {
+    "sourceId": "a379d413fd",
+    "cardId": "openjlpt-n5:a379d413fd",
+    "sourceIndex": 23,
+    "jp": "熱い"
+  },
+  {
+    "sourceId": "60dd63379e",
+    "cardId": "openjlpt-n5:60dd63379e",
+    "sourceIndex": 24,
+    "jp": "あっち"
+  },
+  {
+    "sourceId": "4f134c9b38",
+    "cardId": "openjlpt-n5:4f134c9b38",
+    "sourceIndex": 25,
+    "jp": "後"
+  },
+  {
+    "sourceId": "afdf384f68",
+    "cardId": "openjlpt-n5:afdf384f68",
+    "sourceIndex": 26,
+    "jp": "あなた"
+  },
+  {
+    "sourceId": "4aab699864",
+    "cardId": "openjlpt-n5:4aab699864",
+    "sourceIndex": 27,
+    "jp": "兄"
+  },
+  {
+    "sourceId": "8bfeb208b4",
+    "cardId": "openjlpt-n5:8bfeb208b4",
+    "sourceIndex": 28,
+    "jp": "姉"
+  },
+  {
+    "sourceId": "ac4706068b",
+    "cardId": "openjlpt-n5:ac4706068b",
+    "sourceIndex": 29,
+    "jp": "あの"
+  },
+  {
+    "sourceId": "0cf05b3a0d",
+    "cardId": "openjlpt-n5:0cf05b3a0d",
+    "sourceIndex": 30,
+    "jp": "アパート"
+  },
+  {
+    "sourceId": "a5aceb6426",
+    "cardId": "openjlpt-n5:a5aceb6426",
+    "sourceIndex": 31,
+    "jp": "あびる"
+  },
+  {
+    "sourceId": "0509cb3b27",
+    "cardId": "openjlpt-n5:0509cb3b27",
+    "sourceIndex": 32,
+    "jp": "危ない"
+  },
+  {
+    "sourceId": "4afffe5811",
+    "cardId": "openjlpt-n5:4afffe5811",
+    "sourceIndex": 33,
+    "jp": "甘い"
+  },
+  {
+    "sourceId": "eac90e8e98",
+    "cardId": "openjlpt-n5:eac90e8e98",
+    "sourceIndex": 34,
+    "jp": "あまり"
+  },
+  {
+    "sourceId": "5d72771a3c",
+    "cardId": "openjlpt-n5:5d72771a3c",
+    "sourceIndex": 35,
+    "jp": "飴"
+  },
+  {
+    "sourceId": "277a58c9df",
+    "cardId": "openjlpt-n5:277a58c9df",
+    "sourceIndex": 36,
+    "jp": "雨"
+  },
+  {
+    "sourceId": "f8fa96946f",
+    "cardId": "openjlpt-n5:f8fa96946f",
+    "sourceIndex": 37,
+    "jp": "洗う"
+  },
+  {
+    "sourceId": "93461820fe",
+    "cardId": "openjlpt-n5:93461820fe",
+    "sourceIndex": 38,
+    "jp": "ありがとう"
+  },
+  {
+    "sourceId": "ac08788418",
+    "cardId": "openjlpt-n5:ac08788418",
+    "sourceIndex": 39,
+    "jp": "ある"
+  },
+  {
+    "sourceId": "55f3080ce4",
+    "cardId": "openjlpt-n5:55f3080ce4",
+    "sourceIndex": 40,
+    "jp": "歩く"
+  },
+  {
+    "sourceId": "d727a76b22",
+    "cardId": "openjlpt-n5:d727a76b22",
+    "sourceIndex": 41,
+    "jp": "あれ"
+  },
+  {
+    "sourceId": "e37a087c0f",
+    "cardId": "openjlpt-n5:e37a087c0f",
+    "sourceIndex": 42,
+    "jp": "いい"
+  },
+  {
+    "sourceId": "6d4596ae46",
+    "cardId": "openjlpt-n5:6d4596ae46",
+    "sourceIndex": 43,
+    "jp": "いいえ"
+  },
+  {
+    "sourceId": "ae0cc00f94",
+    "cardId": "openjlpt-n5:ae0cc00f94",
+    "sourceIndex": 44,
+    "jp": "言う"
+  },
+  {
+    "sourceId": "9f074820b1",
+    "cardId": "openjlpt-n5:9f074820b1",
+    "sourceIndex": 45,
+    "jp": "家"
+  },
+  {
+    "sourceId": "a3f296ad9a",
+    "cardId": "openjlpt-n5:a3f296ad9a",
+    "sourceIndex": 46,
+    "jp": "いかが"
+  },
+  {
+    "sourceId": "66e4692df7",
+    "cardId": "openjlpt-n5:66e4692df7",
+    "sourceIndex": 47,
+    "jp": "行く"
+  },
+  {
+    "sourceId": "026ae57b50",
+    "cardId": "openjlpt-n5:026ae57b50",
+    "sourceIndex": 48,
+    "jp": "いくつ"
+  },
+  {
+    "sourceId": "4fc98c6938",
+    "cardId": "openjlpt-n5:4fc98c6938",
+    "sourceIndex": 49,
+    "jp": "いくら"
+  },
+  {
+    "sourceId": "43c874a6c8",
+    "cardId": "openjlpt-n5:43c874a6c8",
+    "sourceIndex": 50,
+    "jp": "池"
+  },
+  {
+    "sourceId": "ca76162587",
+    "cardId": "openjlpt-n5:ca76162587",
+    "sourceIndex": 51,
+    "jp": "医者"
+  },
+  {
+    "sourceId": "d305fa14a8",
+    "cardId": "openjlpt-n5:d305fa14a8",
+    "sourceIndex": 52,
+    "jp": "いす"
+  },
+  {
+    "sourceId": "cd1bcc2b1b",
+    "cardId": "openjlpt-n5:cd1bcc2b1b",
+    "sourceIndex": 53,
+    "jp": "忙しい"
+  },
+  {
+    "sourceId": "4dae367794",
+    "cardId": "openjlpt-n5:4dae367794",
+    "sourceIndex": 54,
+    "jp": "痛い"
+  },
+  {
+    "sourceId": "eac7a22620",
+    "cardId": "openjlpt-n5:eac7a22620",
+    "sourceIndex": 55,
+    "jp": "いただきます"
+  },
+  {
+    "sourceId": "9d8f862791",
+    "cardId": "openjlpt-n5:9d8f862791",
+    "sourceIndex": 56,
+    "jp": "一"
+  },
+  {
+    "sourceId": "1cfccd0cdd",
+    "cardId": "openjlpt-n5:1cfccd0cdd",
+    "sourceIndex": 57,
+    "jp": "一日"
+  },
+  {
+    "sourceId": "cb96f363df",
+    "cardId": "openjlpt-n5:cb96f363df",
+    "sourceIndex": 58,
+    "jp": "いちばん"
+  },
+  {
+    "sourceId": "fac6fc0838",
+    "cardId": "openjlpt-n5:fac6fc0838",
+    "sourceIndex": 59,
+    "jp": "いつ"
+  },
+  {
+    "sourceId": "2a7c4baf86",
+    "cardId": "openjlpt-n5:2a7c4baf86",
+    "sourceIndex": 60,
+    "jp": "五日"
+  },
+  {
+    "sourceId": "2dc7289c82",
+    "cardId": "openjlpt-n5:2dc7289c82",
+    "sourceIndex": 61,
+    "jp": "一緒"
+  },
+  {
+    "sourceId": "9ac35c3990",
+    "cardId": "openjlpt-n5:9ac35c3990",
+    "sourceIndex": 62,
+    "jp": "五つ"
+  },
+  {
+    "sourceId": "dea2a1df8b",
+    "cardId": "openjlpt-n5:dea2a1df8b",
+    "sourceIndex": 63,
+    "jp": "いつも"
+  },
+  {
+    "sourceId": "0df89f5010",
+    "cardId": "openjlpt-n5:0df89f5010",
+    "sourceIndex": 64,
+    "jp": "犬"
+  },
+  {
+    "sourceId": "ce75c75644",
+    "cardId": "openjlpt-n5:ce75c75644",
+    "sourceIndex": 65,
+    "jp": "今"
+  },
+  {
+    "sourceId": "cb29ccdd2a",
+    "cardId": "openjlpt-n5:cb29ccdd2a",
+    "sourceIndex": 66,
+    "jp": "意味"
+  },
+  {
+    "sourceId": "12047d019b",
+    "cardId": "openjlpt-n5:12047d019b",
+    "sourceIndex": 67,
+    "jp": "妹"
+  },
+  {
+    "sourceId": "eda751e069",
+    "cardId": "openjlpt-n5:eda751e069",
+    "sourceIndex": 68,
+    "jp": "嫌"
+  },
+  {
+    "sourceId": "1ff0529d03",
+    "cardId": "openjlpt-n5:1ff0529d03",
+    "sourceIndex": 69,
+    "jp": "入口"
+  },
+  {
+    "sourceId": "9438889173",
+    "cardId": "openjlpt-n5:9438889173",
+    "sourceIndex": 70,
+    "jp": "いる"
+  },
+  {
+    "sourceId": "7a84208708",
+    "cardId": "openjlpt-n5:7a84208708",
+    "sourceIndex": 71,
+    "jp": "要る"
+  },
+  {
+    "sourceId": "6d824d5110",
+    "cardId": "openjlpt-n5:6d824d5110",
+    "sourceIndex": 72,
+    "jp": "入れる"
+  },
+  {
+    "sourceId": "523266ea6f",
+    "cardId": "openjlpt-n5:523266ea6f",
+    "sourceIndex": 73,
+    "jp": "色"
+  },
+  {
+    "sourceId": "f74dd1ee9a",
+    "cardId": "openjlpt-n5:f74dd1ee9a",
+    "sourceIndex": 74,
+    "jp": "いろいろ"
+  },
+  {
+    "sourceId": "08a3ed212d",
+    "cardId": "openjlpt-n5:08a3ed212d",
+    "sourceIndex": 75,
+    "jp": "上"
+  },
+  {
+    "sourceId": "93bdc81dd9",
+    "cardId": "openjlpt-n5:93bdc81dd9",
+    "sourceIndex": 76,
+    "jp": "後ろ"
+  },
+  {
+    "sourceId": "d2b2316e45",
+    "cardId": "openjlpt-n5:d2b2316e45",
+    "sourceIndex": 77,
+    "jp": "薄い"
+  },
+  {
+    "sourceId": "036f4180a2",
+    "cardId": "openjlpt-n5:036f4180a2",
+    "sourceIndex": 78,
+    "jp": "歌"
+  },
+  {
+    "sourceId": "3464318c23",
+    "cardId": "openjlpt-n5:3464318c23",
+    "sourceIndex": 79,
+    "jp": "歌う"
+  },
+  {
+    "sourceId": "63bc7722fa",
+    "cardId": "openjlpt-n5:63bc7722fa",
+    "sourceIndex": 80,
+    "jp": "生まれる"
+  },
+  {
+    "sourceId": "06ac21dc7d",
+    "cardId": "openjlpt-n5:06ac21dc7d",
+    "sourceIndex": 81,
+    "jp": "海"
+  },
+  {
+    "sourceId": "f7e1da43df",
+    "cardId": "openjlpt-n5:f7e1da43df",
+    "sourceIndex": 82,
+    "jp": "売る"
+  },
+  {
+    "sourceId": "7ecfe0d248",
+    "cardId": "openjlpt-n5:7ecfe0d248",
+    "sourceIndex": 83,
+    "jp": "煩い"
+  },
+  {
+    "sourceId": "1ef8a05bf3",
+    "cardId": "openjlpt-n5:1ef8a05bf3",
+    "sourceIndex": 84,
+    "jp": "上着"
+  },
+  {
+    "sourceId": "5bb390da0b",
+    "cardId": "openjlpt-n5:5bb390da0b",
+    "sourceIndex": 85,
+    "jp": "絵"
+  },
+  {
+    "sourceId": "92b1621231",
+    "cardId": "openjlpt-n5:92b1621231",
+    "sourceIndex": 86,
+    "jp": "映画"
+  },
+  {
+    "sourceId": "8a88cfbcb8",
+    "cardId": "openjlpt-n5:8a88cfbcb8",
+    "sourceIndex": 87,
+    "jp": "映画館"
+  },
+  {
+    "sourceId": "16adc7bd03",
+    "cardId": "openjlpt-n5:16adc7bd03",
+    "sourceIndex": 88,
+    "jp": "英語"
+  },
+  {
+    "sourceId": "8ac60a4060",
+    "cardId": "openjlpt-n5:8ac60a4060",
+    "sourceIndex": 89,
+    "jp": "ええ"
+  },
+  {
+    "sourceId": "d5f359c20b",
+    "cardId": "openjlpt-n5:d5f359c20b",
+    "sourceIndex": 90,
+    "jp": "駅"
+  },
+  {
+    "sourceId": "eb1695baf6",
+    "cardId": "openjlpt-n5:eb1695baf6",
+    "sourceIndex": 91,
+    "jp": "エレベーター"
+  },
+  {
+    "sourceId": "381da4d060",
+    "cardId": "openjlpt-n5:381da4d060",
+    "sourceIndex": 92,
+    "jp": "鉛筆"
+  },
+  {
+    "sourceId": "7f02ae8fa1",
+    "cardId": "openjlpt-n5:7f02ae8fa1",
+    "sourceIndex": 93,
+    "jp": "おいしい"
+  },
+  {
+    "sourceId": "60813fffd1",
+    "cardId": "openjlpt-n5:60813fffd1",
+    "sourceIndex": 94,
+    "jp": "多い"
+  },
+  {
+    "sourceId": "8fa5a63fc7",
+    "cardId": "openjlpt-n5:8fa5a63fc7",
+    "sourceIndex": 95,
+    "jp": "大きい"
+  },
+  {
+    "sourceId": "3a2de0afca",
+    "cardId": "openjlpt-n5:3a2de0afca",
+    "sourceIndex": 96,
+    "jp": "大きな"
+  },
+  {
+    "sourceId": "57ed89b240",
+    "cardId": "openjlpt-n5:57ed89b240",
+    "sourceIndex": 97,
+    "jp": "大勢"
+  },
+  {
+    "sourceId": "2007947770",
+    "cardId": "openjlpt-n5:2007947770",
+    "sourceIndex": 98,
+    "jp": "お母さん"
+  },
+  {
+    "sourceId": "669019c625",
+    "cardId": "openjlpt-n5:669019c625",
+    "sourceIndex": 99,
+    "jp": "お菓子"
+  },
+  {
+    "sourceId": "3e015d0a8b",
+    "cardId": "openjlpt-n5:3e015d0a8b",
+    "sourceIndex": 100,
+    "jp": "お金"
+  },
+  {
+    "sourceId": "248a353e09",
+    "cardId": "openjlpt-n5:248a353e09",
+    "sourceIndex": 101,
+    "jp": "起きる"
+  },
+  {
+    "sourceId": "96845304fd",
+    "cardId": "openjlpt-n5:96845304fd",
+    "sourceIndex": 102,
+    "jp": "置く"
+  },
+  {
+    "sourceId": "6c4661d672",
+    "cardId": "openjlpt-n5:6c4661d672",
+    "sourceIndex": 103,
+    "jp": "奥さん"
+  },
+  {
+    "sourceId": "f843b00173",
+    "cardId": "openjlpt-n5:f843b00173",
+    "sourceIndex": 104,
+    "jp": "お酒"
+  },
+  {
+    "sourceId": "101d46a061",
+    "cardId": "openjlpt-n5:101d46a061",
+    "sourceIndex": 105,
+    "jp": "お皿"
+  },
+  {
+    "sourceId": "1b89f0f993",
+    "cardId": "openjlpt-n5:1b89f0f993",
+    "sourceIndex": 106,
+    "jp": "お祖父さん"
+  },
+  {
+    "sourceId": "f2fa049fdd",
+    "cardId": "openjlpt-n5:f2fa049fdd",
+    "sourceIndex": 107,
+    "jp": "教える"
+  },
+  {
+    "sourceId": "ce8facdf69",
+    "cardId": "openjlpt-n5:ce8facdf69",
+    "sourceIndex": 108,
+    "jp": "押す"
+  },
+  {
+    "sourceId": "a082687f7a",
+    "cardId": "openjlpt-n5:a082687f7a",
+    "sourceIndex": 109,
+    "jp": "遅い"
+  },
+  {
+    "sourceId": "edca336b1f",
+    "cardId": "openjlpt-n5:edca336b1f",
+    "sourceIndex": 110,
+    "jp": "お茶"
+  },
+  {
+    "sourceId": "75a36b034c",
+    "cardId": "openjlpt-n5:75a36b034c",
+    "sourceIndex": 111,
+    "jp": "お手洗い"
+  },
+  {
+    "sourceId": "89807c7c22",
+    "cardId": "openjlpt-n5:89807c7c22",
+    "sourceIndex": 112,
+    "jp": "お父さん"
+  },
+  {
+    "sourceId": "db32745bbc",
+    "cardId": "openjlpt-n5:db32745bbc",
+    "sourceIndex": 113,
+    "jp": "弟"
+  },
+  {
+    "sourceId": "2fd7d45c8d",
+    "cardId": "openjlpt-n5:2fd7d45c8d",
+    "sourceIndex": 114,
+    "jp": "男"
+  },
+  {
+    "sourceId": "6f664d3ded",
+    "cardId": "openjlpt-n5:6f664d3ded",
+    "sourceIndex": 115,
+    "jp": "男の子"
+  },
+  {
+    "sourceId": "f0f3826045",
+    "cardId": "openjlpt-n5:f0f3826045",
+    "sourceIndex": 116,
+    "jp": "一昨日"
+  },
+  {
+    "sourceId": "b75778f0ce",
+    "cardId": "openjlpt-n5:b75778f0ce",
+    "sourceIndex": 117,
+    "jp": "一昨年"
+  },
+  {
+    "sourceId": "6f5049e2d4",
+    "cardId": "openjlpt-n5:6f5049e2d4",
+    "sourceIndex": 118,
+    "jp": "大人"
+  },
+  {
+    "sourceId": "3707072a6b",
+    "cardId": "openjlpt-n5:3707072a6b",
+    "sourceIndex": 119,
+    "jp": "おなか"
+  },
+  {
+    "sourceId": "7c134ec812",
+    "cardId": "openjlpt-n5:7c134ec812",
+    "sourceIndex": 120,
+    "jp": "同じ"
+  },
+  {
+    "sourceId": "c6f43a8cc3",
+    "cardId": "openjlpt-n5:c6f43a8cc3",
+    "sourceIndex": 121,
+    "jp": "お兄さん"
+  },
+  {
+    "sourceId": "af378a4c86",
+    "cardId": "openjlpt-n5:af378a4c86",
+    "sourceIndex": 122,
+    "jp": "お姉さん"
+  },
+  {
+    "sourceId": "4df6eda2a2",
+    "cardId": "openjlpt-n5:4df6eda2a2",
+    "sourceIndex": 123,
+    "jp": "お願いします"
+  },
+  {
+    "sourceId": "12d9487797",
+    "cardId": "openjlpt-n5:12d9487797",
+    "sourceIndex": 124,
+    "jp": "おばあさん"
+  },
+  {
+    "sourceId": "03d7b15720",
+    "cardId": "openjlpt-n5:03d7b15720",
+    "sourceIndex": 125,
+    "jp": "伯母さん"
+  },
+  {
+    "sourceId": "36bff8d879",
+    "cardId": "openjlpt-n5:36bff8d879",
+    "sourceIndex": 126,
+    "jp": "おはよう"
+  },
+  {
+    "sourceId": "f347485004",
+    "cardId": "openjlpt-n5:f347485004",
+    "sourceIndex": 127,
+    "jp": "お風呂"
+  },
+  {
+    "sourceId": "7a073616e5",
+    "cardId": "openjlpt-n5:7a073616e5",
+    "sourceIndex": 128,
+    "jp": "お弁当"
+  },
+  {
+    "sourceId": "dad2d16220",
+    "cardId": "openjlpt-n5:dad2d16220",
+    "sourceIndex": 129,
+    "jp": "覚える"
+  },
+  {
+    "sourceId": "ae5d1778d1",
+    "cardId": "openjlpt-n5:ae5d1778d1",
+    "sourceIndex": 130,
+    "jp": "おまわりさん"
+  },
+  {
+    "sourceId": "cdfb776826",
+    "cardId": "openjlpt-n5:cdfb776826",
+    "sourceIndex": 131,
+    "jp": "重い"
+  },
+  {
+    "sourceId": "2568873ebd",
+    "cardId": "openjlpt-n5:2568873ebd",
+    "sourceIndex": 132,
+    "jp": "おもしろい"
+  },
+  {
+    "sourceId": "3c5bb8f223",
+    "cardId": "openjlpt-n5:3c5bb8f223",
+    "sourceIndex": 133,
+    "jp": "泳ぐ"
+  },
+  {
+    "sourceId": "ae00442122",
+    "cardId": "openjlpt-n5:ae00442122",
+    "sourceIndex": 134,
+    "jp": "降りる"
+  },
+  {
+    "sourceId": "d7960dc78d",
+    "cardId": "openjlpt-n5:d7960dc78d",
+    "sourceIndex": 135,
+    "jp": "終る"
+  },
+  {
+    "sourceId": "cdea017272",
+    "cardId": "openjlpt-n5:cdea017272",
+    "sourceIndex": 136,
+    "jp": "音楽"
+  },
+  {
+    "sourceId": "980a922ad3",
+    "cardId": "openjlpt-n5:980a922ad3",
+    "sourceIndex": 137,
+    "jp": "女"
+  },
+  {
+    "sourceId": "e6afab391a",
+    "cardId": "openjlpt-n5:e6afab391a",
+    "sourceIndex": 138,
+    "jp": "女の子"
+  },
+  {
+    "sourceId": "31a803c7f5",
+    "cardId": "openjlpt-n5:31a803c7f5",
+    "sourceIndex": 139,
+    "jp": "外国"
+  },
+  {
+    "sourceId": "70f1678111",
+    "cardId": "openjlpt-n5:70f1678111",
+    "sourceIndex": 140,
+    "jp": "外国人"
+  },
+  {
+    "sourceId": "2120ff505c",
+    "cardId": "openjlpt-n5:2120ff505c",
+    "sourceIndex": 141,
+    "jp": "会社"
+  },
+  {
+    "sourceId": "7cb27c411e",
+    "cardId": "openjlpt-n5:7cb27c411e",
+    "sourceIndex": 142,
+    "jp": "階段"
+  },
+  {
+    "sourceId": "a771d4f949",
+    "cardId": "openjlpt-n5:a771d4f949",
+    "sourceIndex": 143,
+    "jp": "買い物"
+  },
+  {
+    "sourceId": "bdb125e5c6",
+    "cardId": "openjlpt-n5:bdb125e5c6",
+    "sourceIndex": 144,
+    "jp": "買う"
+  },
+  {
+    "sourceId": "8ea4b03d7f",
+    "cardId": "openjlpt-n5:8ea4b03d7f",
+    "sourceIndex": 145,
+    "jp": "返す"
+  },
+  {
+    "sourceId": "1d22f1d023",
+    "cardId": "openjlpt-n5:1d22f1d023",
+    "sourceIndex": 146,
+    "jp": "帰る"
+  },
+  {
+    "sourceId": "687082e55c",
+    "cardId": "openjlpt-n5:687082e55c",
+    "sourceIndex": 147,
+    "jp": "かかる"
+  },
+  {
+    "sourceId": "e2d6576c76",
+    "cardId": "openjlpt-n5:e2d6576c76",
+    "sourceIndex": 148,
+    "jp": "かぎ"
+  },
+  {
+    "sourceId": "f7c7f35d9e",
+    "cardId": "openjlpt-n5:f7c7f35d9e",
+    "sourceIndex": 149,
+    "jp": "書く"
+  },
+  {
+    "sourceId": "452102ad0a",
+    "cardId": "openjlpt-n5:452102ad0a",
+    "sourceIndex": 150,
+    "jp": "学生"
+  },
+  {
+    "sourceId": "0ce2b98d3b",
+    "cardId": "openjlpt-n5:0ce2b98d3b",
+    "sourceIndex": 151,
+    "jp": "かける"
+  },
+  {
+    "sourceId": "6f54881e59",
+    "cardId": "openjlpt-n5:6f54881e59",
+    "sourceIndex": 152,
+    "jp": "傘"
+  },
+  {
+    "sourceId": "1122cac409",
+    "cardId": "openjlpt-n5:1122cac409",
+    "sourceIndex": 153,
+    "jp": "貸す"
+  },
+  {
+    "sourceId": "c1a28465a2",
+    "cardId": "openjlpt-n5:c1a28465a2",
+    "sourceIndex": 154,
+    "jp": "風"
+  },
+  {
+    "sourceId": "c9b5da4d10",
+    "cardId": "openjlpt-n5:c9b5da4d10",
+    "sourceIndex": 155,
+    "jp": "風邪"
+  },
+  {
+    "sourceId": "1c9db63bdc",
+    "cardId": "openjlpt-n5:1c9db63bdc",
+    "sourceIndex": 156,
+    "jp": "家族"
+  },
+  {
+    "sourceId": "e34295f3e1",
+    "cardId": "openjlpt-n5:e34295f3e1",
+    "sourceIndex": 157,
+    "jp": "方"
+  },
+  {
+    "sourceId": "dd8ac16bd2",
+    "cardId": "openjlpt-n5:dd8ac16bd2",
+    "sourceIndex": 158,
+    "jp": "学校"
+  },
+  {
+    "sourceId": "613c41bd1d",
+    "cardId": "openjlpt-n5:613c41bd1d",
+    "sourceIndex": 159,
+    "jp": "カップ"
+  },
+  {
+    "sourceId": "66eeeb818b",
+    "cardId": "openjlpt-n5:66eeeb818b",
+    "sourceIndex": 160,
+    "jp": "家庭"
+  },
+  {
+    "sourceId": "4092bfd9bb",
+    "cardId": "openjlpt-n5:4092bfd9bb",
+    "sourceIndex": 161,
+    "jp": "角"
+  },
+  {
+    "sourceId": "6e6a06687d",
+    "cardId": "openjlpt-n5:6e6a06687d",
+    "sourceIndex": 162,
+    "jp": "かばん"
+  },
+  {
+    "sourceId": "749f78c9d1",
+    "cardId": "openjlpt-n5:749f78c9d1",
+    "sourceIndex": 163,
+    "jp": "花瓶"
+  },
+  {
+    "sourceId": "cd08f9cdc2",
+    "cardId": "openjlpt-n5:cd08f9cdc2",
+    "sourceIndex": 164,
+    "jp": "紙"
+  },
+  {
+    "sourceId": "9d648d38ad",
+    "cardId": "openjlpt-n5:9d648d38ad",
+    "sourceIndex": 165,
+    "jp": "カメラ"
+  },
+  {
+    "sourceId": "0dbf9ef8ca",
+    "cardId": "openjlpt-n5:0dbf9ef8ca",
+    "sourceIndex": 166,
+    "jp": "火曜日"
+  },
+  {
+    "sourceId": "d2546ac97b",
+    "cardId": "openjlpt-n5:d2546ac97b",
+    "sourceIndex": 167,
+    "jp": "辛い"
+  },
+  {
+    "sourceId": "a556e5edce",
+    "cardId": "openjlpt-n5:a556e5edce",
+    "sourceIndex": 168,
+    "jp": "体"
+  },
+  {
+    "sourceId": "8cd440a181",
+    "cardId": "openjlpt-n5:8cd440a181",
+    "sourceIndex": 169,
+    "jp": "借りる"
+  },
+  {
+    "sourceId": "a8b9eb425d",
+    "cardId": "openjlpt-n5:a8b9eb425d",
+    "sourceIndex": 170,
+    "jp": "軽い"
+  },
+  {
+    "sourceId": "9decc44f4e",
+    "cardId": "openjlpt-n5:9decc44f4e",
+    "sourceIndex": 171,
+    "jp": "カレー"
+  },
+  {
+    "sourceId": "6382448bd3",
+    "cardId": "openjlpt-n5:6382448bd3",
+    "sourceIndex": 172,
+    "jp": "カレンダー"
+  },
+  {
+    "sourceId": "bcf12e002d",
+    "cardId": "openjlpt-n5:bcf12e002d",
+    "sourceIndex": 173,
+    "jp": "川"
+  },
+  {
+    "sourceId": "bad3423a93",
+    "cardId": "openjlpt-n5:bad3423a93",
+    "sourceIndex": 174,
+    "jp": "かわいい"
+  },
+  {
+    "sourceId": "fdc787af58",
+    "cardId": "openjlpt-n5:fdc787af58",
+    "sourceIndex": 175,
+    "jp": "漢字"
+  },
+  {
+    "sourceId": "22836046e2",
+    "cardId": "openjlpt-n5:22836046e2",
+    "sourceIndex": 176,
+    "jp": "木"
+  },
+  {
+    "sourceId": "5d679a1af2",
+    "cardId": "openjlpt-n5:5d679a1af2",
+    "sourceIndex": 177,
+    "jp": "黄色"
+  },
+  {
+    "sourceId": "0b36c8d6c6",
+    "cardId": "openjlpt-n5:0b36c8d6c6",
+    "sourceIndex": 178,
+    "jp": "黄色い"
+  },
+  {
+    "sourceId": "6030b50276",
+    "cardId": "openjlpt-n5:6030b50276",
+    "sourceIndex": 179,
+    "jp": "消える"
+  },
+  {
+    "sourceId": "dc19a213cd",
+    "cardId": "openjlpt-n5:dc19a213cd",
+    "sourceIndex": 180,
+    "jp": "聞く"
+  },
+  {
+    "sourceId": "fa320a51ea",
+    "cardId": "openjlpt-n5:fa320a51ea",
+    "sourceIndex": 181,
+    "jp": "北"
+  },
+  {
+    "sourceId": "4fb1c0d758",
+    "cardId": "openjlpt-n5:4fb1c0d758",
+    "sourceIndex": 182,
+    "jp": "ギター"
+  },
+  {
+    "sourceId": "7d1cf1538b",
+    "cardId": "openjlpt-n5:7d1cf1538b",
+    "sourceIndex": 183,
+    "jp": "汚い"
+  },
+  {
+    "sourceId": "5620a00afc",
+    "cardId": "openjlpt-n5:5620a00afc",
+    "sourceIndex": 184,
+    "jp": "喫茶店"
+  },
+  {
+    "sourceId": "e101e41f54",
+    "cardId": "openjlpt-n5:e101e41f54",
+    "sourceIndex": 185,
+    "jp": "切手"
+  },
+  {
+    "sourceId": "4fee5be397",
+    "cardId": "openjlpt-n5:4fee5be397",
+    "sourceIndex": 186,
+    "jp": "切符"
+  },
+  {
+    "sourceId": "a94a4be08f",
+    "cardId": "openjlpt-n5:a94a4be08f",
+    "sourceIndex": 187,
+    "jp": "昨日"
+  },
+  {
+    "sourceId": "8f81565ad7",
+    "cardId": "openjlpt-n5:8f81565ad7",
+    "sourceIndex": 188,
+    "jp": "九"
+  },
+  {
+    "sourceId": "b4faf372f3",
+    "cardId": "openjlpt-n5:b4faf372f3",
+    "sourceIndex": 189,
+    "jp": "牛肉"
+  },
+  {
+    "sourceId": "797ae8d562",
+    "cardId": "openjlpt-n5:797ae8d562",
+    "sourceIndex": 190,
+    "jp": "牛乳"
+  },
+  {
+    "sourceId": "0400a204bd",
+    "cardId": "openjlpt-n5:0400a204bd",
+    "sourceIndex": 191,
+    "jp": "今日"
+  },
+  {
+    "sourceId": "85eb994887",
+    "cardId": "openjlpt-n5:85eb994887",
+    "sourceIndex": 192,
+    "jp": "教室"
+  },
+  {
+    "sourceId": "976c4f7174",
+    "cardId": "openjlpt-n5:976c4f7174",
+    "sourceIndex": 193,
+    "jp": "兄弟"
+  },
+  {
+    "sourceId": "ec4e1dfc87",
+    "cardId": "openjlpt-n5:ec4e1dfc87",
+    "sourceIndex": 194,
+    "jp": "去年"
+  },
+  {
+    "sourceId": "d106dac023",
+    "cardId": "openjlpt-n5:d106dac023",
+    "sourceIndex": 195,
+    "jp": "嫌い"
+  },
+  {
+    "sourceId": "cf23f5fba1",
+    "cardId": "openjlpt-n5:cf23f5fba1",
+    "sourceIndex": 196,
+    "jp": "切る"
+  },
+  {
+    "sourceId": "45fbcb8670",
+    "cardId": "openjlpt-n5:45fbcb8670",
+    "sourceIndex": 197,
+    "jp": "着る"
+  },
+  {
+    "sourceId": "43cd9825f0",
+    "cardId": "openjlpt-n5:43cd9825f0",
+    "sourceIndex": 198,
+    "jp": "きれい"
+  },
+  {
+    "sourceId": "36016e0c51",
+    "cardId": "openjlpt-n5:36016e0c51",
+    "sourceIndex": 199,
+    "jp": "キロ"
+  },
+  {
+    "sourceId": "a59efa3057",
+    "cardId": "openjlpt-n5:a59efa3057",
+    "sourceIndex": 200,
+    "jp": "銀行"
+  },
+  {
+    "sourceId": "b00c4af0a2",
+    "cardId": "openjlpt-n5:b00c4af0a2",
+    "sourceIndex": 201,
+    "jp": "金曜日"
+  },
+  {
+    "sourceId": "95ccaa32f5",
+    "cardId": "openjlpt-n5:95ccaa32f5",
+    "sourceIndex": 202,
+    "jp": "薬"
+  },
+  {
+    "sourceId": "a36841ba49",
+    "cardId": "openjlpt-n5:a36841ba49",
+    "sourceIndex": 203,
+    "jp": "ください"
+  },
+  {
+    "sourceId": "6b454b895e",
+    "cardId": "openjlpt-n5:6b454b895e",
+    "sourceIndex": 204,
+    "jp": "果物"
+  },
+  {
+    "sourceId": "a123a147d7",
+    "cardId": "openjlpt-n5:a123a147d7",
+    "sourceIndex": 205,
+    "jp": "口"
+  },
+  {
+    "sourceId": "9dd0572f05",
+    "cardId": "openjlpt-n5:9dd0572f05",
+    "sourceIndex": 206,
+    "jp": "靴"
+  },
+  {
+    "sourceId": "20a1278928",
+    "cardId": "openjlpt-n5:20a1278928",
+    "sourceIndex": 207,
+    "jp": "靴下"
+  },
+  {
+    "sourceId": "b55dd305d1",
+    "cardId": "openjlpt-n5:b55dd305d1",
+    "sourceIndex": 208,
+    "jp": "国"
+  },
+  {
+    "sourceId": "eec0f93991",
+    "cardId": "openjlpt-n5:eec0f93991",
+    "sourceIndex": 209,
+    "jp": "曇り"
+  },
+  {
+    "sourceId": "c34fdb6092",
+    "cardId": "openjlpt-n5:c34fdb6092",
+    "sourceIndex": 210,
+    "jp": "曇る"
+  },
+  {
+    "sourceId": "01a0587b49",
+    "cardId": "openjlpt-n5:01a0587b49",
+    "sourceIndex": 211,
+    "jp": "暗い"
+  },
+  {
+    "sourceId": "72c04ce067",
+    "cardId": "openjlpt-n5:72c04ce067",
+    "sourceIndex": 212,
+    "jp": "クラス"
+  },
+  {
+    "sourceId": "5538df2bce",
+    "cardId": "openjlpt-n5:5538df2bce",
+    "sourceIndex": 213,
+    "jp": "グラム"
+  },
+  {
+    "sourceId": "2e2abd26ca",
+    "cardId": "openjlpt-n5:2e2abd26ca",
+    "sourceIndex": 214,
+    "jp": "来る"
+  },
+  {
+    "sourceId": "d6b85573f3",
+    "cardId": "openjlpt-n5:d6b85573f3",
+    "sourceIndex": 215,
+    "jp": "車"
+  },
+  {
+    "sourceId": "3c32cfb08a",
+    "cardId": "openjlpt-n5:3c32cfb08a",
+    "sourceIndex": 216,
+    "jp": "黒"
+  },
+  {
+    "sourceId": "5e5300cf62",
+    "cardId": "openjlpt-n5:5e5300cf62",
+    "sourceIndex": 217,
+    "jp": "黒い"
+  },
+  {
+    "sourceId": "e1634cb3e9",
+    "cardId": "openjlpt-n5:e1634cb3e9",
+    "sourceIndex": 218,
+    "jp": "警官"
+  },
+  {
+    "sourceId": "9c1d724a61",
+    "cardId": "openjlpt-n5:9c1d724a61",
+    "sourceIndex": 219,
+    "jp": "今朝"
+  },
+  {
+    "sourceId": "19f270c68f",
+    "cardId": "openjlpt-n5:19f270c68f",
+    "sourceIndex": 220,
+    "jp": "消す"
+  },
+  {
+    "sourceId": "dd34250740",
+    "cardId": "openjlpt-n5:dd34250740",
+    "sourceIndex": 221,
+    "jp": "結構"
+  },
+  {
+    "sourceId": "2eb252da72",
+    "cardId": "openjlpt-n5:2eb252da72",
+    "sourceIndex": 222,
+    "jp": "結婚"
+  },
+  {
+    "sourceId": "04e80a2ba1",
+    "cardId": "openjlpt-n5:04e80a2ba1",
+    "sourceIndex": 223,
+    "jp": "月曜日"
+  },
+  {
+    "sourceId": "2e1642b248",
+    "cardId": "openjlpt-n5:2e1642b248",
+    "sourceIndex": 224,
+    "jp": "玄関"
+  },
+  {
+    "sourceId": "442c4aa1ca",
+    "cardId": "openjlpt-n5:442c4aa1ca",
+    "sourceIndex": 225,
+    "jp": "元気"
+  },
+  {
+    "sourceId": "47c1fdbe2f",
+    "cardId": "openjlpt-n5:47c1fdbe2f",
+    "sourceIndex": 226,
+    "jp": "五"
+  },
+  {
+    "sourceId": "05cf590971",
+    "cardId": "openjlpt-n5:05cf590971",
+    "sourceIndex": 227,
+    "jp": "公園"
+  },
+  {
+    "sourceId": "8699b8bec2",
+    "cardId": "openjlpt-n5:8699b8bec2",
+    "sourceIndex": 228,
+    "jp": "交差点"
+  },
+  {
+    "sourceId": "1288e600be",
+    "cardId": "openjlpt-n5:1288e600be",
+    "sourceIndex": 229,
+    "jp": "紅茶"
+  },
+  {
+    "sourceId": "402eb0d21f",
+    "cardId": "openjlpt-n5:402eb0d21f",
+    "sourceIndex": 230,
+    "jp": "交番"
+  },
+  {
+    "sourceId": "d890e45616",
+    "cardId": "openjlpt-n5:d890e45616",
+    "sourceIndex": 231,
+    "jp": "声"
+  },
+  {
+    "sourceId": "c552e79d34",
+    "cardId": "openjlpt-n5:c552e79d34",
+    "sourceIndex": 232,
+    "jp": "コート"
+  },
+  {
+    "sourceId": "67126059f1",
+    "cardId": "openjlpt-n5:67126059f1",
+    "sourceIndex": 233,
+    "jp": "コーヒー"
+  },
+  {
+    "sourceId": "05123676c2",
+    "cardId": "openjlpt-n5:05123676c2",
+    "sourceIndex": 234,
+    "jp": "ここ"
+  },
+  {
+    "sourceId": "9a7c962266",
+    "cardId": "openjlpt-n5:9a7c962266",
+    "sourceIndex": 235,
+    "jp": "午後"
+  },
+  {
+    "sourceId": "f114f6f499",
+    "cardId": "openjlpt-n5:f114f6f499",
+    "sourceIndex": 236,
+    "jp": "九日"
+  },
+  {
+    "sourceId": "cff3c57405",
+    "cardId": "openjlpt-n5:cff3c57405",
+    "sourceIndex": 237,
+    "jp": "九つ"
+  },
+  {
+    "sourceId": "c92dbe626a",
+    "cardId": "openjlpt-n5:c92dbe626a",
+    "sourceIndex": 238,
+    "jp": "午前"
+  },
+  {
+    "sourceId": "d5d8c608aa",
+    "cardId": "openjlpt-n5:d5d8c608aa",
+    "sourceIndex": 239,
+    "jp": "答える"
+  },
+  {
+    "sourceId": "a9191729e3",
+    "cardId": "openjlpt-n5:a9191729e3",
+    "sourceIndex": 240,
+    "jp": "ごちそうさま"
+  },
+  {
+    "sourceId": "e9e492c68a",
+    "cardId": "openjlpt-n5:e9e492c68a",
+    "sourceIndex": 241,
+    "jp": "こちら"
+  },
+  {
+    "sourceId": "be9b8bcb5e",
+    "cardId": "openjlpt-n5:be9b8bcb5e",
+    "sourceIndex": 242,
+    "jp": "こっち"
+  },
+  {
+    "sourceId": "2da7034c1e",
+    "cardId": "openjlpt-n5:2da7034c1e",
+    "sourceIndex": 243,
+    "jp": "コップ"
+  },
+  {
+    "sourceId": "0020b9ee4e",
+    "cardId": "openjlpt-n5:0020b9ee4e",
+    "sourceIndex": 244,
+    "jp": "今年"
+  },
+  {
+    "sourceId": "491cfa69be",
+    "cardId": "openjlpt-n5:491cfa69be",
+    "sourceIndex": 245,
+    "jp": "言葉"
+  },
+  {
+    "sourceId": "1f4bb6e503",
+    "cardId": "openjlpt-n5:1f4bb6e503",
+    "sourceIndex": 246,
+    "jp": "子供"
+  },
+  {
+    "sourceId": "bd3a2ad2ad",
+    "cardId": "openjlpt-n5:bd3a2ad2ad",
+    "sourceIndex": 247,
+    "jp": "この"
+  },
+  {
+    "sourceId": "a2694d259e",
+    "cardId": "openjlpt-n5:a2694d259e",
+    "sourceIndex": 248,
+    "jp": "御飯"
+  },
+  {
+    "sourceId": "f586d7d023",
+    "cardId": "openjlpt-n5:f586d7d023",
+    "sourceIndex": 249,
+    "jp": "コピーする"
+  },
+  {
+    "sourceId": "61994485cb",
+    "cardId": "openjlpt-n5:61994485cb",
+    "sourceIndex": 250,
+    "jp": "困る"
+  },
+  {
+    "sourceId": "4a11eb5fb4",
+    "cardId": "openjlpt-n5:4a11eb5fb4",
+    "sourceIndex": 251,
+    "jp": "ごめんなさい"
+  },
+  {
+    "sourceId": "6313cc9cb5",
+    "cardId": "openjlpt-n5:6313cc9cb5",
+    "sourceIndex": 252,
+    "jp": "これ"
+  },
+  {
+    "sourceId": "3793173687",
+    "cardId": "openjlpt-n5:3793173687",
+    "sourceIndex": 253,
+    "jp": "今月"
+  },
+  {
+    "sourceId": "7a27eadef1",
+    "cardId": "openjlpt-n5:7a27eadef1",
+    "sourceIndex": 254,
+    "jp": "今週"
+  },
+  {
+    "sourceId": "e1978f90df",
+    "cardId": "openjlpt-n5:e1978f90df",
+    "sourceIndex": 255,
+    "jp": "こんな"
+  },
+  {
+    "sourceId": "0a65b39cf7",
+    "cardId": "openjlpt-n5:0a65b39cf7",
+    "sourceIndex": 256,
+    "jp": "こんにちは"
+  },
+  {
+    "sourceId": "eb1c9a5df9",
+    "cardId": "openjlpt-n5:eb1c9a5df9",
+    "sourceIndex": 257,
+    "jp": "今晩"
+  },
+  {
+    "sourceId": "6c0551dd8a",
+    "cardId": "openjlpt-n5:6c0551dd8a",
+    "sourceIndex": 258,
+    "jp": "こんばんは"
+  },
+  {
+    "sourceId": "7ba7ba2434",
+    "cardId": "openjlpt-n5:7ba7ba2434",
+    "sourceIndex": 259,
+    "jp": "さあ"
+  },
+  {
+    "sourceId": "a96e3a2b33",
+    "cardId": "openjlpt-n5:a96e3a2b33",
+    "sourceIndex": 260,
+    "jp": "財布"
+  },
+  {
+    "sourceId": "dbd7cd319c",
+    "cardId": "openjlpt-n5:dbd7cd319c",
+    "sourceIndex": 261,
+    "jp": "魚"
+  },
+  {
+    "sourceId": "20fcc4f54f",
+    "cardId": "openjlpt-n5:20fcc4f54f",
+    "sourceIndex": 262,
+    "jp": "先"
+  },
+  {
+    "sourceId": "4c39babf5f",
+    "cardId": "openjlpt-n5:4c39babf5f",
+    "sourceIndex": 263,
+    "jp": "咲く"
+  },
+  {
+    "sourceId": "c10cb3070d",
+    "cardId": "openjlpt-n5:c10cb3070d",
+    "sourceIndex": 264,
+    "jp": "作文"
+  },
+  {
+    "sourceId": "4e2aefb855",
+    "cardId": "openjlpt-n5:4e2aefb855",
+    "sourceIndex": 265,
+    "jp": "差す"
+  },
+  {
+    "sourceId": "a371cc6a54",
+    "cardId": "openjlpt-n5:a371cc6a54",
+    "sourceIndex": 266,
+    "jp": "雑誌"
+  },
+  {
+    "sourceId": "8af5030b7a",
+    "cardId": "openjlpt-n5:8af5030b7a",
+    "sourceIndex": 267,
+    "jp": "砂糖"
+  },
+  {
+    "sourceId": "688bc67044",
+    "cardId": "openjlpt-n5:688bc67044",
+    "sourceIndex": 268,
+    "jp": "寒い"
+  },
+  {
+    "sourceId": "0a1f511640",
+    "cardId": "openjlpt-n5:0a1f511640",
+    "sourceIndex": 269,
+    "jp": "さようなら"
+  },
+  {
+    "sourceId": "45c705d5b2",
+    "cardId": "openjlpt-n5:45c705d5b2",
+    "sourceIndex": 270,
+    "jp": "再来年"
+  },
+  {
+    "sourceId": "5cb07674a3",
+    "cardId": "openjlpt-n5:5cb07674a3",
+    "sourceIndex": 271,
+    "jp": "三"
+  },
+  {
+    "sourceId": "e2695084c9",
+    "cardId": "openjlpt-n5:e2695084c9",
+    "sourceIndex": 272,
+    "jp": "散歩"
+  },
+  {
+    "sourceId": "da4b805e0b",
+    "cardId": "openjlpt-n5:da4b805e0b",
+    "sourceIndex": 273,
+    "jp": "四"
+  },
+  {
+    "sourceId": "b366a3d677",
+    "cardId": "openjlpt-n5:b366a3d677",
+    "sourceIndex": 274,
+    "jp": "塩"
+  },
+  {
+    "sourceId": "2c41aedcba",
+    "cardId": "openjlpt-n5:2c41aedcba",
+    "sourceIndex": 275,
+    "jp": "しかし"
+  },
+  {
+    "sourceId": "d5c916ca85",
+    "cardId": "openjlpt-n5:d5c916ca85",
+    "sourceIndex": 276,
+    "jp": "時間"
+  },
+  {
+    "sourceId": "573bc15b1d",
+    "cardId": "openjlpt-n5:573bc15b1d",
+    "sourceIndex": 277,
+    "jp": "仕事"
+  },
+  {
+    "sourceId": "8ec35978bd",
+    "cardId": "openjlpt-n5:8ec35978bd",
+    "sourceIndex": 278,
+    "jp": "辞書"
+  },
+  {
+    "sourceId": "178469ba7a",
+    "cardId": "openjlpt-n5:178469ba7a",
+    "sourceIndex": 279,
+    "jp": "静か"
+  },
+  {
+    "sourceId": "dd36cae3a9",
+    "cardId": "openjlpt-n5:dd36cae3a9",
+    "sourceIndex": 280,
+    "jp": "下"
+  },
+  {
+    "sourceId": "988db98632",
+    "cardId": "openjlpt-n5:988db98632",
+    "sourceIndex": 281,
+    "jp": "七"
+  },
+  {
+    "sourceId": "2c5c99977c",
+    "cardId": "openjlpt-n5:2c5c99977c",
+    "sourceIndex": 282,
+    "jp": "質問"
+  },
+  {
+    "sourceId": "ebf194a316",
+    "cardId": "openjlpt-n5:ebf194a316",
+    "sourceIndex": 283,
+    "jp": "自転車"
+  },
+  {
+    "sourceId": "78fd1a0e8a",
+    "cardId": "openjlpt-n5:78fd1a0e8a",
+    "sourceIndex": 284,
+    "jp": "自動車"
+  },
+  {
+    "sourceId": "ec6fd2f845",
+    "cardId": "openjlpt-n5:ec6fd2f845",
+    "sourceIndex": 285,
+    "jp": "死ぬ"
+  },
+  {
+    "sourceId": "6156bfb418",
+    "cardId": "openjlpt-n5:6156bfb418",
+    "sourceIndex": 286,
+    "jp": "字引"
+  },
+  {
+    "sourceId": "995a632b12",
+    "cardId": "openjlpt-n5:995a632b12",
+    "sourceIndex": 287,
+    "jp": "自分"
+  },
+  {
+    "sourceId": "01420cdf0f",
+    "cardId": "openjlpt-n5:01420cdf0f",
+    "sourceIndex": 288,
+    "jp": "閉まる"
+  },
+  {
+    "sourceId": "8e6c15bef9",
+    "cardId": "openjlpt-n5:8e6c15bef9",
+    "sourceIndex": 289,
+    "jp": "締める"
+  },
+  {
+    "sourceId": "95827b08e3",
+    "cardId": "openjlpt-n5:95827b08e3",
+    "sourceIndex": 290,
+    "jp": "閉める"
+  },
+  {
+    "sourceId": "091c8c0e07",
+    "cardId": "openjlpt-n5:091c8c0e07",
+    "sourceIndex": 291,
+    "jp": "じゃ"
+  },
+  {
+    "sourceId": "5101640e7e",
+    "cardId": "openjlpt-n5:5101640e7e",
+    "sourceIndex": 292,
+    "jp": "写真"
+  },
+  {
+    "sourceId": "f71424e3ff",
+    "cardId": "openjlpt-n5:f71424e3ff",
+    "sourceIndex": 293,
+    "jp": "シャツ"
+  },
+  {
+    "sourceId": "d9c88143a2",
+    "cardId": "openjlpt-n5:d9c88143a2",
+    "sourceIndex": 294,
+    "jp": "シャワー"
+  },
+  {
+    "sourceId": "db9f5d4422",
+    "cardId": "openjlpt-n5:db9f5d4422",
+    "sourceIndex": 295,
+    "jp": "十"
+  },
+  {
+    "sourceId": "5bae559507",
+    "cardId": "openjlpt-n5:5bae559507",
+    "sourceIndex": 296,
+    "jp": "授業"
+  },
+  {
+    "sourceId": "4daa103d7d",
+    "cardId": "openjlpt-n5:4daa103d7d",
+    "sourceIndex": 297,
+    "jp": "宿題"
+  },
+  {
+    "sourceId": "1763fc412a",
+    "cardId": "openjlpt-n5:1763fc412a",
+    "sourceIndex": 298,
+    "jp": "上手"
+  },
+  {
+    "sourceId": "50525927ee",
+    "cardId": "openjlpt-n5:50525927ee",
+    "sourceIndex": 299,
+    "jp": "丈夫"
+  },
+  {
+    "sourceId": "9476d7966d",
+    "cardId": "openjlpt-n5:9476d7966d",
+    "sourceIndex": 300,
+    "jp": "しょうゆ"
+  },
+  {
+    "sourceId": "dcc87a37fb",
+    "cardId": "openjlpt-n5:dcc87a37fb",
+    "sourceIndex": 301,
+    "jp": "食堂"
+  },
+  {
+    "sourceId": "1fcb2fece8",
+    "cardId": "openjlpt-n5:1fcb2fece8",
+    "sourceIndex": 302,
+    "jp": "知る"
+  },
+  {
+    "sourceId": "98eace7008",
+    "cardId": "openjlpt-n5:98eace7008",
+    "sourceIndex": 303,
+    "jp": "白"
+  },
+  {
+    "sourceId": "8997f64f52",
+    "cardId": "openjlpt-n5:8997f64f52",
+    "sourceIndex": 304,
+    "jp": "白い"
+  },
+  {
+    "sourceId": "b8317395af",
+    "cardId": "openjlpt-n5:b8317395af",
+    "sourceIndex": 305,
+    "jp": "新聞"
+  },
+  {
+    "sourceId": "44d9d70862",
+    "cardId": "openjlpt-n5:44d9d70862",
+    "sourceIndex": 306,
+    "jp": "水曜日"
+  },
+  {
+    "sourceId": "e82727193e",
+    "cardId": "openjlpt-n5:e82727193e",
+    "sourceIndex": 307,
+    "jp": "吸う"
+  },
+  {
+    "sourceId": "f0f5f6b29b",
+    "cardId": "openjlpt-n5:f0f5f6b29b",
+    "sourceIndex": 308,
+    "jp": "スカート"
+  },
+  {
+    "sourceId": "20cbecd474",
+    "cardId": "openjlpt-n5:20cbecd474",
+    "sourceIndex": 309,
+    "jp": "好き"
+  },
+  {
+    "sourceId": "ce75057c4c",
+    "cardId": "openjlpt-n5:ce75057c4c",
+    "sourceIndex": 310,
+    "jp": "すぐ"
+  },
+  {
+    "sourceId": "0d38b01113",
+    "cardId": "openjlpt-n5:0d38b01113",
+    "sourceIndex": 311,
+    "jp": "少ない"
+  },
+  {
+    "sourceId": "a8722990f1",
+    "cardId": "openjlpt-n5:a8722990f1",
+    "sourceIndex": 312,
+    "jp": "すぐに"
+  },
+  {
+    "sourceId": "c373555102",
+    "cardId": "openjlpt-n5:c373555102",
+    "sourceIndex": 313,
+    "jp": "少し"
+  },
+  {
+    "sourceId": "67f5908e10",
+    "cardId": "openjlpt-n5:67f5908e10",
+    "sourceIndex": 314,
+    "jp": "涼しい"
+  },
+  {
+    "sourceId": "8149d77689",
+    "cardId": "openjlpt-n5:8149d77689",
+    "sourceIndex": 315,
+    "jp": "ストーブ"
+  },
+  {
+    "sourceId": "938a169f6c",
+    "cardId": "openjlpt-n5:938a169f6c",
+    "sourceIndex": 316,
+    "jp": "スプーン"
+  },
+  {
+    "sourceId": "0a33903ccf",
+    "cardId": "openjlpt-n5:0a33903ccf",
+    "sourceIndex": 317,
+    "jp": "スポーツ"
+  },
+  {
+    "sourceId": "10fe0704ca",
+    "cardId": "openjlpt-n5:10fe0704ca",
+    "sourceIndex": 318,
+    "jp": "ズボン"
+  },
+  {
+    "sourceId": "feae64eac4",
+    "cardId": "openjlpt-n5:feae64eac4",
+    "sourceIndex": 319,
+    "jp": "すみません"
+  },
+  {
+    "sourceId": "d671097071",
+    "cardId": "openjlpt-n5:d671097071",
+    "sourceIndex": 320,
+    "jp": "住む"
+  },
+  {
+    "sourceId": "508131fe89",
+    "cardId": "openjlpt-n5:508131fe89",
+    "sourceIndex": 321,
+    "jp": "スリッパ"
+  },
+  {
+    "sourceId": "c4cdc162d7",
+    "cardId": "openjlpt-n5:c4cdc162d7",
+    "sourceIndex": 322,
+    "jp": "する"
+  },
+  {
+    "sourceId": "c9a15e8777",
+    "cardId": "openjlpt-n5:c9a15e8777",
+    "sourceIndex": 323,
+    "jp": "座る"
+  },
+  {
+    "sourceId": "898b067287",
+    "cardId": "openjlpt-n5:898b067287",
+    "sourceIndex": 324,
+    "jp": "背"
+  },
+  {
+    "sourceId": "af7459ef1e",
+    "cardId": "openjlpt-n5:af7459ef1e",
+    "sourceIndex": 325,
+    "jp": "生徒"
+  },
+  {
+    "sourceId": "4b0b49a42d",
+    "cardId": "openjlpt-n5:4b0b49a42d",
+    "sourceIndex": 326,
+    "jp": "セーター"
+  },
+  {
+    "sourceId": "b48d0c99d4",
+    "cardId": "openjlpt-n5:b48d0c99d4",
+    "sourceIndex": 327,
+    "jp": "せっけん"
+  },
+  {
+    "sourceId": "9d432ac114",
+    "cardId": "openjlpt-n5:9d432ac114",
+    "sourceIndex": 328,
+    "jp": "背広"
+  },
+  {
+    "sourceId": "d12ee2e932",
+    "cardId": "openjlpt-n5:d12ee2e932",
+    "sourceIndex": 329,
+    "jp": "狭い"
+  },
+  {
+    "sourceId": "434707d737",
+    "cardId": "openjlpt-n5:434707d737",
+    "sourceIndex": 330,
+    "jp": "ゼロ"
+  },
+  {
+    "sourceId": "1729d60f09",
+    "cardId": "openjlpt-n5:1729d60f09",
+    "sourceIndex": 331,
+    "jp": "千"
+  },
+  {
+    "sourceId": "0eaa93c144",
+    "cardId": "openjlpt-n5:0eaa93c144",
+    "sourceIndex": 332,
+    "jp": "先月"
+  },
+  {
+    "sourceId": "b8c4cd80db",
+    "cardId": "openjlpt-n5:b8c4cd80db",
+    "sourceIndex": 333,
+    "jp": "先週"
+  },
+  {
+    "sourceId": "814bdc2cec",
+    "cardId": "openjlpt-n5:814bdc2cec",
+    "sourceIndex": 334,
+    "jp": "先生"
+  },
+  {
+    "sourceId": "4d0ca7b320",
+    "cardId": "openjlpt-n5:4d0ca7b320",
+    "sourceIndex": 335,
+    "jp": "洗濯"
+  },
+  {
+    "sourceId": "acba6e07ba",
+    "cardId": "openjlpt-n5:acba6e07ba",
+    "sourceIndex": 336,
+    "jp": "全部"
+  },
+  {
+    "sourceId": "501df34d31",
+    "cardId": "openjlpt-n5:501df34d31",
+    "sourceIndex": 337,
+    "jp": "掃除"
+  },
+  {
+    "sourceId": "e75777d218",
+    "cardId": "openjlpt-n5:e75777d218",
+    "sourceIndex": 338,
+    "jp": "そうして"
+  },
+  {
+    "sourceId": "5ef867ff81",
+    "cardId": "openjlpt-n5:5ef867ff81",
+    "sourceIndex": 339,
+    "jp": "そこ"
+  },
+  {
+    "sourceId": "105df79571",
+    "cardId": "openjlpt-n5:105df79571",
+    "sourceIndex": 340,
+    "jp": "そちら"
+  },
+  {
+    "sourceId": "80981fa136",
+    "cardId": "openjlpt-n5:80981fa136",
+    "sourceIndex": 341,
+    "jp": "そっち"
+  },
+  {
+    "sourceId": "68ad5f4363",
+    "cardId": "openjlpt-n5:68ad5f4363",
+    "sourceIndex": 342,
+    "jp": "外"
+  },
+  {
+    "sourceId": "cb1c02a574",
+    "cardId": "openjlpt-n5:cb1c02a574",
+    "sourceIndex": 343,
+    "jp": "その"
+  },
+  {
+    "sourceId": "38c854e97f",
+    "cardId": "openjlpt-n5:38c854e97f",
+    "sourceIndex": 344,
+    "jp": "そば"
+  },
+  {
+    "sourceId": "6ff51bace3",
+    "cardId": "openjlpt-n5:6ff51bace3",
+    "sourceIndex": 345,
+    "jp": "空"
+  },
+  {
+    "sourceId": "79d922e359",
+    "cardId": "openjlpt-n5:79d922e359",
+    "sourceIndex": 346,
+    "jp": "それ"
+  },
+  {
+    "sourceId": "799b7cabe0",
+    "cardId": "openjlpt-n5:799b7cabe0",
+    "sourceIndex": 347,
+    "jp": "それから"
+  },
+  {
+    "sourceId": "46c1721526",
+    "cardId": "openjlpt-n5:46c1721526",
+    "sourceIndex": 348,
+    "jp": "それでは"
+  },
+  {
+    "sourceId": "5b303264b9",
+    "cardId": "openjlpt-n5:5b303264b9",
+    "sourceIndex": 349,
+    "jp": "大学"
+  },
+  {
+    "sourceId": "992fc07339",
+    "cardId": "openjlpt-n5:992fc07339",
+    "sourceIndex": 350,
+    "jp": "大使館"
+  },
+  {
+    "sourceId": "2f62b9db5e",
+    "cardId": "openjlpt-n5:2f62b9db5e",
+    "sourceIndex": 351,
+    "jp": "大丈夫"
+  },
+  {
+    "sourceId": "9ee7cd3382",
+    "cardId": "openjlpt-n5:9ee7cd3382",
+    "sourceIndex": 352,
+    "jp": "大好き"
+  },
+  {
+    "sourceId": "b3a8593e53",
+    "cardId": "openjlpt-n5:b3a8593e53",
+    "sourceIndex": 353,
+    "jp": "大切"
+  },
+  {
+    "sourceId": "1c0b0f77b6",
+    "cardId": "openjlpt-n5:1c0b0f77b6",
+    "sourceIndex": 354,
+    "jp": "台所"
+  },
+  {
+    "sourceId": "e04372c490",
+    "cardId": "openjlpt-n5:e04372c490",
+    "sourceIndex": 355,
+    "jp": "たいへん"
+  },
+  {
+    "sourceId": "c74892f565",
+    "cardId": "openjlpt-n5:c74892f565",
+    "sourceIndex": 356,
+    "jp": "高い"
+  },
+  {
+    "sourceId": "a7c72d9bb1",
+    "cardId": "openjlpt-n5:a7c72d9bb1",
+    "sourceIndex": 357,
+    "jp": "たくさん"
+  },
+  {
+    "sourceId": "2d5a93eb11",
+    "cardId": "openjlpt-n5:2d5a93eb11",
+    "sourceIndex": 358,
+    "jp": "タクシー"
+  },
+  {
+    "sourceId": "6298cfc5d6",
+    "cardId": "openjlpt-n5:6298cfc5d6",
+    "sourceIndex": 359,
+    "jp": "出す"
+  },
+  {
+    "sourceId": "932afda20b",
+    "cardId": "openjlpt-n5:932afda20b",
+    "sourceIndex": 360,
+    "jp": "立つ"
+  },
+  {
+    "sourceId": "e7ca1b2fd5",
+    "cardId": "openjlpt-n5:e7ca1b2fd5",
+    "sourceIndex": 361,
+    "jp": "たて"
+  },
+  {
+    "sourceId": "372b08211e",
+    "cardId": "openjlpt-n5:372b08211e",
+    "sourceIndex": 362,
+    "jp": "建物"
+  },
+  {
+    "sourceId": "9b2d455dfe",
+    "cardId": "openjlpt-n5:9b2d455dfe",
+    "sourceIndex": 363,
+    "jp": "楽しい"
+  },
+  {
+    "sourceId": "7e9d38afeb",
+    "cardId": "openjlpt-n5:7e9d38afeb",
+    "sourceIndex": 364,
+    "jp": "頼む"
+  },
+  {
+    "sourceId": "80beed00bf",
+    "cardId": "openjlpt-n5:80beed00bf",
+    "sourceIndex": 365,
+    "jp": "たばこ"
+  },
+  {
+    "sourceId": "d9eba03b7b",
+    "cardId": "openjlpt-n5:d9eba03b7b",
+    "sourceIndex": 366,
+    "jp": "たぶん"
+  },
+  {
+    "sourceId": "5c89b3094a",
+    "cardId": "openjlpt-n5:5c89b3094a",
+    "sourceIndex": 367,
+    "jp": "食べ物"
+  },
+  {
+    "sourceId": "86f67e2dc3",
+    "cardId": "openjlpt-n5:86f67e2dc3",
+    "sourceIndex": 368,
+    "jp": "食べる"
+  },
+  {
+    "sourceId": "4d66739694",
+    "cardId": "openjlpt-n5:4d66739694",
+    "sourceIndex": 369,
+    "jp": "卵"
+  },
+  {
+    "sourceId": "3d2ca62c5f",
+    "cardId": "openjlpt-n5:3d2ca62c5f",
+    "sourceIndex": 370,
+    "jp": "誰"
+  },
+  {
+    "sourceId": "2e610178ae",
+    "cardId": "openjlpt-n5:2e610178ae",
+    "sourceIndex": 371,
+    "jp": "誕生日"
+  },
+  {
+    "sourceId": "55dbb815ba",
+    "cardId": "openjlpt-n5:55dbb815ba",
+    "sourceIndex": 372,
+    "jp": "だんだん"
+  },
+  {
+    "sourceId": "d4779ac36c",
+    "cardId": "openjlpt-n5:d4779ac36c",
+    "sourceIndex": 373,
+    "jp": "小さい"
+  },
+  {
+    "sourceId": "38a8411ec3",
+    "cardId": "openjlpt-n5:38a8411ec3",
+    "sourceIndex": 374,
+    "jp": "小さな"
+  },
+  {
+    "sourceId": "a21ba677f2",
+    "cardId": "openjlpt-n5:a21ba677f2",
+    "sourceIndex": 375,
+    "jp": "近い"
+  },
+  {
+    "sourceId": "35e9881c22",
+    "cardId": "openjlpt-n5:35e9881c22",
+    "sourceIndex": 376,
+    "jp": "違う"
+  },
+  {
+    "sourceId": "6d7293f7cf",
+    "cardId": "openjlpt-n5:6d7293f7cf",
+    "sourceIndex": 377,
+    "jp": "近く"
+  },
+  {
+    "sourceId": "3134199c25",
+    "cardId": "openjlpt-n5:3134199c25",
+    "sourceIndex": 378,
+    "jp": "地下鉄"
+  },
+  {
+    "sourceId": "ffa3dda331",
+    "cardId": "openjlpt-n5:ffa3dda331",
+    "sourceIndex": 379,
+    "jp": "地図"
+  },
+  {
+    "sourceId": "f9b377e253",
+    "cardId": "openjlpt-n5:f9b377e253",
+    "sourceIndex": 380,
+    "jp": "茶色"
+  },
+  {
+    "sourceId": "3d12036023",
+    "cardId": "openjlpt-n5:3d12036023",
+    "sourceIndex": 381,
+    "jp": "ちゃわん"
+  },
+  {
+    "sourceId": "9b08365493",
+    "cardId": "openjlpt-n5:9b08365493",
+    "sourceIndex": 382,
+    "jp": "ちょうど"
+  },
+  {
+    "sourceId": "602fdffbf2",
+    "cardId": "openjlpt-n5:602fdffbf2",
+    "sourceIndex": 383,
+    "jp": "ちょっと"
+  },
+  {
+    "sourceId": "c88e0ba104",
+    "cardId": "openjlpt-n5:c88e0ba104",
+    "sourceIndex": 384,
+    "jp": "使う"
+  },
+  {
+    "sourceId": "156f17113e",
+    "cardId": "openjlpt-n5:156f17113e",
+    "sourceIndex": 385,
+    "jp": "疲れる"
+  },
+  {
+    "sourceId": "d00ef0a9d5",
+    "cardId": "openjlpt-n5:d00ef0a9d5",
+    "sourceIndex": 386,
+    "jp": "次"
+  },
+  {
+    "sourceId": "9d4a68ce12",
+    "cardId": "openjlpt-n5:9d4a68ce12",
+    "sourceIndex": 387,
+    "jp": "着く"
+  },
+  {
+    "sourceId": "672321bac9",
+    "cardId": "openjlpt-n5:672321bac9",
+    "sourceIndex": 388,
+    "jp": "机"
+  },
+  {
+    "sourceId": "6e922a750e",
+    "cardId": "openjlpt-n5:6e922a750e",
+    "sourceIndex": 389,
+    "jp": "作る"
+  },
+  {
+    "sourceId": "edc22b8d98",
+    "cardId": "openjlpt-n5:edc22b8d98",
+    "sourceIndex": 390,
+    "jp": "つける"
+  },
+  {
+    "sourceId": "ba6c46f68c",
+    "cardId": "openjlpt-n5:ba6c46f68c",
+    "sourceIndex": 391,
+    "jp": "勤める"
+  },
+  {
+    "sourceId": "3a94b5e981",
+    "cardId": "openjlpt-n5:3a94b5e981",
+    "sourceIndex": 392,
+    "jp": "つまらない"
+  },
+  {
+    "sourceId": "a23d308800",
+    "cardId": "openjlpt-n5:a23d308800",
+    "sourceIndex": 393,
+    "jp": "冷たい"
+  },
+  {
+    "sourceId": "d99745fbb6",
+    "cardId": "openjlpt-n5:d99745fbb6",
+    "sourceIndex": 394,
+    "jp": "強い"
+  },
+  {
+    "sourceId": "5b9670420a",
+    "cardId": "openjlpt-n5:5b9670420a",
+    "sourceIndex": 395,
+    "jp": "手"
+  },
+  {
+    "sourceId": "0cf2b43e9c",
+    "cardId": "openjlpt-n5:0cf2b43e9c",
+    "sourceIndex": 396,
+    "jp": "テープ"
+  },
+  {
+    "sourceId": "ff161262dd",
+    "cardId": "openjlpt-n5:ff161262dd",
+    "sourceIndex": 397,
+    "jp": "テーブル"
+  },
+  {
+    "sourceId": "dc0ae29019",
+    "cardId": "openjlpt-n5:dc0ae29019",
+    "sourceIndex": 398,
+    "jp": "テープレコーダー"
+  },
+  {
+    "sourceId": "375cfbefdd",
+    "cardId": "openjlpt-n5:375cfbefdd",
+    "sourceIndex": 399,
+    "jp": "出かける"
+  },
+  {
+    "sourceId": "218ea67735",
+    "cardId": "openjlpt-n5:218ea67735",
+    "sourceIndex": 400,
+    "jp": "手紙"
+  },
+  {
+    "sourceId": "69d0d632fa",
+    "cardId": "openjlpt-n5:69d0d632fa",
+    "sourceIndex": 401,
+    "jp": "できる"
+  },
+  {
+    "sourceId": "151fd72164",
+    "cardId": "openjlpt-n5:151fd72164",
+    "sourceIndex": 402,
+    "jp": "出口"
+  },
+  {
+    "sourceId": "90e9410bff",
+    "cardId": "openjlpt-n5:90e9410bff",
+    "sourceIndex": 403,
+    "jp": "テスト"
+  },
+  {
+    "sourceId": "d33540fe8e",
+    "cardId": "openjlpt-n5:d33540fe8e",
+    "sourceIndex": 404,
+    "jp": "では"
+  },
+  {
+    "sourceId": "0144505953",
+    "cardId": "openjlpt-n5:0144505953",
+    "sourceIndex": 405,
+    "jp": "デパート"
+  },
+  {
+    "sourceId": "3f71089c32",
+    "cardId": "openjlpt-n5:3f71089c32",
+    "sourceIndex": 406,
+    "jp": "でも"
+  },
+  {
+    "sourceId": "5ef4f7dde9",
+    "cardId": "openjlpt-n5:5ef4f7dde9",
+    "sourceIndex": 407,
+    "jp": "出る"
+  },
+  {
+    "sourceId": "c7e14d8454",
+    "cardId": "openjlpt-n5:c7e14d8454",
+    "sourceIndex": 408,
+    "jp": "テレビ"
+  },
+  {
+    "sourceId": "679e34031e",
+    "cardId": "openjlpt-n5:679e34031e",
+    "sourceIndex": 409,
+    "jp": "天気"
+  },
+  {
+    "sourceId": "a7c36fdb70",
+    "cardId": "openjlpt-n5:a7c36fdb70",
+    "sourceIndex": 410,
+    "jp": "電気"
+  },
+  {
+    "sourceId": "62b5c13164",
+    "cardId": "openjlpt-n5:62b5c13164",
+    "sourceIndex": 411,
+    "jp": "電車"
+  },
+  {
+    "sourceId": "3c039918ba",
+    "cardId": "openjlpt-n5:3c039918ba",
+    "sourceIndex": 412,
+    "jp": "電話"
+  },
+  {
+    "sourceId": "6f4691297f",
+    "cardId": "openjlpt-n5:6f4691297f",
+    "sourceIndex": 413,
+    "jp": "戸"
+  },
+  {
+    "sourceId": "677d3c5fac",
+    "cardId": "openjlpt-n5:677d3c5fac",
+    "sourceIndex": 414,
+    "jp": "ドア"
+  },
+  {
+    "sourceId": "e1e7c2d290",
+    "cardId": "openjlpt-n5:e1e7c2d290",
+    "sourceIndex": 415,
+    "jp": "トイレ"
+  },
+  {
+    "sourceId": "d0fb41651f",
+    "cardId": "openjlpt-n5:d0fb41651f",
+    "sourceIndex": 416,
+    "jp": "どう"
+  },
+  {
+    "sourceId": "a891b73f8b",
+    "cardId": "openjlpt-n5:a891b73f8b",
+    "sourceIndex": 417,
+    "jp": "どうして"
+  },
+  {
+    "sourceId": "a71cbc3ce4",
+    "cardId": "openjlpt-n5:a71cbc3ce4",
+    "sourceIndex": 418,
+    "jp": "どうぞ"
+  },
+  {
+    "sourceId": "93b9cec3d4",
+    "cardId": "openjlpt-n5:93b9cec3d4",
+    "sourceIndex": 419,
+    "jp": "どうぞよろしく"
+  },
+  {
+    "sourceId": "03d03cf25d",
+    "cardId": "openjlpt-n5:03d03cf25d",
+    "sourceIndex": 420,
+    "jp": "動物"
+  },
+  {
+    "sourceId": "d2cb14f88a",
+    "cardId": "openjlpt-n5:d2cb14f88a",
+    "sourceIndex": 421,
+    "jp": "どうも"
+  },
+  {
+    "sourceId": "f840779b9e",
+    "cardId": "openjlpt-n5:f840779b9e",
+    "sourceIndex": 422,
+    "jp": "遠い"
+  },
+  {
+    "sourceId": "e8579084ba",
+    "cardId": "openjlpt-n5:e8579084ba",
+    "sourceIndex": 423,
+    "jp": "十日"
+  },
+  {
+    "sourceId": "978a2cefa5",
+    "cardId": "openjlpt-n5:978a2cefa5",
+    "sourceIndex": 424,
+    "jp": "時々"
+  },
+  {
+    "sourceId": "e3ad76810f",
+    "cardId": "openjlpt-n5:e3ad76810f",
+    "sourceIndex": 425,
+    "jp": "時計"
+  },
+  {
+    "sourceId": "ad884a3b70",
+    "cardId": "openjlpt-n5:ad884a3b70",
+    "sourceIndex": 426,
+    "jp": "どこ"
+  },
+  {
+    "sourceId": "ca332ac7b4",
+    "cardId": "openjlpt-n5:ca332ac7b4",
+    "sourceIndex": 427,
+    "jp": "所"
+  },
+  {
+    "sourceId": "358fc382cb",
+    "cardId": "openjlpt-n5:358fc382cb",
+    "sourceIndex": 428,
+    "jp": "年"
+  },
+  {
+    "sourceId": "de5a452667",
+    "cardId": "openjlpt-n5:de5a452667",
+    "sourceIndex": 429,
+    "jp": "図書館"
+  },
+  {
+    "sourceId": "5480c153dc",
+    "cardId": "openjlpt-n5:5480c153dc",
+    "sourceIndex": 430,
+    "jp": "どちら"
+  },
+  {
+    "sourceId": "e8a4843059",
+    "cardId": "openjlpt-n5:e8a4843059",
+    "sourceIndex": 431,
+    "jp": "どっち"
+  },
+  {
+    "sourceId": "a3679ee665",
+    "cardId": "openjlpt-n5:a3679ee665",
+    "sourceIndex": 432,
+    "jp": "とても"
+  },
+  {
+    "sourceId": "10fb2e55c0",
+    "cardId": "openjlpt-n5:10fb2e55c0",
+    "sourceIndex": 433,
+    "jp": "どなた"
+  },
+  {
+    "sourceId": "c597c353cb",
+    "cardId": "openjlpt-n5:c597c353cb",
+    "sourceIndex": 434,
+    "jp": "隣"
+  },
+  {
+    "sourceId": "cd4b8c6381",
+    "cardId": "openjlpt-n5:cd4b8c6381",
+    "sourceIndex": 435,
+    "jp": "どの"
+  },
+  {
+    "sourceId": "397b682fa7",
+    "cardId": "openjlpt-n5:397b682fa7",
+    "sourceIndex": 436,
+    "jp": "飛ぶ"
+  },
+  {
+    "sourceId": "9d1aa046d6",
+    "cardId": "openjlpt-n5:9d1aa046d6",
+    "sourceIndex": 437,
+    "jp": "止まる"
+  },
+  {
+    "sourceId": "72c525f37a",
+    "cardId": "openjlpt-n5:72c525f37a",
+    "sourceIndex": 438,
+    "jp": "友達"
+  },
+  {
+    "sourceId": "86e7fb81c6",
+    "cardId": "openjlpt-n5:86e7fb81c6",
+    "sourceIndex": 439,
+    "jp": "土曜日"
+  },
+  {
+    "sourceId": "7e4fccba7f",
+    "cardId": "openjlpt-n5:7e4fccba7f",
+    "sourceIndex": 440,
+    "jp": "鳥"
+  },
+  {
+    "sourceId": "3669c65744",
+    "cardId": "openjlpt-n5:3669c65744",
+    "sourceIndex": 441,
+    "jp": "鶏肉"
+  },
+  {
+    "sourceId": "4cc27797ba",
+    "cardId": "openjlpt-n5:4cc27797ba",
+    "sourceIndex": 442,
+    "jp": "撮る"
+  },
+  {
+    "sourceId": "1313ed47fb",
+    "cardId": "openjlpt-n5:1313ed47fb",
+    "sourceIndex": 443,
+    "jp": "取る"
+  },
+  {
+    "sourceId": "b21477c7db",
+    "cardId": "openjlpt-n5:b21477c7db",
+    "sourceIndex": 444,
+    "jp": "どれ"
+  },
+  {
+    "sourceId": "3ae88c29c4",
+    "cardId": "openjlpt-n5:3ae88c29c4",
+    "sourceIndex": 445,
+    "jp": "ナイフ"
+  },
+  {
+    "sourceId": "5d32281da9",
+    "cardId": "openjlpt-n5:5d32281da9",
+    "sourceIndex": 446,
+    "jp": "中"
+  },
+  {
+    "sourceId": "fcea29f192",
+    "cardId": "openjlpt-n5:fcea29f192",
+    "sourceIndex": 447,
+    "jp": "長い"
+  },
+  {
+    "sourceId": "07a4101167",
+    "cardId": "openjlpt-n5:07a4101167",
+    "sourceIndex": 448,
+    "jp": "鳴く"
+  },
+  {
+    "sourceId": "04015c3825",
+    "cardId": "openjlpt-n5:04015c3825",
+    "sourceIndex": 449,
+    "jp": "無くす"
+  },
+  {
+    "sourceId": "ef9536b1ee",
+    "cardId": "openjlpt-n5:ef9536b1ee",
+    "sourceIndex": 450,
+    "jp": "なぜ"
+  },
+  {
+    "sourceId": "641ddbf693",
+    "cardId": "openjlpt-n5:641ddbf693",
+    "sourceIndex": 451,
+    "jp": "夏"
+  },
+  {
+    "sourceId": "e09167a3d4",
+    "cardId": "openjlpt-n5:e09167a3d4",
+    "sourceIndex": 452,
+    "jp": "夏休み"
+  },
+  {
+    "sourceId": "cf58476318",
+    "cardId": "openjlpt-n5:cf58476318",
+    "sourceIndex": 453,
+    "jp": "など"
+  },
+  {
+    "sourceId": "e65bf7ad23",
+    "cardId": "openjlpt-n5:e65bf7ad23",
+    "sourceIndex": 454,
+    "jp": "七つ"
+  },
+  {
+    "sourceId": "75ed3c3b2b",
+    "cardId": "openjlpt-n5:75ed3c3b2b",
+    "sourceIndex": 455,
+    "jp": "七日"
+  },
+  {
+    "sourceId": "a812b1ac7f",
+    "cardId": "openjlpt-n5:a812b1ac7f",
+    "sourceIndex": 456,
+    "jp": "名前"
+  },
+  {
+    "sourceId": "a95b0a87ad",
+    "cardId": "openjlpt-n5:a95b0a87ad",
+    "sourceIndex": 457,
+    "jp": "習う"
+  },
+  {
+    "sourceId": "1227b20370",
+    "cardId": "openjlpt-n5:1227b20370",
+    "sourceIndex": 458,
+    "jp": "並ぶ"
+  },
+  {
+    "sourceId": "1635de1a94",
+    "cardId": "openjlpt-n5:1635de1a94",
+    "sourceIndex": 459,
+    "jp": "並べる"
+  },
+  {
+    "sourceId": "e05de4981d",
+    "cardId": "openjlpt-n5:e05de4981d",
+    "sourceIndex": 460,
+    "jp": "なる"
+  },
+  {
+    "sourceId": "558866ef86",
+    "cardId": "openjlpt-n5:558866ef86",
+    "sourceIndex": 461,
+    "jp": "何"
+  },
+  {
+    "sourceId": "34108268e1",
+    "cardId": "openjlpt-n5:34108268e1",
+    "sourceIndex": 462,
+    "jp": "二"
+  },
+  {
+    "sourceId": "c17f97fafc",
+    "cardId": "openjlpt-n5:c17f97fafc",
+    "sourceIndex": 463,
+    "jp": "賑やか"
+  },
+  {
+    "sourceId": "efac1fc502",
+    "cardId": "openjlpt-n5:efac1fc502",
+    "sourceIndex": 464,
+    "jp": "肉"
+  },
+  {
+    "sourceId": "436f1c3c65",
+    "cardId": "openjlpt-n5:436f1c3c65",
+    "sourceIndex": 465,
+    "jp": "西"
+  },
+  {
+    "sourceId": "d8c3a3f0d0",
+    "cardId": "openjlpt-n5:d8c3a3f0d0",
+    "sourceIndex": 466,
+    "jp": "日曜日"
+  },
+  {
+    "sourceId": "2e6c7d2d9d",
+    "cardId": "openjlpt-n5:2e6c7d2d9d",
+    "sourceIndex": 467,
+    "jp": "荷物"
+  },
+  {
+    "sourceId": "b824bec2c5",
+    "cardId": "openjlpt-n5:b824bec2c5",
+    "sourceIndex": 468,
+    "jp": "ニュース"
+  },
+  {
+    "sourceId": "9ef6c9d703",
+    "cardId": "openjlpt-n5:9ef6c9d703",
+    "sourceIndex": 469,
+    "jp": "庭"
+  },
+  {
+    "sourceId": "3af80b5b2a",
+    "cardId": "openjlpt-n5:3af80b5b2a",
+    "sourceIndex": 470,
+    "jp": "脱ぐ"
+  },
+  {
+    "sourceId": "2f01adebd7",
+    "cardId": "openjlpt-n5:2f01adebd7",
+    "sourceIndex": 471,
+    "jp": "温い"
+  },
+  {
+    "sourceId": "18046e46a1",
+    "cardId": "openjlpt-n5:18046e46a1",
+    "sourceIndex": 472,
+    "jp": "ネクタイ"
+  },
+  {
+    "sourceId": "cbbfc8cad6",
+    "cardId": "openjlpt-n5:cbbfc8cad6",
+    "sourceIndex": 473,
+    "jp": "猫"
+  },
+  {
+    "sourceId": "0c6e923ef9",
+    "cardId": "openjlpt-n5:0c6e923ef9",
+    "sourceIndex": 474,
+    "jp": "寝る"
+  },
+  {
+    "sourceId": "278c1e0e04",
+    "cardId": "openjlpt-n5:278c1e0e04",
+    "sourceIndex": 475,
+    "jp": "ノート"
+  },
+  {
+    "sourceId": "7817fc9d64",
+    "cardId": "openjlpt-n5:7817fc9d64",
+    "sourceIndex": 476,
+    "jp": "登る"
+  },
+  {
+    "sourceId": "5e8fc8669c",
+    "cardId": "openjlpt-n5:5e8fc8669c",
+    "sourceIndex": 477,
+    "jp": "飲み物"
+  },
+  {
+    "sourceId": "e0bcec9bd9",
+    "cardId": "openjlpt-n5:e0bcec9bd9",
+    "sourceIndex": 478,
+    "jp": "飲む"
+  },
+  {
+    "sourceId": "822c5e11a6",
+    "cardId": "openjlpt-n5:822c5e11a6",
+    "sourceIndex": 479,
+    "jp": "乗る"
+  },
+  {
+    "sourceId": "390ac6443d",
+    "cardId": "openjlpt-n5:390ac6443d",
+    "sourceIndex": 480,
+    "jp": "歯"
+  },
+  {
+    "sourceId": "28111455cd",
+    "cardId": "openjlpt-n5:28111455cd",
+    "sourceIndex": 481,
+    "jp": "パーティー"
+  },
+  {
+    "sourceId": "542f39c93d",
+    "cardId": "openjlpt-n5:542f39c93d",
+    "sourceIndex": 482,
+    "jp": "はい"
+  },
+  {
+    "sourceId": "5cc1dad1e8",
+    "cardId": "openjlpt-n5:5cc1dad1e8",
+    "sourceIndex": 483,
+    "jp": "灰皿"
+  },
+  {
+    "sourceId": "c428d02d43",
+    "cardId": "openjlpt-n5:c428d02d43",
+    "sourceIndex": 484,
+    "jp": "入る"
+  },
+  {
+    "sourceId": "645e1e3b4d",
+    "cardId": "openjlpt-n5:645e1e3b4d",
+    "sourceIndex": 485,
+    "jp": "葉書"
+  },
+  {
+    "sourceId": "4729cc56f4",
+    "cardId": "openjlpt-n5:4729cc56f4",
+    "sourceIndex": 486,
+    "jp": "はく"
+  },
+  {
+    "sourceId": "658b912df8",
+    "cardId": "openjlpt-n5:658b912df8",
+    "sourceIndex": 487,
+    "jp": "箱"
+  },
+  {
+    "sourceId": "7ce7f7d305",
+    "cardId": "openjlpt-n5:7ce7f7d305",
+    "sourceIndex": 488,
+    "jp": "はし"
+  },
+  {
+    "sourceId": "8f663254b0",
+    "cardId": "openjlpt-n5:8f663254b0",
+    "sourceIndex": 489,
+    "jp": "橋"
+  },
+  {
+    "sourceId": "8fea1e3f3c",
+    "cardId": "openjlpt-n5:8fea1e3f3c",
+    "sourceIndex": 490,
+    "jp": "始まる"
+  },
+  {
+    "sourceId": "e5b36d7b24",
+    "cardId": "openjlpt-n5:e5b36d7b24",
+    "sourceIndex": 491,
+    "jp": "初め"
+  },
+  {
+    "sourceId": "3f18999e09",
+    "cardId": "openjlpt-n5:3f18999e09",
+    "sourceIndex": 492,
+    "jp": "初めて"
+  },
+  {
+    "sourceId": "a2c1e54c17",
+    "cardId": "openjlpt-n5:a2c1e54c17",
+    "sourceIndex": 493,
+    "jp": "はじめまして"
+  },
+  {
+    "sourceId": "244e138920",
+    "cardId": "openjlpt-n5:244e138920",
+    "sourceIndex": 494,
+    "jp": "走る"
+  },
+  {
+    "sourceId": "bd7df6c7a2",
+    "cardId": "openjlpt-n5:bd7df6c7a2",
+    "sourceIndex": 495,
+    "jp": "バス"
+  },
+  {
+    "sourceId": "4385616659",
+    "cardId": "openjlpt-n5:4385616659",
+    "sourceIndex": 496,
+    "jp": "バター"
+  },
+  {
+    "sourceId": "c65a346458",
+    "cardId": "openjlpt-n5:c65a346458",
+    "sourceIndex": 497,
+    "jp": "二十歳"
+  },
+  {
+    "sourceId": "9ea671262d",
+    "cardId": "openjlpt-n5:9ea671262d",
+    "sourceIndex": 498,
+    "jp": "働く"
+  },
+  {
+    "sourceId": "6eeff514e0",
+    "cardId": "openjlpt-n5:6eeff514e0",
+    "sourceIndex": 499,
+    "jp": "八"
+  },
+  {
+    "sourceId": "153de06669",
+    "cardId": "openjlpt-n5:153de06669",
+    "sourceIndex": 500,
+    "jp": "二十日"
+  },
+  {
+    "sourceId": "6485c3c2a7",
+    "cardId": "openjlpt-n5:6485c3c2a7",
+    "sourceIndex": 501,
+    "jp": "花"
+  },
+  {
+    "sourceId": "8b5843f7fb",
+    "cardId": "openjlpt-n5:8b5843f7fb",
+    "sourceIndex": 502,
+    "jp": "鼻"
+  },
+  {
+    "sourceId": "1ed0362cc3",
+    "cardId": "openjlpt-n5:1ed0362cc3",
+    "sourceIndex": 503,
+    "jp": "話"
+  },
+  {
+    "sourceId": "9d5bde24ec",
+    "cardId": "openjlpt-n5:9d5bde24ec",
+    "sourceIndex": 504,
+    "jp": "話す"
+  },
+  {
+    "sourceId": "4db42e0181",
+    "cardId": "openjlpt-n5:4db42e0181",
+    "sourceIndex": 505,
+    "jp": "早い"
+  },
+  {
+    "sourceId": "406d15f6e9",
+    "cardId": "openjlpt-n5:406d15f6e9",
+    "sourceIndex": 506,
+    "jp": "速い"
+  },
+  {
+    "sourceId": "f16244c585",
+    "cardId": "openjlpt-n5:f16244c585",
+    "sourceIndex": 507,
+    "jp": "春"
+  },
+  {
+    "sourceId": "f47c4aee42",
+    "cardId": "openjlpt-n5:f47c4aee42",
+    "sourceIndex": 508,
+    "jp": "貼る"
+  },
+  {
+    "sourceId": "9edf8548bb",
+    "cardId": "openjlpt-n5:9edf8548bb",
+    "sourceIndex": 509,
+    "jp": "晴れ"
+  },
+  {
+    "sourceId": "3be88666ba",
+    "cardId": "openjlpt-n5:3be88666ba",
+    "sourceIndex": 510,
+    "jp": "晴れる"
+  },
+  {
+    "sourceId": "9cd7c780c3",
+    "cardId": "openjlpt-n5:9cd7c780c3",
+    "sourceIndex": 511,
+    "jp": "半"
+  },
+  {
+    "sourceId": "532c73de5d",
+    "cardId": "openjlpt-n5:532c73de5d",
+    "sourceIndex": 512,
+    "jp": "晩"
+  },
+  {
+    "sourceId": "098e9e7e67",
+    "cardId": "openjlpt-n5:098e9e7e67",
+    "sourceIndex": 513,
+    "jp": "パン"
+  },
+  {
+    "sourceId": "ee3206bb3f",
+    "cardId": "openjlpt-n5:ee3206bb3f",
+    "sourceIndex": 514,
+    "jp": "ハンカチ"
+  },
+  {
+    "sourceId": "67775e3b25",
+    "cardId": "openjlpt-n5:67775e3b25",
+    "sourceIndex": 515,
+    "jp": "番号"
+  },
+  {
+    "sourceId": "246b5ae84d",
+    "cardId": "openjlpt-n5:246b5ae84d",
+    "sourceIndex": 516,
+    "jp": "晩御飯"
+  },
+  {
+    "sourceId": "a1cda8cb11",
+    "cardId": "openjlpt-n5:a1cda8cb11",
+    "sourceIndex": 517,
+    "jp": "半分"
+  },
+  {
+    "sourceId": "0a38c65004",
+    "cardId": "openjlpt-n5:0a38c65004",
+    "sourceIndex": 518,
+    "jp": "東"
+  },
+  {
+    "sourceId": "5b84039234",
+    "cardId": "openjlpt-n5:5b84039234",
+    "sourceIndex": 519,
+    "jp": "引く"
+  },
+  {
+    "sourceId": "23911a0718",
+    "cardId": "openjlpt-n5:23911a0718",
+    "sourceIndex": 520,
+    "jp": "弾く"
+  },
+  {
+    "sourceId": "e25cf6ed2f",
+    "cardId": "openjlpt-n5:e25cf6ed2f",
+    "sourceIndex": 521,
+    "jp": "低い"
+  },
+  {
+    "sourceId": "a81612169c",
+    "cardId": "openjlpt-n5:a81612169c",
+    "sourceIndex": 522,
+    "jp": "飛行機"
+  },
+  {
+    "sourceId": "ec5bd86b72",
+    "cardId": "openjlpt-n5:ec5bd86b72",
+    "sourceIndex": 523,
+    "jp": "左"
+  },
+  {
+    "sourceId": "d91ee7a9ed",
+    "cardId": "openjlpt-n5:d91ee7a9ed",
+    "sourceIndex": 524,
+    "jp": "人"
+  },
+  {
+    "sourceId": "537f8af3d6",
+    "cardId": "openjlpt-n5:537f8af3d6",
+    "sourceIndex": 525,
+    "jp": "一つ"
+  },
+  {
+    "sourceId": "3554fb81b8",
+    "cardId": "openjlpt-n5:3554fb81b8",
+    "sourceIndex": 526,
+    "jp": "一月"
+  },
+  {
+    "sourceId": "3fb1b70809",
+    "cardId": "openjlpt-n5:3fb1b70809",
+    "sourceIndex": 527,
+    "jp": "一人"
+  },
+  {
+    "sourceId": "7a9ce8e2df",
+    "cardId": "openjlpt-n5:7a9ce8e2df",
+    "sourceIndex": 528,
+    "jp": "暇"
+  },
+  {
+    "sourceId": "13696bc9b5",
+    "cardId": "openjlpt-n5:13696bc9b5",
+    "sourceIndex": 529,
+    "jp": "百"
+  },
+  {
+    "sourceId": "734d275fd9",
+    "cardId": "openjlpt-n5:734d275fd9",
+    "sourceIndex": 530,
+    "jp": "病院"
+  },
+  {
+    "sourceId": "c551bc3f7c",
+    "cardId": "openjlpt-n5:c551bc3f7c",
+    "sourceIndex": 531,
+    "jp": "病気"
+  },
+  {
+    "sourceId": "5d7a8d133b",
+    "cardId": "openjlpt-n5:5d7a8d133b",
+    "sourceIndex": 532,
+    "jp": "昼"
+  },
+  {
+    "sourceId": "0b492c3209",
+    "cardId": "openjlpt-n5:0b492c3209",
+    "sourceIndex": 533,
+    "jp": "昼御飯"
+  },
+  {
+    "sourceId": "230d5c7343",
+    "cardId": "openjlpt-n5:230d5c7343",
+    "sourceIndex": 534,
+    "jp": "広い"
+  },
+  {
+    "sourceId": "ef9babb012",
+    "cardId": "openjlpt-n5:ef9babb012",
+    "sourceIndex": 535,
+    "jp": "フィルム"
+  },
+  {
+    "sourceId": "d156402900",
+    "cardId": "openjlpt-n5:d156402900",
+    "sourceIndex": 536,
+    "jp": "封筒"
+  },
+  {
+    "sourceId": "55c1439239",
+    "cardId": "openjlpt-n5:55c1439239",
+    "sourceIndex": 537,
+    "jp": "プール"
+  },
+  {
+    "sourceId": "71e2aefb9d",
+    "cardId": "openjlpt-n5:71e2aefb9d",
+    "sourceIndex": 538,
+    "jp": "フォーク"
+  },
+  {
+    "sourceId": "15f4136421",
+    "cardId": "openjlpt-n5:15f4136421",
+    "sourceIndex": 539,
+    "jp": "吹く"
+  },
+  {
+    "sourceId": "68571540e1",
+    "cardId": "openjlpt-n5:68571540e1",
+    "sourceIndex": 540,
+    "jp": "服"
+  },
+  {
+    "sourceId": "0c1dbd4838",
+    "cardId": "openjlpt-n5:0c1dbd4838",
+    "sourceIndex": 541,
+    "jp": "二つ"
+  },
+  {
+    "sourceId": "c518fb9116",
+    "cardId": "openjlpt-n5:c518fb9116",
+    "sourceIndex": 542,
+    "jp": "豚肉"
+  },
+  {
+    "sourceId": "94c2076821",
+    "cardId": "openjlpt-n5:94c2076821",
+    "sourceIndex": 543,
+    "jp": "二人"
+  },
+  {
+    "sourceId": "750786cc55",
+    "cardId": "openjlpt-n5:750786cc55",
+    "sourceIndex": 544,
+    "jp": "二日"
+  },
+  {
+    "sourceId": "4162724f9a",
+    "cardId": "openjlpt-n5:4162724f9a",
+    "sourceIndex": 545,
+    "jp": "太い"
+  },
+  {
+    "sourceId": "eb9acca7ba",
+    "cardId": "openjlpt-n5:eb9acca7ba",
+    "sourceIndex": 546,
+    "jp": "冬"
+  },
+  {
+    "sourceId": "5791e248f1",
+    "cardId": "openjlpt-n5:5791e248f1",
+    "sourceIndex": 547,
+    "jp": "降る"
+  },
+  {
+    "sourceId": "aa60dd4a11",
+    "cardId": "openjlpt-n5:aa60dd4a11",
+    "sourceIndex": 548,
+    "jp": "古い"
+  },
+  {
+    "sourceId": "34784ed6ca",
+    "cardId": "openjlpt-n5:34784ed6ca",
+    "sourceIndex": 549,
+    "jp": "ふろ"
+  },
+  {
+    "sourceId": "79ddbb2b98",
+    "cardId": "openjlpt-n5:79ddbb2b98",
+    "sourceIndex": 550,
+    "jp": "文章"
+  },
+  {
+    "sourceId": "f8fc73bd75",
+    "cardId": "openjlpt-n5:f8fc73bd75",
+    "sourceIndex": 551,
+    "jp": "ページ"
+  },
+  {
+    "sourceId": "619dae70e9",
+    "cardId": "openjlpt-n5:619dae70e9",
+    "sourceIndex": 552,
+    "jp": "下手"
+  },
+  {
+    "sourceId": "91cf4ea2fd",
+    "cardId": "openjlpt-n5:91cf4ea2fd",
+    "sourceIndex": 553,
+    "jp": "ベッド"
+  },
+  {
+    "sourceId": "db38ebd955",
+    "cardId": "openjlpt-n5:db38ebd955",
+    "sourceIndex": 554,
+    "jp": "ペット"
+  },
+  {
+    "sourceId": "e78074927c",
+    "cardId": "openjlpt-n5:e78074927c",
+    "sourceIndex": 555,
+    "jp": "部屋"
+  },
+  {
+    "sourceId": "71c372d7b2",
+    "cardId": "openjlpt-n5:71c372d7b2",
+    "sourceIndex": 556,
+    "jp": "辺"
+  },
+  {
+    "sourceId": "dd1183b005",
+    "cardId": "openjlpt-n5:dd1183b005",
+    "sourceIndex": 557,
+    "jp": "ペン"
+  },
+  {
+    "sourceId": "65783b95dd",
+    "cardId": "openjlpt-n5:65783b95dd",
+    "sourceIndex": 558,
+    "jp": "勉強"
+  },
+  {
+    "sourceId": "84887dde48",
+    "cardId": "openjlpt-n5:84887dde48",
+    "sourceIndex": 559,
+    "jp": "便利"
+  },
+  {
+    "sourceId": "cfc75623ae",
+    "cardId": "openjlpt-n5:cfc75623ae",
+    "sourceIndex": 560,
+    "jp": "帽子"
+  },
+  {
+    "sourceId": "785a997045",
+    "cardId": "openjlpt-n5:785a997045",
+    "sourceIndex": 561,
+    "jp": "ボールペン"
+  },
+  {
+    "sourceId": "f71c69492e",
+    "cardId": "openjlpt-n5:f71c69492e",
+    "sourceIndex": 562,
+    "jp": "ほか"
+  },
+  {
+    "sourceId": "ab9f2792c4",
+    "cardId": "openjlpt-n5:ab9f2792c4",
+    "sourceIndex": 563,
+    "jp": "ポケット"
+  },
+  {
+    "sourceId": "418493d941",
+    "cardId": "openjlpt-n5:418493d941",
+    "sourceIndex": 564,
+    "jp": "欲しい"
+  },
+  {
+    "sourceId": "2dbe65ee1d",
+    "cardId": "openjlpt-n5:2dbe65ee1d",
+    "sourceIndex": 565,
+    "jp": "ポスト"
+  },
+  {
+    "sourceId": "785adc4f9d",
+    "cardId": "openjlpt-n5:785adc4f9d",
+    "sourceIndex": 566,
+    "jp": "細い"
+  },
+  {
+    "sourceId": "04ab635f4b",
+    "cardId": "openjlpt-n5:04ab635f4b",
+    "sourceIndex": 567,
+    "jp": "ボタン"
+  },
+  {
+    "sourceId": "23ec5a0b3d",
+    "cardId": "openjlpt-n5:23ec5a0b3d",
+    "sourceIndex": 568,
+    "jp": "ホテル"
+  },
+  {
+    "sourceId": "0e8f798dbf",
+    "cardId": "openjlpt-n5:0e8f798dbf",
+    "sourceIndex": 569,
+    "jp": "本"
+  },
+  {
+    "sourceId": "3839786bac",
+    "cardId": "openjlpt-n5:3839786bac",
+    "sourceIndex": 570,
+    "jp": "本棚"
+  },
+  {
+    "sourceId": "849baaf2c3",
+    "cardId": "openjlpt-n5:849baaf2c3",
+    "sourceIndex": 571,
+    "jp": "ほんとう"
+  },
+  {
+    "sourceId": "a59ba12bc5",
+    "cardId": "openjlpt-n5:a59ba12bc5",
+    "sourceIndex": 572,
+    "jp": "毎朝"
+  },
+  {
+    "sourceId": "771fbe6b4d",
+    "cardId": "openjlpt-n5:771fbe6b4d",
+    "sourceIndex": 573,
+    "jp": "毎月"
+  },
+  {
+    "sourceId": "fd1c93832f",
+    "cardId": "openjlpt-n5:fd1c93832f",
+    "sourceIndex": 574,
+    "jp": "毎週"
+  },
+  {
+    "sourceId": "039a696225",
+    "cardId": "openjlpt-n5:039a696225",
+    "sourceIndex": 575,
+    "jp": "毎日"
+  },
+  {
+    "sourceId": "83700909d4",
+    "cardId": "openjlpt-n5:83700909d4",
+    "sourceIndex": 576,
+    "jp": "毎年"
+  },
+  {
+    "sourceId": "2584943533",
+    "cardId": "openjlpt-n5:2584943533",
+    "sourceIndex": 577,
+    "jp": "毎晩"
+  },
+  {
+    "sourceId": "319e218950",
+    "cardId": "openjlpt-n5:319e218950",
+    "sourceIndex": 578,
+    "jp": "前"
+  },
+  {
+    "sourceId": "ae3e0a705f",
+    "cardId": "openjlpt-n5:ae3e0a705f",
+    "sourceIndex": 579,
+    "jp": "曲る"
+  },
+  {
+    "sourceId": "b19034ded1",
+    "cardId": "openjlpt-n5:b19034ded1",
+    "sourceIndex": 580,
+    "jp": "まずい"
+  },
+  {
+    "sourceId": "162e00c6ef",
+    "cardId": "openjlpt-n5:162e00c6ef",
+    "sourceIndex": 581,
+    "jp": "また"
+  },
+  {
+    "sourceId": "6a7163f5f7",
+    "cardId": "openjlpt-n5:6a7163f5f7",
+    "sourceIndex": 582,
+    "jp": "まだ"
+  },
+  {
+    "sourceId": "4d76d06d84",
+    "cardId": "openjlpt-n5:4d76d06d84",
+    "sourceIndex": 583,
+    "jp": "町"
+  },
+  {
+    "sourceId": "6a39701228",
+    "cardId": "openjlpt-n5:6a39701228",
+    "sourceIndex": 584,
+    "jp": "待つ"
+  },
+  {
+    "sourceId": "ede9ab2f7f",
+    "cardId": "openjlpt-n5:ede9ab2f7f",
+    "sourceIndex": 585,
+    "jp": "まっすぐ"
+  },
+  {
+    "sourceId": "27f9d40392",
+    "cardId": "openjlpt-n5:27f9d40392",
+    "sourceIndex": 586,
+    "jp": "マッチ"
+  },
+  {
+    "sourceId": "7734194821",
+    "cardId": "openjlpt-n5:7734194821",
+    "sourceIndex": 587,
+    "jp": "窓"
+  },
+  {
+    "sourceId": "ab36109960",
+    "cardId": "openjlpt-n5:ab36109960",
+    "sourceIndex": 588,
+    "jp": "丸い"
+  },
+  {
+    "sourceId": "a0ff0f67c8",
+    "cardId": "openjlpt-n5:a0ff0f67c8",
+    "sourceIndex": 589,
+    "jp": "万"
+  },
+  {
+    "sourceId": "6318b0423a",
+    "cardId": "openjlpt-n5:6318b0423a",
+    "sourceIndex": 590,
+    "jp": "万年筆"
+  },
+  {
+    "sourceId": "7309a238e8",
+    "cardId": "openjlpt-n5:7309a238e8",
+    "sourceIndex": 591,
+    "jp": "磨く"
+  },
+  {
+    "sourceId": "f1046f3190",
+    "cardId": "openjlpt-n5:f1046f3190",
+    "sourceIndex": 592,
+    "jp": "右"
+  },
+  {
+    "sourceId": "8568eded6e",
+    "cardId": "openjlpt-n5:8568eded6e",
+    "sourceIndex": 593,
+    "jp": "短い"
+  },
+  {
+    "sourceId": "69a792520f",
+    "cardId": "openjlpt-n5:69a792520f",
+    "sourceIndex": 594,
+    "jp": "水"
+  },
+  {
+    "sourceId": "0c8a588e53",
+    "cardId": "openjlpt-n5:0c8a588e53",
+    "sourceIndex": 595,
+    "jp": "店"
+  },
+  {
+    "sourceId": "db35a99e28",
+    "cardId": "openjlpt-n5:db35a99e28",
+    "sourceIndex": 596,
+    "jp": "見せる"
+  },
+  {
+    "sourceId": "dc29195f18",
+    "cardId": "openjlpt-n5:dc29195f18",
+    "sourceIndex": 597,
+    "jp": "道"
+  },
+  {
+    "sourceId": "1713d0bbe8",
+    "cardId": "openjlpt-n5:1713d0bbe8",
+    "sourceIndex": 598,
+    "jp": "三日"
+  },
+  {
+    "sourceId": "b36b221d33",
+    "cardId": "openjlpt-n5:b36b221d33",
+    "sourceIndex": 599,
+    "jp": "三つ"
+  },
+  {
+    "sourceId": "85e4ba2f28",
+    "cardId": "openjlpt-n5:85e4ba2f28",
+    "sourceIndex": 600,
+    "jp": "緑"
+  },
+  {
+    "sourceId": "d2b9c47656",
+    "cardId": "openjlpt-n5:d2b9c47656",
+    "sourceIndex": 601,
+    "jp": "皆さん"
+  },
+  {
+    "sourceId": "84e465b526",
+    "cardId": "openjlpt-n5:84e465b526",
+    "sourceIndex": 602,
+    "jp": "南"
+  },
+  {
+    "sourceId": "e8cdf8b85a",
+    "cardId": "openjlpt-n5:e8cdf8b85a",
+    "sourceIndex": 603,
+    "jp": "耳"
+  },
+  {
+    "sourceId": "85b37b6884",
+    "cardId": "openjlpt-n5:85b37b6884",
+    "sourceIndex": 604,
+    "jp": "見る"
+  },
+  {
+    "sourceId": "2676514561",
+    "cardId": "openjlpt-n5:2676514561",
+    "sourceIndex": 605,
+    "jp": "みんな"
+  },
+  {
+    "sourceId": "bf44ddad08",
+    "cardId": "openjlpt-n5:bf44ddad08",
+    "sourceIndex": 606,
+    "jp": "六日"
+  },
+  {
+    "sourceId": "8e862f05f0",
+    "cardId": "openjlpt-n5:8e862f05f0",
+    "sourceIndex": 607,
+    "jp": "向こう"
+  },
+  {
+    "sourceId": "0a3894175f",
+    "cardId": "openjlpt-n5:0a3894175f",
+    "sourceIndex": 608,
+    "jp": "難しい"
+  },
+  {
+    "sourceId": "7ecc2c4bfc",
+    "cardId": "openjlpt-n5:7ecc2c4bfc",
+    "sourceIndex": 609,
+    "jp": "六つ"
+  },
+  {
+    "sourceId": "5028971b39",
+    "cardId": "openjlpt-n5:5028971b39",
+    "sourceIndex": 610,
+    "jp": "村"
+  },
+  {
+    "sourceId": "ae534d4ca8",
+    "cardId": "openjlpt-n5:ae534d4ca8",
+    "sourceIndex": 611,
+    "jp": "目"
+  },
+  {
+    "sourceId": "eb5450490b",
+    "cardId": "openjlpt-n5:eb5450490b",
+    "sourceIndex": 612,
+    "jp": "メートル"
+  },
+  {
+    "sourceId": "72eb77e07a",
+    "cardId": "openjlpt-n5:72eb77e07a",
+    "sourceIndex": 613,
+    "jp": "眼鏡"
+  },
+  {
+    "sourceId": "c5b7ad76fd",
+    "cardId": "openjlpt-n5:c5b7ad76fd",
+    "sourceIndex": 614,
+    "jp": "もう"
+  },
+  {
+    "sourceId": "3ae16ad93a",
+    "cardId": "openjlpt-n5:3ae16ad93a",
+    "sourceIndex": 615,
+    "jp": "もう一度"
+  },
+  {
+    "sourceId": "d10bb92f3e",
+    "cardId": "openjlpt-n5:d10bb92f3e",
+    "sourceIndex": 616,
+    "jp": "木曜日"
+  },
+  {
+    "sourceId": "16fda19d79",
+    "cardId": "openjlpt-n5:16fda19d79",
+    "sourceIndex": 617,
+    "jp": "持つ"
+  },
+  {
+    "sourceId": "a8f5f4c59e",
+    "cardId": "openjlpt-n5:a8f5f4c59e",
+    "sourceIndex": 618,
+    "jp": "もっと"
+  },
+  {
+    "sourceId": "782272bfda",
+    "cardId": "openjlpt-n5:782272bfda",
+    "sourceIndex": 619,
+    "jp": "物"
+  },
+  {
+    "sourceId": "5b92758003",
+    "cardId": "openjlpt-n5:5b92758003",
+    "sourceIndex": 620,
+    "jp": "門"
+  },
+  {
+    "sourceId": "4f0f6b6ae7",
+    "cardId": "openjlpt-n5:4f0f6b6ae7",
+    "sourceIndex": 621,
+    "jp": "問題"
+  },
+  {
+    "sourceId": "8d29f60b23",
+    "cardId": "openjlpt-n5:8d29f60b23",
+    "sourceIndex": 622,
+    "jp": "八百屋"
+  },
+  {
+    "sourceId": "936289666e",
+    "cardId": "openjlpt-n5:936289666e",
+    "sourceIndex": 623,
+    "jp": "野菜"
+  },
+  {
+    "sourceId": "ead1ae2736",
+    "cardId": "openjlpt-n5:ead1ae2736",
+    "sourceIndex": 624,
+    "jp": "易しい"
+  },
+  {
+    "sourceId": "33b86212ca",
+    "cardId": "openjlpt-n5:33b86212ca",
+    "sourceIndex": 625,
+    "jp": "安い"
+  },
+  {
+    "sourceId": "d4a1d27d3b",
+    "cardId": "openjlpt-n5:d4a1d27d3b",
+    "sourceIndex": 626,
+    "jp": "休み"
+  },
+  {
+    "sourceId": "3e3efcb45f",
+    "cardId": "openjlpt-n5:3e3efcb45f",
+    "sourceIndex": 627,
+    "jp": "休む"
+  },
+  {
+    "sourceId": "62c4216674",
+    "cardId": "openjlpt-n5:62c4216674",
+    "sourceIndex": 628,
+    "jp": "八つ"
+  },
+  {
+    "sourceId": "e8a5cbdf0a",
+    "cardId": "openjlpt-n5:e8a5cbdf0a",
+    "sourceIndex": 629,
+    "jp": "山"
+  },
+  {
+    "sourceId": "f81d503d6f",
+    "cardId": "openjlpt-n5:f81d503d6f",
+    "sourceIndex": 630,
+    "jp": "やる"
+  },
+  {
+    "sourceId": "285b008622",
+    "cardId": "openjlpt-n5:285b008622",
+    "sourceIndex": 631,
+    "jp": "夕方"
+  },
+  {
+    "sourceId": "ae2b9f6d7e",
+    "cardId": "openjlpt-n5:ae2b9f6d7e",
+    "sourceIndex": 632,
+    "jp": "夕飯"
+  },
+  {
+    "sourceId": "8b86921749",
+    "cardId": "openjlpt-n5:8b86921749",
+    "sourceIndex": 633,
+    "jp": "郵便局"
+  },
+  {
+    "sourceId": "39fff8fc4b",
+    "cardId": "openjlpt-n5:39fff8fc4b",
+    "sourceIndex": 634,
+    "jp": "昨夜"
+  },
+  {
+    "sourceId": "50b217ed0b",
+    "cardId": "openjlpt-n5:50b217ed0b",
+    "sourceIndex": 635,
+    "jp": "有名"
+  },
+  {
+    "sourceId": "78c044b951",
+    "cardId": "openjlpt-n5:78c044b951",
+    "sourceIndex": 636,
+    "jp": "雪"
+  },
+  {
+    "sourceId": "d980cb1531",
+    "cardId": "openjlpt-n5:d980cb1531",
+    "sourceIndex": 637,
+    "jp": "ゆっくりと"
+  },
+  {
+    "sourceId": "4f8e83945d",
+    "cardId": "openjlpt-n5:4f8e83945d",
+    "sourceIndex": 638,
+    "jp": "八日"
+  },
+  {
+    "sourceId": "1907b6fc38",
+    "cardId": "openjlpt-n5:1907b6fc38",
+    "sourceIndex": 639,
+    "jp": "洋服"
+  },
+  {
+    "sourceId": "19db29fbbb",
+    "cardId": "openjlpt-n5:19db29fbbb",
+    "sourceIndex": 640,
+    "jp": "よく"
+  },
+  {
+    "sourceId": "4cb7c969c4",
+    "cardId": "openjlpt-n5:4cb7c969c4",
+    "sourceIndex": 641,
+    "jp": "横"
+  },
+  {
+    "sourceId": "222ae96df7",
+    "cardId": "openjlpt-n5:222ae96df7",
+    "sourceIndex": 642,
+    "jp": "四日"
+  },
+  {
+    "sourceId": "1000ee441a",
+    "cardId": "openjlpt-n5:1000ee441a",
+    "sourceIndex": 643,
+    "jp": "四つ"
+  },
+  {
+    "sourceId": "76f05a0739",
+    "cardId": "openjlpt-n5:76f05a0739",
+    "sourceIndex": 644,
+    "jp": "呼ぶ"
+  },
+  {
+    "sourceId": "eb7e675902",
+    "cardId": "openjlpt-n5:eb7e675902",
+    "sourceIndex": 645,
+    "jp": "読む"
+  },
+  {
+    "sourceId": "6c214111ea",
+    "cardId": "openjlpt-n5:6c214111ea",
+    "sourceIndex": 646,
+    "jp": "より"
+  },
+  {
+    "sourceId": "1a0aec6793",
+    "cardId": "openjlpt-n5:1a0aec6793",
+    "sourceIndex": 647,
+    "jp": "夜"
+  },
+  {
+    "sourceId": "83da293775",
+    "cardId": "openjlpt-n5:83da293775",
+    "sourceIndex": 648,
+    "jp": "弱い"
+  },
+  {
+    "sourceId": "61fd50f12e",
+    "cardId": "openjlpt-n5:61fd50f12e",
+    "sourceIndex": 649,
+    "jp": "来月"
+  },
+  {
+    "sourceId": "7a4ef637be",
+    "cardId": "openjlpt-n5:7a4ef637be",
+    "sourceIndex": 650,
+    "jp": "来週"
+  },
+  {
+    "sourceId": "c68f2caa2f",
+    "cardId": "openjlpt-n5:c68f2caa2f",
+    "sourceIndex": 651,
+    "jp": "来年"
+  },
+  {
+    "sourceId": "670f2dd0dc",
+    "cardId": "openjlpt-n5:670f2dd0dc",
+    "sourceIndex": 652,
+    "jp": "ラジオ"
+  },
+  {
+    "sourceId": "924572e50c",
+    "cardId": "openjlpt-n5:924572e50c",
+    "sourceIndex": 653,
+    "jp": "ラジカセ"
+  },
+  {
+    "sourceId": "a45af4ed89",
+    "cardId": "openjlpt-n5:a45af4ed89",
+    "sourceIndex": 654,
+    "jp": "りっぱ"
+  },
+  {
+    "sourceId": "dc7d39c7af",
+    "cardId": "openjlpt-n5:dc7d39c7af",
+    "sourceIndex": 655,
+    "jp": "留学生"
+  },
+  {
+    "sourceId": "0139a208fe",
+    "cardId": "openjlpt-n5:0139a208fe",
+    "sourceIndex": 656,
+    "jp": "両親"
+  },
+  {
+    "sourceId": "ee85169acd",
+    "cardId": "openjlpt-n5:ee85169acd",
+    "sourceIndex": 657,
+    "jp": "料理"
+  },
+  {
+    "sourceId": "2ba96bef9a",
+    "cardId": "openjlpt-n5:2ba96bef9a",
+    "sourceIndex": 658,
+    "jp": "旅行"
+  },
+  {
+    "sourceId": "92b3bb727e",
+    "cardId": "openjlpt-n5:92b3bb727e",
+    "sourceIndex": 659,
+    "jp": "零"
+  },
+  {
+    "sourceId": "f7a15687a1",
+    "cardId": "openjlpt-n5:f7a15687a1",
+    "sourceIndex": 660,
+    "jp": "冷蔵庫"
+  },
+  {
+    "sourceId": "0455201fe6",
+    "cardId": "openjlpt-n5:0455201fe6",
+    "sourceIndex": 661,
+    "jp": "レコード"
+  },
+  {
+    "sourceId": "31893e4378",
+    "cardId": "openjlpt-n5:31893e4378",
+    "sourceIndex": 662,
+    "jp": "レストラン"
+  },
+  {
+    "sourceId": "d23f06249a",
+    "cardId": "openjlpt-n5:d23f06249a",
+    "sourceIndex": 663,
+    "jp": "練習"
+  },
+  {
+    "sourceId": "5fc0f979e6",
+    "cardId": "openjlpt-n5:5fc0f979e6",
+    "sourceIndex": 664,
+    "jp": "廊下"
+  },
+  {
+    "sourceId": "f9ccc7bfdf",
+    "cardId": "openjlpt-n5:f9ccc7bfdf",
+    "sourceIndex": 665,
+    "jp": "六"
+  },
+  {
+    "sourceId": "38249a2dd2",
+    "cardId": "openjlpt-n5:38249a2dd2",
+    "sourceIndex": 666,
+    "jp": "ワイシャツ"
+  },
+  {
+    "sourceId": "640761cb8b",
+    "cardId": "openjlpt-n5:640761cb8b",
+    "sourceIndex": 667,
+    "jp": "若い"
+  },
+  {
+    "sourceId": "ecee43eb04",
+    "cardId": "openjlpt-n5:ecee43eb04",
+    "sourceIndex": 668,
+    "jp": "分かる"
+  },
+  {
+    "sourceId": "0ca0de9dea",
+    "cardId": "openjlpt-n5:0ca0de9dea",
+    "sourceIndex": 669,
+    "jp": "忘れる"
+  },
+  {
+    "sourceId": "d5c2e69813",
+    "cardId": "openjlpt-n5:d5c2e69813",
+    "sourceIndex": 670,
+    "jp": "私"
+  },
+  {
+    "sourceId": "b1d440d4e1",
+    "cardId": "openjlpt-n5:b1d440d4e1",
+    "sourceIndex": 671,
+    "jp": "渡す"
+  },
+  {
+    "sourceId": "78255b9860",
+    "cardId": "openjlpt-n5:78255b9860",
+    "sourceIndex": 672,
+    "jp": "渡る"
+  },
+  {
+    "sourceId": "13b6dbec03",
+    "cardId": "openjlpt-n5:13b6dbec03",
+    "sourceIndex": 673,
+    "jp": "悪い"
+  }
+]

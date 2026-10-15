@@ -1,3 +1,18 @@
+# Report tecnico — Kotoba Drive v0.4.2 (correzione layout)
+
+## Test di regressione
+
+- `npm test`: **81/81** test Node superati, nessun cambiamento alle funzioni di sessione, deck, TTS e storage.
+- `tests/browser_layout042_mock.py`: **superato** in Chromium headless con TTS e storage simulati; sette viewport (320×568, 375×667, 390×844, 428×926, 1366×768, 844×390 e 320×480). Il rettangolo del kanji rimane nel rettangolo della card, senza overflow interno o tagli e senza collisioni con gli esempi e i controlli. Testata anche una stringa giapponese artificiale di 14 caratteri e la lettura in direzione lingua madre → giapponese.
+- `tests/browser_shortword042_mock.py`: **superato** per layout a due colonne di un vocabolo breve su 390×844; kanji e pannello risposta non si sovrappongono.
+- `tests/browser_revision041_mock.py`: **superato** per rivelazione, shuffle degli esempi e contatore del significato.
+- `tests/browser_phase5_mock.py`: **superato** per gli altri flussi della PWA.
+- `tools/validate_content.py`: 75 carte, 2.250 esempi contestuali, 750 originali, 30 scenari, 8 storie e **0 errori strutturali**.
+
+**Non testato:** rendering Safari su iPhone reale, impostazioni di ingrandimento/accessibilità, TTS reale, comportamento Bluetooth fisico e persistenza IndexedDB su dispositivo. I testi generati del deck sono ancora da revisionare linguisticamente.
+
+---
+
 # Report di verifica — Kotoba Drive v0.4.1
 
 ## Automatici eseguiti

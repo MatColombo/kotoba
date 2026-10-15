@@ -1,0 +1,1396 @@
+[
+  {
+    "clusterId": "n5-plan-001",
+    "title": "Azioni 1",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:ada066edfd",
+      "openjlpt-n5:fc3bc1e6f1",
+      "openjlpt-n5:321963ed35",
+      "openjlpt-n5:9661cbac61",
+      "openjlpt-n5:2d55571300",
+      "openjlpt-n5:a5aceb6426",
+      "openjlpt-n5:f8fa96946f",
+      "openjlpt-n5:ac08788418",
+      "openjlpt-n5:55f3080ce4",
+      "openjlpt-n5:ae0cc00f94"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-002",
+    "title": "Azioni 2",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:66e4692df7",
+      "openjlpt-n5:cb29ccdd2a",
+      "openjlpt-n5:9438889173",
+      "openjlpt-n5:7a84208708",
+      "openjlpt-n5:6d824d5110",
+      "openjlpt-n5:3464318c23",
+      "openjlpt-n5:63bc7722fa",
+      "openjlpt-n5:f7e1da43df",
+      "openjlpt-n5:248a353e09",
+      "openjlpt-n5:96845304fd"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-003",
+    "title": "Azioni 3",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:ce8facdf69",
+      "openjlpt-n5:dad2d16220",
+      "openjlpt-n5:3c5bb8f223",
+      "openjlpt-n5:ae00442122",
+      "openjlpt-n5:d7960dc78d",
+      "openjlpt-n5:a771d4f949",
+      "openjlpt-n5:bdb125e5c6",
+      "openjlpt-n5:8ea4b03d7f",
+      "openjlpt-n5:1d22f1d023",
+      "openjlpt-n5:687082e55c"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-004",
+    "title": "Azioni 4",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:0ce2b98d3b",
+      "openjlpt-n5:1122cac409",
+      "openjlpt-n5:8cd440a181",
+      "openjlpt-n5:6030b50276",
+      "openjlpt-n5:dc19a213cd",
+      "openjlpt-n5:cf23f5fba1",
+      "openjlpt-n5:45fbcb8670",
+      "openjlpt-n5:c34fdb6092",
+      "openjlpt-n5:2e2abd26ca",
+      "openjlpt-n5:19f270c68f"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-005",
+    "title": "Azioni 5",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:2eb252da72",
+      "openjlpt-n5:d5d8c608aa",
+      "openjlpt-n5:f586d7d023",
+      "openjlpt-n5:61994485cb",
+      "openjlpt-n5:4c39babf5f",
+      "openjlpt-n5:c10cb3070d",
+      "openjlpt-n5:4e2aefb855",
+      "openjlpt-n5:e2695084c9",
+      "openjlpt-n5:573bc15b1d",
+      "openjlpt-n5:2c5c99977c"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-006",
+    "title": "Azioni 6",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:ec6fd2f845",
+      "openjlpt-n5:01420cdf0f",
+      "openjlpt-n5:8e6c15bef9",
+      "openjlpt-n5:95827b08e3",
+      "openjlpt-n5:5bae559507",
+      "openjlpt-n5:1fcb2fece8",
+      "openjlpt-n5:e82727193e",
+      "openjlpt-n5:d671097071",
+      "openjlpt-n5:c4cdc162d7",
+      "openjlpt-n5:c9a15e8777"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-007",
+    "title": "Azioni 7",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:b48d0c99d4",
+      "openjlpt-n5:4d0ca7b320",
+      "openjlpt-n5:501df34d31",
+      "openjlpt-n5:6298cfc5d6",
+      "openjlpt-n5:932afda20b",
+      "openjlpt-n5:7e9d38afeb",
+      "openjlpt-n5:35e9881c22",
+      "openjlpt-n5:c88e0ba104",
+      "openjlpt-n5:156f17113e",
+      "openjlpt-n5:9d4a68ce12"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-008",
+    "title": "Azioni 8",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:6e922a750e",
+      "openjlpt-n5:edc22b8d98",
+      "openjlpt-n5:ba6c46f68c",
+      "openjlpt-n5:375cfbefdd",
+      "openjlpt-n5:69d0d632fa",
+      "openjlpt-n5:90e9410bff",
+      "openjlpt-n5:5ef4f7dde9",
+      "openjlpt-n5:3c039918ba",
+      "openjlpt-n5:397b682fa7",
+      "openjlpt-n5:9d1aa046d6"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-009",
+    "title": "Azioni 9",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:4cc27797ba",
+      "openjlpt-n5:1313ed47fb",
+      "openjlpt-n5:07a4101167",
+      "openjlpt-n5:04015c3825",
+      "openjlpt-n5:a95b0a87ad",
+      "openjlpt-n5:1227b20370",
+      "openjlpt-n5:1635de1a94",
+      "openjlpt-n5:e05de4981d",
+      "openjlpt-n5:3af80b5b2a",
+      "openjlpt-n5:0c6e923ef9"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-010",
+    "title": "Azioni 10",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:7817fc9d64",
+      "openjlpt-n5:822c5e11a6",
+      "openjlpt-n5:c428d02d43",
+      "openjlpt-n5:4729cc56f4",
+      "openjlpt-n5:8fea1e3f3c",
+      "openjlpt-n5:244e138920",
+      "openjlpt-n5:9ea671262d",
+      "openjlpt-n5:9d5bde24ec",
+      "openjlpt-n5:f47c4aee42",
+      "openjlpt-n5:3be88666ba"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-011",
+    "title": "Azioni 11",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:5b84039234",
+      "openjlpt-n5:23911a0718",
+      "openjlpt-n5:15f4136421",
+      "openjlpt-n5:5791e248f1",
+      "openjlpt-n5:ae3e0a705f",
+      "openjlpt-n5:6a39701228",
+      "openjlpt-n5:7309a238e8",
+      "openjlpt-n5:db35a99e28",
+      "openjlpt-n5:85b37b6884",
+      "openjlpt-n5:16fda19d79"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-012",
+    "title": "Azioni 12",
+    "theme": "azioni",
+    "cardIds": [
+      "openjlpt-n5:3e3efcb45f",
+      "openjlpt-n5:f81d503d6f",
+      "openjlpt-n5:d980cb1531",
+      "openjlpt-n5:76f05a0739",
+      "openjlpt-n5:2ba96bef9a",
+      "openjlpt-n5:d23f06249a",
+      "openjlpt-n5:ecee43eb04",
+      "openjlpt-n5:0ca0de9dea",
+      "openjlpt-n5:b1d440d4e1",
+      "openjlpt-n5:78255b9860"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-013",
+    "title": "Vita Quotidiana 1",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:ebec658463",
+      "openjlpt-n5:2dacb910b2",
+      "openjlpt-n5:8dc7006bda",
+      "openjlpt-n5:b3b4041c52",
+      "openjlpt-n5:27df3d5802",
+      "openjlpt-n5:b62cb9ce4c",
+      "openjlpt-n5:4f134c9b38",
+      "openjlpt-n5:0cf05b3a0d",
+      "openjlpt-n5:5d72771a3c",
+      "openjlpt-n5:277a58c9df"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-014",
+    "title": "Vita Quotidiana 2",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:9f074820b1",
+      "openjlpt-n5:4fc98c6938",
+      "openjlpt-n5:43c874a6c8",
+      "openjlpt-n5:ca76162587",
+      "openjlpt-n5:d305fa14a8",
+      "openjlpt-n5:1cfccd0cdd",
+      "openjlpt-n5:cb96f363df",
+      "openjlpt-n5:2a7c4baf86",
+      "openjlpt-n5:2dc7289c82",
+      "openjlpt-n5:0df89f5010"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-015",
+    "title": "Vita Quotidiana 3",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:ce75c75644",
+      "openjlpt-n5:1ff0529d03",
+      "openjlpt-n5:523266ea6f",
+      "openjlpt-n5:08a3ed212d",
+      "openjlpt-n5:93bdc81dd9",
+      "openjlpt-n5:036f4180a2",
+      "openjlpt-n5:06ac21dc7d",
+      "openjlpt-n5:1ef8a05bf3",
+      "openjlpt-n5:5bb390da0b",
+      "openjlpt-n5:92b1621231"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-016",
+    "title": "Vita Quotidiana 4",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:8a88cfbcb8",
+      "openjlpt-n5:16adc7bd03",
+      "openjlpt-n5:eb1695baf6",
+      "openjlpt-n5:57ed89b240",
+      "openjlpt-n5:3e015d0a8b",
+      "openjlpt-n5:6c4661d672",
+      "openjlpt-n5:f843b00173",
+      "openjlpt-n5:101d46a061",
+      "openjlpt-n5:75a36b034c",
+      "openjlpt-n5:2fd7d45c8d"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-017",
+    "title": "Vita Quotidiana 5",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:6f664d3ded",
+      "openjlpt-n5:f0f3826045",
+      "openjlpt-n5:b75778f0ce",
+      "openjlpt-n5:3707072a6b",
+      "openjlpt-n5:c6f43a8cc3",
+      "openjlpt-n5:af378a4c86",
+      "openjlpt-n5:12d9487797",
+      "openjlpt-n5:03d7b15720",
+      "openjlpt-n5:f347485004",
+      "openjlpt-n5:7a073616e5"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-018",
+    "title": "Vita Quotidiana 6",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:ae5d1778d1",
+      "openjlpt-n5:cdea017272",
+      "openjlpt-n5:980a922ad3",
+      "openjlpt-n5:e6afab391a",
+      "openjlpt-n5:31a803c7f5",
+      "openjlpt-n5:70f1678111",
+      "openjlpt-n5:2120ff505c",
+      "openjlpt-n5:7cb27c411e",
+      "openjlpt-n5:e2d6576c76",
+      "openjlpt-n5:6f54881e59"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-019",
+    "title": "Vita Quotidiana 7",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:c1a28465a2",
+      "openjlpt-n5:c9b5da4d10",
+      "openjlpt-n5:e34295f3e1",
+      "openjlpt-n5:613c41bd1d",
+      "openjlpt-n5:66eeeb818b",
+      "openjlpt-n5:4092bfd9bb",
+      "openjlpt-n5:6e6a06687d",
+      "openjlpt-n5:749f78c9d1",
+      "openjlpt-n5:cd08f9cdc2",
+      "openjlpt-n5:9d648d38ad"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-020",
+    "title": "Vita Quotidiana 8",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:a556e5edce",
+      "openjlpt-n5:9decc44f4e",
+      "openjlpt-n5:6382448bd3",
+      "openjlpt-n5:bcf12e002d",
+      "openjlpt-n5:fdc787af58",
+      "openjlpt-n5:22836046e2",
+      "openjlpt-n5:fa320a51ea",
+      "openjlpt-n5:4fb1c0d758",
+      "openjlpt-n5:5620a00afc",
+      "openjlpt-n5:e101e41f54"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-021",
+    "title": "Vita Quotidiana 9",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:b4faf372f3",
+      "openjlpt-n5:797ae8d562",
+      "openjlpt-n5:976c4f7174",
+      "openjlpt-n5:ec4e1dfc87",
+      "openjlpt-n5:36016e0c51",
+      "openjlpt-n5:a59efa3057",
+      "openjlpt-n5:b00c4af0a2",
+      "openjlpt-n5:95ccaa32f5",
+      "openjlpt-n5:a123a147d7",
+      "openjlpt-n5:9dd0572f05"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-022",
+    "title": "Vita Quotidiana 10",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:20a1278928",
+      "openjlpt-n5:b55dd305d1",
+      "openjlpt-n5:eec0f93991",
+      "openjlpt-n5:72c04ce067",
+      "openjlpt-n5:5538df2bce",
+      "openjlpt-n5:3c32cfb08a",
+      "openjlpt-n5:e1634cb3e9",
+      "openjlpt-n5:9c1d724a61",
+      "openjlpt-n5:04e80a2ba1",
+      "openjlpt-n5:2e1642b248"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-023",
+    "title": "Vita Quotidiana 11",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:05cf590971",
+      "openjlpt-n5:8699b8bec2",
+      "openjlpt-n5:1288e600be",
+      "openjlpt-n5:402eb0d21f",
+      "openjlpt-n5:d890e45616",
+      "openjlpt-n5:c552e79d34",
+      "openjlpt-n5:67126059f1",
+      "openjlpt-n5:9a7c962266",
+      "openjlpt-n5:f114f6f499",
+      "openjlpt-n5:c92dbe626a"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-024",
+    "title": "Vita Quotidiana 12",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:2da7034c1e",
+      "openjlpt-n5:0020b9ee4e",
+      "openjlpt-n5:491cfa69be",
+      "openjlpt-n5:a2694d259e",
+      "openjlpt-n5:3793173687",
+      "openjlpt-n5:7a27eadef1",
+      "openjlpt-n5:eb1c9a5df9",
+      "openjlpt-n5:a96e3a2b33",
+      "openjlpt-n5:20fcc4f54f",
+      "openjlpt-n5:a371cc6a54"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-025",
+    "title": "Vita Quotidiana 13",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:8af5030b7a",
+      "openjlpt-n5:45c705d5b2",
+      "openjlpt-n5:b366a3d677",
+      "openjlpt-n5:8ec35978bd",
+      "openjlpt-n5:dd36cae3a9",
+      "openjlpt-n5:78fd1a0e8a",
+      "openjlpt-n5:6156bfb418",
+      "openjlpt-n5:5101640e7e",
+      "openjlpt-n5:f71424e3ff",
+      "openjlpt-n5:d9c88143a2"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-026",
+    "title": "Vita Quotidiana 14",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:9476d7966d",
+      "openjlpt-n5:dcc87a37fb",
+      "openjlpt-n5:98eace7008",
+      "openjlpt-n5:b8317395af",
+      "openjlpt-n5:f0f5f6b29b",
+      "openjlpt-n5:ce75057c4c",
+      "openjlpt-n5:8149d77689",
+      "openjlpt-n5:938a169f6c",
+      "openjlpt-n5:0a33903ccf",
+      "openjlpt-n5:10fe0704ca"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-027",
+    "title": "Vita Quotidiana 15",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:508131fe89",
+      "openjlpt-n5:898b067287",
+      "openjlpt-n5:af7459ef1e",
+      "openjlpt-n5:4b0b49a42d",
+      "openjlpt-n5:9d432ac114",
+      "openjlpt-n5:434707d737",
+      "openjlpt-n5:0eaa93c144",
+      "openjlpt-n5:b8c4cd80db",
+      "openjlpt-n5:acba6e07ba",
+      "openjlpt-n5:68ad5f4363"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-028",
+    "title": "Vita Quotidiana 16",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:38c854e97f",
+      "openjlpt-n5:6ff51bace3",
+      "openjlpt-n5:992fc07339",
+      "openjlpt-n5:1c0b0f77b6",
+      "openjlpt-n5:e7ca1b2fd5",
+      "openjlpt-n5:372b08211e",
+      "openjlpt-n5:80beed00bf",
+      "openjlpt-n5:5c89b3094a",
+      "openjlpt-n5:2e610178ae",
+      "openjlpt-n5:6d7293f7cf"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-029",
+    "title": "Vita Quotidiana 17",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:ffa3dda331",
+      "openjlpt-n5:f9b377e253",
+      "openjlpt-n5:3d12036023",
+      "openjlpt-n5:d00ef0a9d5",
+      "openjlpt-n5:672321bac9",
+      "openjlpt-n5:5b9670420a",
+      "openjlpt-n5:0cf2b43e9c",
+      "openjlpt-n5:ff161262dd",
+      "openjlpt-n5:dc0ae29019",
+      "openjlpt-n5:218ea67735"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-030",
+    "title": "Vita Quotidiana 18",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:151fd72164",
+      "openjlpt-n5:0144505953",
+      "openjlpt-n5:c7e14d8454",
+      "openjlpt-n5:679e34031e",
+      "openjlpt-n5:a7c36fdb70",
+      "openjlpt-n5:6f4691297f",
+      "openjlpt-n5:677d3c5fac",
+      "openjlpt-n5:e1e7c2d290",
+      "openjlpt-n5:03d03cf25d",
+      "openjlpt-n5:e8579084ba"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-031",
+    "title": "Vita Quotidiana 19",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:ca332ac7b4",
+      "openjlpt-n5:358fc382cb",
+      "openjlpt-n5:de5a452667",
+      "openjlpt-n5:c597c353cb",
+      "openjlpt-n5:72c525f37a",
+      "openjlpt-n5:7e4fccba7f",
+      "openjlpt-n5:3669c65744",
+      "openjlpt-n5:3ae88c29c4",
+      "openjlpt-n5:5d32281da9",
+      "openjlpt-n5:641ddbf693"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-032",
+    "title": "Vita Quotidiana 20",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:e09167a3d4",
+      "openjlpt-n5:75ed3c3b2b",
+      "openjlpt-n5:a812b1ac7f",
+      "openjlpt-n5:436f1c3c65",
+      "openjlpt-n5:2e6c7d2d9d",
+      "openjlpt-n5:b824bec2c5",
+      "openjlpt-n5:9ef6c9d703",
+      "openjlpt-n5:18046e46a1",
+      "openjlpt-n5:cbbfc8cad6",
+      "openjlpt-n5:278c1e0e04"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-033",
+    "title": "Vita Quotidiana 21",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:5e8fc8669c",
+      "openjlpt-n5:390ac6443d",
+      "openjlpt-n5:28111455cd",
+      "openjlpt-n5:5cc1dad1e8",
+      "openjlpt-n5:645e1e3b4d",
+      "openjlpt-n5:658b912df8",
+      "openjlpt-n5:7ce7f7d305",
+      "openjlpt-n5:8f663254b0",
+      "openjlpt-n5:e5b36d7b24",
+      "openjlpt-n5:4385616659"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-034",
+    "title": "Vita Quotidiana 22",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:c65a346458",
+      "openjlpt-n5:153de06669",
+      "openjlpt-n5:6485c3c2a7",
+      "openjlpt-n5:8b5843f7fb",
+      "openjlpt-n5:1ed0362cc3",
+      "openjlpt-n5:f16244c585",
+      "openjlpt-n5:9edf8548bb",
+      "openjlpt-n5:9cd7c780c3",
+      "openjlpt-n5:532c73de5d",
+      "openjlpt-n5:ee3206bb3f"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-035",
+    "title": "Vita Quotidiana 23",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:67775e3b25",
+      "openjlpt-n5:246b5ae84d",
+      "openjlpt-n5:a1cda8cb11",
+      "openjlpt-n5:0a38c65004",
+      "openjlpt-n5:ec5bd86b72",
+      "openjlpt-n5:d91ee7a9ed",
+      "openjlpt-n5:3554fb81b8",
+      "openjlpt-n5:3fb1b70809",
+      "openjlpt-n5:7a9ce8e2df",
+      "openjlpt-n5:734d275fd9"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-036",
+    "title": "Vita Quotidiana 24",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:c551bc3f7c",
+      "openjlpt-n5:0b492c3209",
+      "openjlpt-n5:ef9babb012",
+      "openjlpt-n5:d156402900",
+      "openjlpt-n5:55c1439239",
+      "openjlpt-n5:71e2aefb9d",
+      "openjlpt-n5:68571540e1",
+      "openjlpt-n5:c518fb9116",
+      "openjlpt-n5:94c2076821",
+      "openjlpt-n5:750786cc55"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-037",
+    "title": "Vita Quotidiana 25",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:eb9acca7ba",
+      "openjlpt-n5:34784ed6ca",
+      "openjlpt-n5:79ddbb2b98",
+      "openjlpt-n5:f8fc73bd75",
+      "openjlpt-n5:91cf4ea2fd",
+      "openjlpt-n5:db38ebd955",
+      "openjlpt-n5:e78074927c",
+      "openjlpt-n5:71c372d7b2",
+      "openjlpt-n5:dd1183b005",
+      "openjlpt-n5:cfc75623ae"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-038",
+    "title": "Vita Quotidiana 26",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:785a997045",
+      "openjlpt-n5:f71c69492e",
+      "openjlpt-n5:ab9f2792c4",
+      "openjlpt-n5:2dbe65ee1d",
+      "openjlpt-n5:04ab635f4b",
+      "openjlpt-n5:23ec5a0b3d",
+      "openjlpt-n5:3839786bac",
+      "openjlpt-n5:a59ba12bc5",
+      "openjlpt-n5:771fbe6b4d",
+      "openjlpt-n5:fd1c93832f"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-039",
+    "title": "Vita Quotidiana 27",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:039a696225",
+      "openjlpt-n5:83700909d4",
+      "openjlpt-n5:2584943533",
+      "openjlpt-n5:319e218950",
+      "openjlpt-n5:4d76d06d84",
+      "openjlpt-n5:27f9d40392",
+      "openjlpt-n5:7734194821",
+      "openjlpt-n5:6318b0423a",
+      "openjlpt-n5:f1046f3190",
+      "openjlpt-n5:0c8a588e53"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-040",
+    "title": "Vita Quotidiana 28",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:1713d0bbe8",
+      "openjlpt-n5:85e4ba2f28",
+      "openjlpt-n5:d2b9c47656",
+      "openjlpt-n5:84e465b526",
+      "openjlpt-n5:e8cdf8b85a",
+      "openjlpt-n5:2676514561",
+      "openjlpt-n5:bf44ddad08",
+      "openjlpt-n5:8e862f05f0",
+      "openjlpt-n5:5028971b39",
+      "openjlpt-n5:ae534d4ca8"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-041",
+    "title": "Vita Quotidiana 29",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:eb5450490b",
+      "openjlpt-n5:72eb77e07a",
+      "openjlpt-n5:d10bb92f3e",
+      "openjlpt-n5:782272bfda",
+      "openjlpt-n5:5b92758003",
+      "openjlpt-n5:4f0f6b6ae7",
+      "openjlpt-n5:8d29f60b23",
+      "openjlpt-n5:d4a1d27d3b",
+      "openjlpt-n5:e8a5cbdf0a",
+      "openjlpt-n5:285b008622"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-042",
+    "title": "Vita Quotidiana 30",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:ae2b9f6d7e",
+      "openjlpt-n5:8b86921749",
+      "openjlpt-n5:39fff8fc4b",
+      "openjlpt-n5:78c044b951",
+      "openjlpt-n5:4f8e83945d",
+      "openjlpt-n5:1907b6fc38",
+      "openjlpt-n5:4cb7c969c4",
+      "openjlpt-n5:222ae96df7",
+      "openjlpt-n5:61fd50f12e",
+      "openjlpt-n5:7a4ef637be"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-043",
+    "title": "Vita Quotidiana 31",
+    "theme": "vita-quotidiana",
+    "cardIds": [
+      "openjlpt-n5:c68f2caa2f",
+      "openjlpt-n5:670f2dd0dc",
+      "openjlpt-n5:924572e50c",
+      "openjlpt-n5:dc7d39c7af",
+      "openjlpt-n5:0139a208fe",
+      "openjlpt-n5:92b3bb727e",
+      "openjlpt-n5:f7a15687a1",
+      "openjlpt-n5:0455201fe6",
+      "openjlpt-n5:5fc0f979e6",
+      "openjlpt-n5:38249a2dd2"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-044",
+    "title": "Descrizioni 1",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:51a671ec17",
+      "openjlpt-n5:44ba38cf8b",
+      "openjlpt-n5:91987ae840",
+      "openjlpt-n5:f665c2128a",
+      "openjlpt-n5:8ae27e3b51",
+      "openjlpt-n5:9949d87445",
+      "openjlpt-n5:7b4aecdf7b",
+      "openjlpt-n5:a379d413fd",
+      "openjlpt-n5:0509cb3b27",
+      "openjlpt-n5:4afffe5811"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-045",
+    "title": "Descrizioni 2",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:e37a087c0f",
+      "openjlpt-n5:cd1bcc2b1b",
+      "openjlpt-n5:4dae367794",
+      "openjlpt-n5:eda751e069",
+      "openjlpt-n5:f74dd1ee9a",
+      "openjlpt-n5:d2b2316e45",
+      "openjlpt-n5:7ecfe0d248",
+      "openjlpt-n5:7f02ae8fa1",
+      "openjlpt-n5:60813fffd1",
+      "openjlpt-n5:8fa5a63fc7"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-046",
+    "title": "Descrizioni 3",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:a082687f7a",
+      "openjlpt-n5:6f5049e2d4",
+      "openjlpt-n5:7c134ec812",
+      "openjlpt-n5:cdfb776826",
+      "openjlpt-n5:2568873ebd",
+      "openjlpt-n5:d2546ac97b",
+      "openjlpt-n5:a8b9eb425d",
+      "openjlpt-n5:bad3423a93",
+      "openjlpt-n5:5d679a1af2",
+      "openjlpt-n5:0b36c8d6c6"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-047",
+    "title": "Descrizioni 4",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:7d1cf1538b",
+      "openjlpt-n5:d106dac023",
+      "openjlpt-n5:43cd9825f0",
+      "openjlpt-n5:01a0587b49",
+      "openjlpt-n5:5e5300cf62",
+      "openjlpt-n5:dd34250740",
+      "openjlpt-n5:442c4aa1ca",
+      "openjlpt-n5:688bc67044",
+      "openjlpt-n5:178469ba7a",
+      "openjlpt-n5:1763fc412a"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-048",
+    "title": "Descrizioni 5",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:50525927ee",
+      "openjlpt-n5:8997f64f52",
+      "openjlpt-n5:20cbecd474",
+      "openjlpt-n5:0d38b01113",
+      "openjlpt-n5:67f5908e10",
+      "openjlpt-n5:d12ee2e932",
+      "openjlpt-n5:2f62b9db5e",
+      "openjlpt-n5:9ee7cd3382",
+      "openjlpt-n5:b3a8593e53",
+      "openjlpt-n5:c74892f565"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-049",
+    "title": "Descrizioni 6",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:a7c72d9bb1",
+      "openjlpt-n5:9b2d455dfe",
+      "openjlpt-n5:d4779ac36c",
+      "openjlpt-n5:a21ba677f2",
+      "openjlpt-n5:3a94b5e981",
+      "openjlpt-n5:a23d308800",
+      "openjlpt-n5:d99745fbb6",
+      "openjlpt-n5:f840779b9e",
+      "openjlpt-n5:fcea29f192",
+      "openjlpt-n5:c17f97fafc"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-050",
+    "title": "Descrizioni 7",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:2f01adebd7",
+      "openjlpt-n5:4db42e0181",
+      "openjlpt-n5:406d15f6e9",
+      "openjlpt-n5:e25cf6ed2f",
+      "openjlpt-n5:230d5c7343",
+      "openjlpt-n5:4162724f9a",
+      "openjlpt-n5:aa60dd4a11",
+      "openjlpt-n5:619dae70e9",
+      "openjlpt-n5:84887dde48",
+      "openjlpt-n5:418493d941"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-051",
+    "title": "Descrizioni 8",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:785adc4f9d",
+      "openjlpt-n5:849baaf2c3",
+      "openjlpt-n5:b19034ded1",
+      "openjlpt-n5:ede9ab2f7f",
+      "openjlpt-n5:ab36109960",
+      "openjlpt-n5:8568eded6e",
+      "openjlpt-n5:0a3894175f",
+      "openjlpt-n5:ead1ae2736",
+      "openjlpt-n5:33b86212ca",
+      "openjlpt-n5:50b217ed0b"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-052",
+    "title": "Descrizioni 9",
+    "theme": "descrizioni",
+    "cardIds": [
+      "openjlpt-n5:83da293775",
+      "openjlpt-n5:a45af4ed89",
+      "openjlpt-n5:640761cb8b",
+      "openjlpt-n5:13b6dbec03"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-053",
+    "title": "Tempo 1",
+    "theme": "tempo",
+    "cardIds": [
+      "openjlpt-n5:d46ae79a26",
+      "openjlpt-n5:115ec83476",
+      "openjlpt-n5:0dbf9ef8ca",
+      "openjlpt-n5:a94a4be08f",
+      "openjlpt-n5:0400a204bd",
+      "openjlpt-n5:d5c916ca85",
+      "openjlpt-n5:44d9d70862",
+      "openjlpt-n5:e3ad76810f",
+      "openjlpt-n5:86e7fb81c6",
+      "openjlpt-n5:d8c3a3f0d0"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-054",
+    "title": "Tempo 2",
+    "theme": "tempo",
+    "cardIds": [
+      "openjlpt-n5:5d7a8d133b",
+      "openjlpt-n5:1a0aec6793"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-055",
+    "title": "Cibo 1",
+    "theme": "cibo",
+    "cardIds": [
+      "openjlpt-n5:98bc6f72ae",
+      "openjlpt-n5:669019c625",
+      "openjlpt-n5:edca336b1f",
+      "openjlpt-n5:6b454b895e",
+      "openjlpt-n5:dbd7cd319c",
+      "openjlpt-n5:86f67e2dc3",
+      "openjlpt-n5:4d66739694",
+      "openjlpt-n5:efac1fc502",
+      "openjlpt-n5:e0bcec9bd9",
+      "openjlpt-n5:098e9e7e67"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-056",
+    "title": "Cibo 2",
+    "theme": "cibo",
+    "cardIds": [
+      "openjlpt-n5:69a792520f",
+      "openjlpt-n5:936289666e",
+      "openjlpt-n5:ee85169acd",
+      "openjlpt-n5:31893e4378"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-057",
+    "title": "Conversazione 1",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:bee501faf0",
+      "openjlpt-n5:34e6f7d220",
+      "openjlpt-n5:60dd63379e",
+      "openjlpt-n5:afdf384f68",
+      "openjlpt-n5:ac4706068b",
+      "openjlpt-n5:eac90e8e98",
+      "openjlpt-n5:93461820fe",
+      "openjlpt-n5:d727a76b22",
+      "openjlpt-n5:6d4596ae46",
+      "openjlpt-n5:a3f296ad9a"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-058",
+    "title": "Conversazione 2",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:026ae57b50",
+      "openjlpt-n5:eac7a22620",
+      "openjlpt-n5:fac6fc0838",
+      "openjlpt-n5:dea2a1df8b",
+      "openjlpt-n5:8ac60a4060",
+      "openjlpt-n5:3a2de0afca",
+      "openjlpt-n5:4df6eda2a2",
+      "openjlpt-n5:36bff8d879",
+      "openjlpt-n5:a36841ba49",
+      "openjlpt-n5:05123676c2"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-059",
+    "title": "Conversazione 3",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:a9191729e3",
+      "openjlpt-n5:e9e492c68a",
+      "openjlpt-n5:be9b8bcb5e",
+      "openjlpt-n5:bd3a2ad2ad",
+      "openjlpt-n5:4a11eb5fb4",
+      "openjlpt-n5:6313cc9cb5",
+      "openjlpt-n5:e1978f90df",
+      "openjlpt-n5:0a65b39cf7",
+      "openjlpt-n5:6c0551dd8a",
+      "openjlpt-n5:7ba7ba2434"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-060",
+    "title": "Conversazione 4",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:0a1f511640",
+      "openjlpt-n5:2c41aedcba",
+      "openjlpt-n5:995a632b12",
+      "openjlpt-n5:091c8c0e07",
+      "openjlpt-n5:a8722990f1",
+      "openjlpt-n5:c373555102",
+      "openjlpt-n5:feae64eac4",
+      "openjlpt-n5:e75777d218",
+      "openjlpt-n5:5ef867ff81",
+      "openjlpt-n5:105df79571"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-061",
+    "title": "Conversazione 5",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:80981fa136",
+      "openjlpt-n5:cb1c02a574",
+      "openjlpt-n5:79d922e359",
+      "openjlpt-n5:799b7cabe0",
+      "openjlpt-n5:46c1721526",
+      "openjlpt-n5:e04372c490",
+      "openjlpt-n5:d9eba03b7b",
+      "openjlpt-n5:3d2ca62c5f",
+      "openjlpt-n5:55dbb815ba",
+      "openjlpt-n5:38a8411ec3"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-062",
+    "title": "Conversazione 6",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:9b08365493",
+      "openjlpt-n5:602fdffbf2",
+      "openjlpt-n5:d33540fe8e",
+      "openjlpt-n5:3f71089c32",
+      "openjlpt-n5:d0fb41651f",
+      "openjlpt-n5:a891b73f8b",
+      "openjlpt-n5:a71cbc3ce4",
+      "openjlpt-n5:93b9cec3d4",
+      "openjlpt-n5:d2cb14f88a",
+      "openjlpt-n5:978a2cefa5"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-063",
+    "title": "Conversazione 7",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:ad884a3b70",
+      "openjlpt-n5:5480c153dc",
+      "openjlpt-n5:e8a4843059",
+      "openjlpt-n5:a3679ee665",
+      "openjlpt-n5:10fb2e55c0",
+      "openjlpt-n5:cd4b8c6381",
+      "openjlpt-n5:b21477c7db",
+      "openjlpt-n5:ef9536b1ee",
+      "openjlpt-n5:cf58476318",
+      "openjlpt-n5:558866ef86"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-064",
+    "title": "Conversazione 8",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:542f39c93d",
+      "openjlpt-n5:3f18999e09",
+      "openjlpt-n5:a2c1e54c17",
+      "openjlpt-n5:162e00c6ef",
+      "openjlpt-n5:6a7163f5f7",
+      "openjlpt-n5:c5b7ad76fd",
+      "openjlpt-n5:3ae16ad93a",
+      "openjlpt-n5:a8f5f4c59e",
+      "openjlpt-n5:19db29fbbb",
+      "openjlpt-n5:6c214111ea"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-065",
+    "title": "Conversazione 9",
+    "theme": "conversazione",
+    "cardIds": [
+      "openjlpt-n5:d5c2e69813"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-066",
+    "title": "Famiglia 1",
+    "theme": "famiglia",
+    "cardIds": [
+      "openjlpt-n5:4aab699864",
+      "openjlpt-n5:8bfeb208b4",
+      "openjlpt-n5:12047d019b",
+      "openjlpt-n5:2007947770",
+      "openjlpt-n5:1b89f0f993",
+      "openjlpt-n5:89807c7c22",
+      "openjlpt-n5:db32745bbc",
+      "openjlpt-n5:1c9db63bdc",
+      "openjlpt-n5:1f4bb6e503"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-067",
+    "title": "Numeri 1",
+    "theme": "numeri",
+    "cardIds": [
+      "openjlpt-n5:9d8f862791",
+      "openjlpt-n5:9ac35c3990",
+      "openjlpt-n5:8f81565ad7",
+      "openjlpt-n5:47c1fdbe2f",
+      "openjlpt-n5:cff3c57405",
+      "openjlpt-n5:5cb07674a3",
+      "openjlpt-n5:da4b805e0b",
+      "openjlpt-n5:988db98632",
+      "openjlpt-n5:db9f5d4422",
+      "openjlpt-n5:1729d60f09"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-068",
+    "title": "Numeri 2",
+    "theme": "numeri",
+    "cardIds": [
+      "openjlpt-n5:e65bf7ad23",
+      "openjlpt-n5:34108268e1",
+      "openjlpt-n5:6eeff514e0",
+      "openjlpt-n5:537f8af3d6",
+      "openjlpt-n5:13696bc9b5",
+      "openjlpt-n5:0c1dbd4838",
+      "openjlpt-n5:a0ff0f67c8",
+      "openjlpt-n5:b36b221d33",
+      "openjlpt-n5:7ecc2c4bfc",
+      "openjlpt-n5:62c4216674"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-069",
+    "title": "Numeri 3",
+    "theme": "numeri",
+    "cardIds": [
+      "openjlpt-n5:1000ee441a",
+      "openjlpt-n5:f9ccc7bfdf"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-070",
+    "title": "Trasporti 1",
+    "theme": "trasporti",
+    "cardIds": [
+      "openjlpt-n5:d5f359c20b",
+      "openjlpt-n5:4fee5be397",
+      "openjlpt-n5:d6b85573f3",
+      "openjlpt-n5:ebf194a316",
+      "openjlpt-n5:2d5a93eb11",
+      "openjlpt-n5:3134199c25",
+      "openjlpt-n5:62b5c13164",
+      "openjlpt-n5:bd7df6c7a2",
+      "openjlpt-n5:a81612169c",
+      "openjlpt-n5:dc29195f18"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-071",
+    "title": "Scuola 1",
+    "theme": "scuola",
+    "cardIds": [
+      "openjlpt-n5:381da4d060",
+      "openjlpt-n5:f2fa049fdd",
+      "openjlpt-n5:f7c7f35d9e",
+      "openjlpt-n5:452102ad0a",
+      "openjlpt-n5:dd8ac16bd2",
+      "openjlpt-n5:85eb994887",
+      "openjlpt-n5:4daa103d7d",
+      "openjlpt-n5:814bdc2cec",
+      "openjlpt-n5:5b303264b9",
+      "openjlpt-n5:65783b95dd"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  },
+  {
+    "clusterId": "n5-plan-072",
+    "title": "Scuola 2",
+    "theme": "scuola",
+    "cardIds": [
+      "openjlpt-n5:0e8f798dbf",
+      "openjlpt-n5:eb7e675902"
+    ],
+    "rationale": "Raggruppamento lessicale preliminare, da riprogettare per una storia coerente",
+    "storyStatus": "planned",
+    "narrativeArc": "Da progettare in fase di generazione storie"
+  }
+]

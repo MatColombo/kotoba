@@ -1,4 +1,4 @@
-# Problemi noti — Kotoba Drive v0.4.1
+# Problemi noti — Kotoba Drive v0.4.2
 
 ## Lingua e didattica
 

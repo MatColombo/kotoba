@@ -1,0 +1,13 @@
+{"cards": 674, "errors": 4718, "warnings": 0, "status": "fail"}
+ERROR: cards[0] contextual total=0 expected=30
+ERROR: cards[0] informal count 0 !=10
+ERROR: cards[0] informal incomplete/duplicate canonical scenarios
+ERROR: cards[0] colleague count 0 !=10
+ERROR: cards[0] colleague incomplete/duplicate canonical scenarios
+ERROR: cards[0] superior count 0 !=10
+ERROR: cards[0] superior incomplete/duplicate canonical scenarios
+ERROR: cards[1] contextual total=0 expected=30
+ERROR: cards[1] informal count 0 !=10
+ERROR: cards[1] informal incomplete/duplicate canonical scenarios
+ERROR: cards[1] colleague count 0 !=10
+ERROR: cards[1] colleague incomplete/duplicate canonical scenarios

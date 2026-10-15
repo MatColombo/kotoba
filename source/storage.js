@@ -29,7 +29,7 @@
    if(!isObj(c)){errors.push(`cards[${i}] non è un oggetto.`);continue}
    if(c.id===undefined||c.id===null||!safeId(idKey(c.id))){errors.push(`cards[${i}].id non valido.`);continue}
    const cid=idKey(c.id);if(ids.has(cid))errors.push(`ID carta duplicato: ${cid}`);ids.add(cid);
-   if(!['verb','noun','na','i'].includes(c.pos))errors.push(`Carta ${cid}: pos non valida.`);
+   if(!['verb','noun','na','i','pronoun','determiner','adverb','interjection','expression','numeral','conjunction','particle','counter','prefix','suffix','auxiliary','other'].includes(c.pos))errors.push(`Carta ${cid}: pos non valida.`);
    if(typeof c.jp!=='string'||!c.jp.trim()||typeof c.kana!=='string'||!c.kana.trim())errors.push(`Carta ${cid}: jp/kana obbligatori.`);
    if(!isObj(c.meaning)||typeof c.meaning.it!=='string'||typeof c.meaning.en!=='string')errors.push(`Carta ${cid}: meaning.it/en obbligatori.`);
    if(!Array.isArray(c.forms))errors.push(`Carta ${cid}: forms deve essere un array.`);

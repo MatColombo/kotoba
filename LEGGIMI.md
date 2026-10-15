@@ -1,11 +1,11 @@
-# Kotoba Drive v0.4.1 — Istruzioni
+# Kotoba Drive v0.4.2 — Istruzioni
 
 Versione di aggiornamento della PWA Kotoba Drive v0.4.0. Hosting gratuito GitHub Pages, Web Speech API e IndexedDB, senza backend.
 
 ## Aggiornamento dal sito esistente
 
 1. **Prima di installare la nuova versione** aprire la PWA attuale → **☰ → Deck e backup → Esporta study.json**, e possibilmente **Backup completo (deck + studio)**. Conservare il file al di fuori dell'app.
-2. Scaricare ed estrarre `kotoba-drive-v0.4.1-github-pages.zip` e caricare tutti i file estratti nella root del repository GitHub Pages; non caricare il file ZIP tal quale.
+2. Scaricare ed estrarre `kotoba-drive-v0.4.2-github-pages.zip` e caricare tutti i file estratti nella root del repository GitHub Pages; non caricare il file ZIP tal quale.
 3. Assicurarsi che `decks/n4-core.json` (revisione **6**) e `decks/catalog.json` siano pubblicati; se il sito è in una sottocartella, mantenere la stessa struttura dei percorsi.
 4. In **Settings → Pages**, se necessario, usare `Deploy from a branch`, branch `main`, directory `/ (root)`.
 5. Aprire il sito HTTPS su Safari, attendere il nuovo Service Worker, chiudere e riaprire la PWA dalla schermata Home. La versione nell'intestazione deve indicare **v0.4.1**.
@@ -62,3 +62,13 @@ I test Playwright richiedono Chromium e Playwright Python. I test UI usano un ar
 Configurare sessione, filtri, shuffle e sequenze prima di mettersi al volante. Non interagire con lo schermo durante la guida. Safari può non inoltrare i comandi media Bluetooth alla Web Speech API; il comportamento dell'auto richiede un test reale.
 
 **Aggiornamento della verifica finale:** corretti anche 58 casi di disallineamento evidente fra passato giapponese e traduzioni inglesi e introdotto un test specifico. La revisione madrelingua completa resta da eseguire.
+
+## Correzione layout v0.4.2
+
+- **Kanji senza tagli:** la parola giapponese non ha più limiti di altezza (`max-height`) o `overflow:hidden`; può occupare più righe. Il relativo contenitore non viene compresso per fare posto agli esempi.
+- **Uso della larghezza:** margini laterali ottimizzati; l'indicatore di capitolo e l'etichetta della domanda condividono una riga. Sulle card con parole giapponesi brevi, in verticale e con larghezza sufficiente, parola e significato sono affiancati. In orientamento desktop ampio vale la stessa disposizione.
+- **Priorità:** parola e navigazione restano visibili; esempi, forme e metadati secondari cedono spazio se l'altezza è insufficiente. La dimensione del font della parola resta quella già prevista dalle regole responsive della v0.4.1: non è stata ridotta per la correzione.
+- **Telefoni stretti:** i tasti capitolo conservano l'area cliccabile; sotto 350 px nascondono solo le didascalie lunghe, lasciando visibili le frecce.
+- **Compatibilità:** gli ID delle 75 carte, gli esempi e i dati personali sono invariati; il deck N4 resta alla revisione 6. È sufficiente aggiornare i file del sito, mantenendo il backup delle preferenze.
+
+Test automatici: `python3 tests/browser_layout042_mock.py` e `python3 tests/browser_shortword042_mock.py` (richiedono Playwright e Chromium). La verifica reale su Safari/iPhone resta da effettuare.

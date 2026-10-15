@@ -1,3 +1,16 @@
+# Changelog — Kotoba Drive v0.4.2
+
+## Layout flashcard: kanji sempre prioritario
+
+- Rimosso il taglio della parola principale dovuto a `max-height` e `overflow:hidden`.
+- L'area del vocabolo usa la propria altezza naturale, consentendo la disposizione su più righe; il pannello degli esempi si ridimensiona prima del kanji.
+- Utilizzata più larghezza utile: margini orizzontali ridotti, riga unica per capitolo ed etichetta della domanda, disposizione a due colonne per parole giapponesi brevi su telefono sufficientemente largo e per le card desktop.
+- Conservate le dimensioni del testo principale e quelle dei tasti di navigazione. Su schermi molto stretti i pulsanti precedente/successivo mostrano le frecce senza didascalie lunghe.
+- Verificati layout a 320×568, 375×667, 390×844, 428×926, 1366×768, 844×390 e 320×480 con Chromium simulato, compresa una parola giapponese artificiale lunga. Testato anche giapponese nella soluzione, in direzione inversa.
+- Nessuna modifica allo schema del deck o dei progressi; cache Service Worker aggiornata. Le frasi restano bozze da revisionare linguisticamente.
+
+---
+
 # Changelog — Kotoba Drive v0.4.1
 
 ## Flashcard e player

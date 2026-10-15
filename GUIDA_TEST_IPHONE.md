@@ -1,11 +1,11 @@
-# Checklist manuale Safari iPhone — v0.4.0
+# Checklist manuale Safari iPhone — v0.4.2
 
 **Compilare sul dispositivo reale**. Data, modello iPhone, versione iOS, modello autoradio, modo connessione (Bluetooth/CarPlay) e versione del browser devono essere registrati per ogni prova. Eseguire prove audio e volante con auto parcheggiata.
 
 | Test | Risultato | Note |
 |---|---|---|
 | Aggiornamento da alpha.3/beta.1 mantenendo progressi | Da testare | Prima esportare backup completo |
-| Avvio da Safari via HTTPS GitHub Pages | Da testare | Verificare intestazione v0.4.0 |
+| Avvio da Safari via HTTPS GitHub Pages | Da testare | Verificare intestazione v0.4.2 |
 | Installazione su schermata Home e apertura PWA | Da testare | Non cancellare lo storage precedente |
 | Layout senza scroll sulla flashcard (portrait) | Da testare | Provare orientamento ruotato |
 | Menu, editor sequenze e slider | Da testare | Rate, pitch, volume per lingua/gruppo/elemento |
@@ -47,7 +47,17 @@ Un evento Media Session ricevuto non dimostra la compatibilità con *tutti* i co
 - [ ] Interrompendo prima della fine la lettura del significato il badge **non** deve avanzare.
 - [ ] Crea una sessione con shuffle **esempi attivo** ma shuffle **carte disattivo**; l'ordine delle carte è invariato e gli esempi variano fra i vocaboli.
 - [ ] Chiudi e riapri la PWA: seed, ordine dei singoli esempi, posizione della sessione, preferiti e contatori devono restare invariati.
-- [ ] In «Deck e backup», verifica deck N4 **revisione 5**; se è rimasta la 4, verifica l'aggiornamento del sito, la cache PWA e l'import del deck.
+- [ ] In «Deck e backup», verifica deck N4 **revisione 6**; se è rimasta la 4, verifica l'aggiornamento del sito, la cache PWA e l'import del deck.
 - [ ] Esegui un export di `study.json`, verifica che contenga `meaningPlays`, `exampleOrders` e `exampleShuffleSeed` per le sessioni nuove; ripristina solo dopo aver conservato un backup esterno.
 
 Il controllo linguistico individuale di nuove frasi e storie non è coperto da questa checklist tecnica.
+
+## Test supplementari v0.4.2 — vocabolo giapponese
+
+- [ ] Su iPhone verticale apri **恥ずかしい** e **すばらしい**: tutti e cinque i caratteri devono rimanere completamente visibili, senza sovrapposizione con le forme o la soluzione.
+- [ ] Su una card breve, ad esempio **選ぶ**, verifica che il layout affiancato mostri integralmente vocabolo e significato, quando lo spazio lo permette.
+- [ ] Ripeti con il verso lingua madre → giapponese: anche il kanji mostrato come soluzione non deve essere tagliato.
+- [ ] Ruota l'iPhone: se lo spazio verticale è insufficiente può sparire parte degli esempi, **non** il kanji.
+- [ ] Su schermi piccoli verifica le frecce precedente/successivo e il pulsante play; devono restare utilizzabili.
+- [ ] Aumenta le dimensioni del testo dalle impostazioni accessibilità e verifica che nessun carattere del vocabolo venga tagliato.
+- [ ] Conferma che esempi troppo lunghi continuino a scorrere lentamente senza spostare il vocabolo principale.

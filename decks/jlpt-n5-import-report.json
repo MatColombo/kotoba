@@ -1,0 +1,28 @@
+{
+  "sourceRecords": 674,
+  "convertedCards": 674,
+  "sourceSHA256": "cbb221c9a3a92108fcd02fb088d9afacc70bc8c96570d5730425de0a49dad5f3",
+  "sourceExamples": 1320,
+  "playableExamplesWithCompleteKana": 1192,
+  "unplayableDueToIncompleteReading": 128,
+  "sourceEntriesWithoutExamples": 10,
+  "contextExamplesRequired": 20220,
+  "contextExamplesCreated": 0,
+  "posCounts": {
+    "verb": 127,
+    "noun": 360,
+    "i": 60,
+    "pronoun": 23,
+    "determiner": 7,
+    "adverb": 24,
+    "interjection": 12,
+    "expression": 9,
+    "numeral": 22,
+    "na": 24,
+    "conjunction": 4,
+    "particle": 2
+  },
+  "clusters": 72,
+  "licenseStatus": "example provenance verification required",
+  "nativeReview": false
+}

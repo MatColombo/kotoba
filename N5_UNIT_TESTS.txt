@@ -1,0 +1,496 @@
+TAP version 13
+# Subtest: phase4 deck keeps 75 permanent card IDs and 750 old example IDs
+ok 1 - phase4 deck keeps 75 permanent card IDs and 750 old example IDs
+  ---
+  duration_ms: 2.756003
+  type: 'test'
+  ...
+# Subtest: phase4 2250 contextual examples 30 for each card, 10 per register
+ok 2 - phase4 2250 contextual examples 30 for each card, 10 per register
+  ---
+  duration_ms: 2.466699
+  type: 'test'
+  ...
+# Subtest: all contextual examples have stable IDs, complete text, correct scenario and review status
+ok 3 - all contextual examples have stable IDs, complete text, correct scenario and review status
+  ---
+  duration_ms: 3.469837
+  type: 'test'
+  ...
+# Subtest: catalog specifies revision six; all 30 scenarios have unique IDs
+ok 4 - catalog specifies revision six; all 30 scenarios have unique IDs
+  ---
+  duration_ms: 0.510247
+  type: 'test'
+  ...
+# Subtest: selected register + scenario returns the expected example or none
+ok 5 - selected register + scenario returns the expected example or none
+  ---
+  duration_ms: 0.261403
+  type: 'test'
+  ...
+# Subtest: unfiltered practice alternates three registers at each ordinal scenario
+ok 6 - unfiltered practice alternates three registers at each ordinal scenario
+  ---
+  duration_ms: 0.197657
+  type: 'test'
+  ...
+# Subtest: groups comprise seven groups of ten and one of five, no duplicates
+ok 7 - groups comprise seven groups of ten and one of five, no duplicates
+  ---
+  duration_ms: 0.272389
+  type: 'test'
+  ...
+# Subtest: each story has all its target cards represented in at least one segment
+ok 8 - each story has all its target cards represented in at least one segment
+  ---
+  duration_ms: 0.202294
+  type: 'test'
+  ...
+# Subtest: legacy deck to phase4 deck is additive with all 750 old examples preserved
+ok 9 - legacy deck to phase4 deck is additive with all 750 old examples preserved
+  ---
+  duration_ms: 12.7245
+  type: 'test'
+  ...
+# Subtest: form grammatical data and language master settings never duplicated inside content
+ok 10 - form grammatical data and language master settings never duplicated inside content
+  ---
+  duration_ms: 0.714384
+  type: 'test'
+  ...
+# Subtest: session group/story filters restrict cards to ten or five
+ok 11 - session group/story filters restrict cards to ten or five
+  ---
+  duration_ms: 1.400436
+  type: 'test'
+  ...
+# Subtest: new deck passes validation without affecting imported decks
+ok 12 - new deck passes validation without affecting imported decks
+  ---
+  duration_ms: 31.13562
+  type: 'test'
+  ...
+# Subtest: nested repeats: word×2, meaning×1, group×3; item pause is honored inside group
+ok 13 - nested repeats: word×2, meaning×1, group×3; item pause is honored inside group
+  ---
+  duration_ms: 4.353285
+  type: 'test'
+  ...
+# Subtest: chapter boundary puts combined gap before next chapter marker; jumps do not inherit previous pause
+ok 14 - chapter boundary puts combined gap before next chapter marker; jumps do not inherit previous pause
+  ---
+  duration_ms: 0.407943
+  type: 'test'
+  ...
+# Subtest: no last-card tail silence, extra item pause before next chapter, zero-value pause allowed
+ok 15 - no last-card tail silence, extra item pause before next chapter, zero-value pause allowed
+  ---
+  duration_ms: 0.39267
+  type: 'test'
+  ...
+# Subtest: examples pair JP/native for each example, not all JP then all translations
+ok 16 - examples pair JP/native for each example, not all JP then all translations
+  ---
+  duration_ms: 0.314843
+  type: 'test'
+  ...
+# Subtest: forms announce before spoken form and use different language masters
+ok 17 - forms announce before spoken form and use different language masters
+  ---
+  duration_ms: 0.37945
+  type: 'test'
+  ...
+# Subtest: master→group→item applies independent rate/pitch/volume and validates zeros
+ok 18 - master→group→item applies independent rate/pitch/volume and validates zeros
+  ---
+  duration_ms: 0.278118
+  type: 'test'
+  ...
+# Subtest: when group is disabled or contains only disabled items, it is not a chapter
+ok 19 - when group is disabled or contains only disabled items, it is not a chapter
+  ---
+  duration_ms: 0.927334
+  type: 'test'
+  ...
+# Subtest: sequence repository migrates old v0.3 settings, preserves IDs and supports create/clone/remove/active
+ok 20 - sequence repository migrates old v0.3 settings, preserves IDs and supports create/clone/remove/active
+  ---
+  duration_ms: 0.64486
+  type: 'test'
+  ...
+# Subtest: speech adapter passes per-event voice settings and safely ignores late callbacks
+ok 21 - speech adapter passes per-event voice settings and safely ignores late callbacks
+  ---
+  duration_ms: 0.818531
+  type: 'test'
+  ...
+# Subtest: playback pauses during a delay, resumes at same event, and stops without stray events
+ok 22 - playback pauses during a delay, resumes at same event, and stops without stray events
+  ---
+  duration_ms: 0.994686
+  type: 'test'
+  ...
+# Subtest: media action handlers are registered via the adapter and can be simulated independently
+ok 23 - media action handlers are registered via the adapter and can be simulated independently
+  ---
+  duration_ms: 0.242364
+  type: 'test'
+  ...
+# Subtest: default inherited repeat pause survives serialization and reload (null is not zero)
+ok 24 - default inherited repeat pause survives serialization and reload (null is not zero)
+  ---
+  duration_ms: 0.33256
+  type: 'test'
+  ...
+# Subtest: pause/resume preserves the remaining portion of a pending silence
+ok 25 - pause/resume preserves the remaining portion of a pending silence
+  ---
+  duration_ms: 0.340272
+  type: 'test'
+  ...
+# Subtest: example shuffle is separate from card shuffle and deterministic
+ok 26 - example shuffle is separate from card shuffle and deterministic
+  ---
+  duration_ms: 16.49565
+  type: 'test'
+  ...
+# Subtest: example order persists in exported sessions and restores with new extra examples
+ok 27 - example order persists in exported sessions and restores with new extra examples
+  ---
+  duration_ms: 1.379934
+  type: 'test'
+  ...
+# Subtest: shuffle respects register and scenario filters and does not add other examples
+ok 28 - shuffle respects register and scenario filters and does not add other examples
+  ---
+  duration_ms: 0.3524
+  type: 'test'
+  ...
+# Subtest: no example shuffle retains normal scenario order
+ok 29 - no example shuffle retains normal scenario order
+  ---
+  duration_ms: 0.360782
+  type: 'test'
+  ...
+# Subtest: meaning plays are distinct from completed exposures and survive JSON roundtrips
+ok 30 - meaning plays are distinct from completed exposures and survive JSON roundtrips
+  ---
+  duration_ms: 0.567484
+  type: 'test'
+  ...
+# Subtest: study merge conserves larger meaning count without duplicating repeated backups
+ok 31 - study merge conserves larger meaning count without duplicating repeated backups
+  ---
+  duration_ms: 0.510598
+  type: 'test'
+  ...
+# Subtest: new context sentences are unique and do not reproduce any legacy Japanese sentence
+ok 32 - new context sentences are unique and do not reproduce any legacy Japanese sentence
+  ---
+  duration_ms: 15.501155
+  type: 'test'
+  ...
+# Subtest: English tense in dated adjective examples agrees with Japanese past forms
+ok 33 - English tense in dated adjective examples agrees with Japanese past forms
+  ---
+  duration_ms: 0.707474
+  type: 'test'
+  ...
+# Subtest: offline navigation and installed deck are answered by the versioned precache
+ok 34 - offline navigation and installed deck are answered by the versioned precache
+  ---
+  duration_ms: 6.460653
+  type: 'test'
+  ...
+# Subtest: activation deletes old versioned caches without deleting unrelated application caches
+ok 35 - activation deletes old versioned caches without deleting unrelated application caches
+  ---
+  duration_ms: 1.790652
+  type: 'test'
+  ...
+# Subtest: service worker does not intercept POST or cross-origin traffic
+ok 36 - service worker does not intercept POST or cross-origin traffic
+  ---
+  duration_ms: 1.11749
+  type: 'test'
+  ...
+# Subtest: shuffle off preserves original card order
+ok 37 - shuffle off preserves original card order
+  ---
+  duration_ms: 17.14724
+  type: 'test'
+  ...
+# Subtest: shuffle on reproducible from seed, id unique
+ok 38 - shuffle on reproducible from seed, id unique
+  ---
+  duration_ms: 0.753713
+  type: 'test'
+  ...
+# Subtest: restoration ignores additions to deck and preserves ordered ids
+ok 39 - restoration ignores additions to deck and preserves ordered ids
+  ---
+  duration_ms: 0.337297
+  type: 'test'
+  ...
+# Subtest: filter known off by default and optional only known
+ok 40 - filter known off by default and optional only known
+  ---
+  duration_ms: 0.163746
+  type: 'test'
+  ...
+# Subtest: favorite independent from known
+ok 41 - favorite independent from known
+  ---
+  duration_ms: 0.29254
+  type: 'test'
+  ...
+# Subtest: filters are conjunctive and scenario availability works
+ok 42 - filters are conjunctive and scenario availability works
+  ---
+  duration_ms: 0.190997
+  type: 'test'
+  ...
+# Subtest: empty set throws rather than duplicating cards
+ok 43 - empty set throws rather than duplicating cards
+  ---
+  duration_ms: 0.425269
+  type: 'test'
+  ...
+# Subtest: request greater than available clamps count
+ok 44 - request greater than available clamps count
+  ---
+  duration_ms: 0.198518
+  type: 'test'
+  ...
+# Subtest: percentile ties share the same lower-rank percentile
+ok 45 - percentile ties share the same lower-rank percentile
+  ---
+  duration_ms: 0.298599
+  type: 'test'
+  ...
+# Subtest: quartiles non-overlapping and all-zero remain in one bucket
+ok 46 - quartiles non-overlapping and all-zero remain in one bucket
+  ---
+  duration_ms: 1.222147
+  type: 'test'
+  ...
+# Subtest: grade full once; duplicated callback run is idempotent
+ok 47 - grade full once; duplicated callback run is idempotent
+  ---
+  duration_ms: 0.281864
+  type: 'test'
+  ...
+# Subtest: interrupt counts partial, no example completion
+ok 48 - interrupt counts partial, no example completion
+  ---
+  duration_ms: 0.104447
+  type: 'test'
+  ...
+# Subtest: mark known does not clear previous history
+ok 49 - mark known does not clear previous history
+  ---
+  duration_ms: 0.080261
+  type: 'test'
+  ...
+# Subtest: checkpoint survives JSON serialization including chapter and order
+ok 50 - checkpoint survives JSON serialization including chapter and order
+  ---
+  duration_ms: 0.287642
+  type: 'test'
+  ...
+# Subtest: resume after deck removed card reports unresolved ref
+ok 51 - resume after deck removed card reports unresolved ref
+  ---
+  duration_ms: 0.156776
+  type: 'test'
+  ...
+# Subtest: dashboard counts exposure, coverage and declared knowledge separately
+ok 52 - dashboard counts exposure, coverage and declared knowledge separately
+  ---
+  duration_ms: 0.321864
+  type: 'test'
+  ...
+# Subtest: study export/import preserves session refs and progress; merge does not double credit
+ok 53 - study export/import preserves session refs and progress; merge does not double credit
+  ---
+  duration_ms: 0.737458
+  type: 'test'
+  ...
+# Subtest: change of cards in deck does not reclassify preserved session
+ok 54 - change of cards in deck does not reclassify preserved session
+  ---
+  duration_ms: 0.33209
+  type: 'test'
+  ...
+# Subtest: replaceAll stores a recoverable safety backup atomically with replacement
+ok 55 - replaceAll stores a recoverable safety backup atomically with replacement
+  ---
+  duration_ms: 1.522109
+  type: 'test'
+  ...
+# Subtest: interrupted replacement rolls back every store, including safety backup
+ok 56 - interrupted replacement rolls back every store, including safety backup
+  ---
+  duration_ms: 1.075577
+  type: 'test'
+  ...
+# Subtest: importing study clears obsolete sequence record while preserving backup
+ok 57 - importing study clears obsolete sequence record while preserving backup
+  ---
+  duration_ms: 0.292159
+  type: 'test'
+  ...
+# Subtest: invalid imported deck objects report errors instead of throwing
+ok 58 - invalid imported deck objects report errors instead of throwing
+  ---
+  duration_ms: 1.163169
+  type: 'test'
+  ...
+# Subtest: imported study rejects duplicate sessions and hostile sequence IDs
+ok 59 - imported study rejects duplicate sessions and hostile sequence IDs
+  ---
+  duration_ms: 1.07103
+  type: 'test'
+  ...
+# Subtest: no session completes after TTS reports unavailable, error, or timeout
+ok 60 - no session completes after TTS reports unavailable, error, or timeout
+  ---
+  duration_ms: 0.488484
+  type: 'test'
+  ...
+# Subtest: SpeechAdapter emits start only on actual utterance start and cancels a timed-out voice
+ok 61 - SpeechAdapter emits start only on actual utterance start and cancels a timed-out voice
+  ---
+  duration_ms: 0.673733
+  type: 'test'
+  ...
+# Subtest: all 75 cards produce deterministic bounded compilations in both native languages
+ok 62 - all 75 cards produce deterministic bounded compilations in both native languages
+  ---
+  duration_ms: 72.430649
+  type: 'test'
+  ...
+# Subtest: static PWA build references every precached file and keeps paths relative
+ok 63 - static PWA build references every precached file and keeps paths relative
+  ---
+  duration_ms: 1.909641
+  type: 'test'
+  ...
+# Subtest: structural contextual content contains required registers and linked stories (not linguistic certification)
+ok 64 - structural contextual content contains required registers and linked stories (not linguistic certification)
+  ---
+  duration_ms: 2.302672
+  type: 'test'
+  ...
+# Subtest: 75 original N4 cards and 750 examples preserved with permanent IDs
+ok 65 - 75 original N4 cards and 750 examples preserved with permanent IDs
+  ---
+  duration_ms: 5.00871
+  type: 'test'
+  ...
+# Subtest: legacy vocab array converts to standalone deck and keeps numeric IDs
+ok 66 - legacy vocab array converts to standalone deck and keeps numeric IDs
+  ---
+  duration_ms: 3.496727
+  type: 'test'
+  ...
+# Subtest: invalid JSON, duplicate ID and duplicate example ID rejected
+ok 67 - invalid JSON, duplicate ID and duplicate example ID rejected
+  ---
+  duration_ms: 6.669427
+  type: 'test'
+  ...
+# Subtest: invalid schema, foreign key and missing translation rejected
+ok 68 - invalid schema, foreign key and missing translation rejected
+  ---
+  duration_ms: 10.588929
+  type: 'test'
+  ...
+# Subtest: multiple decks may have identical card IDs but independent deck IDs
+ok 69 - multiple decks may have identical card IDs but independent deck IDs
+  ---
+  duration_ms: 5.509833
+  type: 'test'
+  ...
+# Subtest: additive deck update preserves all original card references
+ok 70 - additive deck update preserves all original card references
+  ---
+  duration_ms: 18.363343
+  type: 'test'
+  ...
+# Subtest: changed translation or edited example is detected, with same card identity
+ok 71 - changed translation or edited example is detected, with same card identity
+  ---
+  duration_ms: 20.078656
+  type: 'test'
+  ...
+# Subtest: removed cards can retain missing session references or exclude them
+ok 72 - removed cards can retain missing session references or exclude them
+  ---
+  duration_ms: 8.622503
+  type: 'test'
+  ...
+# Subtest: manual mapping of changed card ID keeps session and progress
+ok 73 - manual mapping of changed card ID keeps session and progress
+  ---
+  duration_ms: 8.120388
+  type: 'test'
+  ...
+# Subtest: invalid remapping to nonexistent card is rejected
+ok 74 - invalid remapping to nonexistent card is rejected
+  ---
+  duration_ms: 13.092494
+  type: 'test'
+  ...
+# Subtest: study export normalized and carries no vocabulary text
+ok 75 - study export normalized and carries no vocabulary text
+  ---
+  duration_ms: 0.264487
+  type: 'test'
+  ...
+# Subtest: duplicate backup merge does not double counters
+ok 76 - duplicate backup merge does not double counters
+  ---
+  duration_ms: 0.576767
+  type: 'test'
+  ...
+# Subtest: merge uses maximal exposure and newer explicit classification
+ok 77 - merge uses maximal exposure and newer explicit classification
+  ---
+  duration_ms: 0.326822
+  type: 'test'
+  ...
+# Subtest: old memory schema and broken session reference rejected
+ok 78 - old memory schema and broken session reference rejected
+  ---
+  duration_ms: 0.18591
+  type: 'test'
+  ...
+# Subtest: catalog and deck are independently versioned JSON files
+ok 79 - catalog and deck are independently versioned JSON files
+  ---
+  duration_ms: 10.21654
+  type: 'test'
+  ...
+# Subtest: missing card ID and deleted example are not silently accepted as additive
+ok 80 - missing card ID and deleted example are not silently accepted as additive
+  ---
+  duration_ms: 12.257268
+  type: 'test'
+  ...
+# Subtest: duplicate stories/scenarios are rejected and references checked
+ok 81 - duplicate stories/scenarios are rejected and references checked
+  ---
+  duration_ms: 6.883498
+  type: 'test'
+  ...
+1..81
+# tests 81
+# suites 0
+# pass 81
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 329.030203

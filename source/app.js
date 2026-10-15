@@ -3,6 +3,7 @@
  const Core=window.KotobaCore;
  const textSafe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const POS={verb:{it:'VERBO · 動詞',en:'VERB · 動詞'},noun:{it:'SOSTANTIVO · 名詞',en:'NOUN · 名詞'},na:{it:'AGGETTIVO な',en:'な ADJECTIVE'},i:{it:'AGGETTIVO い',en:'い ADJECTIVE'}};
+ const EXTRA_POS={pronoun:{it:'PRONOME',en:'PRONOUN'},determiner:{it:'DETERMINANTE',en:'DETERMINER'},adverb:{it:'AVVERBIO',en:'ADVERB'},interjection:{it:'INTERIEZIONE',en:'INTERJECTION'},expression:{it:'ESPRESSIONE',en:'EXPRESSION'},numeral:{it:'NUMERALE',en:'NUMERAL'},conjunction:{it:'CONGIUNZIONE',en:'CONJUNCTION'},particle:{it:'PARTICELLA',en:'PARTICLE'},counter:{it:'CONTATORE',en:'COUNTER'},prefix:{it:'PREFISSO',en:'PREFIX'},suffix:{it:'SUFFISSO',en:'SUFFIX'},auxiliary:{it:'AUSILIARE',en:'AUXILIARY'},other:{it:'ALTRO',en:'OTHER'}};Object.assign(POS,EXTRA_POS);
  const TYPES={word:{it:'Parola giapponese',en:'Japanese word'},meaning:{it:'Significato',en:'Meaning'},forms:{it:'Coniugazioni (con etichetta)',en:'Grammar forms (with label)'},exampleJP:{it:'Esempio giapponese',en:'Japanese example'},exampleNative:{it:'Traduzione esempio',en:'Example translation'}};
  const TYPE_KEYS=Object.keys(TYPES);
  const keyStorage='kotoba-drive-v04-alpha1';
@@ -182,6 +183,7 @@
    $('pos-pill').textContent=POS[w.pos][state.lang];
    $('front-label').textContent=nativeFirst?t(`DOMANDA · ${state.lang==='it'?'ITALIANO':'INGLESE'}`,`QUESTION · ENGLISH`):t('DOMANDA · GIAPPONESE','QUESTION · JAPANESE');
    $('answer-label').textContent=nativeFirst?t('SOLUZIONE · GIAPPONESE','ANSWER · JAPANESE'):t(`SOLUZIONE · ${state.lang==='it'?'ITALIANO':'INGLESE'}`,'ANSWER · ENGLISH');
+   $('study-card').classList.toggle('inline-headword',!nativeFirst&&Array.from(w.jp).length<=3);
    $('study-front').textContent=nativeFirst?w.meaning[state.lang]:w.jp;
    $('study-front').classList.toggle('native',nativeFirst);
    $('study-front').lang=nativeFirst?state.lang:'ja';

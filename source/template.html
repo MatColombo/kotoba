@@ -18,17 +18,19 @@
  <div class="app" id="app">
   <header class="topbar">
    <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.1 · CONTENUTI IN REVISIONE</div></div></div>
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.2 · CONTENUTI IN REVISIONE</div></div></div>
    <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
    <section class="view study-view" id="view-study" aria-label="Flashcard audio">
-    <article class="study-card">
+    <article class="study-card" id="study-card">
      <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><span class="meaning-counter card-meaning-count" id="study-meaning-count" title="Letture audio concluse del significato">Significato ♫ 0</span><div class="card-flags"><button type="button" id="study-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><span id="pos-pill" class="pos-badge">VERBO</span></div>
      <div class="progress-track"><div id="progress-bar"></div></div>
-     <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
-     <div class="card-content">
+     <div class="card-chapter-row">
+      <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
       <div class="front-label" id="front-label">DOMANDA · GIAPPONESE</div>
+     </div>
+     <div class="card-content">
       <div class="front-word" id="study-front" lang="ja">集める</div>
       <div class="front-reading" id="study-front-reading">あつめる</div>
       <div class="answer-panel" id="answer-panel">
@@ -50,7 +52,7 @@
      </div>
      <div class="study-bottom">
       <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
-      <div class="controls"><button class="control secondary" id="btn-repeat" type="button"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
+      <div class="controls"><button class="control secondary" id="btn-repeat" type="button" aria-label="Capitolo precedente"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button" aria-label="Capitolo successivo"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
       <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Esempi ↗</button></div>
      </div>
     </article>
