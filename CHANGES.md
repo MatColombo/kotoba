@@ -1,3 +1,14 @@
+# Kotoba Drive v0.4.4 — Catalogo online con deck completi N4/N5
+
+- Pubblicati in `decks/` i due deck completi con ID indipendenti (`kotoba-n4-final`, `kotoba-n5-final`), invariati nei contenuti e negli ID rispetto agli artefatti N4/N5 forniti.
+- Aggiornato il catalogo online per mostrare i deck completi al posto delle vecchie anteprime; lo starter N4 da 75 carte resta installato per compatibilità con studio e storie preesistenti.
+- Il Service Worker non precache i due nuovi JSON voluminosi: il download avviene a richiesta, il salvataggio offline tramite IndexedDB e la cache PWA viene invalidata alla nuova versione.
+- UI del catalogo con stato Installato/Aggiorna e indicazione Scaricamento durante la richiesta.
+- Test strutturali dedicati alla pubblicazione, compatibilità loader, conteggi e disponibilità file statici.
+- Limiti: le licenze degli esempi originali devono essere confermate prima della redistribuzione pubblica; prova Safari/iPhone da effettuare.
+
+---
+
 # Changelog — Kotoba Drive v0.4.2
 
 ## Layout flashcard: kanji sempre prioritario

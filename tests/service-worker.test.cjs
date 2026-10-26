@@ -45,3 +45,13 @@ test('service worker does not intercept POST or cross-origin traffic',async()=>{
  assert.equal(await sw.emit('fetch',{request:new Request(origin+'api',{method:'POST'})}),undefined);
  assert.equal(await sw.emit('fetch',{request:new Request('https://other.example/data')}),undefined);
 });
+test('complete N4/N5 online deck files are fetched on demand, never precached or duplicated in Cache API',async()=>{
+ const sw=mockWorker();await sw.emit('install');await sw.emit('activate');
+ for(const name of ['n4-final-kotoba-drive.json','n5-final-kotoba-drive.json']){
+   const url=origin+'decks/'+name;
+   assert.equal(await sw.caches.match(new Request(url)),undefined);
+   const response=await sw.emit('fetch',{request:new Request(url)});
+   assert.equal(await response.text(),'fresh '+url);
+   assert.equal(await sw.caches.match(new Request(url)),undefined);
+ }
+});

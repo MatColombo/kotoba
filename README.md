@@ -1,3 +1,11 @@
+# Kotoba Drive v0.4.4 — Deck completi N4 e N5 online
+
+**Novità:** il catalogo online di GitHub Pages propone ora i due deck completi già convertiti in formato Kotoba Drive: **N4 (630 carte, 18.900 esempi contestuali)** e **N5 (674 carte, 20.220 esempi contestuali)**. Entrambi mantengono gli esempi sorgente originali in `legacyExamples`.
+
+Per la pubblicazione e la procedura di installazione, leggere **[ONLINE_DECKS_DEPLOY.md](ONLINE_DECKS_DEPLOY.md)**. I deck completi sono installabili una volta dalla sezione **Deck e backup → Catalogo online** e restano disponibili in IndexedDB per lo studio offline. Il vecchio deck integrato N4 da 75 parole rimane disponibile senza alterare i progressi esistenti. Gli ID dei nuovi deck sono distinti. La revisione linguistica professionale e la verifica delle licenze sorgente sono ancora da completare.
+
+---
+
 # Kotoba Drive v0.4.2
 
 PWA statica, local-first e gratuita per ripassare vocaboli giapponesi N4 con audio. Distribuibile su GitHub Pages, senza backend o servizi a pagamento.

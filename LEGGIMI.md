@@ -1,4 +1,6 @@
-# Kotoba Drive v0.4.2 — Istruzioni
+# Kotoba Drive v0.4.4 — Istruzioni
+
+**Aggiornamento online:** i deck completi N4 (630 vocaboli) e N5 (674 vocaboli) sono pubblicati nel catalogo come deck separati e installabili. Per il deploy da Git Bash e l’installazione nella PWA consultare [ONLINE_DECKS_DEPLOY.md](ONLINE_DECKS_DEPLOY.md). Le istruzioni v0.4.2 riportate sotto restano come riferimento storico.
 
 Versione di aggiornamento della PWA Kotoba Drive v0.4.0. Hosting gratuito GitHub Pages, Web Speech API e IndexedDB, senza backend.
 

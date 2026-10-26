@@ -2,26 +2,26 @@
   "schemaVersion": 1,
   "decks": [
     {
-      "deckId": "jlpt-n4-core",
-      "title": "JLPT N4 — Kotoba Drive",
-      "description": "75 vocaboli N4, 30 scenari, 2250 esempi contestuali in bozza, 8 storie IT/EN.",
+      "deckId": "kotoba-n4-final",
+      "title": "JLPT N4 completo — 630 vocaboli",
+      "description": "630 vocaboli. 18.900 esempi contestuali (10 per registro). 1.238 esempi originali conservati. Contenuti non revisionati da madrelingua.",
       "level": "N4",
-      "url": "./n4-core.json",
-      "revision": 6,
-      "cardCount": 75,
+      "url": "./n4-final-kotoba-drive.json",
+      "revision": 1,
+      "cardCount": 630,
       "languages": [
         "ja",
         "it",
         "en"
       ],
-      "license": "Contenuti originali Kotoba Drive; verificare la licenza prima della redistribuzione"
+      "license": "Licenze degli esempi sorgente da verificare prima della redistribuzione pubblica"
     },
     {
-      "deckId": "openjlpt-n5",
-      "title": "JLPT N5 — OpenJLPT (EN, bozza)",
-      "description": "674 vocaboli N5. Traduzioni italiane ed esempi contestuali da completare.",
+      "deckId": "kotoba-n5-final",
+      "title": "JLPT N5 completo — 674 vocaboli",
+      "description": "674 vocaboli. 20.220 esempi contestuali (10 per registro). 1.320 esempi originali conservati. Contenuti non revisionati da madrelingua.",
       "level": "N5",
-      "url": "./jlpt-n5-openjlpt.json",
+      "url": "./n5-final-kotoba-drive.json",
       "revision": 1,
       "cardCount": 674,
       "languages": [
@@ -29,7 +29,7 @@
         "it",
         "en"
       ],
-      "license": "OpenJLPT CC BY-SA 4.0; verificare licenze delle frasi Tatoeba"
+      "license": "Licenze degli esempi sorgente da verificare prima della redistribuzione pubblica"
     }
   ]
 }

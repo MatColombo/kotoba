@@ -14,7 +14,7 @@ test('all contextual examples have stable IDs, complete text, correct scenario a
  for(const c of deck.cards)for(const e of c.examples){assert(!ids.has(e.id));ids.add(e.id);assert.equal(e.cardId,String(c.id));assert.equal(e.register,scen.get(e.scenarioId).register);assert(e.jp.length&&e.kana.length&&e.it.length&&e.en.length);assert(!/[\u4e00-\u9fff]/.test(e.kana));assert.equal(e.reviewStatus,'new-original-draft')}
 });
 test('catalog specifies revision six; all 30 scenarios have unique IDs',()=>{
- assert.equal(deck.revision,6);assert.equal(require('../decks/catalog.json').decks[0].revision,6);
+ assert.equal(deck.revision,6);assert.deepEqual(require('../decks/catalog.json').decks.map(x=>x.deckId),['kotoba-n4-final','kotoba-n5-final']);
  assert.equal(deck.scenarios.length,30);assert.equal(new Set(deck.scenarios.map(s=>s.id)).size,30);
  assert.deepEqual(deck.scenarios.reduce((a,s)=>(a[s.register]=(a[s.register]||0)+1,a),{}),{informal:10,colleague:10,superior:10});
 });
