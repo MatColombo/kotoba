@@ -1,3 +1,7 @@
+# Kotoba Drive v0.4.5 — integrazione ONNX sperimentale
+
+**[Istruzioni installazione TTS, tre strategie e GitHub Pages](KOTOBA_ONNX_INTEGRAZIONE.md)**.
+
 # Kotoba Drive v0.4.4 — Deck completi N4 e N5 online
 
 **Novità:** il catalogo online di GitHub Pages propone ora i due deck completi già convertiti in formato Kotoba Drive: **N4 (630 carte, 18.900 esempi contestuali)** e **N5 (674 carte, 20.220 esempi contestuali)**. Entrambi mantengono gli esempi sorgente originali in `legacyExamples`.

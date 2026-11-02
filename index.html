@@ -135,13 +135,38 @@
  .study-card #repeat-label,.study-card #next-label{display:none}
  .study-card .control.secondary .control-symbol{font-size:22px}
 }
+
+/* Pocket TTS ONNX study experiment (independent from existing speech overrides). */
+.onnx-settings{margin:15px 0;border:1px solid #426673;padding:13px;background:#142c39;border-radius:14px}
+.onnx-settings h3{margin:0 0 6px;font-size:16px;color:#b6f4dc}
+.onnx-settings p{font-size:11px;line-height:1.45}
+.onnx-check{display:flex;align-items:center;gap:9px;font-size:12px;margin:10px 0}
+.onnx-check input{width:19px;height:19px;accent-color:#53c9a5;flex:none}
+.onnx-language-params{display:grid;gap:12px}
+.onnx-language{background:#1c3745;border:1px solid #365669;border-radius:10px;padding:10px;min-width:0}
+.onnx-language header{display:flex;align-items:center;justify-content:space-between;gap:5px;flex-wrap:wrap;margin-bottom:9px}
+.onnx-language header strong{font-size:13px;color:#d9fff1}
+.onnx-language header button{font-size:11px;padding:5px 8px}
+.onnx-language>label{display:grid;gap:4px;font-size:11px;margin:9px 0}
+.onnx-language .onnx-check{display:flex}
+.onnx-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.onnx-fields label{min-width:0;display:grid;gap:4px;font-size:11px}
+.onnx-fields input{width:100%;min-width:0;background:#132738;border:1px solid #34556b;border-radius:8px;color:#e0ecee;padding:7px 6px;font:inherit}
+.onnx-preload-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.onnx-preload-row button{font-size:12px}
+.onnx-readiness{display:flex;gap:8px;align-items:center;justify-content:center;color:#b8f1dd;font-size:12px;margin:2px auto 4px}
+.onnx-ring{--percent:0;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:conic-gradient(#61d6ac calc(var(--percent)*1%),#345063 0);position:relative;isolation:isolate}
+.onnx-ring:before{content:'';position:absolute;inset:4px;border-radius:50%;background:#102435;z-index:-1}
+.onnx-ring span{font-size:10px;font-variant-numeric:tabular-nums;font-weight:700;color:#d3ffea}
+.onnx-language input,.onnx-language select{max-width:100%}
+@media(max-width:370px){.onnx-fields{grid-template-columns:1fr 1fr}.onnx-readiness{font-size:11px}}
 </style>
 </head>
 <body>
  <div class="app" id="app">
   <header class="topbar">
    <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.4 · N4/N5 COMPLETI ONLINE</div></div></div>
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.6 · TTS ibrido ONNX + dispositivo</div></div></div>
    <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
@@ -176,6 +201,7 @@
      <div class="study-bottom">
       <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
       <div class="controls"><button class="control secondary" id="btn-repeat" type="button" aria-label="Capitolo precedente"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button" aria-label="Capitolo successivo"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
+      <div id="onnx-readiness" class="onnx-readiness" hidden role="status" aria-live="polite"><span class="onnx-ring" id="onnx-progress-ring"><span id="onnx-progress-number">0%</span></span><span id="onnx-progress-caption">Audio ONNX 0%</span></div>
       <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Esempi ↗</button></div>
      </div>
     </article>
@@ -247,6 +273,17 @@
     <section class="audio-masters-panel" aria-label="Audio master per lingua">
      <div class="master-head"><h3>Audio master per lingua</h3><p>Velocità, tono e volume per ciascuna lingua. Gli override della sequenza hanno precedenza.</p></div>
      <div id="audio-masters" class="audio-masters"></div>
+    </section>
+    <section class="onnx-settings" aria-label="Motore ONNX Pocket TTS">
+     <h3>Pocket TTS · ONNX e voce dispositivo</h3><p class="small-copy">Scegli il motore indipendentemente per ogni lingua. In modalità ibrida il giapponese usa ONNX e l’italiano viene letto in tempo reale dal dispositivo, senza scaricare il modello italiano. Gli Audio master e gli override delle sequenze conservano la velocità di playback.</p>
+     <label class="onnx-check"><input id="onnx-enabled" type="checkbox"> Abilita motore TTS configurabile (ONNX / dispositivo)</label>
+     <button id="onnx-hybrid-preset" class="outline-btn" type="button">Usa modalità ibrida: JA ONNX + IT dispositivo</button>
+     <p class="field-hint">Gli annunci delle forme sono ora frasi complete, pronunciate più lentamente (fattore regolabile per lingua). La barra di preparazione conta solo gli audio ONNX: la voce del dispositivo parte durante la lettura.</p>
+     <div class="field-block"><label for="onnx-strategy">Strategia generazione</label><select class="input" id="onnx-strategy"><option value="ready">1 · Card pronta, poi riproduzione</option><option value="live">2 · Live, in ordine di ascolto</option></select></div>
+     <div class="onnx-preload-row"><button class="outline-btn" id="onnx-preload" type="button">Precarica 10 minuti</button><button class="outline-btn" id="onnx-preload-stop" type="button">Ferma precaricamento</button></div>
+     <p id="onnx-state" class="small-copy" role="status">Buffer normale: -1 / corrente / +1 / +2 card. Precaricamento limitato a 144 MiB di PCM.</p>
+     <div id="onnx-language-params" class="onnx-language-params"></div>
+     <p class="small-copy">Un solo modello in memoria. Se manca un testo nel dizionario ONNX (per esempio un deck importato), il sistema usa esplicitamente la voce di sistema.</p>
     </section>
     <label class="toggle-line"><div><b>Annuncia la forma grammaticale</b><p>Per esempio «forma te», poi 「集めて」.</p></div><input type="checkbox" id="announce-forms" checked><span class="toggle-visual"></span></label>
     <label class="toggle-line"><div><b>Mantieni lo schermo acceso</b><p>Richiede Wake Lock, se supportato da Safari. Si attiva quando parte la lezione.</p></div><input type="checkbox" id="wake-enabled" checked><span class="toggle-visual"></span></label>
@@ -947,6 +984,366 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  return {REGISTERS,examplesFor,availableScenarios,storiesFor,groupById,storyById,validateContextDeck};
 });
 </script>
+ <script>/* Kotoba Drive ONNX study audio. Session-scoped PCM cache, one Web Worker/model at a time.
+ * No audio is persisted in IndexedDB/Cache API; model HTTP caching is independent.
+ * UMD for testability under node:test.
+ */
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.KotobaOnnx=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
+'use strict';
+const LANGS=['ja','it','en'];
+const LOCALE={ 'ja-JP':'ja','it-IT':'it','en-US':'en' };
+const DEFAULTS=Object.freeze({
+ ja:{voice:'female_03',engine:'onnx',formLabelRate:.8,formRate:.9,temperature:.3,lsdSteps:4,maxFrames:200,framesAfterEos:0,pauseMs:250,startSilenceMs:200,endSilenceMs:180,contextMeaning:false,itSeparator:'oppure'},
+ it:{voice:'alba_it',engine:'onnx',formLabelRate:.8,formRate:1,temperature:.3,lsdSteps:4,maxFrames:200,framesAfterEos:0,pauseMs:250,startSilenceMs:200,endSilenceMs:180,contextMeaning:true,itSeparator:'oppure'},
+ en:{voice:'alba',engine:'onnx',formLabelRate:.8,formRate:1,temperature:.3,lsdSteps:4,maxFrames:200,framesAfterEos:2,pauseMs:250,startSilenceMs:200,endSilenceMs:180,contextMeaning:true,itSeparator:'oppure'}
+});
+const LIMITS={formLabelRate:[0.5,1.2],formRate:[0.5,1.2],temperature:[0,1.5],lsdSteps:[1,8],maxFrames:[50,600],framesAfterEos:[0,5],pauseMs:[0,1500],startSilenceMs:[0,1500],endSilenceMs:[0,1500]};
+const bound=(x,min,max,d)=>{const n=Number(x);return Number.isFinite(n)?Math.max(min,Math.min(max,n)):d;};
+function normalizeSettings(raw={}){
+ const settings={};for(const lang of LANGS){const base=DEFAULTS[lang],src=raw[lang]||{};settings[lang]={...base};
+  for(const [key,[low,high]] of Object.entries(LIMITS))settings[lang][key]=bound(src[key],low,high,base[key]);
+  settings[lang].voice=typeof src.voice==='string'&&src.voice?src.voice:base.voice;
+  settings[lang].engine=src.engine==='device'?'device':'onnx';
+  settings[lang].contextMeaning=src.contextMeaning===undefined?base.contextMeaning:!!src.contextMeaning;
+  settings[lang].itSeparator=['comma','dash','oppure'].includes(src.itSeparator)?src.itSeparator:base.itSeparator;
+ }return settings;
+}
+function spokenText(lang,original,type,cfg){
+ let text=String(original||'').trim();
+ // A grammatical label is particularly vulnerable to clipping/hallucinations in
+ // short ONNX utterances. Give it a complete, clear sentence in either engine.
+ if(type==='formLabel'){
+  const lower=text.charAt(0).toLowerCase()+text.slice(1).replace(/[.!?]+$/g,'');
+  text=lang==='it'?'Adesso ascolta la '+lower+'.':
+       lang==='en'?'Now listen to the '+lower+'.':text;
+ }
+ if(lang==='it'){
+  const separators={comma:', ',dash:' - ',oppure:' oppure '};
+  text=text.replace(/\s*;\s*/g,separators[cfg.itSeparator]||separators.oppure);
+  if(type==='meaning'&&cfg.contextMeaning)text='In italiano significa '+text.replace(/[.!?]+$/g,'')+'.';
+ }else if(lang==='en'&&type==='meaning'&&cfg.contextMeaning)text='In English, it means '+text.replace(/[.!?]+$/g,'')+'.';
+ return text.replace(/\s+/g,' ').trim();
+}
+function wavBlob(samples,rate){
+ const out=new ArrayBuffer(44+samples.length*2),view=new DataView(out);
+ const chars=(off,str)=>{for(let i=0;i<str.length;i++)view.setUint8(off+i,str.charCodeAt(i));};
+ chars(0,'RIFF');view.setUint32(4,36+samples.length*2,true);chars(8,'WAVE');chars(12,'fmt ');
+ view.setUint32(16,16,true);view.setUint16(20,1,true);view.setUint16(22,1,true);
+ view.setUint32(24,rate,true);view.setUint32(28,rate*2,true);view.setUint16(32,2,true);
+ view.setUint16(34,16,true);chars(36,'data');view.setUint32(40,samples.length*2,true);
+ for(let i=0;i<samples.length;i++){const v=Math.max(-1,Math.min(1,samples[i]));view.setInt16(44+2*i,v<0?Math.round(32768*v):Math.round(32767*v),true);}
+ return new Blob([out],{type:'audio/wav'});
+}
+function keyFor(lang,voice,text,cfg){
+ return JSON.stringify([lang,voice,text,cfg.temperature,cfg.lsdSteps,cfg.maxFrames,
+   cfg.framesAfterEos,cfg.pauseMs,cfg.startSilenceMs,cfg.endSilenceMs]);
+}
+const uniqueEvents=plan=>{const seen=new Set(),items=[];for(const e of plan||[]){if(e.kind!=='say'||!String(e.text||'').trim())continue;const k=e.lang+'\u0000'+e.text+'\u0000'+e.type;if(!seen.has(k)){seen.add(k);items.push(e);}}return items;};
+function orderedEvents(plan,groupLanguages){const unique=uniqueEvents(plan);if(!groupLanguages)return unique;
+ const order=[];for(const event of unique){if(!order.includes(event.lang))order.push(event.lang);}
+ return unique.sort((a,b)=>order.indexOf(a.lang)-order.indexOf(b.lang));
+}
+class SessionAudioCache{
+ constructor(normalMiB=76,preloadMiB=144){this.normalLimit=normalMiB*1048576;this.preloadLimit=preloadMiB*1048576;this.reset();}
+ reset(){this.entries=new Map();this.references=new Map();this.bytes=0;this.extended=false;}
+ get(key){return this.entries.get(key)||null;}
+ insert(key,value,index){if(!this.entries.has(key)){this.entries.set(key,value);this.bytes+=value.samples.byteLength;}this.reference(index,key);}
+ reference(index,key){if(!this.references.has(index))this.references.set(index,new Set());this.references.get(index).add(key);}
+ retain(positions){const wanted=new Set(positions);
+  for(const index of this.references.keys())if(!wanted.has(index))this.references.delete(index);
+  const remaining=new Set();for(const keys of this.references.values())for(const key of keys)remaining.add(key);
+  for(const [key,v] of this.entries)if(!remaining.has(key)){this.entries.delete(key);this.bytes-=v.samples.byteLength;}
+ }
+ canAdd(bytes){return this.bytes+bytes<=(this.extended?this.preloadLimit:this.normalLimit);}
+ get limit(){return this.extended?this.preloadLimit:this.normalLimit;}
+}
+class WorkerClient{
+ constructor({workerPath='./tts-worker.js',onProgress=()=>{},onStatus=()=>{}}={}){
+  this.path=workerPath;this.onProgress=onProgress;this.onStatus=onStatus;
+  this.worker=null;this.lang=null;this.manifest=null;this.ready=null;this.requestId=0;this.jobs=new Map();this.disposed=false;
+ }
+ start(){
+  if(this.worker)return;
+  const w=new Worker(this.path);this.worker=w;
+  w.onmessage=({data:m})=>{
+   if(m.type==='status')this.onStatus(m.message);
+   if(m.type==='progress')this.onProgress(m);
+   if(m.type==='ready'){if(this.ready){this.ready.resolve(m);this.ready=null;}}
+   if(m.type==='audio'){const p=this.jobs.get(m.requestId);if(p){this.jobs.delete(m.requestId);p.resolve(m);}}
+   if(m.type==='error'){
+    const e=new Error('Pocket TTS ONNX: '+m.message);this.onStatus(e.message);
+    if(this.ready){this.ready.reject(e);this.ready=null;}
+    if(m.requestId!==null&&m.requestId!==undefined){const p=this.jobs.get(m.requestId);if(p){this.jobs.delete(m.requestId);p.reject(e);}}
+    else for(const p of this.jobs.values())p.reject(e);
+   }
+  };
+  w.onerror=e=>{const err=new Error('ONNX Web Worker: '+(e.message||'errore'));
+    if(this.ready){this.ready.reject(err);this.ready=null;}for(const p of this.jobs.values())p.reject(err);this.jobs.clear();this.close();this.onStatus(err.message);
+  };
+ }
+ async load(lang,manifest){
+  this.start();if(this.lang===lang)return;
+  if(this.ready)throw Error('Caricamento ONNX sovrapposto');
+  this.lang=null;this.manifest=manifest;
+  const ready=new Promise((resolve,reject)=>{this.ready={resolve,reject};});
+  this.worker.postMessage({type:'load',language:lang,manifest,voiceId:manifest.languages[lang]?.defaultVoice});
+  await ready;this.lang=lang;
+ }
+ async synthesize(lang,segments,voiceId,options){
+  if(this.lang!==lang)throw Error('Modello ONNX non pronto per '+lang);
+  const id=++this.requestId;
+  const pending=new Promise((resolve,reject)=>this.jobs.set(id,{resolve,reject}));
+  this.worker.postMessage({type:'generate',requestId:id,language:lang,voiceId,manifest:this.manifest,segments,
+   options:{...options,englishFramesAfterEos:options.framesAfterEos,seed:options.seed||1234}});
+  return pending;
+ }
+ close(){if(this.worker){this.worker.terminate();this.worker=null;}this.lang=null;
+   if(this.ready){this.ready.reject(new Error('Worker annullato'));this.ready=null;}
+   for(const p of this.jobs.values())p.reject(new Error('Worker annullato'));this.jobs.clear();
+ }
+}
+class OnnxStudyAudio{
+ constructor({fallback,workerPath='./tts-worker.js',manifestUrl='./onnx/manifest.json',onProgress=()=>{},onStatus=()=>{}}={}){
+  if(!fallback)throw Error('Richiesto fallback speechSynthesis');this.fallback=fallback;
+  this.onProgress=onProgress;this.onStatus=onStatus;this.workerPath=workerPath;this.manifestUrl=manifestUrl;
+  this.settings=normalizeSettings();this.strategy='ready';this.enabled=false;
+  this.client=null;this.cache=new SessionAudioCache();this.tokenIndex=null;this.manifest=null;
+  this.tokenShards=new Map();this.deckId=null;this.sessionId=null;this.cards=[];this.getPlan=null;this.index=0;
+  this.queue=[];this.queued=new Map();this.processing=false;this.epoch=1;this.playToken=0;this.taskOrder=0;this.audioContext=null;
+  this.currentPlayback=null;this.preparePercent=new Map();this.preloadUntil=0;this.preloadTarget=-1;this.preloadTimer=null;
+ }
+ configure({enabled,strategy,settings}={}){
+  const newSettings=normalizeSettings(settings||this.settings);
+  const changed=JSON.stringify(newSettings)!==JSON.stringify(this.settings);
+  if(changed)this.clearTasks(true);
+  this.settings=newSettings;
+  if(enabled!==undefined)this.enabled=!!enabled;
+  if(['ready','live'].includes(strategy))this.strategy=strategy;
+  this.onProgress({type:'configuration',percent:0});
+ }
+ active(){return this.enabled;}
+ // The device engine speaks in real time. It is intentionally excluded from
+ // both ONNX pre-generation and the session PCM cache.
+ needsOnnx(event){
+  const lang=LOCALE[event?.lang]||'ja';
+  return this.enabled&&this.settings[lang].engine!=='device';
+ }
+ onnxEventsFor(index,grouped=false){
+  return orderedEvents(this.getPlan?.(index)?.plan,grouped).filter(e=>this.needsOnnx(e));
+ }
+ playbackEvent(event,device=false){
+  const lang=LOCALE[event.lang]||'ja',cfg=this.settings[lang];
+  const settings={rate:1,pitch:1,volume:1,...event.settings};
+  if(event.type==='formLabel'){
+   settings.rate=bound((Number(settings.rate)||1)*cfg.formLabelRate,.1,10,1);
+  }else if(event.type==='form'){
+   settings.rate=bound((Number(settings.rate)||1)*cfg.formRate,.1,10,1);
+  }
+  return {...event,settings,...(device?{text:spokenText(lang,event.text,event.type,cfg)}:{})};
+ }
+ async loadManifest(){
+  if(this.manifest)return this.manifest;
+  const response=await fetch(this.manifestUrl);if(!response.ok)throw Error(`ONNX manifest HTTP ${response.status}. Esegui prepare_kotoba_onnx.py.`);
+  const manifest=await response.json();if(!manifest.languages?.ja||!manifest.languages?.it||!manifest.languages?.en)throw Error('Manifest JA/IT/EN incompleto');
+  this.manifest=manifest;return manifest;
+ }
+ async loadTokenShard(url,deckId){
+  if(!url)throw Error('Shard non disponibile');
+  if(this.tokenShards.has(url)){
+   const cached=this.tokenShards.get(url);this.tokenShards.delete(url);this.tokenShards.set(url,cached);return cached;
+  }
+  const response=await fetch(url);if(!response.ok)throw Error(`Token HTTP ${response.status}: ${url}`);
+  const doc=await response.json();if(doc.deckId!==deckId)throw Error('Token deckId non corrisponde');
+  this.tokenShards.set(url,doc);
+  while(this.tokenShards.size>6)this.tokenShards.delete(this.tokenShards.keys().next().value);
+  return doc;
+ }
+ async loadTokens(deckId,cardId){
+  const info=this.manifest?.tokenIndexes?.[deckId];
+  if(!info)throw Error(`Deck ${deckId} non pretokenizzato per ONNX. Usa Web Speech o rigenera gli asset.`);
+  const url=info.shards?.[String(cardId)];
+  if(!url)throw Error(`Card ${cardId} non presente nel token index`);
+  return this.loadTokenShard(url,deckId);
+ }
+
+ bindSession({sessionId,deckId,cards,getPlan,index=0}){
+  const changed=this.sessionId!==null&&this.sessionId!==sessionId;
+  if(changed)this.clearTasks(true);
+  this.sessionId=sessionId;this.deckId=deckId;this.cards=cards||[];this.getPlan=getPlan;this.index=index;
+  if(changed){this.tokenIndex=null;this.tokenShards.clear();this.manifest=null;}
+  this.onProgress({type:'session',percent:0});
+  if(this.enabled&&this.strategy==='live')this.openCard(index);
+ }
+ clearTasks(hard=false){
+  this.epoch++;for(const task of this.queued.values())task.reject(new Error('Preparazione annullata'));this.queue=[];this.queued.clear();this.cache.reset();this.preparePercent.clear();
+  this.preloadUntil=0;this.preloadTarget=-1;if(this.preloadTimer)clearTimeout(this.preloadTimer);this.preloadTimer=null;
+  if(hard&&this.client){this.client.close();this.client=null;this.processing=false;}
+ }
+ dispose(){this.cancel();this.clearTasks(true);if(this.audioContext)this.audioContext.close?.().catch(()=>{});this.audioContext=null;}
+ configurePlayback({mode}={}){if(mode)this.strategy=mode;}
+ openCard(index){this.index=index;if(!this.enabled||!this.getPlan)return;
+  const keep=this.preloadUntil>Date.now()
+   ?Array.from(this.cache.references.keys()).filter(k=>k>=index-1).concat([index,index+1,index+2])
+   :[index-1,index,index+1,index+2];
+  this.cache.retain(keep);
+  if(this.preloadUntil<=Date.now()){
+   const relevant=new Set(keep);
+   const discarded=[];
+   this.queue=this.queue.filter(task=>{
+    if([...task.refs].some(ref=>relevant.has(ref)))return true;
+    discarded.push(task);return false;
+   });
+   for(const task of discarded)if(this.queued.get(task.key)===task){
+    this.queued.delete(task.key);task.reject(new Error('Card fuori finestra audio'));
+   }
+  }
+  this.onProgress({type:'card',index,percent:this.percent(index)});
+  if(this.strategy==='live')this.scheduleCard(index,false,0);
+ }
+ percent(index){const events=this.onnxEventsFor(index);
+  if(!events.length)return 100;
+  let complete=0;for(const event of events){const k=this.eventKey(event);if(k&&this.cache.get(k))complete++;}
+  return Math.round(100*complete/events.length);
+ }
+ eventKey(event){const lang=LOCALE[event.lang]||'ja',cfg=this.settings[lang];return keyFor(lang,cfg.voice,spokenText(lang,event.text,event.type,cfg),cfg);}
+ prepareCard(index){
+  if(!this.enabled)return Promise.resolve();
+  const events=this.onnxEventsFor(index);
+  this.scheduleCard(index,true,0);
+  return Promise.all(events.map(e=>this.getPart(index,e,0,{enqueue:false}))).then(()=>{});
+ }
+ scheduleCard(index,grouped=false,priority=4){
+  if(!this.enabled||index<0||index>=this.cards.length||!this.getPlan)return;
+  const events=this.onnxEventsFor(index,grouped);
+  // Scheduling is fire-and-forget, but every rejected promise must be observed.
+  for(const event of events)this.requestPart(index,event,priority).catch(()=>{});
+ }
+ scheduleFuture(){if(!this.enabled||this.strategy!=='ready')return;
+  for(const idx of [this.index+1,this.index+2])this.scheduleCard(idx,true,6+(idx-this.index));
+ }
+ async preload(minutes=10){
+  if(!this.enabled)throw Error('Abilita ONNX prima del precaricamento');
+  this.preloadUntil=Date.now()+Math.max(1,minutes)*60000;this.preloadTarget=this.index-1;
+  this.cache.extended=true;
+  const epoch=this.epoch;
+  while(this.preloadUntil>Date.now()&&epoch===this.epoch&&this.preloadTarget<this.cards.length-1){
+   if(this.cache.bytes>=this.cache.preloadLimit*.92){this.onStatus('Precaricamento fermato: limite memoria PCM raggiunto');break;}
+   this.preloadTarget++;
+   const idx=this.preloadTarget;
+   this.scheduleCard(idx,true,12);
+   await this.waitCard(idx).catch(()=>{});
+   if(this.percent(idx)!==100){this.onStatus('Precaricamento sospeso: card non completa o buffer saturo');break;}
+   this.onProgress({type:'preload',index:idx,count:idx-this.index,secondsRemaining:Math.ceil((this.preloadUntil-Date.now())/1000)});
+  }
+  this.preloadUntil=0;this.onProgress({type:'preloadEnd',index:this.preloadTarget});
+ }
+ stopPreload(){
+  this.preloadUntil=0;
+  const removed=this.queue.filter(q=>q.priority>=12);
+  this.queue=this.queue.filter(q=>q.priority<12);
+  for(const task of removed){
+   if(this.queued.get(task.key)===task){this.queued.delete(task.key);task.reject(new Error('Precaricamento fermato'));}
+  }
+  this.onProgress({type:'preloadEnd',index:this.preloadTarget});
+ }
+ waitCard(index){const events=this.onnxEventsFor(index);
+  return Promise.all(events.map(e=>this.getPart(index,e,12,{enqueue:false})));
+ }
+ requestPart(index,event,priority=0){
+  const key=this.eventKey(event),cached=this.cache.get(key);
+  if(cached){this.cache.reference(index,key);return Promise.resolve(cached);}
+  const pending=this.queued.get(key);
+  if(pending){pending.refs.add(index);pending.priority=Math.min(pending.priority,priority);this.queue.sort((a,b)=>a.priority-b.priority||a.order-b.order);return pending.promise;}
+  let resolve,reject;const promise=new Promise((r,j)=>{resolve=r;reject=j;});
+  const task={key,index,refs:new Set([index]),event,priority,order:++this.taskOrder,resolve,reject,promise,epoch:this.epoch};
+  this.queued.set(key,task);this.queue.push(task);this.queue.sort((a,b)=>a.priority-b.priority||a.order-b.order);
+  this.pump().catch(e=>this.onStatus(e.message));return promise;
+ }
+ getPart(index,event,priority=0,{enqueue=true}={}){const key=this.eventKey(event),found=this.cache.get(key);
+  if(found){this.cache.reference(index,key);return Promise.resolve(found);}
+  if(this.queued.has(key))return this.queued.get(key).promise;
+  return enqueue?this.requestPart(index,event,priority):Promise.reject(new Error('Utterance non in coda'));
+ }
+ async pump(){
+  if(this.processing)return;this.processing=true;
+  const epoch=this.epoch;
+  try{while(this.queue.length&&epoch===this.epoch){const task=this.queue.shift();if(task.epoch!==this.epoch){task.reject(Error('Sessione cambiata'));continue;}
+    try{const value=await this.generateEvent(task.event,task.index);
+     if(task.epoch!==this.epoch){task.reject(Error('Sessione cambiata'));continue;}
+     if(this.cache.canAdd(value.samples.byteLength)||task.index===this.index){
+      for(const idx of task.refs)this.cache.insert(task.key,value,idx);
+     }else this.onStatus('Buffer audio al limite; precaricamento sospeso');
+     task.resolve(value);
+    }catch(err){task.reject(err);this.onStatus('ONNX: '+err.message);}
+    finally{if(this.queued.get(task.key)===task)this.queued.delete(task.key);this.onProgress({type:'card',index:task.index,percent:this.percent(task.index)});}
+   }}finally{if(epoch===this.epoch)this.processing=false;}
+ }
+ async generateEvent(event,index){
+  const lang=LOCALE[event.lang]||'ja',cfg=this.settings[lang];
+  const text=spokenText(lang,event.text,event.type,cfg);
+  await this.loadManifest();const shard=await this.loadTokens(this.deckId,this.cards[index]?.id);
+  let entry=shard.tokens?.[lang]?.[text];
+  if(!entry){
+   const story=this.manifest?.tokenIndexes?.[this.deckId]?.stories;
+   if(story){const sd=await this.loadTokenShard(story,this.deckId);entry=sd.tokens?.[lang]?.[text];}
+  }
+  if(!entry)throw Error(`Testo non pretokenizzato (${lang}): ${text.slice(0,85)}`);
+  if(!this.client)this.client=new WorkerClient({workerPath:this.workerPath,onProgress:m=>this.onProgress({type:'frame',...m}),onStatus:this.onStatus});
+  await this.client.load(lang,this.manifest);
+  const options={temperature:cfg.temperature,lsdSteps:cfg.lsdSteps,maxFrames:Math.round(cfg.maxFrames),framesAfterEos:Math.round(cfg.framesAfterEos),
+   pauseMs:Math.round(cfg.pauseMs),startSilenceMs:Math.round(cfg.startSilenceMs),endSilenceMs:Math.round(cfg.endSilenceMs),seed:1234};
+  const result=await this.client.synthesize(lang,entry,cfg.voice,options);
+  const samples=result.samples instanceof Float32Array?result.samples:new Float32Array(result.samples);
+  return {samples,sampleRate:result.sampleRate,report:result.reports,generationSeconds:result.generationSeconds};
+ }
+ unlockPlayback(){
+  if(typeof AudioContext==='undefined'&&typeof webkitAudioContext==='undefined')return;
+  if(!this.audioContext){const Ctor=globalThis.AudioContext||globalThis.webkitAudioContext;this.audioContext=new Ctor();}
+  this.audioContext.resume().catch(()=>{});
+ }
+ cancel(){this.playToken++;const p=this.currentPlayback;if(p)p.cancel();this.currentPlayback=null;this.fallback.cancel();}
+ speak(event,onStarted=()=>{}){
+  if(!this.needsOnnx(event)){
+   // Native speechSynthesis on iPhone/Safari: no token fetch, model switch or PCM.
+   // Keep the original event for progress/accounting callbacks.
+   return this.fallback.speak(this.playbackEvent(event,true),()=>onStarted(event));
+  }
+  const index=this.index,playId=++this.playToken;
+  return new Promise(resolve=>{
+   let finished=false;let stopSound=null;
+   const finish=status=>{if(finished)return;finished=true;if(this.currentPlayback?.id===playId)this.currentPlayback=null;resolve(status);};
+   this.currentPlayback={id:playId,cancel:()=>{if(stopSound)stopSound();finish('canceled');}};
+   (async()=>{
+    let audio;
+    try{audio=await this.getPart(index,event,0);}catch(e){
+     // For imported/custom decks without a token dictionary, prefer explicit fallback
+     // to avoid silently dropping a study utterance.
+     if(finished)return;
+     this.onStatus('ONNX non disponibile, uso voce sistema: '+e.message);
+     const result=await this.fallback.speak(this.playbackEvent(event,true),()=>onStarted(event));finish(result);return;
+    }
+    if(finished)return;
+    try{
+     const context=this.audioContext;
+     if(!context)throw Error('AudioContext non avviato: tocca Play per sbloccare audio iOS');
+     await context.resume();
+     if(finished)return;
+     const buffer=context.createBuffer(1,audio.samples.length,audio.sampleRate);
+     buffer.copyToChannel(audio.samples,0);
+     const src=context.createBufferSource();src.buffer=buffer;
+     src.playbackRate.value=bound(this.playbackEvent(event).settings?.rate,.1,10,1);
+     const gain=context.createGain();gain.gain.value=bound(event.settings?.volume,0,1,1);
+     src.connect(gain).connect(context.destination);
+     stopSound=()=>{src.onended=null;try{src.stop();}catch(e){}};
+     src.onended=()=>finish('done');src.start();onStarted(event);
+    }catch(e){this.onStatus('Audio ONNX: '+e.message);finish('error');}
+   })();
+  });
+ }
+}
+return {LANGS,DEFAULTS,LIMITS,normalizeSettings,spokenText,uniqueEvents,orderedEvents,SessionAudioCache,WorkerClient,OnnxStudyAudio,wavBlob};
+});
+</script>
  <script>(()=>{'use strict';
  const $=id=>document.getElementById(id);
  const Core=window.KotobaCore;
@@ -968,7 +1365,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  const num=(n,min,max,fallback=min)=>{const v=Number(n);return Number.isFinite(v)?Math.min(max,Math.max(min,v)):fallback};
  const item=(type,repeat=1)=>Core.normalizeItem({id:uid(),type,repeat,enabled:true});
  const group=(name,items,repeat=1,after=0)=>Core.normalizeGroup({id:uid(),name,repeat,pauseAfterGroupMs:Math.round(after*1000),pauseBetweenGroupRepeatsMs:Math.round(after*1000),items});
- const defaults={lang:'it',direction:'jp-native',category:'all',size:20,exampleCount:1,formCount:'all',globalGap:.4,announceForms:true,wheel:true,wake:true,progress:{},exampleCycle:{},audioMasters:Core.audioMasters()};
+ const defaults={lang:'it',direction:'jp-native',category:'all',size:20,exampleCount:1,formCount:'all',globalGap:.4,announceForms:true,wheel:true,wake:true,progress:{},exampleCycle:{},audioMasters:Core.audioMasters(),ttsEnabled:false,ttsStrategy:'ready',ttsParams:KotobaOnnx.normalizeSettings()};
  let stored={};try{stored=JSON.parse(localStorage.getItem(keyStorage)||'{}')||{}}catch(e){}
  // One-time non-destructive migration: read the previous settings without overwriting them.
  if(!Object.keys(stored).length){try{const previous=JSON.parse(localStorage.getItem('kotoba-drive-v2')||'{}');if(previous&&typeof previous==='object')stored=previous}catch(e){}}
@@ -980,7 +1377,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  state.formCount=(state.formCount==='all'||['1','2','3','4','5','6'].includes(String(state.formCount)))?String(state.formCount):'all';
  state.globalGap=num(state.globalGap,0,12,.4);state.announceForms=state.announceForms!==false;state.wheel=state.wheel!==false;state.wake=state.wake!==false;
  let sequenceRepo=new Core.SequenceRepository(stored.sequenceLibrary,stored.sequences);
- state.audioMasters=Core.audioMasters(state.audioMasters);
+ state.audioMasters=Core.audioMasters(state.audioMasters);state.ttsParams=KotobaOnnx.normalizeSettings(state.ttsParams);
  if(!state.progress||typeof state.progress!=='object')state.progress={};if(!state.exampleCycle||typeof state.exampleCycle!=='object')state.exampleCycle={};
  const t=(it,en)=>state.lang==='it'?it:en;
  const locale=()=>state.lang==='it'?'it-IT':'en-US';
@@ -995,7 +1392,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  const examplesForCard=(w)=>{const session=currentSession();return Content.examplesFor(w,session?.filters||{},session?.exampleShuffleEnabled?session.exampleOrders?.[String(w.id)]:null);};
  const exampleStart=(w)=>{const session=currentSession();return session?.exampleShuffleEnabled?(Number(session.exampleOffsets?.[String(w.id)])||0):(Number(state.exampleCycle[w.id])||0);};
  const selectedExample=(w)=>{const examples=examplesForCard(w);if(!examples.length)return {example:{jp:'',kana:'',it:'',en:''},index:0};const base=state.visibleExampleIndex??(exampleStart(w)%examples.length);return {example:examples[base%examples.length],index:base%examples.length}};
- const settingFields=['lang','direction','category','size','exampleCount','formCount','globalGap','announceForms','wheel','wake','exampleCycle'];
+ const settingFields=['lang','direction','category','size','exampleCount','formCount','globalGap','announceForms','wheel','wake','exampleCycle','ttsEnabled','ttsStrategy','ttsParams'];
  function snapshotStudy(){
    if(!db||!activeDeckId)return null;
    studyDoc.deckStates[activeDeckId]={...(studyDoc.deckStates[activeDeckId]||{}),lastSeenRevision:activeDeck?.revision||1,cards:structuredClone(state.progress)};
@@ -1085,7 +1482,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    // A created session remains 'created' until audio actually starts.
    session.status=session.status;
    const missing=resolved.missingIds.length;if(missing)toast(`${missing} carte mancanti nel deck: ignorate per questa riproduzione`);
-   renderStudy();save();
+   bindTtsSession();renderStudy();save();
  }
  function createNewSession(options={}){
    const deck=installedDecks.find(d=>d.deckId===(options.deckId||activeDeckId))||activeDeck;
@@ -1154,7 +1551,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    $('btn-reveal').textContent=allRevealed()?t('Nascondi soluzione','Hide answer'):t('Mostra soluzione','Reveal answer');
    $('btn-show-detail').textContent=t('Esempi ↗','Examples ↗');
    const flags=progressFor(w);for(const [kind,name] of [['favorite','favorite'],['known','known']]){const btn=$(`study-${name}`);btn.setAttribute('aria-pressed',String(!!flags[kind]));btn.classList.toggle('active',!!flags[kind]);btn.textContent=kind==='favorite'?(flags[kind]?'★':'☆'):(flags[kind]?t('✓ Noto','✓ Known'):t('Noto','Known'));}
-   $('study-meaning-count').textContent=t(`Significato ♫ ${flags.meaningPlays||0}`,`Meaning ♫ ${flags.meaningPlays||0}`);
+   $('study-meaning-count').textContent=t(`Significato ♫ ${flags.meaningPlays||0}`,`Meaning ♫ ${flags.meaningPlays||0}`);updateOnnxProgress(speechAdapter.percent(state.index));
    scheduleExampleScroll();
    $('playback-status').textContent=state.phase;$('status-dot').classList.toggle('live',state.playing);updateMediaMetadata();updateStats();
  }
@@ -1186,7 +1583,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    const story=rows.find(s=>s.id===selectedStoryId);
    $('story-detail').innerHTML=`<div class="story-head"><h2>${textSafe(story.title)}</h2><p>${textSafe(story.description||'')}</p><p class="small-copy">${story.cardIds.map(id=>textSafe(BANK.find(c=>String(c.id)===String(id))?.jp||id)).join(' · ')}</p><button class="solid-btn" id="story-play" type="button">▶ Ascolta storia</button><button class="outline-btn" id="story-stop" type="button">■ Ferma</button></div>${story.segments.map((seg,i)=>`<div class="story-segment"><small>${i+1}. ${textSafe(seg.speaker||'Narratore')}</small><p lang="ja">${textSafe(seg.jp)}</p><p lang="ja" class="ex-kana">${textSafe(seg.kana)}</p><p>${textSafe(seg[state.lang])}</p></div>`).join('')}`;
  }
- async function playStory(){const story=Content.storyById(activeDeck,selectedStoryId);if(!story)return;if(state.playing||state.paused)stopLesson();interruptPreview();const id=++storyAudioRun;
+ async function playStory(){speechAdapter.unlockPlayback();const story=Content.storyById(activeDeck,selectedStoryId);if(!story)return;if(state.playing||state.paused)stopLesson();interruptPreview();const id=++storyAudioRun;
    for(const seg of story.segments){if(id!==storyAudioRun)break;await speak(seg.jp,'ja-JP');if(id!==storyAudioRun)break;await delay(250);if(id!==storyAudioRun)break;await speak(seg[state.lang],locale());if(id!==storyAudioRun)break;await delay(450)}
  }
  function stopStory(){storyAudioRun++;speechAdapter.cancel();}
@@ -1265,14 +1662,52 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  function bridgeOff(){const player=$('media-bed');if(!player.paused)player.pause()}
  async function requestWake(){if(!state.wake||!('wakeLock'in navigator)||document.visibilityState!=='visible'||wakeLockHandle)return;try{const newLock=await navigator.wakeLock.request('screen');if(!state.playing){newLock.release().catch(()=>{});return}wakeLockHandle=newLock;newLock.addEventListener('release',()=>{if(wakeLockHandle===newLock)wakeLockHandle=null},{once:true})}catch(e){makeLog('SCHERMO',`Wake Lock non disponibile: ${e.name||e.message}`)}}
  function releaseWake(){if(wakeLockHandle){const lock=wakeLockHandle;wakeLockHandle=null;lock.release().catch(()=>{})}}
- function stopLesson(msg){finalizeRun(false);releaseWake();state.playing=false;state.paused=false;cancelLesson();bridgeOff();setPlaybackState();state.phase=msg||t('Riproduzione fermata','Playback stopped');save();renderStudy()}
- function pauseLesson(){if(!state.playing)return;runPauseStart=Date.now();playbackController.pause();state.playing=false;state.paused=true;releaseWake();bridgeOff();setPlaybackState();state.phase=t('In pausa','Paused');save();renderStudy()}
+ function stopLesson(msg){ttsPrepareTicket++;finalizeRun(false);releaseWake();state.playing=false;state.paused=false;cancelLesson();bridgeOff();setPlaybackState();state.phase=msg||t('Riproduzione fermata','Playback stopped');save();renderStudy()}
+ function pauseLesson(){if(!state.playing)return;ttsPrepareTicket++;runPauseStart=Date.now();playbackController.pause();state.playing=false;state.paused=true;releaseWake();bridgeOff();setPlaybackState();state.phase=t('In pausa','Paused');save();renderStudy()}
  function resetSession(){syncSessionCreator();showView('sessions');closeDrawer();toast('Scegli filtri e shuffle prima di creare la sessione')}
  function loadVoices(){if(!('speechSynthesis'in window))return;state.voices=speechSynthesis.getVoices()||[];renderCapabilities()}
  function selectVoice(lang){const prefix=lang.split('-')[0].toLowerCase();const matches=state.voices.filter(v=>v.lang.toLowerCase().startsWith(prefix));return matches.find(v=>v.localService)||matches[0]||null}
  function renderCapabilities(){const tts='speechSynthesis'in window,ms='mediaSession'in navigator;$('cap-tts').textContent=tts?'DISPONIBILE':'NON DISPONIBILE';$('cap-tts').className=tts?'available':'unavailable';$('cap-media').textContent=ms?'API PRESENTE':'NON DISPONIBILE';$('cap-media').className=ms?'available':'unavailable';for(const [id,lang] of [['ja','ja-JP'],['it','it-IT'],['en','en-US']]){const v=selectVoice(lang);$('cap-'+id).textContent=v?`${v.name} (${v.lang})`:tts?'Voce non elencata':'Non disponibile';$('cap-'+id).className=v?'available':'unavailable'}$('hardware-count').textContent=String(state.hardwareCount)}
- const speechAdapter=new Core.SpeechAdapter('speechSynthesis'in window?window.speechSynthesis:null,window.SpeechSynthesisUtterance,selectVoice,msg=>makeLog('TTS',msg));
+ const nativeSpeech=new Core.SpeechAdapter('speechSynthesis'in window?window.speechSynthesis:null,window.SpeechSynthesisUtterance,selectVoice,msg=>makeLog('TTS',msg));
+ let ttsPrepareTicket=0;
+ const speechAdapter=new KotobaOnnx.OnnxStudyAudio({fallback:nativeSpeech,workerPath:'./tts-worker.js',
+   onStatus:msg=>{makeLog('ONNX',msg);const node=$('onnx-state');if(node)node.textContent=String(msg).slice(0,150);},
+   onProgress:evt=>{
+    const isCurrent=evt.index===undefined||evt.index===state.index;
+    if(evt.type==='card'&&isCurrent)updateOnnxProgress(evt.percent);
+    if(evt.type==='preload'){$('onnx-state').textContent=`Precaricamento: ${evt.count} card pronte · ~${Math.max(0,evt.secondsRemaining)} s rimasti`;}
+    if(evt.type==='preloadEnd'){$('onnx-state').textContent='Precaricamento concluso o fermato. Gli audio rimangono in memoria per la sessione.';}
+   }
+ });
+ function bindTtsSession(){
+   if(!state.sessionId||!state.deck.length)return;
+   speechAdapter.configure({enabled:state.ttsEnabled,strategy:state.ttsStrategy,settings:state.ttsParams});
+   speechAdapter.bindSession({sessionId:state.sessionId,deckId:activeDeckId,cards:state.deck,index:state.index,
+     getPlan:idx=>{const word=state.deck[idx];return word?compileSequence(word):{plan:[]};}});
+   updateOnnxProgress(speechAdapter.percent(state.index));
+ }
+ function updateOnnxProgress(percent){
+   const display=$('onnx-readiness');if(!display)return;
+   if(!state.ttsEnabled){display.hidden=true;return;}display.hidden=false;
+   const progress=Math.max(0,Math.min(100,Number(percent)||0));
+   $('onnx-progress-ring').style.setProperty('--percent',String(progress));
+   $('onnx-progress-number').textContent=`${Math.round(progress)}%`;
+   // A native event is synthesized in real time, not pre-buffered as PCM.
+   const plan=state.deck[state.index]?compileSequence(current()).plan:[];
+   const nativePart=plan.some(e=>e.kind==='say'&&!speechAdapter.needsOnnx(e));
+   const onnxPart=plan.some(e=>e.kind==='say'&&speechAdapter.needsOnnx(e));
+   $('onnx-progress-caption').textContent=progress>=100?
+      (!onnxPart?'Voce dispositivo · live':nativePart?'ONNX pronto · voce dispositivo live':'Card audio ONNX pronta'):
+      `Audio ONNX ${Math.round(progress)}% · ${nativePart?'dispositivo live':'preparazione'}`;
+ }
+ function applyOnnxSettings({restart=true}={}){
+   if(restart&&(state.playing||state.paused))stopLesson('Impostazioni ONNX cambiate');
+   state.ttsParams=KotobaOnnx.normalizeSettings(state.ttsParams);
+   speechAdapter.configure({enabled:state.ttsEnabled,strategy:state.ttsStrategy,settings:state.ttsParams});
+   if(state.sessionId)bindTtsSession();renderOnnxSettings();save();
+ }
  function speak(text,lang,settings=null){return speechAdapter.speak({text,lang,settings:settings||Core.resolveSpeechSettings(lang,[],{},state.audioMasters)})}
+
  function setPhase(msg){state.phase=msg;$('playback-status').textContent=msg}
  function beginRun(cardId,chapterIndex){
    if(currentRun&&String(currentRun.cardId)===String(cardId))return;
@@ -1320,7 +1755,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  function finishedCard(){
    if(!state.playing)return;
    const w=current();if(!currentRun?.heardSay){stopLesson('TTS non disponibile: ascolto non conteggiato');return;}finalizeRun(true);if(currentSession()?.exampleShuffleEnabled){const s=currentSession();s.exampleOffsets??={};s.exampleOffsets[String(w.id)]=(exampleStart(w)+state.exampleCount)%Math.max(1,examplesForCard(w).length);}else state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+state.exampleCount)%Math.max(1,examplesForCard(w).length);save();
-   state.index++;state.chapterIndex=0;save();state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
+   state.index++;speechAdapter.openCard(state.index);state.chapterIndex=0;save();state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
    if(state.index<state.deck.length){playCardAtChapter(0);return}
    state.playing=false;state.paused=false;state.completed=true;const session=currentSession();if(session){session.status='completed';session.completedAt=new Date().toISOString();}releaseWake();bridgeOff();setPlaybackState();state.index=Math.max(0,state.deck.length-1);revealAll();state.phase=t('Sessione completata','Session complete');renderStudy();save();renderSessions();toast(t('Sessione terminata','Session finished'));
  }
@@ -1330,15 +1765,31 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    onComplete:finishedCard});
  const previewPlayback=new Core.PlaybackController({speech:speechAdapter,onEvent:s=>{if(s.kind==='say')makeLog('ANTEPRIMA',`${s.lang}: ${s.label}`)}});
  function playCardAtChapter(chapterIndex=0,preserveReveal=false){
+   const preparationToken=++ttsPrepareTicket;
    const result=compileSequence(current());
    if(!result.chapters.length||!result.sayCount){state.playing=false;state.paused=false;toast(t('Nessun elemento audio attivo','No enabled audio element'));renderStudy();return false}
    state.activePlan=result;state.chapterIndex=Math.max(0,Math.min(result.chapters.length-1,chapterIndex));
    beginRun(current().id,state.chapterIndex);if(currentRun)currentRun.meaningEventIds=new Set();const session=currentSession();if(session&&session.status==='created')session.status='in-progress';
    state.playing=true;state.paused=false;state.completed=false;if(!preserveReveal){resetReveal();state.visibleExampleIndex=null;}
    const start=result.chapters[state.chapterIndex].startEventIndex;
-   playbackController.start(result.plan,start);setPlaybackState();renderStudy();return true;
+   speechAdapter.openCard(state.index);
+   const begin=()=>{
+     if(preparationToken!==ttsPrepareTicket||!state.playing)return;
+     playbackController.start(result.plan,start);
+     speechAdapter.scheduleFuture();setPlaybackState();renderStudy();
+   };
+   if(state.ttsEnabled&&state.ttsStrategy==='ready'){
+     state.phase='Preparazione audio ONNX della card';renderStudy();
+     speechAdapter.prepareCard(state.index).then(begin).catch(error=>{
+       if(preparationToken!==ttsPrepareTicket||!state.playing)return;
+       makeLog('ONNX',error.message||String(error));toast('ONNX non pronto: voce di sistema per questa sessione');
+       state.ttsEnabled=false;speechAdapter.configure({enabled:false});renderOnnxSettings();begin();
+     });
+   }else begin();
+   setPlaybackState();renderStudy();return true;
  }
  function startLesson(){
+   speechAdapter.unlockPlayback();
    if(state.playing){pauseLesson();return}
    if(state.completed||state.index>=state.deck.length||!state.deck.length)newDeck();
    interruptPreview();
@@ -1353,12 +1804,12 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    const moved=Core.NavigationController.move(result.chapters,state.chapterIndex,direction);
    const wasPlaying=state.playing;
    if(currentRun){currentRun.skipped=true;if(moved.deltaCard!==0)finalizeRun(false)}
-   playbackController.stop();state.activePlan=null;if(direction>0)revealAll();
+   ttsPrepareTicket++;playbackController.stop();state.activePlan=null;if(direction>0)revealAll();
    if(moved.deltaCard!==0){
      const next=state.index+moved.deltaCard;
      if(next<0){state.chapterIndex=0;state.phase=t('Prima carta della sessione','First card of session');renderStudy();if(wasPlaying)playCardAtChapter(0);return}
      if(next>=state.deck.length){state.completed=true;state.playing=false;state.paused=false;releaseWake();bridgeOff();setPlaybackState();state.phase=t('Sessione conclusa con salto','Session ended by skipping');const session=currentSession();if(session){session.status='completed';session.completedAt=new Date().toISOString();}save();renderStudy();return}
-     state.index=next;resetReveal();state.visibleExampleIndex=null;const adjacent=compileSequence(current());
+     state.index=next;speechAdapter.openCard(next);resetReveal();state.visibleExampleIndex=null;const adjacent=compileSequence(current());
      state.chapterIndex=moved.deltaCard<0?Math.max(0,adjacent.chapters.length-1):0;
    }else state.chapterIndex=moved.chapterIndex;
    state.phase=t('Capitolo selezionato','Chapter selected');save();state.playing=false;state.paused=!wasPlaying;
@@ -1369,13 +1820,13 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    else state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+direction+length)%length;
    if(!state.answerShown){state.revealed.exampleJP=false;state.revealed.exampleNative=false;}save();renderStudy();}
 
- async function manualSpeech(text,lang){if(state.playing||state.paused)stopLesson(t('Pausa per ascolto singolo','Stopped for single playback'));interruptPreview();await speak(text,lang)}
+ async function manualSpeech(text,lang){speechAdapter.unlockPlayback();if(state.playing||state.paused)stopLesson(t('Pausa per ascolto singolo','Stopped for single playback'));interruptPreview();await speak(text,lang)}
  function previewSingle(g,el){
    if(state.playing||state.paused)stopLesson();interruptPreview();
    const seq=Core.normalizeSequence({direction:state.direction,groups:[{...g,repeat:1,pauseAfterGroupMs:0,pauseBetweenGroupRepeatsMs:0,items:[{...el,enabled:true,repeat:1,pauseAfterElementMs:0,pauseBetweenRepeatsMs:0}]}]},state.direction);
    const result=compileSequence(current(),seq,{exampleCount:1});if(result.sayCount)previewPlayback.start(result.plan);
  }
- async function playTen(){const w=wordById(state.chosenWordId);if(!w)return;const examples=Content.examplesFor(w,{register:detailRegister,scenario:detailScenario}).slice(0,10);if(state.playing||state.paused)stopLesson();interruptPreview();const token=state.previewId;$('btn-play-10').textContent=t('■ Ferma','■ Stop');for(let i=0;i<examples.length;i++){if(token!==state.previewId)break;await speak(examples[i].jp,'ja-JP');if(token!==state.previewId)break;await delay(200);if(token!==state.previewId)break;await speak(examples[i][state.lang],locale());if(token!==state.previewId)break;await delay(350)}$('btn-play-10').textContent=t('▶ Ascolta fino a 10','▶ Play up to 10')}
+ async function playTen(){speechAdapter.unlockPlayback();const w=wordById(state.chosenWordId);if(!w)return;const examples=Content.examplesFor(w,{register:detailRegister,scenario:detailScenario}).slice(0,10);if(state.playing||state.paused)stopLesson();interruptPreview();const token=state.previewId;$('btn-play-10').textContent=t('■ Ferma','■ Stop');for(let i=0;i<examples.length;i++){if(token!==state.previewId)break;await speak(examples[i].jp,'ja-JP');if(token!==state.previewId)break;await delay(200);if(token!==state.previewId)break;await speak(examples[i][state.lang],locale());if(token!==state.previewId)break;await delay(350)}$('btn-play-10').textContent=t('▶ Ascolta fino a 10','▶ Play up to 10')}
  function setupMediaSession(){
    const adapter=new Core.MediaSessionAdapter(navigator.mediaSession,(action,info)=>{if(action.startsWith('unsupported:'))makeLog('MEDIA',`${action} non supportata`);else{state.hardwareCount++;renderCapabilities();makeLog('MEDIA',`${action} ricevuto`)}});
    if(!adapter.install({
@@ -1508,11 +1959,12 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
    const preferred=studyDoc.settings.activeDeckId||studyDoc.activeDeckId;
    activeDeck=installedDecks.find(d=>d.deckId===preferred)||installedDecks[0];activeDeckId=activeDeck.deckId;BANK=activeDeck.cards;
    studyDoc.deckStates[activeDeckId]??={cards:{},lastSeenRevision:activeDeck.revision};
-   Object.assign(state,studyDoc.settings);state.audioMasters=Core.audioMasters(studyDoc.audioMasters);state.progress=studyDoc.deckStates[activeDeckId].cards;
+   Object.assign(state,studyDoc.settings);state.ttsParams=KotobaOnnx.normalizeSettings(state.ttsParams);state.audioMasters=Core.audioMasters(studyDoc.audioMasters);state.progress=studyDoc.deckStates[activeDeckId].cards;
    sequenceRepo=new Core.SequenceRepository(studyDoc.sequences||undefined,existing?undefined:stored.sequences);
    state.exampleCycle=studyDoc.settings.exampleCycleByDeck?.[activeDeckId]||state.exampleCycle||{};
    state.lang=state.lang==='en'?'en':'it';state.size=Math.max(5,Math.min(BANK.length,Number(state.size)||20));state.chosenWordId=String(BANK[0].id);
-   initializeSettings();syncSessionCreator();restoreSessionOrCreate();renderLanguage();renderSessions();setupMediaSession();await refreshCatalog();save();
+   speechAdapter.configure({enabled:state.ttsEnabled,strategy:state.ttsStrategy,settings:state.ttsParams});
+   initializeSettings();renderOnnxSettings();syncSessionCreator();restoreSessionOrCreate();renderLanguage();renderSessions();setupMediaSession();await refreshCatalog();save();
    $('boot-error').hidden=true;makeLog('AVVIO','Kotoba Drive v0.4.4: deck completi N4 e N5 nel catalogo online; test reali iPhone ancora richiesti');
  }
  // Deck manager events: all file contents are validated before writing to IndexedDB.
@@ -1640,6 +2092,64 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  $('add-group').addEventListener('click',()=>{const groups=selectedSequence().groups;if(groups.length>=16)return toast('Limite: 16 gruppi');groups.push(group(t(`Gruppo ${groups.length+1}`,`Group ${groups.length+1}`),[item('word')],1,0));editorChange();renderSequenceEditor();toast(t('Capitolo aggiunto','Chapter added'))});
  $('preset-standard').addEventListener('click',()=>{if(!confirm(t('Ripristinare la sequenza attiva?','Reset active sequence?')))return;sequenceRepo.reset(state.direction,false);editorChange();renderSequenceEditor()});
  $('preset-repeat').addEventListener('click',()=>{if(!confirm(t('Sostituire la sequenza attiva con il preset intensivo?','Replace active sequence with repeat preset?')))return;sequenceRepo.reset(state.direction,true);editorChange();renderSequenceEditor()});
+ // Browser ONNX synthesis settings: per-language and independent of post-playback master rate.
+ function renderOnnxSettings(){
+   $('onnx-enabled').checked=!!state.ttsEnabled;$('onnx-strategy').value=state.ttsStrategy;
+   const manifest=speechAdapter.manifest;
+   $('onnx-language-params').innerHTML=[['ja','日本語 · giapponese'],['it','Italiano'],['en','English']].map(([lang,label])=>{
+    const cfg=state.ttsParams[lang],voices=manifest?.languages?.[lang]?.voices;
+    const available=voices?Object.entries(voices):lang==='ja'?[['female_03',{label:'female_03 · donna'}],['male_01',{label:'male_01 · uomo'}]]:
+      lang==='it'?[['alba_it',{label:'Alba'}],['female_03_it',{label:'female_03'}],['male_01_it',{label:'male_01'}]]:
+      [['alba',{label:'Alba · donna'}],['vctk_p226',{label:'VCTK p226 · uomo'}]];
+    const option=(key)=>`<label><span>${key.label}</span><input data-onnx-field="${lang}:${key.id}" type="number" min="${key.min}" max="${key.max}" step="${key.step}" value="${cfg[key.id]}"></label>`;
+    return `<section class="onnx-language"><header><strong>${label}</strong><button data-onnx-copy="${lang}" type="button" class="outline-btn" title="Copia numeri sulle altre lingue">Copia → altre</button></header>
+     <label>Motore voce<select class="input" data-onnx-field="${lang}:engine">
+       <option value="onnx" ${cfg.engine==='onnx'?'selected':''}>Pocket TTS ONNX · locale</option>
+       <option value="device" ${cfg.engine==='device'?'selected':''}>Voce dispositivo · Web Speech, in diretta</option>
+      </select></label>
+     <label>Voce ONNX (usata soltanto con Pocket TTS)<select class="input" data-onnx-field="${lang}:voice">${available.map(([id,v])=>`<option value="${textSafe(id)}" ${id===cfg.voice?'selected':''}>${textSafe(v.label)}</option>`).join('')}</select></label>
+     <div class="onnx-fields">${[
+      {id:'formLabelRate',label:'Velocità annunci forme · fattore ×',min:.5,max:1.2,step:.05},
+      {id:'formRate',label:'Velocità lettura forme · fattore ×',min:.5,max:1.2,step:.05},
+      {id:'temperature',label:'Temperatura',min:0,max:1.5,step:.05},
+      {id:'lsdSteps',label:'LSD steps',min:1,max:8,step:1},
+      {id:'maxFrames',label:'Max frames',min:50,max:600,step:10},
+      {id:'framesAfterEos',label:'Frame dopo EOS',min:0,max:5,step:1},
+      {id:'pauseMs',label:'Pausa segmenti (ms)',min:0,max:1500,step:25},
+      {id:'startSilenceMs',label:'Silenzio iniziale (ms)',min:0,max:1500,step:25},
+      {id:'endSilenceMs',label:'Silenzio finale (ms)',min:0,max:1500,step:25}
+     ].map(option).join('')}</div>
+     ${lang==='it'?`<label>Separatore italiano<select class="input" data-onnx-field="it:itSeparator">${[['oppure','oppure'],['comma','virgola'],['dash','trattino']].map(([v,label])=>`<option value="${v}" ${cfg.itSeparator===v?'selected':''}>${label}</option>`).join('')}</select></label>`:''}
+     ${lang!=='ja'?`<label class="onnx-check"><input type="checkbox" data-onnx-field="${lang}:contextMeaning" ${cfg.contextMeaning?'checked':''}> Significato contestualizzato</label>`:''}
+     </section>`;
+   }).join('');
+   updateOnnxProgress(speechAdapter.percent(state.index));
+ }
+ $('onnx-hybrid-preset').addEventListener('click',()=>{
+   state.ttsEnabled=true;state.ttsParams.ja.engine='onnx';state.ttsParams.it.engine='device';
+   applyOnnxSettings();toast('Modalità ibrida: giapponese ONNX, italiano voce dispositivo');
+ });
+ $('onnx-enabled').addEventListener('change',e=>{state.ttsEnabled=e.target.checked;applyOnnxSettings();});
+ $('onnx-strategy').addEventListener('change',e=>{state.ttsStrategy=e.target.value;applyOnnxSettings();});
+ $('onnx-language-params').addEventListener('change',e=>{
+   const input=e.target.closest('[data-onnx-field]');if(!input)return;
+   const [lang,key]=input.dataset.onnxField.split(':');
+   state.ttsParams[lang][key]=input.type==='checkbox'?input.checked:input.type==='number'?Number(input.value):input.value;
+   applyOnnxSettings();
+ });
+ $('onnx-language-params').addEventListener('click',e=>{
+   const btn=e.target.closest('[data-onnx-copy]');if(!btn)return;
+   const lang=btn.dataset.onnxCopy;const keys=Object.keys(KotobaOnnx.LIMITS);
+   for(const other of KotobaOnnx.LANGS)if(other!==lang){for(const key of keys)state.ttsParams[other][key]=state.ttsParams[lang][key];}
+   applyOnnxSettings();toast(`Parametri numerici ${lang.toUpperCase()} copiati sulle altre lingue; voci e punteggiatura conservate`);
+ });
+ $('onnx-preload').addEventListener('click',()=>{
+   if(!state.ttsEnabled)return toast('Attiva prima il motore ONNX');
+   speechAdapter.unlockPlayback();
+   $('onnx-preload').disabled=true;
+   speechAdapter.preload(10).catch(e=>toast(e.message)).finally(()=>{$('onnx-preload').disabled=false;});
+ });
+ $('onnx-preload-stop').addEventListener('click',()=>speechAdapter.stopPreload());
  // Master settings are independent for JA / IT / EN and are stored with study preferences.
  const masterEditor=$('audio-masters');
  masterEditor.addEventListener('input',e=>{if(e.target.hasAttribute('data-master'))e.target.nextElementSibling.textContent=fmtAudio(e.target.dataset.master.split(':')[1],e.target.value)});
@@ -1675,7 +2185,7 @@ return {freshProgress,normalizeProgress,exposure,percentileMap,bucket,filterCard
  if('speechSynthesis'in window){speechSynthesis.onvoiceschanged=loadVoices;loadVoices();setTimeout(loadVoices,850);setTimeout(loadVoices,2500)}
   boot().catch(e=>{console.error(e);$('boot-error').textContent=e.message||String(e);$('boot-error').hidden=false;});
  if('serviceWorker'in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
- window.addEventListener('pagehide',()=>{cancelLesson();releaseWake();bridgeOff()});
+ window.addEventListener('pagehide',()=>{cancelLesson();releaseWake();bridgeOff();speechAdapter.dispose();});
  // Read-only QA surface, useful for validating nested repetition without TTS voices.
  window.KotobaDriveQA=Object.freeze({getPlan:()=>compileSequence(current()),getContextSelection:()=>examplesForCard(current()).map(x=>x.id),getStories:()=>activeDeck?.stories?.length||0,getSettings:()=>({lang:state.lang,direction:state.direction,exampleCount:state.exampleCount,groups:selectedSequence().groups,audioMasters:state.audioMasters}),getCurrent:()=>current().jp,getSequences:()=>sequenceRepo.serialize(),getDecks:()=>installedDecks.map(d=>({id:d.deckId,cards:d.cards.length})),getStudy:()=>snapshotStudy(),getSession:()=>structuredClone(currentSession()||null),getMetrics:()=>Sessions.dashboard(BANK,state.progress,studyDoc.sessions),getPlayback:()=>({index:state.index,chapter:state.chapterIndex,playing:state.playing,paused:state.paused,position:playbackController.index}),core:Core});
 })();

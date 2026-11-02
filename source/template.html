@@ -18,7 +18,7 @@
  <div class="app" id="app">
   <header class="topbar">
    <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.4 · N4/N5 COMPLETI ONLINE</div></div></div>
+   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.6 · TTS ibrido ONNX + dispositivo</div></div></div>
    <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
@@ -53,6 +53,7 @@
      <div class="study-bottom">
       <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
       <div class="controls"><button class="control secondary" id="btn-repeat" type="button" aria-label="Capitolo precedente"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button" aria-label="Capitolo successivo"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
+      <div id="onnx-readiness" class="onnx-readiness" hidden role="status" aria-live="polite"><span class="onnx-ring" id="onnx-progress-ring"><span id="onnx-progress-number">0%</span></span><span id="onnx-progress-caption">Audio ONNX 0%</span></div>
       <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Esempi ↗</button></div>
      </div>
     </article>
@@ -125,6 +126,17 @@
      <div class="master-head"><h3>Audio master per lingua</h3><p>Velocità, tono e volume per ciascuna lingua. Gli override della sequenza hanno precedenza.</p></div>
      <div id="audio-masters" class="audio-masters"></div>
     </section>
+    <section class="onnx-settings" aria-label="Motore ONNX Pocket TTS">
+     <h3>Pocket TTS · ONNX e voce dispositivo</h3><p class="small-copy">Scegli il motore indipendentemente per ogni lingua. In modalità ibrida il giapponese usa ONNX e l’italiano viene letto in tempo reale dal dispositivo, senza scaricare il modello italiano. Gli Audio master e gli override delle sequenze conservano la velocità di playback.</p>
+     <label class="onnx-check"><input id="onnx-enabled" type="checkbox"> Abilita motore TTS configurabile (ONNX / dispositivo)</label>
+     <button id="onnx-hybrid-preset" class="outline-btn" type="button">Usa modalità ibrida: JA ONNX + IT dispositivo</button>
+     <p class="field-hint">Gli annunci delle forme sono ora frasi complete, pronunciate più lentamente (fattore regolabile per lingua). La barra di preparazione conta solo gli audio ONNX: la voce del dispositivo parte durante la lettura.</p>
+     <div class="field-block"><label for="onnx-strategy">Strategia generazione</label><select class="input" id="onnx-strategy"><option value="ready">1 · Card pronta, poi riproduzione</option><option value="live">2 · Live, in ordine di ascolto</option></select></div>
+     <div class="onnx-preload-row"><button class="outline-btn" id="onnx-preload" type="button">Precarica 10 minuti</button><button class="outline-btn" id="onnx-preload-stop" type="button">Ferma precaricamento</button></div>
+     <p id="onnx-state" class="small-copy" role="status">Buffer normale: -1 / corrente / +1 / +2 card. Precaricamento limitato a 144 MiB di PCM.</p>
+     <div id="onnx-language-params" class="onnx-language-params"></div>
+     <p class="small-copy">Un solo modello in memoria. Se manca un testo nel dizionario ONNX (per esempio un deck importato), il sistema usa esplicitamente la voce di sistema.</p>
+    </section>
     <label class="toggle-line"><div><b>Annuncia la forma grammaticale</b><p>Per esempio «forma te», poi 「集めて」.</p></div><input type="checkbox" id="announce-forms" checked><span class="toggle-visual"></span></label>
     <label class="toggle-line"><div><b>Mantieni lo schermo acceso</b><p>Richiede Wake Lock, se supportato da Safari. Si attiva quando parte la lezione.</p></div><input type="checkbox" id="wake-enabled" checked><span class="toggle-visual"></span></label>
     <label class="toggle-line"><div><b>Bridge audio per il volante</b><p>Sperimentale: può interferire con la sintesi vocale su alcuni iPhone.</p></div><input type="checkbox" id="wheel-enabled" checked><span class="toggle-visual"></span></label>
@@ -153,6 +165,7 @@
  <script>__STORAGE_JS__</script>
  <script>__SESSIONS_JS__</script>
  <script>__CONTENT_JS__</script>
+ <script>__ONNX_TTS_JS__</script>
  <script>__APP_JS__</script>
 </body>
 </html>

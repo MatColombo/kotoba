@@ -1,6 +1,6 @@
 {
   "name": "kotoba-drive",
-  "version": "0.4.4-n4-n5-complete",
+  "version": "0.4.6-onnx-native-hybrid",
   "private": true,
   "description": "Kotoba Drive static PWA with installable complete N4 and N5 online decks, offline study, sessions and playback",
   "scripts": {

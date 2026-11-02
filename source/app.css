@@ -121,3 +121,28 @@
  .study-card #repeat-label,.study-card #next-label{display:none}
  .study-card .control.secondary .control-symbol{font-size:22px}
 }
+
+/* Pocket TTS ONNX study experiment (independent from existing speech overrides). */
+.onnx-settings{margin:15px 0;border:1px solid #426673;padding:13px;background:#142c39;border-radius:14px}
+.onnx-settings h3{margin:0 0 6px;font-size:16px;color:#b6f4dc}
+.onnx-settings p{font-size:11px;line-height:1.45}
+.onnx-check{display:flex;align-items:center;gap:9px;font-size:12px;margin:10px 0}
+.onnx-check input{width:19px;height:19px;accent-color:#53c9a5;flex:none}
+.onnx-language-params{display:grid;gap:12px}
+.onnx-language{background:#1c3745;border:1px solid #365669;border-radius:10px;padding:10px;min-width:0}
+.onnx-language header{display:flex;align-items:center;justify-content:space-between;gap:5px;flex-wrap:wrap;margin-bottom:9px}
+.onnx-language header strong{font-size:13px;color:#d9fff1}
+.onnx-language header button{font-size:11px;padding:5px 8px}
+.onnx-language>label{display:grid;gap:4px;font-size:11px;margin:9px 0}
+.onnx-language .onnx-check{display:flex}
+.onnx-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.onnx-fields label{min-width:0;display:grid;gap:4px;font-size:11px}
+.onnx-fields input{width:100%;min-width:0;background:#132738;border:1px solid #34556b;border-radius:8px;color:#e0ecee;padding:7px 6px;font:inherit}
+.onnx-preload-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.onnx-preload-row button{font-size:12px}
+.onnx-readiness{display:flex;gap:8px;align-items:center;justify-content:center;color:#b8f1dd;font-size:12px;margin:2px auto 4px}
+.onnx-ring{--percent:0;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:conic-gradient(#61d6ac calc(var(--percent)*1%),#345063 0);position:relative;isolation:isolate}
+.onnx-ring:before{content:'';position:absolute;inset:4px;border-radius:50%;background:#102435;z-index:-1}
+.onnx-ring span{font-size:10px;font-variant-numeric:tabular-nums;font-weight:700;color:#d3ffea}
+.onnx-language input,.onnx-language select{max-width:100%}
+@media(max-width:370px){.onnx-fields{grid-template-columns:1fr 1fr}.onnx-readiness{font-size:11px}}

@@ -1,0 +1,37 @@
+Correzione Kotoba Drive ONNX v0.4.5 - preparazione modelli (v0.4.5.1)
+
+Problema
+La Lab v4.1 salva negli assets per il browser solo i modelli e gli embedding vocali.
+Il tokenizer.model, bos_before_voice.npy e mimi_encoder.onnx rimangono nella cartella
+_download_models. Se v4.1 riutilizza i download della v4, questi file si trovano
+in kotoba_n5_onnx_pages_v4/_download_models e non in v4.1.
+Il preparatore originale cercava solo v4.1 ed exporter, quindi si bloccava
+con "File mancante it/tokenizer.model".
+
+Installazione
+- Estrarre lo ZIP nella ROOT del repository Kotoba Drive, sostituendo solo:
+  tools/prepare_kotoba_onnx.py
+- Conservare entrambe le cartelle Lab v4 e v4.1 nella stessa directory.
+- Dalla root di Kotoba Drive, in PowerShell, riutilizzare $Py e $Lab:
+
+  & $Py .\tools\prepare_kotoba_onnx.py --lab $Lab
+  & $Py .\tools\verify_onnx_deploy.py
+  & $Py .\source\build_index.py
+
+Modifiche
+- Ricerca tokenizer e BOS prima in v4.1, poi nelle cache v4 / v3 / v2
+  e nelle directory dell'exporter.
+- Identica risoluzione dell'encoder inglese per la voce maschile.
+- Non riscarica modelli, non cambia i grafi ONNX o la sintesi.
+- Se manca un file, mostra tutti i percorsi controllati.
+
+Verifica
+Test integrato con una Lab simulata in cui il tokenizer e il BOS italiani
+ed inglesi esistono SOLO nella cache v4: completata la preparazione dei
+tre bundle e creato onnx/manifest.json. I dati usati erano simulati, non
+pesi ONNX reali dell'utente.
+
+Nota
+Il comando verify_onnx_deploy.py verifica anche la presenza della nuova
+voce inglese maschile. Se il relativo campione non fosse scaricabile,
+prepara un WAV locale e passa --male-en-wav PERCORSO al preparatore.

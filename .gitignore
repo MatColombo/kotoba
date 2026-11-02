@@ -1,0 +1,12 @@
+# Existing progress remains in browser IndexedDB, not in Git.
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+# Local voice recordings are only used for preparing public voice embeddings.
+tools/_voice_samples/
+tools/voices/
+# Model encoder is required only during offline preparation, not in GitHub Pages.
+onnx/assets/*/mimi_encoder.onnx
