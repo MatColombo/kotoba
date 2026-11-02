@@ -165,7 +165,9 @@ def build_indexes(root:Path,manifest:dict,ja_yaml:Path|None):
   cfg=yaml.safe_load(ja_yaml.read_text(encoding='utf-8')) or {}
   if isinstance(cfg.get('replace_characters'),dict):ja_mapping=cfg['replace_characters']
  index_paths={}
- for name in ('n4-core','n4-final-kotoba-drive','n5-final-kotoba-drive'):
+ # Include both the curated N5 deck and the original OpenJLPT N5 deck:
+ # these have distinct deckId values, so they need separate token indexes.
+ for name in ('n4-core','n4-final-kotoba-drive','n5-final-kotoba-drive','jlpt-n5-openjlpt'):
   deck_path=root/'decks'/f'{name}.json'
   if not deck_path.exists():continue
   deck=json.loads(deck_path.read_text(encoding='utf-8'))
