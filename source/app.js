@@ -24,7 +24,7 @@
  // One-time non-destructive migration: read the previous settings without overwriting them.
  if(!Object.keys(stored).length){try{const previous=JSON.parse(localStorage.getItem('kotoba-drive-v2')||'{}');if(previous&&typeof previous==='object')stored=previous}catch(e){}}
  if(!Object.keys(stored).length){try{const old=JSON.parse(localStorage.getItem('kotoba-drive-demo-v1')||'{}');if(old&&typeof old==='object'){for(const key of ['lang','direction','category','size','wheel','progress','exampleCycle'])if(old[key]!==undefined)stored[key]=old[key]}}catch(e){}}
- const state={...defaults,...stored,sessionId:null,playing:false,paused:false,completed:false,view:'study',drawerOpen:false,chapterIndex:0,activePlan:null,drawerTab:'settings',deck:[],index:0,answerShown:false,revealed:{answer:false,forms:false,exampleJP:false,exampleNative:false},visibleExampleIndex:null,previewId:0,voices:[],phase:'',libraryFilter:'all',search:'',chosenWordId:1,hardwareCount:0,events:[]};
+ const state={...defaults,...stored,sessionId:null,playing:false,paused:false,completed:false,view:'home',drawerOpen:false,chapterIndex:0,activePlan:null,drawerTab:'settings',deck:[],index:0,answerShown:false,revealed:{answer:false,forms:false,exampleJP:false,exampleNative:false},visibleExampleIndex:null,previewId:0,voices:[],phase:'',libraryFilter:'all',search:'',chosenWordId:1,hardwareCount:0,events:[]};
  if(state.lang!=='en')state.lang='it';if(!['jp-native','native-jp'].includes(state.direction))state.direction='jp-native';
  if(!['all','verb','noun','na','i'].includes(state.category))state.category='all';
  state.size=num(state.size,5,15000,20);state.exampleCount=num(state.exampleCount,0,10,1);
@@ -173,10 +173,15 @@
    const visible=plan.filter(s=>['say','pause','chapterStart'].includes(s.kind)).slice(0,58);
    $('sequence-preview').innerHTML=visible.map(s=>s.kind==='pause'?`<span class="preview-chip wait" title="${textSafe(s.description)}">${s.seconds.toLocaleString('it-IT')}s</span>`:s.kind==='chapterStart'?`<span class="preview-chip chapter" title="Capitolo">◈ ${textSafe(s.title)}</span>`:`<span class="preview-chip" title="${textSafe(s.label)}">${textSafe(s.type==='formLabel'?`▣ ${s.label}`:s.type==='exampleJP'||s.type==='exampleNative'?s.label:s.text)}</span>`).join('')+(plan.length>58?`<span class="preview-more">… +${plan.length-58}</span>`:'')||'<span class="small-copy">Nessun elemento attivo.</span>';
  }
+ function highlightNotebookTerm(jp,w){
+   const text=String(jp||''),forms=[w.jp,...(w.forms||[]).map(f=>f.jp)].filter(Boolean).sort((a,b)=>b.length-a.length);
+   const expressions=[...new Set(forms)].filter(x=>x.length>1);if(!expressions.length)return textSafe(text);
+   let out='',i=0;while(i<text.length){const match=expressions.find(x=>text.startsWith(x,i));if(match){out+=`<mark class="nb-term-mark">${textSafe(match)}</mark>`;i+=match.length;}else{out+=textSafe(text[i]);i++;}}return out;
+ }
  // Readable current card, including the two-way prompt/answer presentation.
  function renderStudy(){
    const w=current(),total=state.deck.length,{example, index:exIndex}=selectedExample(w);const nativeFirst=state.direction==='native-jp';
-   $('study-counter').textContent=t(`PAROLA ${Math.min(state.index+1,total)} / ${total}`,`WORD ${Math.min(state.index+1,total)} / ${total}`);
+   $('study-counter').textContent=`${Math.min(state.index+1,total)} / ${total}`;
    const ch=state.activePlan?.chapters||compileSequence(w).chapters;const ci=Math.min(state.chapterIndex,Math.max(0,ch.length-1));
    $('chapter-label').textContent=ch.length?t(`CAPITOLO ${ci+1}/${ch.length}: ${ch[ci].title}`,`CHAPTER ${ci+1}/${ch.length}: ${ch[ci].title}`):t('Nessun capitolo attivo','No active chapter');
    $('progress-bar').style.width=(total?((state.index+1)/total*100):0)+'%';
@@ -195,18 +200,22 @@
    $('study-answer-reading').textContent=(state.revealed.answer||state.answerShown)&&nativeFirst?w.kana:'';
    $('forms-heading').textContent=t('FORME GRAMMATICALI','GRAMMAR FORMS');
    $('forms-count').textContent=t(`${w.forms.length} forme`,`${w.forms.length} forms`);
-   $('study-forms').innerHTML=(state.revealed.forms||state.answerShown)?w.forms.slice(0,3).map(f=>`<span class="form-pill"><span>${textSafe(f.label)}</span>${textSafe(f.jp)}</span>`).join('')+(w.forms.length>3?`<span class="extra-counter">+${w.forms.length-3}</span>`:''):`<span class="muted-placeholder">${t('Visibili dopo la risposta','Shown after the answer')}</span>`;
+   $('study-forms').innerHTML=w.forms.map((f,i)=>`<span class="form-pill" data-nb-form="${i}"><span>${textSafe(f.label)}</span>${textSafe(f.jp)}</span>`).join('');
    $('example-heading').textContent=t(`ESEMPIO ${Math.min(exIndex+1,examplesForCard(w).length)} / ${examplesForCard(w).length}`,`EXAMPLE ${Math.min(exIndex+1,examplesForCard(w).length)} / ${examplesForCard(w).length}`);
-   $('study-example-jp').textContent=(state.revealed.exampleJP||state.answerShown)?example.jp:t('Frase nascosta fino alla soluzione','Sentence hidden until the answer');
+   $('study-example-jp').innerHTML=(state.revealed.exampleJP||state.answerShown)?highlightNotebookTerm(example.jp,w):textSafe(t('Frase nascosta fino alla soluzione','Sentence hidden until the answer'));
    $('study-example-kana').textContent=(state.revealed.exampleJP||state.answerShown)?example.kana:'';
    $('study-example-native').textContent=(state.revealed.exampleNative||state.answerShown)?example[state.lang]:'';
-   $('btn-play').innerHTML=state.playing?`<span class="control-symbol">Ⅱ</span><span>${t('Pausa','Pause')}</span>`:`<span class="control-symbol">▶</span><span>${state.completed?t('Nuova','New'):state.paused?t('Riprendi','Resume'):t('Avvia audio','Start audio')}</span>`;
+   $('btn-play').innerHTML=state.playing?'Ⅱ':'▶';$('btn-play').setAttribute('aria-label',state.playing?'Pausa':state.paused?'Riprendi':'Avvia audio');
    $('repeat-label').textContent=t('Precedente','Previous');$('next-label').textContent=t('Successivo','Next');
    $('btn-reveal').textContent=allRevealed()?t('Nascondi soluzione','Hide answer'):t('Mostra soluzione','Reveal answer');
    $('btn-show-detail').textContent=t('Esempi ↗','Examples ↗');
-   const flags=progressFor(w);for(const [kind,name] of [['favorite','favorite'],['known','known']]){const btn=$(`study-${name}`);btn.setAttribute('aria-pressed',String(!!flags[kind]));btn.classList.toggle('active',!!flags[kind]);btn.textContent=kind==='favorite'?(flags[kind]?'★':'☆'):(flags[kind]?t('✓ Noto','✓ Known'):t('Noto','Known'));}
+   const flags=progressFor(w);for(const [kind,name] of [['favorite','favorite'],['known','known']]){const btn=$(`study-${name}`);btn.setAttribute('aria-pressed',String(!!flags[kind]));btn.classList.toggle('active',!!flags[kind]);btn.textContent=kind==='favorite'?(flags[kind]?'★':'☆'):'✓';}
    $('study-meaning-count').textContent=t(`Significato ♫ ${flags.meaningPlays||0}`,`Meaning ♫ ${flags.meaningPlays||0}`);updateOnnxProgress(speechAdapter.percent(state.index));
    scheduleExampleScroll();
+   $('study-card').dataset.nbFocus=state.nbReading?.type||'';$('study-card').classList.toggle('nb-audio-paused',!!state.paused);
+   document.querySelectorAll('[data-nb-focus]').forEach(el=>el.classList.toggle('nb-reading',el.dataset.nbFocus===state.nbReading?.type));
+   document.querySelectorAll('[data-nb-form]').forEach(el=>el.classList.toggle('nb-reading',state.nbReading?.type==='forms'&&Number(el.dataset.nbForm)===state.nbReading.formIndex));
+   document.dispatchEvent(new Event('kotoba:study-rendered'));
    $('playback-status').textContent=state.phase;$('status-dot').classList.toggle('live',state.playing);updateMediaMetadata();updateStats();
  }
  let exampleScrollFrame=0;
@@ -228,7 +237,7 @@
    for(const lang of ['it','en']){$('language-'+lang).classList.toggle('active',state.lang===lang);$('language-'+lang).setAttribute('aria-pressed',String(state.lang===lang))}
    document.documentElement.lang=state.lang;renderStudy();renderLibrary();renderDetail();renderSequenceEditor();renderDeckManager();if(state.view==='stories')renderStories();
  }
- function showView(tab){if(state.view==='stories'&&tab!=='stories')stopStory();if(state.view==='library'&&tab!=='library')interruptPreview();state.view=tab;for(const type of ['study','library','diagnostics','decks','sessions','stories'])$('view-'+type).classList.toggle('hidden',tab!==type);$('header-section').textContent=tab==='study'?'STUDIO':tab==='library'?'LESSICO':tab==='decks'?'DECK':tab==='sessions'?'SESSIONI':tab==='stories'?'STORIE':'TEST';if(tab==='library'){renderLibrary();renderDetail()}if(tab==='diagnostics')renderCapabilities();if(tab==='decks')renderDeckManager();if(tab==='sessions')renderSessions();if(tab==='stories')renderStories();$('main-content').scrollTop=0}
+ function showView(tab){if(state.view==='stories'&&tab!=='stories')stopStory();if(state.view==='library'&&tab!=='library')interruptPreview();state.view=tab;document.querySelectorAll('#main-content > .view').forEach(el=>el.classList.toggle('hidden',el.id!=='view-'+tab));$('header-section').textContent=tab==='study'?'STUDIO':tab==='home'?'HOME':'';if(tab==='library'){renderLibrary();renderDetail()}if(tab==='diagnostics')renderCapabilities();if(tab==='decks')renderDeckManager();if(tab==='sessions')renderSessions();if(tab==='stories')renderStories();$('main-content').scrollTop=0;document.dispatchEvent(new CustomEvent('kotoba:viewchange',{detail:{view:tab}}))}
  function renderStories(){
    const rows=activeDeck?.stories||[];
    if(!rows.length){$('story-list').innerHTML='<p class="small-copy">Questo deck non contiene storie.</p>';$('story-detail').innerHTML='';return}
@@ -316,19 +325,19 @@
  function bridgeOff(){const player=$('media-bed');if(!player.paused)player.pause()}
  async function requestWake(){if(!state.wake||!('wakeLock'in navigator)||document.visibilityState!=='visible'||wakeLockHandle)return;try{const newLock=await navigator.wakeLock.request('screen');if(!state.playing){newLock.release().catch(()=>{});return}wakeLockHandle=newLock;newLock.addEventListener('release',()=>{if(wakeLockHandle===newLock)wakeLockHandle=null},{once:true})}catch(e){makeLog('SCHERMO',`Wake Lock non disponibile: ${e.name||e.message}`)}}
  function releaseWake(){if(wakeLockHandle){const lock=wakeLockHandle;wakeLockHandle=null;lock.release().catch(()=>{})}}
- function stopLesson(msg){ttsPrepareTicket++;finalizeRun(false);releaseWake();state.playing=false;state.paused=false;cancelLesson();bridgeOff();setPlaybackState();state.phase=msg||t('Riproduzione fermata','Playback stopped');save();renderStudy()}
+ function stopLesson(msg){state.nbReading=null;ttsPrepareTicket++;finalizeRun(false);releaseWake();state.playing=false;state.paused=false;cancelLesson();bridgeOff();setPlaybackState();state.phase=msg||t('Riproduzione fermata','Playback stopped');save();renderStudy()}
  function pauseLesson(){if(!state.playing)return;ttsPrepareTicket++;runPauseStart=Date.now();playbackController.pause();state.playing=false;state.paused=true;releaseWake();bridgeOff();setPlaybackState();state.phase=t('In pausa','Paused');save();renderStudy()}
  function resetSession(){syncSessionCreator();showView('sessions');closeDrawer();toast('Scegli filtri e shuffle prima di creare la sessione')}
  function loadVoices(){if(!('speechSynthesis'in window))return;state.voices=speechSynthesis.getVoices()||[];renderCapabilities()}
  function selectVoice(lang){const prefix=lang.split('-')[0].toLowerCase();const matches=state.voices.filter(v=>v.lang.toLowerCase().startsWith(prefix));return matches.find(v=>v.localService)||matches[0]||null}
  function renderCapabilities(){const tts='speechSynthesis'in window,ms='mediaSession'in navigator;$('cap-tts').textContent=tts?'DISPONIBILE':'NON DISPONIBILE';$('cap-tts').className=tts?'available':'unavailable';$('cap-media').textContent=ms?'API PRESENTE':'NON DISPONIBILE';$('cap-media').className=ms?'available':'unavailable';for(const [id,lang] of [['ja','ja-JP'],['it','it-IT'],['en','en-US']]){const v=selectVoice(lang);$('cap-'+id).textContent=v?`${v.name} (${v.lang})`:tts?'Voce non elencata':'Non disponibile';$('cap-'+id).className=v?'available':'unavailable'}$('hardware-count').textContent=String(state.hardwareCount)}
  const nativeSpeech=new Core.SpeechAdapter('speechSynthesis'in window?window.speechSynthesis:null,window.SpeechSynthesisUtterance,selectVoice,msg=>makeLog('TTS',msg));
- let ttsPrepareTicket=0;
+ let ttsPrepareTicket=0;let nbOnnxActivity={phase:'model',lang:'ja'};
  const speechAdapter=new KotobaOnnx.OnnxStudyAudio({fallback:nativeSpeech,workerPath:'./tts-worker.js',
-   onStatus:msg=>{makeLog('ONNX',msg);const node=$('onnx-state');if(node)node.textContent=String(msg).slice(0,150);},
+   onStatus:msg=>{makeLog('ONNX',msg);const node=$('onnx-state');if(node)node.textContent=String(msg).slice(0,150);const text=String(msg),m=text.match(/(?:Caricamento modello\s+|^)(JA|IT|EN)(?=[:\s])/i);if(m){nbOnnxActivity={phase:/\bfrase\s+\d+\/\d+/i.test(text)?'synth':'model',lang:m[1].toLowerCase()};updateOnnxProgress(speechAdapter.percent(state.index))}},
    onProgress:evt=>{
     const isCurrent=evt.index===undefined||evt.index===state.index;
-    if(evt.type==='card'&&isCurrent)updateOnnxProgress(evt.percent);
+    if(evt.type==='card'&&isCurrent){if(evt.percent>0)nbOnnxActivity.phase='synth';updateOnnxProgress(evt.percent)}
     if(evt.type==='preload'){$('onnx-state').textContent=`Precaricamento: ${evt.count} card pronte · ~${Math.max(0,evt.secondsRemaining)} s rimasti`;}
     if(evt.type==='preloadEnd'){$('onnx-state').textContent='Precaricamento concluso o fermato. Gli audio rimangono in memoria per la sessione.';}
    }
@@ -341,18 +350,17 @@
    updateOnnxProgress(speechAdapter.percent(state.index));
  }
  function updateOnnxProgress(percent){
-   const display=$('onnx-readiness');if(!display)return;
-   if(!state.ttsEnabled){display.hidden=true;return;}display.hidden=false;
+   const display=$('onnx-readiness'),caption=$('onnx-progress-caption');if(!display)return;
    const progress=Math.max(0,Math.min(100,Number(percent)||0));
+   const plan=state.deck[state.index]?compileSequence(current()).plan:[];
+   const onnxEvents=plan.filter(e=>e.kind==='say'&&speechAdapter.needsOnnx(e));
+   const visible=state.ttsEnabled&&state.playing&&onnxEvents.length>0&&progress<100;
+   display.hidden=!visible;caption.hidden=!visible;$('study-card').classList.toggle('nb-onnx-loading',!!visible);
+   if(!visible)return;
    $('onnx-progress-ring').style.setProperty('--percent',String(progress));
    $('onnx-progress-number').textContent=`${Math.round(progress)}%`;
-   // A native event is synthesized in real time, not pre-buffered as PCM.
-   const plan=state.deck[state.index]?compileSequence(current()).plan:[];
-   const nativePart=plan.some(e=>e.kind==='say'&&!speechAdapter.needsOnnx(e));
-   const onnxPart=plan.some(e=>e.kind==='say'&&speechAdapter.needsOnnx(e));
-   $('onnx-progress-caption').textContent=progress>=100?
-      (!onnxPart?'Voce dispositivo · live':nativePart?'ONNX pronto · voce dispositivo live':'Card audio ONNX pronta'):
-      `Audio ONNX ${Math.round(progress)}% · ${nativePart?'dispositivo live':'preparazione'}`;
+   const label=nbOnnxActivity.lang==='en'?'inglese':nbOnnxActivity.lang==='it'?'italiano':'giapponese';
+   caption.textContent=nbOnnxActivity.phase==='model'?`Caricamento modello ${label}…`:`${Math.round(progress)}% — Generazione ${label}…`;
  }
  function applyOnnxSettings({restart=true}={}){
    if(restart&&(state.playing||state.paused))stopLesson('Impostazioni ONNX cambiate');
@@ -396,6 +404,7 @@
    if(step.kind==='pause'){setPhase(t(`Pausa ${step.seconds}s`,`Pause ${step.seconds}s`));return}
    if(step.kind!=='say')return;
    const nativeFirst=state.direction==='native-jp';
+   state.nbReading={type:step.type==='form'||step.type==='formLabel'?'forms':step.type,formIndex:step.formIndex};
    if(step.exIndex!==null&&step.exIndex!==undefined){
      if(state.visibleExampleIndex!==step.exIndex&&!state.answerShown){state.revealed.exampleJP=false;state.revealed.exampleNative=false;}
      state.visibleExampleIndex=step.exIndex;
@@ -406,10 +415,17 @@
    if(step.type==='exampleNative')state.revealed.exampleNative=true;
    renderStudy();setPhase(t(`In ascolto · ${step.label}`,`Listening · ${step.label}`));
  }
+ function recordNotebookListen(w){
+   try{const key='kotoba-notebook-listens-v1',all=JSON.parse(localStorage.getItem(key)||'[]');const events=Array.isArray(all)?all:[];
+   events.push({deckId:activeDeckId,cardId:String(w.id),jp:String(w.jp||''),at:new Date().toISOString()});
+   const recent=events.filter(x=>Date.now()-Date.parse(x.at)<90*86400000).slice(-10000);
+   localStorage.setItem(key,JSON.stringify(recent));document.dispatchEvent(new Event('kotoba:listen-complete'));
+   }catch(err){console.warn('Statistiche giornaliere non memorizzate:',err)}
+ }
  function finishedCard(){
    if(!state.playing)return;
-   const w=current();if(!currentRun?.heardSay){stopLesson('TTS non disponibile: ascolto non conteggiato');return;}finalizeRun(true);if(currentSession()?.exampleShuffleEnabled){const s=currentSession();s.exampleOffsets??={};s.exampleOffsets[String(w.id)]=(exampleStart(w)+state.exampleCount)%Math.max(1,examplesForCard(w).length);}else state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+state.exampleCount)%Math.max(1,examplesForCard(w).length);save();
-   state.index++;speechAdapter.openCard(state.index);state.chapterIndex=0;save();state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
+   const w=current();if(!currentRun?.heardSay){stopLesson('TTS non disponibile: ascolto non conteggiato');return;}finalizeRun(true);recordNotebookListen(w);state.nbReading=null;if(currentSession()?.exampleShuffleEnabled){const s=currentSession();s.exampleOffsets??={};s.exampleOffsets[String(w.id)]=(exampleStart(w)+state.exampleCount)%Math.max(1,examplesForCard(w).length);}else state.exampleCycle[w.id]=((Number(state.exampleCycle[w.id])||0)+state.exampleCount)%Math.max(1,examplesForCard(w).length);save();
+   state.index++;state.nbReading=null;speechAdapter.openCard(state.index);state.chapterIndex=0;save();state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
    if(state.index<state.deck.length){playCardAtChapter(0);return}
    state.playing=false;state.paused=false;state.completed=true;const session=currentSession();if(session){session.status='completed';session.completedAt=new Date().toISOString();}releaseWake();bridgeOff();setPlaybackState();state.index=Math.max(0,state.deck.length-1);revealAll();state.phase=t('Sessione completata','Session complete');renderStudy();save();renderSessions();toast(t('Sessione terminata','Session finished'));
  }
@@ -433,7 +449,7 @@
      speechAdapter.scheduleFuture();setPlaybackState();renderStudy();
    };
    if(state.ttsEnabled&&state.ttsStrategy==='ready'){
-     state.phase='Preparazione audio ONNX della card';renderStudy();
+     nbOnnxActivity={phase:'model',lang:result.plan.find(e=>e.kind==='say'&&speechAdapter.needsOnnx(e))?.lang?.slice(0,2)||'ja'};state.phase='Preparazione audio ONNX della card';renderStudy();
      speechAdapter.prepareCard(state.index).then(begin).catch(error=>{
        if(preparationToken!==ttsPrepareTicket||!state.playing)return;
        makeLog('ONNX',error.message||String(error));toast('ONNX non pronto: voce di sistema per questa sessione');
@@ -619,7 +635,7 @@
    state.lang=state.lang==='en'?'en':'it';state.size=Math.max(5,Math.min(BANK.length,Number(state.size)||20));state.chosenWordId=String(BANK[0].id);
    speechAdapter.configure({enabled:state.ttsEnabled,strategy:state.ttsStrategy,settings:state.ttsParams});
    initializeSettings();renderOnnxSettings();syncSessionCreator();restoreSessionOrCreate();renderLanguage();renderSessions();setupMediaSession();await refreshCatalog();save();
-   $('boot-error').hidden=true;makeLog('AVVIO','Kotoba Drive v0.4.4: deck completi N4 e N5 nel catalogo online; test reali iPhone ancora richiesti');
+   $('boot-error').hidden=true;makeLog('AVVIO','Kotoba Drive · Notebook UI (motore TTS 0.4.6 preservato)');showView('home');document.dispatchEvent(new Event('kotoba:booted'));
  }
  // Deck manager events: all file contents are validated before writing to IndexedDB.
  $('deck-list').addEventListener('click',async e=>{const btn=e.target.closest('button');if(!btn)return;try{
@@ -658,7 +674,7 @@
  $('detail-favorite').addEventListener('click',()=>changeFlag(wordById(state.chosenWordId),'favorite'));
  $('detail-known').addEventListener('click',()=>changeFlag(wordById(state.chosenWordId),'known'));
  // Global navigation and basic study controls.
- $('btn-menu').addEventListener('click',()=>state.drawerOpen?closeDrawer():openDrawer());
+ $('btn-menu').addEventListener('click',()=>document.dispatchEvent(new Event('kotoba:toggle-menu')));
  $('btn-close-drawer').addEventListener('click',closeDrawer);$('drawer-shade').addEventListener('click',closeDrawer);
  $('btn-drawer-done').addEventListener('click',()=>{closeDrawer();showView('study')});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&state.drawerOpen)closeDrawer()});
@@ -668,8 +684,15 @@
  for(const lang of ['it','en'])$('language-'+lang).addEventListener('click',()=>{
     if(state.lang===lang)return;if(state.playing||state.paused)stopLesson();interruptPreview();state.chapterIndex=0;state.activePlan=null;state.lang=lang;const session=currentSession();if(session)session.language=lang;resetReveal();state.visibleExampleIndex=null;state.phase=lang==='it'?'Pronto per iniziare':'Ready to start';save();renderLanguage();toast(lang==='it'?'Lingua madre: italiano':'Native language: English')
  });
+ $('nb-card-prev').addEventListener('click',()=>window.KotobaNotebookBridge.card(-1));$('nb-card-next').addEventListener('click',()=>window.KotobaNotebookBridge.card(1));
  $('btn-play').addEventListener('click',startLesson);$('btn-repeat').addEventListener('click',()=>navigateChapter(-1));$('btn-next').addEventListener('click',()=>navigateChapter(1));
  $('btn-reveal').addEventListener('click',()=>{if(allRevealed())resetReveal();else revealAll();renderStudy()});
+ // The answer pane replaces the former textual Reveal button in the compact flashcard.
+ $('answer-panel').setAttribute('role','button');$('answer-panel').setAttribute('tabindex','0');
+ $('answer-panel').setAttribute('aria-label','Mostra o nascondi la risposta');
+ const revealMeaningOnly=()=>{if(state.answerShown)resetReveal();else state.revealed.answer=!state.revealed.answer;renderStudy()};
+ $('answer-panel').addEventListener('click',revealMeaningOnly);
+ $('answer-panel').addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();revealMeaningOnly()}});
  $('example-prev').addEventListener('click',()=>moveExample(-1));$('example-next').addEventListener('click',()=>moveExample(1));
  $('btn-show-detail').addEventListener('click',()=>{state.chosenWordId=current().id;showView('library');renderDetail();if(innerWidth<721)$('detail-panel').scrollIntoView({behavior:'smooth',block:'start'})});
  // Session settings; the sequence for each translation direction is saved separately.
@@ -840,6 +863,21 @@
   boot().catch(e=>{console.error(e);$('boot-error').textContent=e.message||String(e);$('boot-error').hidden=false;});
  if('serviceWorker'in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
  window.addEventListener('pagehide',()=>{cancelLesson();releaseWake();bridgeOff();speechAdapter.dispose();});
+ // Visual notebook controller: preserves the original session, playback and TTS implementations.
+ window.KotobaNotebookBridge=Object.freeze({
+   view:showView, getView:()=>state.view,
+   data:()=>({sessions:studyDoc.sessions,installedDecks,catalog,deckStates:studyDoc.deckStates,activeDeckId,sessionId:state.sessionId,activeCard:current(),currentIndex:state.index,session:currentSession(),ttsEnabled:state.ttsEnabled,ttsStrategy:state.ttsStrategy}),
+   resume(id){const s=sessionById(id);if(!s)throw Error('Sessione non trovata');if(s.status==='completed'){s.status='in-progress';s.currentCardIndex=0;s.currentChapterIndex=0;s.completedAt=null}activateSession(s);renderLanguage();showView('study')},
+   newSession(deckId){syncSessionCreator();showView('sessions');if(deckId){$('create-deck').value=deckId;updateAvailableOptions();updateEligible()}},
+   deck(id){switchDeck(id).then(()=>{showView('notebook-detail');document.dispatchEvent(new Event('kotoba:deckchange'))}).catch(e=>toast(e.message))},
+   card(delta){if(!state.deck.length)return;const index=Math.max(0,Math.min(state.deck.length-1,state.index+delta));if(index===state.index)return;stopLesson();state.index=index;state.chapterIndex=0;state.completed=false;state.activePlan=null;state.nbReading=null;resetReveal();state.visibleExampleIndex=null;speechAdapter.openCard(index);save();renderStudy()},
+   preview:()=>{if(state.playing||state.paused)stopLesson();interruptPreview();const compiled=compileSequence(current());if(compiled.sayCount)previewPlayback.start(compiled.plan)},
+   plan:()=>compileSequence(current()),
+   legacySettings:()=>openDrawer('settings'), closeLegacy:()=>{if(state.drawerOpen)closeDrawer()}, refresh:()=>{renderSessions();renderDeckManager();renderStudy()},
+   getLog:()=>state.events.map(e=>typeof e==='string'?e:JSON.stringify(e)).join('\n'),
+   getEngineStatus:()=>({enabled:state.ttsEnabled,lang:state.ttsParams,percent:speechAdapter.percent(state.index),ready:!!speechAdapter.manifest}),
+   debug:()=>makeLog('UI','Notebook UI attiva')
+ });
  // Read-only QA surface, useful for validating nested repetition without TTS voices.
  window.KotobaDriveQA=Object.freeze({getPlan:()=>compileSequence(current()),getContextSelection:()=>examplesForCard(current()).map(x=>x.id),getStories:()=>activeDeck?.stories?.length||0,getSettings:()=>({lang:state.lang,direction:state.direction,exampleCount:state.exampleCount,groups:selectedSequence().groups,audioMasters:state.audioMasters}),getCurrent:()=>current().jp,getSequences:()=>sequenceRepo.serialize(),getDecks:()=>installedDecks.map(d=>({id:d.deckId,cards:d.cards.length})),getStudy:()=>snapshotStudy(),getSession:()=>structuredClone(currentSession()||null),getMetrics:()=>Sessions.dashboard(BANK,state.progress,studyDoc.sessions),getPlayback:()=>({index:state.index,chapter:state.chapterIndex,playing:state.playing,paused:state.paused,position:playbackController.index}),core:Core});
 })();

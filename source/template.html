@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#101827">
+  <meta name="theme-color" content="#F8F6EF">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Kotoba Drive">
-  <meta name="description" content="Kotoba Drive v0.4: deck JSON indipendenti, IndexedDB, sequenze audio e TTS per lingua.">
+  <meta name="description" content="Kotoba Drive Notebook: studio audio del giapponese, deck JLPT e sintesi locale ONNX/ibrida.">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="apple-touch-icon" href="./icon-192.png">
@@ -17,45 +17,38 @@
 <body>
  <div class="app" id="app">
   <header class="topbar">
-   <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="app-drawer"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-   <div class="brand"><div class="brandmark" aria-hidden="true">語</div><div><div class="brandname">kotoba<span>drive</span></div><div class="brandline">v0.4.6 · TTS ibrido ONNX + dispositivo</div></div></div>
-   <div class="header-right"><span id="header-section" class="header-section">STUDIO</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
+   <button class="menu-trigger icon-btn" id="btn-menu" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="nb-nav"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+   <div class="brand"><img class="nb-top-icon" src="./icon-192.png" alt="" width="27" height="27"><div class="brandname">Kotoba Drive</div></div>
+   <div class="header-right"><span id="header-section" class="header-section">HOME</span><div class="lang-switch" aria-label="Lingua madre"><button id="language-it" class="active" type="button" aria-pressed="true">IT</button><button id="language-en" type="button" aria-pressed="false">EN</button></div></div>
   </header>
   <main id="main-content">
-   <section class="view study-view" id="view-study" aria-label="Flashcard audio">
-    <article class="study-card" id="study-card">
-     <div class="card-top"><div class="card-caption" id="study-counter">PAROLA 1 / 20</div><span class="meaning-counter card-meaning-count" id="study-meaning-count" title="Letture audio concluse del significato">Significato ♫ 0</span><div class="card-flags"><button type="button" id="study-favorite" class="flag-btn" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn" aria-label="Noto" aria-pressed="false">Noto</button></div><span id="pos-pill" class="pos-badge">VERBO</span></div>
-     <div class="progress-track"><div id="progress-bar"></div></div>
-     <div class="card-chapter-row">
-      <div class="chapter-line" id="chapter-label" aria-live="polite">CAPITOLO 1/4</div>
-      <div class="front-label" id="front-label">DOMANDA · GIAPPONESE</div>
+   <section class="view nb-view nb-home" id="view-home" aria-label="Home">
+    <div class="nb-home-brand"><div class="nb-home-brandline"><img src="./icon-192.png" alt="" width="45" height="45"><div><h1>Kotoba Drive</h1><p>Learn Japanese... hands free.</p></div></div></div>
+    <section class="nb-home-dashboard" aria-label="Attività recente"><div class="nb-dashboard-heading"><span>Ultimi 7 giorni</span><span class="nb-streak" id="nb-streak" title="Giorni consecutivi con card completate">♨ <b>0</b></span></div><div id="nb-activity-bars" class="nb-activity-bars" aria-label="Card ascoltate negli ultimi 7 giorni"></div><div class="nb-home-recent"><div><small>Ultimo deck</small><strong id="nb-last-deck">—</strong></div><div><small>Ultime 3 card</small><strong id="nb-recent-cards">—</strong></div></div></section>
+    <section class="nb-home-actions"><div class="nb-home-resume" id="nb-home-resume" hidden></div><div class="nb-session-title"><button class="nb-icon-action nb-add-session" type="button" data-nb-action="new-session" title="Nuova sessione" aria-label="Nuova sessione">+</button><h2>Sessioni</h2><span id="nb-sessions-count">0</span></div><div class="nb-session-scroll" id="nb-home-sessions" tabindex="0"></div></section>
+   </section>
+
+   <section class="view study-view hidden" id="view-study" aria-label="Flashcard audio">
+    <article class="study-card notebook-card" id="study-card">
+     <div class="nb-eyelets card-flags"><button type="button" id="study-favorite" class="flag-btn nb-eyelet" title="Preferito" aria-label="Preferito" aria-pressed="false">☆</button><button type="button" id="study-known" class="flag-btn nb-eyelet" title="Noto" aria-label="Noto" aria-pressed="false">✓</button></div>
+     <div class="nb-word-pair card-content">
+      <div class="nb-headword nb-focus" data-nb-focus="word"><div class="front-word" id="study-front" lang="ja">食べる</div><div class="front-reading" id="study-front-reading" lang="ja">たべる</div></div>
+      <div class="answer-panel nb-meaning nb-focus" data-nb-focus="meaning" id="answer-panel"><div id="study-answer" class="answer-word masked">••••</div><div id="study-answer-reading" class="answer-reading"></div></div>
      </div>
-     <div class="card-content">
-      <div class="front-word" id="study-front" lang="ja">集める</div>
-      <div class="front-reading" id="study-front-reading">あつめる</div>
-      <div class="answer-panel" id="answer-panel">
-       <span id="answer-label" class="answer-title">SOLUZIONE · ITALIANO</span>
-       <div id="study-answer" class="answer-word masked">••••</div>
-       <div id="study-answer-reading" class="answer-reading"></div>
+     <section class="learning-extras nb-context" id="learning-extras" aria-label="Forme ed esempi">
+      <div class="nb-forms-section"><div id="study-forms" class="compact-forms"></div></div>
+      <div class="nb-example-section"><div class="nb-example-header"><span id="example-heading">ESEMPIO 1 / 3</span><span class="example-actions"><button id="example-prev" class="mini-icon" type="button" aria-label="Esempio precedente">‹</button><button id="example-next" class="mini-icon" type="button" aria-label="Esempio successivo">›</button></span></div>
+       <div class="example-stage" id="example-stage"><div class="example-viewport jp-viewport nb-focus" data-nb-focus="exampleJP"><div class="example-scroll-inner example-jp" id="study-example-jp" lang="ja"></div></div><div class="example-viewport kana-viewport"><div class="example-scroll-inner example-kana" id="study-example-kana" lang="ja"></div></div><div class="example-viewport native-viewport nb-focus" data-nb-focus="exampleNative"><div class="example-scroll-inner example-native" id="study-example-native"></div></div></div>
       </div>
-     </div>
-     <div class="learning-extras" id="learning-extras">
-      <div class="extra-heading"><span id="forms-heading">FORME GRAMMATICALI</span><span id="forms-count" class="extra-counter">5 forme</span></div>
-      <div id="study-forms" class="compact-forms"></div>
-      <div class="example-divider"></div>
-      <div class="extra-heading"><span id="example-heading">ESEMPIO 1 / 10</span><span class="example-actions"><button id="example-prev" class="mini-icon" type="button" aria-label="Esempio precedente">‹</button><button id="example-next" class="mini-icon" type="button" aria-label="Esempio successivo">›</button></span></div>
-      <div class="example-stage" id="example-stage">
-       <div class="example-viewport jp-viewport"><div class="example-scroll-inner example-jp" id="study-example-jp" lang="ja"></div></div>
-       <div class="example-viewport kana-viewport"><div class="example-scroll-inner example-kana" id="study-example-kana" lang="ja"></div></div>
-       <div class="example-viewport native-viewport"><div class="example-scroll-inner example-native" id="study-example-native"></div></div>
-      </div>
-     </div>
-     <div class="study-bottom">
-      <div class="playback-status"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto per iniziare</span></div>
-      <div class="controls"><button class="control secondary" id="btn-repeat" type="button" aria-label="Capitolo precedente"><span class="control-symbol">◀</span><span id="repeat-label">◀ Capitolo</span></button><button class="control primary" id="btn-play" type="button"><span class="control-symbol">▶</span><span id="play-label">Avvia audio</span></button><button class="control secondary" id="btn-next" type="button" aria-label="Capitolo successivo"><span id="next-label">Capitolo ▶</span><span class="control-symbol">▶</span></button></div>
-      <div id="onnx-readiness" class="onnx-readiness" hidden role="status" aria-live="polite"><span class="onnx-ring" id="onnx-progress-ring"><span id="onnx-progress-number">0%</span></span><span id="onnx-progress-caption">Audio ONNX 0%</span></div>
-      <div class="card-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Esempi ↗</button></div>
-     </div>
+     </section>
+     <footer class="study-bottom nb-player">
+      <div class="nb-card-nav"><button type="button" id="nb-card-prev" aria-label="Card precedente" title="Card precedente">‹</button><strong id="study-counter">1 / 20</strong><button type="button" id="nb-card-next" aria-label="Card successiva" title="Card successiva">›</button></div>
+      <div class="controls nb-transport"><button class="control secondary" id="btn-repeat" type="button" aria-label="Step precedente" title="Step precedente"><span class="control-symbol">◀◀</span><span class="nb-sr-only" id="repeat-label">Precedente</span></button><div class="nb-play-wrapper"><button class="control primary" id="btn-play" type="button" aria-label="Play o pausa">▶</button><div id="onnx-readiness" class="onnx-readiness" hidden role="status" aria-live="polite"><span class="onnx-ring" id="onnx-progress-ring"><span id="onnx-progress-number">0%</span></span></div></div><button class="control secondary" id="btn-next" type="button" aria-label="Step successivo" title="Step successivo"><span class="control-symbol">▶▶</span><span class="nb-sr-only" id="next-label">Successivo</span></button></div>
+      <div id="onnx-progress-caption" class="nb-onnx-caption" aria-live="polite" hidden></div>
+      <div class="playback-status" id="nb-playback-hint"><span class="status-dot" id="status-dot"></span><span id="playback-status" aria-live="polite">Pronto</span></div>
+      <div class="card-actions nb-hidden-actions"><button id="btn-reveal" class="text-button" type="button">Mostra soluzione</button><button id="btn-show-detail" class="text-button" type="button">Dettagli</button></div>
+     </footer>
+     <div class="nb-compat" aria-hidden="true"><span id="study-meaning-count"></span><span id="pos-pill"></span><span id="front-label"></span><span id="answer-label"></span><span id="forms-heading"></span><span id="forms-count"></span><span id="chapter-label"></span><div id="progress-bar"></div></div>
     </article>
    </section>
 
@@ -108,9 +101,26 @@
     <div class="section-header"><button class="back-btn" data-goto-study type="button">← Studio</button><div><div class="section-kicker">BLUETOOTH · iOS</div><h1>Test volante</h1></div></div>
     <div class="diagnostics-layout"><section class="surface diag-panel"><h2>Compatibilità audio</h2><p class="small-copy">Verifica i pulsanti soltanto a veicolo fermo. I comandi fisici si distinguono dalle simulazioni nel registro.</p><div class="diag-line"><span>Web Speech API</span><strong id="cap-tts">—</strong></div><div class="diag-line"><span>Media Session API</span><strong id="cap-media">—</strong></div><div class="diag-line"><span>Voce giapponese</span><strong id="cap-ja">—</strong></div><div class="diag-line"><span>Voce italiana</span><strong id="cap-it">—</strong></div><div class="diag-line"><span>Voce inglese</span><strong id="cap-en">—</strong></div><div class="diag-line"><span>Eventi ricevuti</span><strong id="hardware-count">0</strong></div><div class="diag-actions"><button id="btn-media" class="solid-btn" type="button">▶ Audio test</button><button id="btn-ja" class="outline-btn" type="button">♪ 日本語</button><button id="btn-it" class="outline-btn" type="button">♪ IT</button><button id="btn-en" class="outline-btn" type="button">♪ EN</button></div><p class="small-copy">L'audio di test è quasi silenzioso e serve ad attivare la sessione multimediale: non prova da solo la compatibilità del volante.</p></section><section class="surface diag-panel"><h2>Registro eventi</h2><div id="event-log" class="event-log" role="log" aria-live="polite">In attesa di eventi…</div><div class="diag-actions"><button id="sim-prev" class="outline-btn" type="button">← Simula</button><button id="sim-play" class="outline-btn" type="button">⏯ Simula</button><button id="sim-next" class="outline-btn" type="button">Simula →</button><button id="clear-log" class="outline-btn" type="button">Svuota</button></div><p class="small-copy"><strong>MEDIA:</strong> evento reale ricevuto dal browser. <strong>SIMULATO:</strong> evento prodotto da un pulsante della pagina. La ricezione dal volante su iPhone non è garantita.</p></section></div>
    </section>
+
+   <section id="view-notebook-library" class="view nb-view nb-page hidden"><div class="nb-page-title"><h1>Libreria</h1><div><button class="nb-icon-action" type="button" data-nb-action="search-decks" aria-label="Cerca" title="Cerca">⌕</button><button class="nb-icon-action" type="button" data-nb-action="import" aria-label="Aggiungi o importa" title="Aggiungi">+</button></div></div><nav class="nb-segment" aria-label="Sezione della libreria"><button type="button" id="nb-tab-installed" class="selected" data-nb-tab="installed">Installati</button><button type="button" id="nb-tab-catalog" data-nb-tab="catalog">Catalogo</button></nav><input id="nb-library-search" type="search" class="input" hidden placeholder="Cerca un deck" aria-label="Cerca un deck"><div class="nb-content-scroll" id="nb-library-list"></div></section>
+   <section id="view-notebook-detail" class="view nb-view nb-page hidden"><div class="nb-page-title"><button type="button" class="nb-back" data-nb-view="notebook-library" aria-label="Torna a Libreria">‹</button><h1 id="nb-detail-title">Dettaglio deck</h1><button type="button" class="nb-icon-action" id="nb-detail-more" title="Gestione deck" aria-label="Gestisci deck">···</button></div><div class="nb-detail-body"><div class="nb-detail-meta" id="nb-detail-meta"></div><button type="button" class="nb-primary-action" id="nb-create-from-deck">+ Nuova sessione</button><div class="nb-detail-stats" id="nb-detail-stats"></div><section class="nb-distribution"><h2>Distribuzione ascolti <button type="button" class="nb-info" title="Card per numero di ascolti completi. Le card mai completate non appaiono nelle barre.">ⓘ</button></h2><div class="nb-empty-count" id="nb-detail-unheard"></div><div class="nb-distribution-body" id="nb-detail-distribution"></div></section><section class="nb-month"><h2>Ultimi 30 giorni</h2><div id="nb-month-activity" class="nb-month-bars"></div><p id="nb-month-caption"></p></section><button type="button" class="nb-row-button" id="nb-deck-sessions">Sessioni esistenti <span>›</span></button></div></section>
+   <section id="view-notebook-sequences" class="view nb-view nb-page hidden"><div class="nb-page-title"><h1>Sequenze</h1></div><div id="nb-sequences-content" class="nb-content-scroll"></div></section>
+   <section id="view-notebook-audio" class="view nb-view nb-page hidden"><div class="nb-page-title"><h1>Audio e voci</h1></div><div id="nb-audio-content" class="nb-content-scroll"></div></section>
+   <section id="view-notebook-appearance" class="view nb-view nb-page hidden"><div class="nb-page-title"><h1>Aspetto</h1></div><div class="nb-appearance-content"><h2>Tema</h2><div class="nb-theme-choices"><button type="button" data-nb-theme-choice="paper"><span class="nb-theme-paper">あ</span>Paper</button><button type="button" data-nb-theme-choice="graphite"><span class="nb-theme-graphite">あ</span>Graphite</button><button type="button" data-nb-theme-choice="auto"><span class="nb-theme-auto">◐</span>Auto</button></div><h2>Dimensione testo Studio</h2><div class="nb-font-slider-line"><input id="nb-font-size" type="range" min="6" max="30" step="1" value="17" aria-label="Dimensione minima del testo"><output id="nb-font-px">17 px</output></div><div class="nb-font-preview" id="nb-font-preview"><div class="nb-font-head"><strong lang="ja">食べる</strong><span>mangiare</span></div><div class="nb-font-forms"><span>辞書形　食べる</span><span>│</span><span>て形　食べて</span><span>│</span><span>ない形　食べない</span></div><div class="nb-font-example"><p lang="ja">毎朝パンを<mark>食べます</mark>。</p><p>Ogni mattina mangio pane.</p></div></div><div class="nb-font-actions"><button type="button" id="nb-font-cancel">Annulla</button><button type="button" id="nb-font-apply">Applica</button></div><h2>Quadrettatura</h2><select id="nb-grid-style" class="input"><option value="none">Assente</option><option value="subtle" selected>Tenue</option><option value="visible">Visibile</option></select><label class="nb-check"><input type="checkbox" id="nb-animations" checked> Animazioni discrete</label></div></section>
+   <section id="view-notebook-backup" class="view nb-view nb-page hidden"><div class="nb-page-title"><h1>Backup e dati</h1></div><div class="nb-backup-content"><div class="nb-backup-symbol">♧</div><h2>I tuoi dati di studio</h2><p>Esporta o ripristina una copia locale.</p><div class="nb-backup-actions"><button type="button" id="nb-backup-export">↓ <span>Esporta backup</span> ›</button><button type="button" id="nb-backup-import">↑ <span>Ripristina da file</span> ›</button><button type="button" id="nb-backup-more">ⓘ <span>Contenuto del backup</span> ›</button></div></div></section>
+   <section id="view-notebook-errors" class="view nb-view nb-page hidden"><div class="nb-page-title"><h1>Registro errori</h1><div><button type="button" id="nb-copy-log" aria-label="Copia log" title="Copia log">⧉</button><button type="button" id="nb-clear-log" aria-label="Svuota log" title="Svuota">×</button></div></div><p class="nb-logs-caption">Registro tecnico completo · solo per diagnostica</p><pre id="nb-error-log" class="nb-error-log" tabindex="0"></pre></section>
   </main>
  </div>
 
+
+ <div id="nb-nav-shade" class="nb-nav-shade" hidden></div>
+ <nav id="nb-nav" class="nb-nav" aria-label="Navigazione principale" hidden>
+  <div class="nb-nav-heading">Kotoba Drive <button id="nb-close-menu" aria-label="Chiudi navigazione">×</button></div>
+  <p>STUDIO</p><button data-nb-view="home">⌂ <span>Home</span></button><button data-nb-view="study">▣ <span>Studio</span></button><button data-nb-view="notebook-library">▤ <span>Libreria</span></button><button data-nb-view="stories">♧ <span>Storie</span></button>
+  <p>CONFIGURAZIONE</p><button data-nb-view="sessions">⊞ <span>Nuova sessione</span></button><button data-nb-view="notebook-sequences">≡ <span>Sequenze</span></button><button data-nb-view="notebook-audio">♫ <span>Audio e voci</span></button><button data-nb-view="notebook-appearance">◐ <span>Aspetto</span></button>
+  <p>SISTEMA</p><button data-nb-view="notebook-backup">⇩ <span>Backup e dati</span></button><button data-nb-view="diagnostics">◉ <span>Diagnostica</span></button>
+  <button id="nb-advanced-link" class="nb-advanced-link">⚙ <span>Impostazioni avanzate</span></button>
+ </nav>
  <div class="drawer-shade" id="drawer-shade" hidden></div>
  <aside class="drawer" id="app-drawer" role="dialog" aria-modal="true" aria-label="Menu e configurazione" aria-hidden="true" inert>
   <div class="drawer-header"><div><div class="section-kicker">KOTOBA DRIVE</div><h2>Personalizza la sessione</h2></div><button class="icon-btn drawer-close" id="btn-close-drawer" type="button" aria-label="Chiudi menu">×</button></div>
@@ -167,5 +177,6 @@
  <script>__CONTENT_JS__</script>
  <script>__ONNX_TTS_JS__</script>
  <script>__APP_JS__</script>
+ <script>__NOTEBOOK_JS__</script>
 </body>
 </html>
