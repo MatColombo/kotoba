@@ -78,7 +78,7 @@
    const previous=$('create-deck').value||activeDeckId;
    $('create-deck').innerHTML=installedDecks.map(d=>`<option value="${textSafe(d.deckId)}">${textSafe(d.title)} (${d.cards.length})</option>`).join('');
    $('create-deck').value=installedDecks.some(d=>d.deckId===previous)?previous:activeDeckId;
-   $('create-language').value=state.lang;$('create-direction').value=state.direction;$('create-shuffle-examples').checked=!!(currentSession()?.exampleShuffleEnabled);
+   $('create-language').value=state.lang;$('create-direction').value=state.direction;$('create-shuffle-examples').checked=!!(currentSession()?.exampleShuffleEnabled);$('create-show-kana').checked=currentSession()?.showKana!==false;
    $('create-size').value=state.size;$('create-example-count').value=state.exampleCount;
    $('create-category').value=state.category;
    renderCreateSequences();updateAvailableOptions();updateEligible();
@@ -129,6 +129,8 @@
    state.chapterIndex=Math.max(0,Number(session.currentChapterIndex)||0);
    state.lang=session.language||'it';state.direction=session.direction||'jp-native';
    if(session.sequenceId)sequenceRepo.select(state.direction,session.sequenceId);
+   state.showKana=session.showKana!==false;
+   $('create-show-kana').checked=state.showKana;$('session-show-kana').checked=state.showKana;
    state.size=Number(session.requestedCount)||resolved.cards.length;state.category=session.filters?.category||'all';state.exampleCount=Math.min(10,Math.max(0,Number(session.exampleCount??state.exampleCount)));$('example-count').value=state.exampleCount;
    state.completed=session.status==='completed';state.paused=false;state.playing=false;state.activePlan=null;resetReveal();state.visibleExampleIndex=null;
    state.phase=recover?'Sessione ripristinata':'Sessione pronta';
@@ -144,6 +146,7 @@
    const session=Sessions.buildSession({deckId:deck.deckId,cards:deck.cards,progress:studyDoc.deckStates[deck.deckId]?.cards||{},filters,
     count:options.count??state.size,shuffle:options.shuffle??true,seed:options.seed,shuffleExamples:options.shuffleExamples??false,exampleSeed:options.exampleSeed,sequenceId:options.sequenceId||sequenceRepo.active(options.direction||state.direction).sequenceId,
     language:options.language||state.lang,direction:options.direction||state.direction,name:options.name||''});
+   session.showKana=options.showKana!==false;
    session.exampleCount=Number(options.exampleCount??state.exampleCount);
    studyDoc.sessions.push(session);activateSession(session);renderSessions();return session;
  }
@@ -174,10 +177,9 @@
    $('sequence-preview').innerHTML=visible.map(s=>s.kind==='pause'?`<span class="preview-chip wait" title="${textSafe(s.description)}">${s.seconds.toLocaleString('it-IT')}s</span>`:s.kind==='chapterStart'?`<span class="preview-chip chapter" title="Capitolo">◈ ${textSafe(s.title)}</span>`:`<span class="preview-chip" title="${textSafe(s.label)}">${textSafe(s.type==='formLabel'?`▣ ${s.label}`:s.type==='exampleJP'||s.type==='exampleNative'?s.label:s.text)}</span>`).join('')+(plan.length>58?`<span class="preview-more">… +${plan.length-58}</span>`:'')||'<span class="small-copy">Nessun elemento attivo.</span>';
  }
  function highlightNotebookTerm(jp,w){
-   const text=String(jp||''),forms=[w.jp,...(w.forms||[]).map(f=>f.jp)].filter(Boolean).sort((a,b)=>b.length-a.length);
-   const expressions=[...new Set(forms)].filter(x=>x.length>1);if(!expressions.length)return textSafe(text);
-   let out='',i=0;while(i<text.length){const match=expressions.find(x=>text.startsWith(x,i));if(match){out+=`<mark class="nb-term-mark">${textSafe(match)}</mark>`;i+=match.length;}else{out+=textSafe(text[i]);i++;}}return out;
+   return window.KotobaTermHighlight.markJapanese(jp,w);
  }
+
  // Readable current card, including the two-way prompt/answer presentation.
  function renderStudy(){
    const w=current(),total=state.deck.length,{example, index:exIndex}=selectedExample(w);const nativeFirst=state.direction==='native-jp';
@@ -192,19 +194,21 @@
    $('study-front').textContent=nativeFirst?w.meaning[state.lang]:w.jp;
    $('study-front').classList.toggle('native',nativeFirst);
    $('study-front').lang=nativeFirst?state.lang:'ja';
-   $('study-front-reading').textContent=nativeFirst?'':w.kana;
+   const showKana=currentSession()?.showKana!==false;
+   $('study-card').classList.toggle('nb-no-kana',!showKana);
+   $('study-front-reading').textContent=nativeFirst||!showKana?'':w.kana;
    $('study-answer').textContent=(state.revealed.answer||state.answerShown)?(nativeFirst?w.jp:w.meaning[state.lang]):'••••';
    $('study-answer').lang=nativeFirst?'ja':state.lang;
    $('study-answer').classList.toggle('jp',nativeFirst);
    $('study-answer').classList.toggle('masked',!(state.revealed.answer||state.answerShown));
-   $('study-answer-reading').textContent=(state.revealed.answer||state.answerShown)&&nativeFirst?w.kana:'';
+   $('study-answer-reading').textContent=showKana&&(state.revealed.answer||state.answerShown)&&nativeFirst?w.kana:'';
    $('forms-heading').textContent=t('FORME GRAMMATICALI','GRAMMAR FORMS');
    $('forms-count').textContent=t(`${w.forms.length} forme`,`${w.forms.length} forms`);
    $('study-forms').innerHTML=w.forms.map((f,i)=>`<span class="form-pill" data-nb-form="${i}"><span>${textSafe(f.label)}</span>${textSafe(f.jp)}</span>`).join('');
    $('example-heading').textContent=t(`ESEMPIO ${Math.min(exIndex+1,examplesForCard(w).length)} / ${examplesForCard(w).length}`,`EXAMPLE ${Math.min(exIndex+1,examplesForCard(w).length)} / ${examplesForCard(w).length}`);
-   $('study-example-jp').innerHTML=(state.revealed.exampleJP||state.answerShown)?highlightNotebookTerm(example.jp,w):textSafe(t('Frase nascosta fino alla soluzione','Sentence hidden until the answer'));
-   $('study-example-kana').textContent=(state.revealed.exampleJP||state.answerShown)?example.kana:'';
-   $('study-example-native').textContent=(state.revealed.exampleNative||state.answerShown)?example[state.lang]:'';
+   $('study-example-jp').innerHTML=highlightNotebookTerm(example.jp,w);
+   $('study-example-kana').textContent=showKana?example.kana:'';
+   $('study-example-native').textContent=example[state.lang]||'';
    $('btn-play').innerHTML=state.playing?'Ⅱ':'▶';$('btn-play').setAttribute('aria-label',state.playing?'Pausa':state.paused?'Riprendi':'Avvia audio');
    $('repeat-label').textContent=t('Precedente','Previous');$('next-label').textContent=t('Successivo','Next');
    $('btn-reveal').textContent=allRevealed()?t('Nascondi soluzione','Hide answer'):t('Mostra soluzione','Reveal answer');
@@ -359,8 +363,9 @@
    if(!visible)return;
    $('onnx-progress-ring').style.setProperty('--percent',String(progress));
    $('onnx-progress-number').textContent=`${Math.round(progress)}%`;
-   const label=nbOnnxActivity.lang==='en'?'inglese':nbOnnxActivity.lang==='it'?'italiano':'giapponese';
-   caption.textContent=nbOnnxActivity.phase==='model'?`Caricamento modello ${label}…`:`${Math.round(progress)}% — Generazione ${label}…`;
+   const names={ja:t('giapponese','Japanese'),it:t('italiano','Italian'),en:t('inglese','English')};
+   const label=names[nbOnnxActivity.lang]||names.ja;
+   caption.textContent=nbOnnxActivity.phase==='model'?t(`Caricamento modello ${label}…`,`Loading ${label} model…`):t(`${Math.round(progress)}% — Generazione ${label}…`,`${Math.round(progress)}% — Generating ${label} audio…`);
  }
  function applyOnnxSettings({restart=true}={}){
    if(restart&&(state.playing||state.paused))stopLesson('Impostazioni ONNX cambiate');
@@ -449,7 +454,7 @@
      speechAdapter.scheduleFuture();setPlaybackState();renderStudy();
    };
    if(state.ttsEnabled&&state.ttsStrategy==='ready'){
-     nbOnnxActivity={phase:'model',lang:result.plan.find(e=>e.kind==='say'&&speechAdapter.needsOnnx(e))?.lang?.slice(0,2)||'ja'};state.phase='Preparazione audio ONNX della card';renderStudy();
+     nbOnnxActivity={phase:'model',lang:result.plan.find(e=>e.kind==='say'&&speechAdapter.needsOnnx(e))?.lang?.slice(0,2)||'ja'};state.phase=t('Preparazione audio ONNX della card','Preparing ONNX card audio');renderStudy();
      speechAdapter.prepareCard(state.index).then(begin).catch(error=>{
        if(preparationToken!==ttsPrepareTicket||!state.playing)return;
        makeLog('ONNX',error.message||String(error));toast('ONNX non pronto: voce di sistema per questa sessione');
@@ -660,12 +665,12 @@
    $(id).addEventListener('change',()=>{if(['create-deck','create-register','create-group'].includes(id))updateAvailableOptions();if(id==='create-direction')renderCreateSequences();updateEligible()});
  }
  $('create-session').addEventListener('click',()=>{try{
-   const options={deckId:$('create-deck').value,name:$('create-name').value,count:Number($('create-size').value),filters:sessionFiltersFromForm(),shuffle:$('create-shuffle').checked,shuffleExamples:$('create-shuffle-examples').checked,language:$('create-language').value,direction:$('create-direction').value,sequenceId:$('create-sequence').value,exampleCount:Number($('create-example-count').value)};
+   const options={deckId:$('create-deck').value,name:$('create-name').value,count:Number($('create-size').value),filters:sessionFiltersFromForm(),shuffle:$('create-shuffle').checked,shuffleExamples:$('create-shuffle-examples').checked,language:$('create-language').value,direction:$('create-direction').value,sequenceId:$('create-sequence').value,exampleCount:Number($('create-example-count').value),showKana:$('create-show-kana').checked};
    createNewSession(options);renderLanguage();showView('study');toast('Sessione creata: ordine salvato');
  }catch(e){toast(e.message)}});
  $('saved-sessions').addEventListener('click',e=>{const btn=e.target.closest('button');if(!btn)return;const action=Object.keys(btn.dataset).find(k=>k.startsWith('session'));const id=btn.dataset[action],session=sessionById(id);if(!session)return;
    if(action==='sessionResume'){try{if(session.status==='completed'){session.status='in-progress';session.currentCardIndex=0;session.currentChapterIndex=0;session.completedAt=null}activateSession(session);renderLanguage();showView('study')}catch(err){toast(err.message)}return}
-   if(action==='sessionCopy'){const deck=installedDecks.find(d=>d.deckId===session.deckId);if(!deck)return toast('Deck non installato');try{createNewSession({deckId:deck.deckId,filters:session.filters,count:session.requestedCount||session.orderedCardIds.length,shuffle:session.shuffleEnabled,shuffleExamples:session.exampleShuffleEnabled,language:session.language,direction:session.direction,sequenceId:session.sequenceId,name:(session.name||'Sessione')+' (copia)',exampleCount:session.exampleCount||state.exampleCount});renderLanguage();showView('study')}catch(err){toast(err.message)}return}
+   if(action==='sessionCopy'){const deck=installedDecks.find(d=>d.deckId===session.deckId);if(!deck)return toast('Deck non installato');try{createNewSession({deckId:deck.deckId,filters:session.filters,count:session.requestedCount||session.orderedCardIds.length,shuffle:session.shuffleEnabled,shuffleExamples:session.exampleShuffleEnabled,language:session.language,direction:session.direction,sequenceId:session.sequenceId,name:(session.name||'Sessione')+' (copia)',exampleCount:session.exampleCount??state.exampleCount,showKana:session.showKana!==false});renderLanguage();showView('study')}catch(err){toast(err.message)}return}
    if(action==='sessionArchive'){if(session.id===state.sessionId)stopLesson();session.status=session.status==='archived'?'in-progress':'archived';save();renderSessions();return}
    if(action==='sessionDelete'){if(!confirm('Eliminare la sessione? I progressi delle carte rimarranno salvati.'))return;if(session.id===state.sessionId){stopLesson();state.sessionId=null;}studyDoc.sessions=studyDoc.sessions.filter(s=>s.id!==id);save();renderSessions();}
  });
@@ -699,6 +704,7 @@
  $('study-category').addEventListener('change',e=>{state.category=e.target.value;$('create-category').value=state.category;save();updateEligible()});
  $('session-size').addEventListener('change',e=>{state.size=num(e.target.value,5,15000,20);$('create-size').value=state.size;save();updateEligible()});
  $('study-direction').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.chapterIndex=0;state.activePlan=null;state.direction=e.target.value;const session=currentSession();if(session){session.direction=state.direction;session.sequenceId=sequenceRepo.active(state.direction).sequenceId;}resetReveal();state.visibleExampleIndex=null;state.phase=t('Direzione cambiata','Direction changed');save();renderStudy();renderSequenceEditor()});
+ $('session-show-kana').addEventListener('change',e=>{const session=currentSession();if(session)session.showKana=e.target.checked;state.showKana=e.target.checked;save();renderStudy()});
  $('example-count').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.exampleCount=num(e.target.value,0,10,1);save();renderStudy();previewPlan()});
  $('form-count').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.formCount=e.target.value;save();previewPlan()});
  $('global-gap').addEventListener('change',e=>{if(state.playing||state.paused)stopLesson();state.globalGap=num(e.target.value,0,12,.4);e.target.value=state.globalGap;save();previewPlan()});

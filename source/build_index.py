@@ -11,6 +11,7 @@ html=html.replace('__STORAGE_JS__',(src/'storage.js').read_text(encoding='utf-8'
 html=html.replace('__CONTENT_JS__',(src/'content.js').read_text(encoding='utf-8'))
 html=html.replace('__SESSIONS_JS__',(src/'sessions.js').read_text(encoding='utf-8'))
 html=html.replace('__ONNX_TTS_JS__',(src/'onnx-tts.js').read_text(encoding='utf-8'))
+html=html.replace('__WORD_HIGHLIGHTER_JS__',(src/'word-highlighter.js').read_text(encoding='utf-8'))
 html=html.replace('__APP_JS__',(src/'app.js').read_text(encoding='utf-8'))
 html=html.replace('__NOTEBOOK_JS__',(src/'notebook-ui.js').read_text(encoding='utf-8'))
 (root/'index.html').write_text(html,encoding='utf-8')

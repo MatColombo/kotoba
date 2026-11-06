@@ -20,7 +20,7 @@ test('Notebook exposes frozen Home, Library, appearance and technical screen con
 });
 test('Notebook style has anthracite night and 6px text minimum, not permanent bottom navigation',()=>{
  assert.match(css,/#1C1D1F/);
- assert.match(css,/#F8F6EF/);
+ assert.match(css,/#EEEBDD/);
  assert.match(template,/id="nb-font-size"[^>]*min="6"[^>]*max="30"/);
  assert.doesNotMatch(template,/class="bottom-navigation"/);
  assert.match(css,/#view-study .*\.nb-reading/);

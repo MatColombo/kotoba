@@ -1,6 +1,6 @@
 // Version-scoped cache for GitHub Pages static app. IndexedDB study data is not cached here.
 const CACHE_PREFIX='kotoba-drive-';
-const CACHE_NAME='kotoba-drive-2026-11-06-v046-hybrid-form-label-notebook-01';
+const CACHE_NAME='kotoba-drive-2026-11-06-v046-hybrid-form-label-notebook-011';
 const APP_FILES=['./','./index.html','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./voice-sandbox.html','./decks/catalog.json','./decks/n4-core.json','./decks/scenarios.json','./bridge.mp3','./tts-worker.js'];
 // The two complete decks (about 33 MiB together) are downloaded only on demand.
 // Once installed, their offline source of truth is IndexedDB, not a second Cache API copy.

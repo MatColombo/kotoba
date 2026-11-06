@@ -1,4 +1,8 @@
-# Kotoba Drive — Notebook UI v0.1 (beta di integrazione)
+# Notebook UI v0.1.1 — aggiornamento
+
+Vedi `NOTEBOOK_UI_FIX_v011.md` per installazione e modifica della riga kana, layout e highlight.
+
+# Kotoba Drive — Notebook UI v0.1 (documentazione della baseline)
 
 Questa è la prima integrazione delle schermate approvate nella v0.4.6 ONNX/ibrida. **Non cambia il motore di sintesi né il formato dei deck o dei progressi.**
 
